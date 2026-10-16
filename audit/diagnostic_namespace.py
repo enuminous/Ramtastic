@@ -1,4 +1,4 @@
-"""Apply only the documented one-line namespace experiment to the frozen file.
+"""Apply the documented namespace and zero-form proof experiment.
 
 Never updates the source pin. The published repository retains the original
 source; this mutation belongs only to a disposable diagnostic checkout.
@@ -15,6 +15,12 @@ if path.read_bytes()!=original:
 needle=b'namespace Ramtastic.Dolbeault.DolbeaultTheorem\n'
 assert original.count(needle)==1
 changed=original.replace(needle,needle+b'\nopen Ramtastic.ComplexStructure\n')
+old=b'  have hdf := hclosed x\n'
+new=old+b'  have hform : (fun x => extDeriv f x) = 0 := funext hclosed\n'
+assert changed.count(old)==1
+changed=changed.replace(old,new)
+assert changed.count(b'this, hdf, pullbackJ_zero')==2
+changed=changed.replace(b'this, hdf, pullbackJ_zero',b'this, hform, pullbackJ_zero')
 path.write_bytes(changed)
-print('DIAGNOSTIC_ONLY: opened Ramtastic.ComplexStructure; no theorem statement or proof text changed.')
+print('DIAGNOSTIC_ONLY: opened Ramtastic.ComplexStructure; supplied function-level zero equality to the two imaginary-component simp proofs. The theorem statement is unchanged.')
 print('Original release build remains FAILED. Subsequent Lean results concern this explicitly modified checkout.')

@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   lean:
-    name: Diagnostic namespace repair, axioms and semantic probes
+    name: Diagnostic source repair, axioms and semantic probes
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -22,7 +22,7 @@ jobs:
           lint: false
           use-mathlib-cache: true
           use-github-cache: true
-      - name: Apply explicit diagnostic namespace correction
+      - name: Apply explicit diagnostic namespace and zero-form correction
         run: python3 audit/diagnostic_namespace.py
       - name: Build diagnostically corrected source
         run: lake build
