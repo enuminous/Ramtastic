@@ -1,4 +1,4 @@
-name: Ramtastic Zoo audit
+name: Ramtastic Zoo diagnostic audit
 on:
   push:
   pull_request:
@@ -7,6 +7,7 @@ permissions:
   contents: read
 jobs:
   lean:
+    name: Diagnostic namespace repair, axioms and semantic probes
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -14,14 +15,20 @@ jobs:
       - uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
         with:
           auto-config: false
-          build: true
+          build: false
           test: false
           lint: false
           use-mathlib-cache: true
           use-github-cache: true
+      - name: Apply explicit diagnostic namespace correction
+        run: python3 audit/diagnostic_namespace.py
+      - name: Build diagnostically corrected source
+        run: lake build
       - name: Audit all project declarations
         run: lake env lean -DwarningAsError=true audit/StrictAudit.lean
       - name: Exercise audit rejection controls
         run: python3 audit/test_axiom_audit.py
+      - name: Verify semantic counterexamples
+        run: lake env lean -DwarningAsError=true audit/SemanticProbes.lean
       - name: Verify dependency pins
         run: git diff --exit-code -- lean-toolchain lakefile.lean lake-manifest.json
