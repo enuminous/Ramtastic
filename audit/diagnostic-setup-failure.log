@@ -1,0 +1,322 @@
+﻿2026-10-16T20:40:18.0768926Z Current runner version: '2.337.0'
+2026-10-16T20:40:18.0790751Z ##[group]Runner Image Provisioner
+2026-10-16T20:40:18.0791561Z Hosted Compute Agent
+2026-10-16T20:40:18.0792026Z Version: 20261012.601
+2026-10-16T20:40:18.0792587Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-16T20:40:18.0793245Z Build Date: 2026-10-12T17:48:21Z
+2026-10-16T20:40:18.0793883Z Worker ID: {f50235bf-513d-4f79-bc1f-b676f415829f}
+2026-10-16T20:40:18.0794457Z Region: centralus
+2026-10-16T20:40:18.0794901Z Cloud: Azure
+2026-10-16T20:40:18.0795378Z ##[endgroup]
+2026-10-16T20:40:18.0797043Z ##[group]Operating System
+2026-10-16T20:40:18.0797563Z Ubuntu
+2026-10-16T20:40:18.0798009Z 24.04.5
+2026-10-16T20:40:18.0798435Z LTS
+2026-10-16T20:40:18.0798865Z ##[endgroup]
+2026-10-16T20:40:18.0799361Z ##[group]Runner Image
+2026-10-16T20:40:18.0799858Z Image: ubuntu-24.04
+2026-10-16T20:40:18.0800329Z Version: 20261012.334.1
+2026-10-16T20:40:18.0801388Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-16T20:40:18.0802664Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-16T20:40:18.0803736Z ##[endgroup]
+2026-10-16T20:40:18.0804675Z ##[group]GITHUB_TOKEN Permissions
+2026-10-16T20:40:18.0806862Z Contents: read
+2026-10-16T20:40:18.0807380Z Metadata: read
+2026-10-16T20:40:18.0807833Z ##[endgroup]
+2026-10-16T20:40:18.0809590Z Secret source: Actions
+2026-10-16T20:40:18.0810336Z Cache mode: write
+2026-10-16T20:40:18.0810928Z Prepare workflow directory
+2026-10-16T20:40:18.1131609Z Prepare all required actions
+2026-10-16T20:40:18.1174202Z Getting action download info
+2026-10-16T20:40:18.3947688Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-16T20:40:18.4718140Z Download action repository 'leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865' (SHA:f061402b660e0c34644504b324e830f2991d4865)
+2026-10-16T20:40:18.7404528Z Getting action download info
+2026-10-16T20:40:18.8572494Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-10-16T20:40:19.1991322Z Complete job name: Diagnostic namespace repair, axioms and semantic probes
+2026-10-16T20:40:19.2739755Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-16T20:40:19.2741262Z with:
+2026-10-16T20:40:19.2742144Z   repository: enuminous/Ramtastic
+2026-10-16T20:40:19.2748752Z   token: ***
+2026-10-16T20:40:19.2749576Z   ssh-strict: true
+2026-10-16T20:40:19.2750494Z   ssh-user: git
+2026-10-16T20:40:19.2751351Z   persist-credentials: true
+2026-10-16T20:40:19.2752267Z   clean: true
+2026-10-16T20:40:19.2753138Z   sparse-checkout-cone-mode: true
+2026-10-16T20:40:19.2754110Z   fetch-depth: 1
+2026-10-16T20:40:19.2754984Z   fetch-tags: false
+2026-10-16T20:40:19.2755996Z   show-progress: true
+2026-10-16T20:40:19.2756869Z   lfs: false
+2026-10-16T20:40:19.2757687Z   submodules: false
+2026-10-16T20:40:19.2758614Z   set-safe-directory: true
+2026-10-16T20:40:19.2759583Z   allow-unsafe-pr-checkout: false
+2026-10-16T20:40:19.2760783Z ##[endgroup]
+2026-10-16T20:40:19.3713111Z Syncing repository: enuminous/Ramtastic
+2026-10-16T20:40:19.3716357Z ##[group]Getting Git version info
+2026-10-16T20:40:19.3717714Z Working directory is '/home/runner/work/Ramtastic/Ramtastic'
+2026-10-16T20:40:19.3719799Z [command]/usr/bin/git version
+2026-10-16T20:40:19.3750260Z git version 2.55.0
+2026-10-16T20:40:19.3767859Z ##[endgroup]
+2026-10-16T20:40:19.3784370Z Temporarily overriding HOME='/home/runner/work/_temp/d22f605f-b46d-41cb-9729-0cd6db250c78' before making global git config changes
+2026-10-16T20:40:19.3788917Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-16T20:40:19.3795245Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ramtastic/Ramtastic
+2026-10-16T20:40:19.3836630Z Deleting the contents of '/home/runner/work/Ramtastic/Ramtastic'
+2026-10-16T20:40:19.3841603Z ##[group]Initializing the repository
+2026-10-16T20:40:19.3844876Z [command]/usr/bin/git init /home/runner/work/Ramtastic/Ramtastic
+2026-10-16T20:40:19.3939364Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-16T20:40:19.3941382Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-16T20:40:19.3943057Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-16T20:40:19.3944350Z hint: call:
+2026-10-16T20:40:19.3945229Z hint:
+2026-10-16T20:40:19.3946698Z hint: 	git config --global init.defaultBranch <name>
+2026-10-16T20:40:19.3947800Z hint:
+2026-10-16T20:40:19.3948889Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-16T20:40:19.3950486Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-16T20:40:19.3951773Z hint:
+2026-10-16T20:40:19.3952778Z hint: 	git branch -m <name>
+2026-10-16T20:40:19.3954160Z hint:
+2026-10-16T20:40:19.3955858Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-16T20:40:19.3958333Z Initialized empty Git repository in /home/runner/work/Ramtastic/Ramtastic/.git/
+2026-10-16T20:40:19.3962775Z [command]/usr/bin/git remote add origin https://github.com/enuminous/Ramtastic
+2026-10-16T20:40:19.3992177Z ##[endgroup]
+2026-10-16T20:40:19.3993888Z ##[group]Disabling automatic garbage collection
+2026-10-16T20:40:19.3995859Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-16T20:40:19.4024428Z ##[endgroup]
+2026-10-16T20:40:19.4026761Z ##[group]Setting up auth
+2026-10-16T20:40:19.4029700Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-16T20:40:19.4056524Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-16T20:40:19.4350202Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-16T20:40:19.4382925Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-16T20:40:19.4560172Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-16T20:40:19.4587130Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-16T20:40:19.4750622Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-16T20:40:19.4782203Z ##[endgroup]
+2026-10-16T20:40:19.4784039Z ##[group]Fetching the repository
+2026-10-16T20:40:19.4791932Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7db013475032f06b349951d743f5a405eaeff3a7:refs/remotes/origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T20:40:19.9683167Z From https://github.com/enuminous/Ramtastic
+2026-10-16T20:40:19.9685303Z  * [new ref]         7db013475032f06b349951d743f5a405eaeff3a7 -> origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T20:40:19.9688379Z ##[endgroup]
+2026-10-16T20:40:19.9689269Z ##[group]Determining the checkout info
+2026-10-16T20:40:19.9690071Z ##[endgroup]
+2026-10-16T20:40:19.9695140Z [command]/usr/bin/git sparse-checkout disable
+2026-10-16T20:40:19.9739689Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-16T20:40:19.9764903Z ##[group]Checking out the ref
+2026-10-16T20:40:19.9769209Z [command]/usr/bin/git checkout --progress --force -B audit/monolithic-zoo-2026-10-16 refs/remotes/origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T20:40:20.0007765Z Switched to a new branch 'audit/monolithic-zoo-2026-10-16'
+2026-10-16T20:40:20.0010889Z branch 'audit/monolithic-zoo-2026-10-16' set up to track 'origin/audit/monolithic-zoo-2026-10-16'.
+2026-10-16T20:40:20.0015188Z ##[endgroup]
+2026-10-16T20:40:20.0050117Z [command]/usr/bin/git log -1 --format=%H
+2026-10-16T20:40:20.0068975Z 7db013475032f06b349951d743f5a405eaeff3a7
+2026-10-16T20:40:20.0505020Z ##[group]Run leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
+2026-10-16T20:40:20.0505693Z with:
+2026-10-16T20:40:20.0506033Z   auto-config: false
+2026-10-16T20:40:20.0506332Z   build: false
+2026-10-16T20:40:20.0506651Z   test: false
+2026-10-16T20:40:20.0506935Z   lint: false
+2026-10-16T20:40:20.0507241Z   use-mathlib-cache: true
+2026-10-16T20:40:20.0507626Z   use-github-cache: true
+2026-10-16T20:40:20.0507983Z   mk_all-check: false
+2026-10-16T20:40:20.0508379Z   check-reservoir-eligibility: false
+2026-10-16T20:40:20.0508726Z   leanchecker: false
+2026-10-16T20:40:20.0509026Z   lean4checker: false
+2026-10-16T20:40:20.0509350Z   nanoda: false
+2026-10-16T20:40:20.0509651Z   nanoda-allow-sorry: true
+2026-10-16T20:40:20.0509970Z   axiom-audit: false
+2026-10-16T20:40:20.0510331Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-10-16T20:40:20.0510803Z   lake-package-directory: .
+2026-10-16T20:40:20.0511180Z   reinstall-transient-toolchain: false
+2026-10-16T20:40:20.0511562Z ##[endgroup]
+2026-10-16T20:40:20.0580590Z ##[start-action display=install elan;id=__leanprover_lean-action.__run]
+2026-10-16T20:40:20.0624160Z ##[group]Run : Install Elan
+2026-10-16T20:40:20.0624636Z [36;1m: Install Elan[0m
+2026-10-16T20:40:20.0625079Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-10-16T20:40:20.0789268Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-16T20:40:20.0789845Z ##[endgroup]
+2026-10-16T20:40:20.0889519Z ##[group]Elan Installation Output
+2026-10-16T20:40:20.1568906Z info: downloading installer
+2026-10-16T20:40:21.6530343Z info: downloading https://releases.lean-lang.org/lean4/v4.30.0-rc1/lean-4.30.0-rc1-linux.tar.zst
+2026-10-16T20:40:27.8623805Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.30.0-rc1
+2026-10-16T20:40:36.5478322Z Lean (version 4.30.0-rc1, x86_64-unknown-linux-gnu, commit 714601baf118066cbf3f282361339c6d06665b2a, Release)
+2026-10-16T20:40:36.5849281Z Lake version 5.0.0-src+714601b (Lean version 4.30.0-rc1)
+2026-10-16T20:40:36.5850881Z ##[endgroup]
+2026-10-16T20:40:36.5851350Z 
+2026-10-16T20:40:36.5884198Z ##[end-action id=__leanprover_lean-action.__run;outcome=success;conclusion=success;duration_ms=16530]
+2026-10-16T20:40:36.5893796Z ##[start-action display=configure `lean-action`;id=__leanprover_lean-action.config]
+2026-10-16T20:40:36.5921332Z ##[group]Run : Configure Lean Action
+2026-10-16T20:40:36.5921883Z [36;1m: Configure Lean Action[0m
+2026-10-16T20:40:36.5922375Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-10-16T20:40:36.5963161Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-16T20:40:36.5963553Z env:
+2026-10-16T20:40:36.5963871Z   AUTO_CONFIG: false
+2026-10-16T20:40:36.5964168Z   BUILD: false
+2026-10-16T20:40:36.5964462Z   TEST: false
+2026-10-16T20:40:36.5964725Z   LINT: false
+2026-10-16T20:40:36.5964975Z ##[endgroup]
+2026-10-16T20:40:36.6654277Z ##[group]Configure lean-action
+2026-10-16T20:40:36.6701138Z ##[end-action id=__leanprover_lean-action.config;outcome=success;conclusion=success;duration_ms=80]
+2026-10-16T20:40:36.6706365Z ##[start-action display=reinstall transient toolchain;id=__leanprover_lean-action.__run_2]
+2026-10-16T20:40:36.6722763Z ##[end-action id=__leanprover_lean-action.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:40:36.6726296Z ##[start-action display=ensure all files are imported;id=__leanprover_lean-action.mk_all]
+2026-10-16T20:40:36.6730918Z ##[end-action id=__leanprover_lean-action.mk_all;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:40:36.6733109Z ##[start-action display=Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.__actions_cache]
+2026-10-16T20:40:37.0179281Z ##[group]Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25
+2026-10-16T20:40:37.0179750Z with:
+2026-10-16T20:40:37.0180036Z   path: ./.lake
+2026-10-16T20:40:37.0181166Z   key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-7db013475032f06b349951d743f5a405eaeff3a7
+2026-10-16T20:40:37.0182311Z   restore-keys: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18
+2026-10-16T20:40:37.0182991Z   enableCrossOsArchive: false
+2026-10-16T20:40:37.0183349Z   fail-on-cache-miss: false
+2026-10-16T20:40:37.0183694Z   lookup-only: false
+2026-10-16T20:40:37.0183963Z ##[endgroup]
+2026-10-16T20:40:37.2660998Z Cache not found for input keys: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-7db013475032f06b349951d743f5a405eaeff3a7, lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18
+2026-10-16T20:40:37.2709277Z ##[end-action id=__leanprover_lean-action.__actions_cache;outcome=success;conclusion=success;duration_ms=597]
+2026-10-16T20:40:37.2712104Z ##[start-action display=detect mathlib;id=__leanprover_lean-action.detect-mathlib]
+2026-10-16T20:40:37.2718099Z ##[end-action id=__leanprover_lean-action.detect-mathlib;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:40:37.2720367Z ##[start-action display=get mathlib cache;id=__leanprover_lean-action.__run_3]
+2026-10-16T20:40:37.3212420Z ##[group]Run : Get Mathlib Cache
+2026-10-16T20:40:37.3212997Z [36;1m: Get Mathlib Cache[0m
+2026-10-16T20:40:37.3213485Z [36;1mecho "::group::Mathlib Cache"[0m
+2026-10-16T20:40:37.3213957Z [36;1mlake exe cache get[0m
+2026-10-16T20:40:37.3214364Z [36;1mecho "::endgroup::"[0m
+2026-10-16T20:40:37.3214797Z [36;1mecho[0m
+2026-10-16T20:40:37.3254068Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-16T20:40:37.3254445Z ##[endgroup]
+2026-10-16T20:40:37.3823817Z ##[group]Mathlib Cache
+2026-10-16T20:40:37.7183102Z info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+2026-10-16T20:41:09.8341355Z info: mathlib: checking out revision '8ec19128ad27190c2ec7c872d504be0a2877bd68'
+2026-10-16T20:41:11.4979621Z info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-10-16T20:41:11.9060523Z info: plausible: checking out revision '264309b5c0c10e569025a53ab6440a45c03133e4'
+2026-10-16T20:41:11.9160770Z info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-10-16T20:41:12.2837540Z info: LeanSearchClient: checking out revision 'c5d5b8fe6e5158def25cd28eb94e4141ad97c843'
+2026-10-16T20:41:12.2922538Z info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-10-16T20:41:12.7197670Z info: importGraph: checking out revision '4411c5f89c797401c609b3a946c8874569e69731'
+2026-10-16T20:41:12.7321289Z info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-10-16T20:41:13.6258534Z info: proofwidgets: checking out revision '82d457fb3bdd9efadbae06608ff337d689efdddf'
+2026-10-16T20:41:14.2625364Z info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-10-16T20:41:15.1120994Z info: aesop: checking out revision 'f74c7555aaa94eadd7b7bff9170f7983f92aac21'
+2026-10-16T20:41:15.1302775Z info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-10-16T20:41:15.6175829Z info: Qq: checking out revision '7aa86cb20b8458748dc24d55dab2d7ea01161057'
+2026-10-16T20:41:15.6273283Z info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-10-16T20:41:20.0723732Z info: batteries: checking out revision 'bf597c77bf9b8e66720d724928207f5911533113'
+2026-10-16T20:41:20.0992930Z info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-10-16T20:41:20.4884752Z info: Cli: checking out revision 'f7d0ca7c926cdde0562af20394dd25d028b839a5'
+2026-10-16T20:41:20.7976008Z ✔ [2/22] Built Cache.Init (255ms)
+2026-10-16T20:41:20.9027518Z ✔ [5/22] Built Cache.Lean (313ms)
+2026-10-16T20:41:20.9029283Z ✔ [6/22] Built Cache.Init:c.o (74ms)
+2026-10-16T20:41:21.0018984Z ✔ [7/22] Built Cache.Lean:c.o (144ms)
+2026-10-16T20:41:21.3048027Z ✔ [8/22] Built Batteries.Data.String.Basic (362ms)
+2026-10-16T20:41:21.4019943Z ✔ [9/22] Built Batteries.Data.String.Basic:c.o (141ms)
+2026-10-16T20:41:21.7067512Z ✔ [10/22] Built Batteries.Data.Array.Match (729ms)
+2026-10-16T20:41:21.9029168Z ✔ [11/22] Built Batteries.Data.Array.Match:c.o (268ms)
+2026-10-16T20:41:22.0030811Z ✔ [12/22] Built Batteries.Data.String.Matcher (363ms)
+2026-10-16T20:41:22.1058657Z ✔ [13/22] Built Cache.IO (1.3s)
+2026-10-16T20:41:22.2040493Z ✔ [14/22] Built Batteries.Data.String.Matcher:c.o (167ms)
+2026-10-16T20:41:22.7079247Z ✔ [15/22] Built Cache.Hashing (595ms)
+2026-10-16T20:41:23.2110626Z ✔ [16/22] Built Cache.Hashing:c.o (495ms)
+2026-10-16T20:41:23.5114037Z ✔ [17/22] Built Cache.IO:c.o (1.4s)
+2026-10-16T20:41:24.4128095Z ✔ [18/22] Built Cache.Requests (1.7s)
+2026-10-16T20:41:25.0130187Z ✔ [19/22] Built Cache.Main (641ms)
+2026-10-16T20:41:25.5136845Z ✔ [20/22] Built Cache.Main:c.o (476ms)
+2026-10-16T20:41:26.1142090Z ✔ [21/22] Built Cache.Requests:c.o (1.7s)
+2026-10-16T20:41:26.7155814Z ✔ [22/22] Built cache:exe (557ms)
+2026-10-16T20:41:28.4407047Z Current branch: HEAD
+2026-10-16T20:41:28.4407703Z Using cache (Azure) from origin: (some leanprover-community/mathlib4)
+2026-10-16T20:41:28.4408243Z Attempting to download 8266 file(s) from leanprover-community/mathlib4 cache
+2026-10-16T20:41:29.3878389Z 
+2026-10-16T20:41:29.4884050Z Downloaded: 1 file(s) [attempted 1/8266 = 0%, 18 KB/s], Decompressed: 0
+2026-10-16T20:41:29.5917161Z Downloaded: 283 file(s) [attempted 283/8266 = 3%, 6423 KB/s], Decompressed: 18
+2026-10-16T20:41:29.6957274Z Downloaded: 541 file(s) [attempted 541/8266 = 6%, 2215 KB/s], Decompressed: 18
+2026-10-16T20:41:29.7966370Z Downloaded: 870 file(s) [attempted 870/8266 = 10%, 1088 KB/s], Decompressed: 18
+2026-10-16T20:41:29.8949000Z Downloaded: 1126 file(s) [attempted 1126/8266 = 13%, 1910 KB/s], Decompressed: 18
+2026-10-16T20:41:29.9962552Z Downloaded: 1459 file(s) [attempted 1459/8266 = 17%, 7035 KB/s], Decompressed: 18
+2026-10-16T20:41:30.0982501Z Downloaded: 1814 file(s) [attempted 1814/8266 = 21%, 6872 KB/s], Decompressed: 150
+2026-10-16T20:41:30.2006981Z Downloaded: 2114 file(s) [attempted 2114/8266 = 25%, 10205 KB/s], Decompressed: 150
+2026-10-16T20:41:30.2999110Z Downloaded: 2390 file(s) [attempted 2390/8266 = 28%, 7027 KB/s], Decompressed: 150
+2026-10-16T20:41:30.4003675Z Downloaded: 2724 file(s) [attempted 2724/8266 = 32%, 4685 KB/s], Decompressed: 150
+2026-10-16T20:41:30.5037205Z Downloaded: 3046 file(s) [attempted 3046/8266 = 36%, 1608 KB/s], Decompressed: 150
+2026-10-16T20:41:30.6293661Z Downloaded: 3382 file(s) [attempted 3382/8266 = 40%, 8445 KB/s], Decompressed: 150
+2026-10-16T20:41:30.7317189Z Downloaded: 3600 file(s) [attempted 3600/8266 = 43%, 10058 KB/s], Decompressed: 150
+2026-10-16T20:41:30.8310474Z Downloaded: 3961 file(s) [attempted 3961/8266 = 47%, 7452 KB/s], Decompressed: 150
+2026-10-16T20:41:30.9310557Z Downloaded: 4264 file(s) [attempted 4264/8266 = 51%, 6595 KB/s], Decompressed: 150
+2026-10-16T20:41:31.0337135Z Downloaded: 4546 file(s) [attempted 4546/8266 = 54%, 926 KB/s], Decompressed: 150
+2026-10-16T20:41:31.1322535Z Downloaded: 4829 file(s) [attempted 4829/8266 = 58%, 1840 KB/s], Decompressed: 150
+2026-10-16T20:41:31.2347830Z Downloaded: 5189 file(s) [attempted 5189/8266 = 62%, 1779 KB/s], Decompressed: 150
+2026-10-16T20:41:31.3320406Z Downloaded: 5511 file(s) [attempted 5511/8266 = 66%, 5358 KB/s], Decompressed: 150
+2026-10-16T20:41:31.4358781Z Downloaded: 5797 file(s) [attempted 5797/8266 = 70%, 1420 KB/s], Decompressed: 150
+2026-10-16T20:41:31.5398227Z Downloaded: 6118 file(s) [attempted 6118/8266 = 74%, 3277 KB/s], Decompressed: 150
+2026-10-16T20:41:31.6389183Z Downloaded: 6383 file(s) [attempted 6383/8266 = 77%, 8343 KB/s], Decompressed: 150
+2026-10-16T20:41:31.7409113Z Downloaded: 6700 file(s) [attempted 6700/8266 = 81%, 491 KB/s], Decompressed: 150
+2026-10-16T20:41:31.8407710Z Downloaded: 7029 file(s) [attempted 7029/8266 = 85%, 768 KB/s], Decompressed: 150
+2026-10-16T20:41:31.9462601Z Downloaded: 7345 file(s) [attempted 7345/8266 = 88%, 1469 KB/s], Decompressed: 150
+2026-10-16T20:41:32.0447365Z Downloaded: 7658 file(s) [attempted 7658/8266 = 92%, 5126 KB/s], Decompressed: 150
+2026-10-16T20:41:32.1523169Z Downloaded: 8008 file(s) [attempted 8008/8266 = 96%, 1910 KB/s], Decompressed: 150
+2026-10-16T20:41:32.1977106Z Downloaded: 8264 file(s) [attempted 8264/8266 = 99%, 455 KB/s], Decompressed: 150
+2026-10-16T20:41:32.2002049Z Downloaded: 8266 file(s) [attempted 8266/8266 = 100%, 455 KB/s], Decompressed: 150
+2026-10-16T20:42:00.1597188Z Decompressed 8266 file(s)
+2026-10-16T20:42:00.1600657Z Already decompressed 8266 file(s)
+2026-10-16T20:42:00.2043245Z ##[endgroup]
+2026-10-16T20:42:00.2043484Z 
+2026-10-16T20:42:00.2761857Z ##[end-action id=__leanprover_lean-action.__run_3;outcome=success;conclusion=success;duration_ms=83004]
+2026-10-16T20:42:00.2776591Z ##[start-action display=build enuminous/Ramtastic;id=__leanprover_lean-action.build]
+2026-10-16T20:42:00.2782192Z ##[end-action id=__leanprover_lean-action.build;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:00.2784881Z ##[start-action display=Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.__actions_cache_2]
+2026-10-16T20:42:00.3801061Z ##[group]Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25
+2026-10-16T20:42:00.3801495Z with:
+2026-10-16T20:42:00.3801765Z   path: ./.lake
+2026-10-16T20:42:00.3802520Z   key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-7db013475032f06b349951d743f5a405eaeff3a7
+2026-10-16T20:42:00.3803304Z   enableCrossOsArchive: false
+2026-10-16T20:42:00.3803650Z ##[endgroup]
+2026-10-16T20:42:00.5117104Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Ramtastic/Ramtastic --files-from manifest.txt --use-compress-program zstdmt
+2026-10-16T20:42:19.3758599Z Sent 0 of 2422102564 (0.0%), 0.0 MBs/sec
+2026-10-16T20:42:20.3747839Z Sent 536870912 of 2422102564 (22.2%), 255.7 MBs/sec
+2026-10-16T20:42:21.3753054Z Sent 1006632960 of 2422102564 (41.6%), 319.7 MBs/sec
+2026-10-16T20:42:22.3758480Z Sent 1342177280 of 2422102564 (55.4%), 319.8 MBs/sec
+2026-10-16T20:42:23.3790743Z Sent 1677721600 of 2422102564 (69.3%), 319.7 MBs/sec
+2026-10-16T20:42:24.3780756Z Sent 2220775972 of 2422102564 (91.7%), 352.7 MBs/sec
+2026-10-16T20:42:25.2233657Z Sent 2422102564 of 2422102564 (100.0%), 337.2 MBs/sec
+2026-10-16T20:42:25.5481672Z Cache saved with key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-7db013475032f06b349951d743f5a405eaeff3a7
+2026-10-16T20:42:25.5536657Z ##[end-action id=__leanprover_lean-action.__actions_cache_2;outcome=success;conclusion=success;duration_ms=25275]
+2026-10-16T20:42:25.5542180Z ##[start-action display=test enuminous/Ramtastic;id=__leanprover_lean-action.test]
+2026-10-16T20:42:25.5547841Z ##[end-action id=__leanprover_lean-action.test;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:25.5551231Z ##[start-action display=lint enuminous/Ramtastic;id=__leanprover_lean-action.lint]
+2026-10-16T20:42:25.5556270Z ##[end-action id=__leanprover_lean-action.lint;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:25.5558232Z ##[start-action display=check reservoir eligibility;id=__leanprover_lean-action.__run_4]
+2026-10-16T20:42:25.5561929Z ##[end-action id=__leanprover_lean-action.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:25.5564225Z ##[start-action display=check environment with leanchecker;id=__leanprover_lean-action.__run_5]
+2026-10-16T20:42:25.5569818Z ##[end-action id=__leanprover_lean-action.__run_5;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:25.5572145Z ##[start-action display=check environment with nanoda;id=__leanprover_lean-action.nanoda]
+2026-10-16T20:42:25.5576168Z ##[end-action id=__leanprover_lean-action.nanoda;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:25.5578761Z ##[start-action display=audit axioms with axiom-audit;id=__leanprover_lean-action.axiom-audit]
+2026-10-16T20:42:25.5582413Z ##[end-action id=__leanprover_lean-action.axiom-audit;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T20:42:25.5642116Z ##[group]Run python3 audit/diagnostic_namespace.py
+2026-10-16T20:42:25.5642539Z [36;1mpython3 audit/diagnostic_namespace.py[0m
+2026-10-16T20:42:25.5736735Z shell: /usr/bin/bash -e {0}
+2026-10-16T20:42:25.5737070Z ##[endgroup]
+2026-10-16T20:42:25.6211275Z fatal: path 'Ramtastic/Dolbeault/DolbeaultTheorem.lean' exists on disk, but not in '916ab476012852778edd9ca63aecf200a8e90ed1'
+2026-10-16T20:42:25.7201439Z Traceback (most recent call last):
+2026-10-16T20:42:25.7202258Z   File "/home/runner/work/Ramtastic/Ramtastic/audit/diagnostic_namespace.py", line 12, in <module>
+2026-10-16T20:42:25.7202931Z     original=subprocess.check_output(['git','show',f'{target}:{path}'])
+2026-10-16T20:42:25.7203535Z              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-16T20:42:25.7204211Z   File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+2026-10-16T20:42:25.7205354Z     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+2026-10-16T20:42:25.7206301Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-16T20:42:25.7206815Z   File "/usr/lib/python3.12/subprocess.py", line 571, in run
+2026-10-16T20:42:25.7207456Z     raise CalledProcessError(retcode, process.args,
+2026-10-16T20:42:25.7209108Z subprocess.CalledProcessError: Command '['git', 'show', '916ab476012852778edd9ca63aecf200a8e90ed1:Ramtastic/Dolbeault/DolbeaultTheorem.lean']' returned non-zero exit status 128.
+2026-10-16T20:42:25.7360990Z ##[error]Process completed with exit code 1.
+2026-10-16T20:42:25.7479855Z Post job cleanup.
+2026-10-16T20:42:25.8232631Z [command]/usr/bin/git version
+2026-10-16T20:42:25.8266933Z git version 2.55.0
+2026-10-16T20:42:25.8297831Z Temporarily overriding HOME='/home/runner/work/_temp/e1a295cf-8ffd-4ea7-9beb-1c24d36e3996' before making global git config changes
+2026-10-16T20:42:25.8299291Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-16T20:42:25.8303110Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ramtastic/Ramtastic
+2026-10-16T20:42:25.8339157Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-16T20:42:25.8371626Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-16T20:42:25.8577840Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-16T20:42:25.8605995Z http.https://github.com/.extraheader
+2026-10-16T20:42:25.8623199Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-16T20:42:25.8657524Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-16T20:42:25.8841534Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-16T20:42:25.8888252Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-16T20:42:25.9243574Z Cleaning up orphan processes
+2026-10-16T20:42:25.9472809Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

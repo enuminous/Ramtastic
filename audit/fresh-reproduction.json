@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Fresh clone reproduction of Python inventory, four exact witnesses, 46 adapter outputs, 90 fixtures, 22 engine tests and extension Python certificate generators. JSON outputs matched the shipped audit bytes.",
+  "script_sha256": {
+    "run_audit.py": "7f96dad8e5fd52457bd2ccc76c1fd99daa3c81967e2b37ae337c5d618c0a38ca",
+    "reproduce.py": "3af7edb9ffb62b1aefe4134f425426e38e59a5b9996f614fde0261a560abaadd"
+  },
+  "lean_executed_in_this_local_reproduction": false,
+  "note": "This reproduction used an intermediate bundle with the final Python scripts; final ZIP integrity is checked separately after hosted evidence is filled."
+}

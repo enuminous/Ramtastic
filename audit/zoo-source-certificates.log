@@ -1,0 +1,17 @@
+$ python3 verify.py
+Static checks passed: 46 animals, 90 fixture entries, 186 original source hashes.
+This command checks static integrity only. Compiler and runtime evidence is recorded in BUILD_STATUS.md.
+exit=0
+
+$ python3 scripts/extension_fixtures.py
+Source-derived finite decision certificates: {'chimera': 128, 'circus': 96, 'monster': 384, 'woodpecker': 3, 'nightingale': 16, 'nightingale_root': 16} total 643
+exit=0
+
+$ python3 scripts/report_fixtures.py
+Generated complete-record Python/Lean certificates: {'chimera': 128, 'circus': 256, 'monster': 1048}
+Run lake env lean -DwarningAsError=true .lake/SourceReportFixtures.lean to check them.
+exit=0
+
+$ python3 scripts/threshold_fixtures.py
+Generated 2100 exact-arithmetic source certificates; all included binary64 intermediates agree with Fraction.
+exit=0

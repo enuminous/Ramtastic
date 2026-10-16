@@ -1,0 +1,193 @@
+{
+  "publication_ready": true,
+  "date": "2026-10-16",
+  "target_commit": "916ab476012852778edd9ca63aecf200a8e90ed1",
+  "lean_toolchain": "leanprover/lean4:v4.30.0-rc1",
+  "mathlib_commit": "8ec19128ad27190c2ec7c872d504be0a2877bd68",
+  "frozen_release": {
+    "result": "failed",
+    "run_id": 38963360333,
+    "job_id": 117183670827,
+    "audit_commit": "8fac53601d33aeabd0e4753380992ea0bd4102d4",
+    "log": "frozen-build.log",
+    "cause": "Unresolved DelDelBar.del/delbar in DolbeaultTheorem.lean"
+  },
+  "diagnostic_result": "Build, both compiled axiom scans, four rejection controls and five Lean probe theorems passed",
+  "diagnostic": {
+    "result": "passed",
+    "run_id": 38967875726,
+    "job_id": 117198752732,
+    "run_url": "https://github.com/enuminous/Ramtastic/actions/runs/38967875726",
+    "audit_commit": "c899a756f5f74476491adbf624f603b84d59d1c0",
+    "log": "verified-diagnostic.log",
+    "log_sha256": "afe7e09f81a884df3f6438a005da30b39beae1afe96f3259509a4c5876c6c227",
+    "patch": "diagnostic-source.patch",
+    "scope": "One disposable-checkout namespace/proof-body correction; theorem statement and dependency pins unchanged.",
+    "source_modified_in_published_repository": false,
+    "unmodified_subset_modules": 75,
+    "released_modules_after_diagnostic": 77,
+    "subset_compiled_declarations": {
+      "safe": 2221,
+      "theorems": 926,
+      "unsafe": 0
+    },
+    "full_compiled_declarations": {
+      "safe": 2223,
+      "theorems": 928,
+      "unsafe": 0
+    },
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "rejection_controls": [
+      "public axiom: rejected AuditProbe.probe",
+      "private axiom: rejected probe",
+      "placeholder: rejected sorryAx",
+      "native proof: rejected AuditProbe.probe._native.native_decide.ax_"
+    ],
+    "lean_probe_theorems": [
+      "squareMinusIdentity_does_not_force_euclidean_isometry",
+      "actual_quarter_turn_changes_euclidean_length",
+      "hodge_named_field_allows_unequal_dimensions",
+      "clamped_hodge_sum_adds_out_of_range_terms",
+      "two_skew_factors_need_not_have_selfadjoint_product"
+    ],
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2
+      },
+      {
+        "name": "Run leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3
+      },
+      {
+        "name": "Apply explicit diagnostic namespace and zero-form correction",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4
+      },
+      {
+        "name": "Build diagnostically corrected source",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5
+      },
+      {
+        "name": "Audit 75 unmodified released modules independently of the failed source",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6
+      },
+      {
+        "name": "Audit all project declarations",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7
+      },
+      {
+        "name": "Exercise audit rejection controls",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8
+      },
+      {
+        "name": "Verify semantic counterexamples",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9
+      },
+      {
+        "name": "Verify dependency pins",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21
+      }
+    ]
+  },
+  "retained_previous_runs": [
+    {
+      "run": 38963360333,
+      "job": 117183670827,
+      "role": "frozen",
+      "commit": "8fac53601d33aeabd0e4753380992ea0bd4102d4"
+    },
+    {
+      "run": 38963899857,
+      "job": 117185486643,
+      "role": "shallow diagnostic failure",
+      "commit": "7db013475032f06b349951d743f5a405eaeff3a7"
+    },
+    {
+      "run": 38965312902,
+      "job": 117190223194,
+      "role": "namespace-only failure",
+      "commit": "ac896f105def7dbc21ca39f6e779571f53f59de1"
+    },
+    {
+      "run": 38965836165,
+      "job": 117191957614,
+      "role": "hform simp failure",
+      "commit": "3523d7423ea2531fcd9d9227f9f37a553c5dcfcb"
+    },
+    {
+      "run": 38966396070,
+      "job": 117193810550,
+      "role": "diagnostic build passed; audit harness API and matrix proof failed",
+      "commit": "2cb534dffcf1fa6c4e9e319fec937030558c1a6e"
+    },
+    {
+      "run": 38967005688,
+      "job": 117195846710,
+      "role": "both compiled axiom audits passed; native-name expectation and matrix proof harness failed",
+      "commit": "e64111ffebb56f378608e386932c3b545491419e"
+    }
+  ],
+  "python_reproduction": {
+    "status": "passed",
+    "scope": "Fresh clone reproduction of Python inventory, four exact witnesses, 46 adapter outputs, 90 fixtures, 22 engine tests and extension Python certificate generators. JSON outputs matched the shipped audit bytes.",
+    "script_sha256": {
+      "run_audit.py": "7f96dad8e5fd52457bd2ccc76c1fd99daa3c81967e2b37ae337c5d618c0a38ca",
+      "reproduce.py": "3af7edb9ffb62b1aefe4134f425426e38e59a5b9996f614fde0261a560abaadd"
+    },
+    "lean_executed_in_this_local_reproduction": false,
+    "note": "This reproduction used an intermediate bundle with the final Python scripts; final ZIP integrity is checked separately after hosted evidence is filled."
+  },
+  "limits": [
+    "Fixture runs are not target observations.",
+    "44 canonical operations lack target inputs.",
+    "No full current Python/Lean Zoo implementation equivalence established.",
+    "No EFMW physical, Hypernym product or unreleased halting claim validated."
+  ],
+  "publication_addendum": {
+    "observed_main_commit": "df74289123e82a42be5d31f40038552bbb6b38a6",
+    "added_file": "ARISTOTLE_SUMMARY.md",
+    "referenced_RequestProject_Lean_files_present": false,
+    "source_changed": false,
+    "treatment": "Preserved as reported provenance, excluded from the frozen executable inventory."
+  }
+}

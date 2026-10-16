@@ -1,0 +1,1319 @@
+{
+  "TORTOISE": {
+    "candidate_brier": 0.12,
+    "control_brier": 0.14
+  },
+  "CAT": {
+    "full": 0.2,
+    "ablated": 0.3
+  },
+  "BAT": {
+    "gain": 0.01,
+    "placebo_gain": 0.02,
+    "incremental_brier": 0.1,
+    "placebo_brier": 0.2
+  },
+  "HEDGEHOG": {
+    "median_gain": 0.003,
+    "win_rate": 0.7,
+    "habitat_support": false,
+    "development": [
+      "development-a"
+    ],
+    "heldout": [
+      "heldout-b"
+    ]
+  },
+  "CROCODILE": {
+    "treated_pre": 1,
+    "treated_post": 4,
+    "control_pre": 2,
+    "control_post": 3
+  },
+  "TURTLE": {
+    "evidence_groups": [
+      {
+        "id": "one-shared-source",
+        "applicable": true,
+        "veto_on_failure": false,
+        "polarity": "positive"
+      },
+      {
+        "id": "one-shared-source",
+        "applicable": true,
+        "veto_on_failure": false,
+        "polarity": "positive"
+      },
+      {
+        "id": "one-shared-source",
+        "applicable": true,
+        "veto_on_failure": false,
+        "polarity": "positive"
+      }
+    ],
+    "invariant_score": 0.9
+  },
+  "MAGPIE": {
+    "coherence": 0.9,
+    "direct_support": 0.8,
+    "provenance": 0.7,
+    "corroboration": 0.6,
+    "unsupported_inference": 0.2,
+    "unresolved_provenance": 0.1,
+    "contradiction": 0.3
+  },
+  "WOLF": {
+    "rho": 0.85,
+    "previous": 0,
+    "instantaneous": 1
+  },
+  "ELEPHANT": {
+    "events": [
+      {
+        "id": 1,
+        "time": 1,
+        "status": "superseded",
+        "supersedes": null,
+        "provenance": "synthetic original"
+      },
+      {
+        "id": 2,
+        "time": 2,
+        "status": "active",
+        "supersedes": 1,
+        "provenance": "synthetic revision"
+      }
+    ],
+    "start": 2,
+    "fuel": 3
+  },
+  "CHAMELEON": {
+    "distance": 2,
+    "expected_adaptation": 0.5,
+    "between": 1,
+    "within": 0
+  },
+  "JELLYFISH": {
+    "base_weight": 0.4,
+    "stress_gain": 0.2,
+    "confidence": 0.8,
+    "stress": 0.5,
+    "health": 0.9,
+    "alpha": 0.5,
+    "incoming": 0.2
+  },
+  "BEAVER": {
+    "effectiveness": 0.1,
+    "collateral": 0.1,
+    "verification": 1,
+    "bounded": true,
+    "rollback_verified": false
+  },
+  "MANTIS": {
+    "ready": false,
+    "z_variance": 3,
+    "z_autocorrelation": 3,
+    "z_curvature": 3
+  },
+  "BISON": {
+    "demand": 10,
+    "queue": 2,
+    "capacity": 3,
+    "queue_limit": 5
+  },
+  "WEASEL": {
+    "findings": [
+      {
+        "changed_keys": 1,
+        "severity": 2,
+        "cost": 0.2,
+        "reproducibility": 1
+      },
+      {
+        "changed_keys": 2,
+        "severity": 3,
+        "cost": 0.1,
+        "reproducibility": 1
+      }
+    ],
+    "budget": 1
+  },
+  "SALMON": {
+    "weight": 2,
+    "incoming_weights": [
+      0.25,
+      0.25
+    ],
+    "parents": {
+      "0": [
+        1
+      ]
+    },
+    "start": 0,
+    "fuel": 1
+  },
+  "ORCA": {
+    "ack": true,
+    "payload_complete": false,
+    "ownership_clear": true,
+    "dependency_complete": true
+  },
+  "MOLE": {
+    "indicators_present": true,
+    "surface_health": 0.9,
+    "latent_degradation": 0.7,
+    "coverage": 0.8
+  },
+  "LYNX": {
+    "distance": 2,
+    "rarity": 2,
+    "rediscovery": 0.5,
+    "replication": 0.8,
+    "yield_score": 0.9
+  },
+  "HORSE": {
+    "workload": 0.8,
+    "attention": 0.7,
+    "fatigue": 0.2
+  },
+  "TERMITE": {
+    "state": 0.2,
+    "weighted_sum": 0.8,
+    "total_weight": 1,
+    "susceptibility": 0.5,
+    "bias": 0.1
+  },
+  "PHOENIX": {
+    "fidelity": 0.5,
+    "integrity": 1,
+    "capability": 0.8,
+    "scores": [
+      0.9,
+      0.95
+    ],
+    "start": 0,
+    "hold": 2,
+    "threshold": 0.8
+  },
+  "COBRA": {
+    "previous": 0,
+    "divergence": 0.8,
+    "violation": 0.3,
+    "proxy_delta": 0,
+    "goal_delta": 0,
+    "context_gap": 0.2,
+    "confidence": 0.9
+  },
+  "WHALE": {
+    "values": [
+      1,
+      2,
+      4
+    ],
+    "baseline": 1,
+    "window": 1
+  },
+  "FALCON": {
+    "event_time": 1,
+    "hazard_time": 3,
+    "delay": 1,
+    "alarm_time": 2
+  },
+  "RHINO": {
+    "baseline": 2,
+    "after": 1
+  },
+  "BONOBO": {
+    "gains": [
+      0.2,
+      -0.1
+    ],
+    "efficiency": 0.8,
+    "stability": 0.9,
+    "fairness_dispersion": 0.1,
+    "resolution": 0.8
+  },
+  "AXOLOTL": {
+    "reference_function": 1,
+    "damaged_function": 0.2,
+    "adapted_function": 0.8,
+    "cost": 0.3,
+    "transformation": 0.3,
+    "invariant_retention": 1
+  },
+  "BUTTERFLY": {
+    "state": 1.2,
+    "base": 0.1,
+    "gain": 0.5,
+    "threshold": 1,
+    "incoming": 0
+  },
+  "OWL": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "OCTOPUS": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "GECKO": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "HIVE": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "EAGLE": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "CRAB": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "SHEPHERD": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "PULSE": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "FOX": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "SPIDER": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "RAVEN": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "DOLPHIN": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "ANT": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "MOTH": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "SHARK": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "PENGUIN": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  },
+  "DRAGON": {
+    "columns": [
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "rows": 4,
+    "horizons": 1
+  }
+}

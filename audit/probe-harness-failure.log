@@ -1,0 +1,729 @@
+﻿2026-10-16T21:06:19.9668188Z Current runner version: '2.337.0'
+2026-10-16T21:06:19.9694020Z ##[group]Runner Image Provisioner
+2026-10-16T21:06:19.9695120Z Hosted Compute Agent
+2026-10-16T21:06:19.9695768Z Version: 20261012.601
+2026-10-16T21:06:19.9696453Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-16T21:06:19.9697215Z Build Date: 2026-10-12T17:48:21Z
+2026-10-16T21:06:19.9697879Z Worker ID: {9bed2fe7-82b2-43a2-8342-b3415d15a5f5}
+2026-10-16T21:06:19.9698651Z Region: westus
+2026-10-16T21:06:19.9699502Z Cloud: Azure
+2026-10-16T21:06:19.9700106Z ##[endgroup]
+2026-10-16T21:06:19.9701831Z ##[group]Operating System
+2026-10-16T21:06:19.9702484Z Ubuntu
+2026-10-16T21:06:19.9703086Z 24.04.5
+2026-10-16T21:06:19.9703640Z LTS
+2026-10-16T21:06:19.9704180Z ##[endgroup]
+2026-10-16T21:06:19.9704787Z ##[group]Runner Image
+2026-10-16T21:06:19.9705381Z Image: ubuntu-24.04
+2026-10-16T21:06:19.9705985Z Version: 20261012.334.1
+2026-10-16T21:06:19.9707243Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-16T21:06:19.9709626Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-16T21:06:19.9710624Z ##[endgroup]
+2026-10-16T21:06:19.9711811Z ##[group]GITHUB_TOKEN Permissions
+2026-10-16T21:06:19.9713955Z Contents: read
+2026-10-16T21:06:19.9714694Z Metadata: read
+2026-10-16T21:06:19.9715261Z ##[endgroup]
+2026-10-16T21:06:19.9717469Z Secret source: Actions
+2026-10-16T21:06:19.9718438Z Cache mode: write
+2026-10-16T21:06:19.9719315Z Prepare workflow directory
+2026-10-16T21:06:20.0066814Z Prepare all required actions
+2026-10-16T21:06:20.0118101Z Getting action download info
+2026-10-16T21:06:20.3944348Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-16T21:06:20.5094419Z Download action repository 'leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865' (SHA:f061402b660e0c34644504b324e830f2991d4865)
+2026-10-16T21:06:20.8660681Z Getting action download info
+2026-10-16T21:06:21.0133757Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-10-16T21:06:21.2259270Z Complete job name: Diagnostic source repair, axioms and semantic probes
+2026-10-16T21:06:21.3071599Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-16T21:06:21.3072673Z with:
+2026-10-16T21:06:21.3073093Z   fetch-depth: 0
+2026-10-16T21:06:21.3073544Z   repository: enuminous/Ramtastic
+2026-10-16T21:06:21.3077475Z   token: ***
+2026-10-16T21:06:21.3077895Z   ssh-strict: true
+2026-10-16T21:06:21.3078325Z   ssh-user: git
+2026-10-16T21:06:21.3078758Z   persist-credentials: true
+2026-10-16T21:06:21.3079594Z   clean: true
+2026-10-16T21:06:21.3080052Z   sparse-checkout-cone-mode: true
+2026-10-16T21:06:21.3080565Z   fetch-tags: false
+2026-10-16T21:06:21.3081000Z   show-progress: true
+2026-10-16T21:06:21.3081440Z   lfs: false
+2026-10-16T21:06:21.3081847Z   submodules: false
+2026-10-16T21:06:21.3082304Z   set-safe-directory: true
+2026-10-16T21:06:21.3082800Z   allow-unsafe-pr-checkout: false
+2026-10-16T21:06:21.3083788Z ##[endgroup]
+2026-10-16T21:06:21.4121215Z Syncing repository: enuminous/Ramtastic
+2026-10-16T21:06:21.4123513Z ##[group]Getting Git version info
+2026-10-16T21:06:21.4124671Z Working directory is '/home/runner/work/Ramtastic/Ramtastic'
+2026-10-16T21:06:21.4126059Z [command]/usr/bin/git version
+2026-10-16T21:06:21.4170224Z git version 2.55.0
+2026-10-16T21:06:21.4195346Z ##[endgroup]
+2026-10-16T21:06:21.4210929Z Temporarily overriding HOME='/home/runner/work/_temp/9219ba9d-541c-460d-8440-452eb27e3e44' before making global git config changes
+2026-10-16T21:06:21.4213265Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-16T21:06:21.4218329Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ramtastic/Ramtastic
+2026-10-16T21:06:21.4277735Z Deleting the contents of '/home/runner/work/Ramtastic/Ramtastic'
+2026-10-16T21:06:21.4284621Z ##[group]Initializing the repository
+2026-10-16T21:06:21.4290768Z [command]/usr/bin/git init /home/runner/work/Ramtastic/Ramtastic
+2026-10-16T21:06:21.4395877Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-16T21:06:21.4397652Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-16T21:06:21.4399461Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-16T21:06:21.4400304Z hint: call:
+2026-10-16T21:06:21.4400710Z hint:
+2026-10-16T21:06:21.4401235Z hint: 	git config --global init.defaultBranch <name>
+2026-10-16T21:06:21.4401875Z hint:
+2026-10-16T21:06:21.4402469Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-16T21:06:21.4403418Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-16T21:06:21.4404375Z hint:
+2026-10-16T21:06:21.4404818Z hint: 	git branch -m <name>
+2026-10-16T21:06:21.4405486Z hint:
+2026-10-16T21:06:21.4406151Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-16T21:06:21.4407160Z Initialized empty Git repository in /home/runner/work/Ramtastic/Ramtastic/.git/
+2026-10-16T21:06:21.4418153Z [command]/usr/bin/git remote add origin https://github.com/enuminous/Ramtastic
+2026-10-16T21:06:21.4460083Z ##[endgroup]
+2026-10-16T21:06:21.4461016Z ##[group]Disabling automatic garbage collection
+2026-10-16T21:06:21.4463582Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-16T21:06:21.4497247Z ##[endgroup]
+2026-10-16T21:06:21.4497975Z ##[group]Setting up auth
+2026-10-16T21:06:21.4505410Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-16T21:06:21.4541072Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-16T21:06:21.4903886Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-16T21:06:21.4943888Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-16T21:06:21.5206157Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-16T21:06:21.5246937Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-16T21:06:21.5483131Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-16T21:06:21.5525039Z ##[endgroup]
+2026-10-16T21:06:21.5599451Z ##[group]Fetching the repository
+2026-10-16T21:06:21.5601178Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-10-16T21:06:22.0611593Z From https://github.com/enuminous/Ramtastic
+2026-10-16T21:06:22.0613290Z  * [new branch]      audit/monolithic-zoo-2026-10-16 -> origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T21:06:22.0614726Z  * [new branch]      main       -> origin/main
+2026-10-16T21:06:22.0630942Z [command]/usr/bin/git branch --list --remote origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T21:06:22.0664673Z   origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T21:06:22.0678487Z [command]/usr/bin/git rev-parse refs/remotes/origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T21:06:22.0708454Z e64111ffebb56f378608e386932c3b545491419e
+2026-10-16T21:06:22.0715163Z ##[endgroup]
+2026-10-16T21:06:22.0716648Z ##[group]Determining the checkout info
+2026-10-16T21:06:22.0717975Z ##[endgroup]
+2026-10-16T21:06:22.0725299Z [command]/usr/bin/git sparse-checkout disable
+2026-10-16T21:06:22.0796692Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-16T21:06:22.0840112Z ##[group]Checking out the ref
+2026-10-16T21:06:22.0844919Z [command]/usr/bin/git checkout --progress --force -B audit/monolithic-zoo-2026-10-16 refs/remotes/origin/audit/monolithic-zoo-2026-10-16
+2026-10-16T21:06:22.0971273Z Switched to a new branch 'audit/monolithic-zoo-2026-10-16'
+2026-10-16T21:06:22.0979690Z branch 'audit/monolithic-zoo-2026-10-16' set up to track 'origin/audit/monolithic-zoo-2026-10-16'.
+2026-10-16T21:06:22.0983652Z ##[endgroup]
+2026-10-16T21:06:22.1027789Z [command]/usr/bin/git log -1 --format=%H
+2026-10-16T21:06:22.1055444Z e64111ffebb56f378608e386932c3b545491419e
+2026-10-16T21:06:22.1668712Z ##[group]Run leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
+2026-10-16T21:06:22.1669825Z with:
+2026-10-16T21:06:22.1670289Z   auto-config: false
+2026-10-16T21:06:22.1670786Z   build: false
+2026-10-16T21:06:22.1671239Z   test: false
+2026-10-16T21:06:22.1671678Z   lint: false
+2026-10-16T21:06:22.1672135Z   use-mathlib-cache: true
+2026-10-16T21:06:22.1672657Z   use-github-cache: true
+2026-10-16T21:06:22.1673168Z   mk_all-check: false
+2026-10-16T21:06:22.1673685Z   check-reservoir-eligibility: false
+2026-10-16T21:06:22.1674307Z   leanchecker: false
+2026-10-16T21:06:22.1674808Z   lean4checker: false
+2026-10-16T21:06:22.1675285Z   nanoda: false
+2026-10-16T21:06:22.1675744Z   nanoda-allow-sorry: true
+2026-10-16T21:06:22.1676253Z   axiom-audit: false
+2026-10-16T21:06:22.1676859Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-10-16T21:06:22.1677578Z   lake-package-directory: .
+2026-10-16T21:06:22.1678192Z   reinstall-transient-toolchain: false
+2026-10-16T21:06:22.1678816Z ##[endgroup]
+2026-10-16T21:06:22.1756163Z ##[start-action display=install elan;id=setup.__run]
+2026-10-16T21:06:22.1836495Z ##[group]Run : Install Elan
+2026-10-16T21:06:22.1837143Z [36;1m: Install Elan[0m
+2026-10-16T21:06:22.1837759Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-10-16T21:06:22.2082608Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-16T21:06:22.2083615Z ##[endgroup]
+2026-10-16T21:06:22.2228680Z ##[group]Elan Installation Output
+2026-10-16T21:06:22.2656517Z info: downloading installer
+2026-10-16T21:06:23.2630900Z info: downloading https://releases.lean-lang.org/lean4/v4.30.0-rc1/lean-4.30.0-rc1-linux.tar.zst
+2026-10-16T21:06:28.5986960Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.30.0-rc1
+2026-10-16T21:06:34.8780843Z Lean (version 4.30.0-rc1, x86_64-unknown-linux-gnu, commit 714601baf118066cbf3f282361339c6d06665b2a, Release)
+2026-10-16T21:06:34.9163211Z Lake version 5.0.0-src+714601b (Lean version 4.30.0-rc1)
+2026-10-16T21:06:34.9198480Z ##[endgroup]
+2026-10-16T21:06:34.9198975Z 
+2026-10-16T21:06:34.9223923Z ##[end-action id=setup.__run;outcome=success;conclusion=success;duration_ms=12746]
+2026-10-16T21:06:34.9236530Z ##[start-action display=configure `lean-action`;id=setup.config]
+2026-10-16T21:06:34.9425569Z ##[group]Run : Configure Lean Action
+2026-10-16T21:06:34.9425954Z [36;1m: Configure Lean Action[0m
+2026-10-16T21:06:34.9426303Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-10-16T21:06:34.9494331Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-16T21:06:34.9494762Z env:
+2026-10-16T21:06:34.9495000Z   AUTO_CONFIG: false
+2026-10-16T21:06:34.9495277Z   BUILD: false
+2026-10-16T21:06:34.9495540Z   TEST: false
+2026-10-16T21:06:34.9495777Z   LINT: false
+2026-10-16T21:06:34.9496010Z ##[endgroup]
+2026-10-16T21:06:34.9940415Z ##[group]Configure lean-action
+2026-10-16T21:06:34.9993970Z ##[end-action id=setup.config;outcome=success;conclusion=success;duration_ms=75]
+2026-10-16T21:06:34.9998941Z ##[start-action display=reinstall transient toolchain;id=setup.__run_2]
+2026-10-16T21:06:35.0018677Z ##[end-action id=setup.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:06:35.0022530Z ##[start-action display=ensure all files are imported;id=setup.mk_all]
+2026-10-16T21:06:35.0027039Z ##[end-action id=setup.mk_all;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:06:35.0029847Z ##[start-action display=Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25;id=setup.__actions_cache]
+2026-10-16T21:06:35.5083583Z ##[group]Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25
+2026-10-16T21:06:35.5084017Z with:
+2026-10-16T21:06:35.5084221Z   path: ./.lake
+2026-10-16T21:06:35.5085130Z   key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-e64111ffebb56f378608e386932c3b545491419e
+2026-10-16T21:06:35.5086915Z   restore-keys: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18
+2026-10-16T21:06:35.5087753Z   enableCrossOsArchive: false
+2026-10-16T21:06:35.5088045Z   fail-on-cache-miss: false
+2026-10-16T21:06:35.5088286Z   lookup-only: false
+2026-10-16T21:06:35.5088503Z ##[endgroup]
+2026-10-16T21:06:35.9626505Z Cache hit for restore-key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-2cb534dffcf1fa6c4e9e319fec937030558c1a6e
+2026-10-16T21:06:37.2437000Z Received 0 of 2421543989 (0.0%), 0.0 MBs/sec
+2026-10-16T21:06:38.2435571Z Received 125829120 of 2421543989 (5.2%), 60.0 MBs/sec
+2026-10-16T21:06:39.2446895Z Received 268435456 of 2421543989 (11.1%), 85.3 MBs/sec
+2026-10-16T21:06:40.2447888Z Received 440401920 of 2421543989 (18.2%), 105.0 MBs/sec
+2026-10-16T21:06:41.2490147Z Received 603979776 of 2421543989 (24.9%), 115.2 MBs/sec
+2026-10-16T21:06:42.2464088Z Received 692060160 of 2421543989 (28.6%), 109.9 MBs/sec
+2026-10-16T21:06:43.2471054Z Received 851443712 of 2421543989 (35.2%), 116.0 MBs/sec
+2026-10-16T21:06:44.2485701Z Received 1019215872 of 2421543989 (42.1%), 121.4 MBs/sec
+2026-10-16T21:06:45.2492893Z Received 1153433600 of 2421543989 (47.6%), 122.2 MBs/sec
+2026-10-16T21:06:46.2520630Z Received 1317011456 of 2421543989 (54.4%), 125.5 MBs/sec
+2026-10-16T21:06:47.2524730Z Received 1459617792 of 2421543989 (60.3%), 126.4 MBs/sec
+2026-10-16T21:06:48.2550110Z Received 1606418432 of 2421543989 (66.3%), 127.6 MBs/sec
+2026-10-16T21:06:49.2543743Z Received 1744830464 of 2421543989 (72.1%), 127.9 MBs/sec
+2026-10-16T21:06:50.2547948Z Received 1879048192 of 2421543989 (77.6%), 127.9 MBs/sec
+2026-10-16T21:06:51.2555842Z Received 2013265920 of 2421543989 (83.1%), 127.9 MBs/sec
+2026-10-16T21:06:52.2559865Z Received 2147483648 of 2421543989 (88.7%), 127.9 MBs/sec
+2026-10-16T21:06:53.2577744Z Received 2281701376 of 2421543989 (94.2%), 127.9 MBs/sec
+2026-10-16T21:06:54.2585216Z Received 2415919104 of 2421543989 (99.8%), 127.9 MBs/sec
+2026-10-16T21:06:54.2885231Z Received 2421543989 of 2421543989 (100.0%), 128.0 MBs/sec
+2026-10-16T21:06:54.2888888Z Cache Size: ~2309 MB (2421543989 B)
+2026-10-16T21:06:54.2932504Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4879effc-ee47-42c3-9599-f7d5f9a1ab03/cache.tzst -P -C /home/runner/work/Ramtastic/Ramtastic --use-compress-program unzstd
+2026-10-16T21:07:10.5808227Z Cache restored successfully
+2026-10-16T21:07:10.6978104Z Cache restored from key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-2cb534dffcf1fa6c4e9e319fec937030558c1a6e
+2026-10-16T21:07:10.7139682Z ##[end-action id=setup.__actions_cache;outcome=success;conclusion=success;duration_ms=35710]
+2026-10-16T21:07:10.7143000Z ##[start-action display=detect mathlib;id=setup.detect-mathlib]
+2026-10-16T21:07:10.7148182Z ##[end-action id=setup.detect-mathlib;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:10.7151191Z ##[start-action display=get mathlib cache;id=setup.__run_3]
+2026-10-16T21:07:10.7367534Z ##[group]Run : Get Mathlib Cache
+2026-10-16T21:07:10.7368162Z [36;1m: Get Mathlib Cache[0m
+2026-10-16T21:07:10.7368742Z [36;1mecho "::group::Mathlib Cache"[0m
+2026-10-16T21:07:10.7369424Z [36;1mlake exe cache get[0m
+2026-10-16T21:07:10.7369852Z [36;1mecho "::endgroup::"[0m
+2026-10-16T21:07:10.7370249Z [36;1mecho[0m
+2026-10-16T21:07:10.7913767Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-16T21:07:10.7914322Z ##[endgroup]
+2026-10-16T21:07:10.8488620Z ##[group]Mathlib Cache
+2026-10-16T21:07:20.1129723Z Current branch: HEAD
+2026-10-16T21:07:20.1131718Z Using cache (Azure) from origin: (some leanprover-community/mathlib4)
+2026-10-16T21:07:20.1133155Z Attempting to download 8266 file(s) from leanprover-community/mathlib4 cache
+2026-10-16T21:07:21.3535603Z 
+2026-10-16T21:07:21.4532136Z Downloaded: 1 file(s) [attempted 1/8266 = 0%, 14 KB/s], Decompressed: 0
+2026-10-16T21:07:21.5609844Z Downloaded: 80 file(s) [attempted 80/8266 = 0%, 542 KB/s], Decompressed: 77
+2026-10-16T21:07:21.6615409Z Downloaded: 180 file(s) [attempted 180/8266 = 2%, 188 KB/s], Decompressed: 178
+2026-10-16T21:07:21.7617507Z Downloaded: 278 file(s) [attempted 278/8266 = 3%, 260 KB/s], Decompressed: 273
+2026-10-16T21:07:21.8637694Z Downloaded: 385 file(s) [attempted 385/8266 = 4%, 740 KB/s], Decompressed: 383
+2026-10-16T21:07:21.9640925Z Downloaded: 494 file(s) [attempted 494/8266 = 5%, 205 KB/s], Decompressed: 489
+2026-10-16T21:07:22.0661936Z Downloaded: 610 file(s) [attempted 610/8266 = 7%, 483 KB/s], Decompressed: 607
+2026-10-16T21:07:22.1661841Z Downloaded: 726 file(s) [attempted 726/8266 = 8%, 986 KB/s], Decompressed: 721
+2026-10-16T21:07:22.2675491Z Downloaded: 842 file(s) [attempted 842/8266 = 10%, 336 KB/s], Decompressed: 840
+2026-10-16T21:07:22.3684364Z Downloaded: 956 file(s) [attempted 956/8266 = 11%, 2381 KB/s], Decompressed: 953
+2026-10-16T21:07:22.4682293Z Downloaded: 1074 file(s) [attempted 1074/8266 = 12%, 1808 KB/s], Decompressed: 1072
+2026-10-16T21:07:22.5685510Z Downloaded: 1191 file(s) [attempted 1191/8266 = 14%, 1500 KB/s], Decompressed: 1188
+2026-10-16T21:07:22.6691753Z Downloaded: 1303 file(s) [attempted 1303/8266 = 15%, 275 KB/s], Decompressed: 1298
+2026-10-16T21:07:22.7691608Z Downloaded: 1419 file(s) [attempted 1419/8266 = 17%, 450 KB/s], Decompressed: 1412
+2026-10-16T21:07:22.8690912Z Downloaded: 1534 file(s) [attempted 1534/8266 = 18%, 195 KB/s], Decompressed: 1531
+2026-10-16T21:07:22.9704429Z Downloaded: 1646 file(s) [attempted 1646/8266 = 19%, 1505 KB/s], Decompressed: 1642
+2026-10-16T21:07:23.0702437Z Downloaded: 1755 file(s) [attempted 1755/8266 = 21%, 320 KB/s], Decompressed: 1753
+2026-10-16T21:07:23.1712704Z Downloaded: 1869 file(s) [attempted 1869/8266 = 22%, 226 KB/s], Decompressed: 1862
+2026-10-16T21:07:23.2720407Z Downloaded: 1973 file(s) [attempted 1973/8266 = 23%, 172 KB/s], Decompressed: 1968
+2026-10-16T21:07:23.3724441Z Downloaded: 2084 file(s) [attempted 2084/8266 = 25%, 584 KB/s], Decompressed: 2082
+2026-10-16T21:07:23.4731111Z Downloaded: 2200 file(s) [attempted 2200/8266 = 26%, 849 KB/s], Decompressed: 2196
+2026-10-16T21:07:23.5727496Z Downloaded: 2314 file(s) [attempted 2314/8266 = 27%, 342 KB/s], Decompressed: 2311
+2026-10-16T21:07:23.6755770Z Downloaded: 2420 file(s) [attempted 2420/8266 = 29%, 1215 KB/s], Decompressed: 2413
+2026-10-16T21:07:23.7757386Z Downloaded: 2539 file(s) [attempted 2539/8266 = 30%, 438 KB/s], Decompressed: 2532
+2026-10-16T21:07:23.8760719Z Downloaded: 2650 file(s) [attempted 2650/8266 = 32%, 742 KB/s], Decompressed: 2647
+2026-10-16T21:07:23.9753765Z Downloaded: 2766 file(s) [attempted 2766/8266 = 33%, 677 KB/s], Decompressed: 2761
+2026-10-16T21:07:24.0752002Z Downloaded: 2879 file(s) [attempted 2879/8266 = 34%, 3095 KB/s], Decompressed: 2875
+2026-10-16T21:07:24.1758183Z Downloaded: 2992 file(s) [attempted 2992/8266 = 36%, 913 KB/s], Decompressed: 2986
+2026-10-16T21:07:24.2755492Z Downloaded: 3112 file(s) [attempted 3112/8266 = 37%, 407 KB/s], Decompressed: 3109
+2026-10-16T21:07:24.3760079Z Downloaded: 3227 file(s) [attempted 3227/8266 = 39%, 508 KB/s], Decompressed: 3225
+2026-10-16T21:07:24.4758941Z Downloaded: 3342 file(s) [attempted 3342/8266 = 40%, 3918 KB/s], Decompressed: 3338
+2026-10-16T21:07:24.5761813Z Downloaded: 3460 file(s) [attempted 3460/8266 = 41%, 435 KB/s], Decompressed: 3454
+2026-10-16T21:07:24.6765156Z Downloaded: 3573 file(s) [attempted 3573/8266 = 43%, 778 KB/s], Decompressed: 3570
+2026-10-16T21:07:24.7761762Z Downloaded: 3689 file(s) [attempted 3689/8266 = 44%, 186 KB/s], Decompressed: 3679
+2026-10-16T21:07:24.8783160Z Downloaded: 3802 file(s) [attempted 3802/8266 = 45%, 1794 KB/s], Decompressed: 3797
+2026-10-16T21:07:24.9801552Z Downloaded: 3911 file(s) [attempted 3911/8266 = 47%, 605 KB/s], Decompressed: 3906
+2026-10-16T21:07:25.0810841Z Downloaded: 4022 file(s) [attempted 4022/8266 = 48%, 1126 KB/s], Decompressed: 4020
+2026-10-16T21:07:25.1806371Z Downloaded: 4136 file(s) [attempted 4136/8266 = 50%, 900 KB/s], Decompressed: 4134
+2026-10-16T21:07:25.2801138Z Downloaded: 4250 file(s) [attempted 4250/8266 = 51%, 928 KB/s], Decompressed: 4245
+2026-10-16T21:07:25.3802299Z Downloaded: 4368 file(s) [attempted 4368/8266 = 52%, 297 KB/s], Decompressed: 4360
+2026-10-16T21:07:25.4815812Z Downloaded: 4470 file(s) [attempted 4470/8266 = 54%, 1037 KB/s], Decompressed: 4467
+2026-10-16T21:07:25.5849346Z Downloaded: 4585 file(s) [attempted 4585/8266 = 55%, 1387 KB/s], Decompressed: 4581
+2026-10-16T21:07:25.6840837Z Downloaded: 4696 file(s) [attempted 4696/8266 = 56%, 155 KB/s], Decompressed: 4689
+2026-10-16T21:07:25.7883183Z Downloaded: 4807 file(s) [attempted 4807/8266 = 58%, 1202 KB/s], Decompressed: 4798
+2026-10-16T21:07:25.8885557Z Downloaded: 4921 file(s) [attempted 4921/8266 = 59%, 1459 KB/s], Decompressed: 4917
+2026-10-16T21:07:25.9885114Z Downloaded: 5032 file(s) [attempted 5032/8266 = 60%, 187 KB/s], Decompressed: 5028
+2026-10-16T21:07:26.1087907Z Downloaded: 5149 file(s) [attempted 5149/8266 = 62%, 2277 KB/s], Decompressed: 5146
+2026-10-16T21:07:26.2104222Z Downloaded: 5262 file(s) [attempted 5262/8266 = 63%, 484 KB/s], Decompressed: 5257
+2026-10-16T21:07:26.3113890Z Downloaded: 5368 file(s) [attempted 5368/8266 = 64%, 623 KB/s], Decompressed: 5361
+2026-10-16T21:07:26.4118124Z Downloaded: 5491 file(s) [attempted 5491/8266 = 66%, 2069 KB/s], Decompressed: 5487
+2026-10-16T21:07:26.5113000Z Downloaded: 5601 file(s) [attempted 5601/8266 = 67%, 517 KB/s], Decompressed: 5593
+2026-10-16T21:07:26.6148465Z Downloaded: 5717 file(s) [attempted 5717/8266 = 69%, 323 KB/s], Decompressed: 5714
+2026-10-16T21:07:26.7146563Z Downloaded: 5830 file(s) [attempted 5830/8266 = 70%, 868 KB/s], Decompressed: 5827
+2026-10-16T21:07:26.8163350Z Downloaded: 5949 file(s) [attempted 5949/8266 = 71%, 723 KB/s], Decompressed: 5943
+2026-10-16T21:07:26.9165067Z Downloaded: 6069 file(s) [attempted 6069/8266 = 73%, 2495 KB/s], Decompressed: 6064
+2026-10-16T21:07:27.0171912Z Downloaded: 6175 file(s) [attempted 6175/8266 = 74%, 247 KB/s], Decompressed: 6173
+2026-10-16T21:07:27.1185242Z Downloaded: 6296 file(s) [attempted 6296/8266 = 76%, 678 KB/s], Decompressed: 6291
+2026-10-16T21:07:27.2194695Z Downloaded: 6412 file(s) [attempted 6412/8266 = 77%, 4175 KB/s], Decompressed: 6407
+2026-10-16T21:07:27.3197453Z Downloaded: 6521 file(s) [attempted 6521/8266 = 78%, 550 KB/s], Decompressed: 6518
+2026-10-16T21:07:27.4191284Z Downloaded: 6645 file(s) [attempted 6645/8266 = 80%, 753 KB/s], Decompressed: 6639
+2026-10-16T21:07:27.5197868Z Downloaded: 6762 file(s) [attempted 6762/8266 = 81%, 2866 KB/s], Decompressed: 6760
+2026-10-16T21:07:27.6195738Z Downloaded: 6872 file(s) [attempted 6872/8266 = 83%, 449 KB/s], Decompressed: 6869
+2026-10-16T21:07:27.7192423Z Downloaded: 6989 file(s) [attempted 6989/8266 = 84%, 322 KB/s], Decompressed: 6984
+2026-10-16T21:07:27.8196604Z Downloaded: 7106 file(s) [attempted 7106/8266 = 85%, 397 KB/s], Decompressed: 7103
+2026-10-16T21:07:27.9196584Z Downloaded: 7223 file(s) [attempted 7223/8266 = 87%, 885 KB/s], Decompressed: 7219
+2026-10-16T21:07:28.0205683Z Downloaded: 7340 file(s) [attempted 7340/8266 = 88%, 265 KB/s], Decompressed: 7335
+2026-10-16T21:07:28.1202306Z Downloaded: 7453 file(s) [attempted 7453/8266 = 90%, 1545 KB/s], Decompressed: 7451
+2026-10-16T21:07:28.2205478Z Downloaded: 7569 file(s) [attempted 7569/8266 = 91%, 258 KB/s], Decompressed: 7567
+2026-10-16T21:07:28.3222847Z Downloaded: 7686 file(s) [attempted 7686/8266 = 92%, 482 KB/s], Decompressed: 7680
+2026-10-16T21:07:28.4226109Z Downloaded: 7798 file(s) [attempted 7798/8266 = 94%, 1085 KB/s], Decompressed: 7796
+2026-10-16T21:07:28.5245046Z Downloaded: 7912 file(s) [attempted 7912/8266 = 95%, 555 KB/s], Decompressed: 7907
+2026-10-16T21:07:28.6248127Z Downloaded: 8033 file(s) [attempted 8033/8266 = 97%, 254 KB/s], Decompressed: 8030
+2026-10-16T21:07:28.7246949Z Downloaded: 8141 file(s) [attempted 8141/8266 = 98%, 136 KB/s], Decompressed: 8137
+2026-10-16T21:07:29.4780438Z Downloaded: 8258 file(s) [attempted 8258/8266 = 99%, 1421 KB/s], Decompressed: 8255
+2026-10-16T21:07:29.4822181Z Downloaded: 8265 file(s) [attempted 8265/8266 = 99%, 421 KB/s], Decompressed: 8260
+2026-10-16T21:07:29.4823117Z Downloaded: 8266 file(s) [attempted 8266/8266 = 100%, 421 KB/s], Decompressed: 8260
+2026-10-16T21:07:30.2020198Z Decompressed 8266 file(s)
+2026-10-16T21:07:30.2020829Z Already decompressed 8266 file(s)
+2026-10-16T21:07:30.2376091Z ##[endgroup]
+2026-10-16T21:07:30.2376320Z 
+2026-10-16T21:07:30.2385187Z ##[end-action id=setup.__run_3;outcome=success;conclusion=success;duration_ms=19523]
+2026-10-16T21:07:30.2399364Z ##[start-action display=build enuminous/Ramtastic;id=setup.build]
+2026-10-16T21:07:30.2404083Z ##[end-action id=setup.build;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:30.2406171Z ##[start-action display=Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25;id=setup.__actions_cache_2]
+2026-10-16T21:07:30.3506056Z ##[group]Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25
+2026-10-16T21:07:30.3506443Z with:
+2026-10-16T21:07:30.3506637Z   path: ./.lake
+2026-10-16T21:07:30.3507530Z   key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-e64111ffebb56f378608e386932c3b545491419e
+2026-10-16T21:07:30.3508491Z   enableCrossOsArchive: false
+2026-10-16T21:07:30.3508743Z ##[endgroup]
+2026-10-16T21:07:30.5095858Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Ramtastic/Ramtastic --files-from manifest.txt --use-compress-program zstdmt
+2026-10-16T21:07:50.5304780Z Sent 0 of 2421561092 (0.0%), 0.0 MBs/sec
+2026-10-16T21:07:51.5324534Z Sent 469762048 of 2421561092 (19.4%), 223.7 MBs/sec
+2026-10-16T21:07:52.5371043Z Sent 536870912 of 2421561092 (22.2%), 170.4 MBs/sec
+2026-10-16T21:07:53.5335235Z Sent 1006632960 of 2421561092 (41.6%), 239.8 MBs/sec
+2026-10-16T21:07:54.5336207Z Sent 1409286144 of 2421561092 (58.2%), 268.6 MBs/sec
+2026-10-16T21:07:55.5334892Z Sent 1744830464 of 2421561092 (72.1%), 277.1 MBs/sec
+2026-10-16T21:07:56.5344534Z Sent 2153125636 of 2421561092 (88.9%), 293.1 MBs/sec
+2026-10-16T21:07:57.5343918Z Sent 2287343364 of 2421561092 (94.5%), 272.5 MBs/sec
+2026-10-16T21:07:58.5349352Z Sent 2421561092 of 2421561092 (100.0%), 256.5 MBs/sec
+2026-10-16T21:07:59.0970852Z Cache saved with key: lake-Linux-X64-3d321ed534439c2981d20caf01c22b4c93ee2815f8fc7b3662e53a1993d5f339-f2e9ef40b308e78c65286414bc58e56469480bd5036f6198566fbd89583d7b18-e64111ffebb56f378608e386932c3b545491419e
+2026-10-16T21:07:59.1077443Z ##[end-action id=setup.__actions_cache_2;outcome=success;conclusion=success;duration_ms=28867]
+2026-10-16T21:07:59.1083692Z ##[start-action display=test enuminous/Ramtastic;id=setup.test]
+2026-10-16T21:07:59.1089393Z ##[end-action id=setup.test;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:59.1092343Z ##[start-action display=lint enuminous/Ramtastic;id=setup.lint]
+2026-10-16T21:07:59.1096455Z ##[end-action id=setup.lint;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:59.1098243Z ##[start-action display=check reservoir eligibility;id=setup.__run_4]
+2026-10-16T21:07:59.1101902Z ##[end-action id=setup.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:59.1104377Z ##[start-action display=check environment with leanchecker;id=setup.__run_5]
+2026-10-16T21:07:59.1108851Z ##[end-action id=setup.__run_5;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:59.1111466Z ##[start-action display=check environment with nanoda;id=setup.nanoda]
+2026-10-16T21:07:59.1114625Z ##[end-action id=setup.nanoda;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:59.1117170Z ##[start-action display=audit axioms with axiom-audit;id=setup.axiom-audit]
+2026-10-16T21:07:59.1120843Z ##[end-action id=setup.axiom-audit;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-16T21:07:59.1176926Z ##[group]Run python3 audit/diagnostic_namespace.py
+2026-10-16T21:07:59.1177355Z [36;1mpython3 audit/diagnostic_namespace.py[0m
+2026-10-16T21:07:59.1267384Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:07:59.1267662Z ##[endgroup]
+2026-10-16T21:07:59.1788286Z DIAGNOSTIC_ONLY: opened Ramtastic.ComplexStructure; unfolded the projections and pullback, then rewrote the closed-form hypothesis. The theorem statement is unchanged.
+2026-10-16T21:07:59.1790520Z Original release build remains FAILED. Subsequent Lean results concern this explicitly modified checkout.
+2026-10-16T21:07:59.1857675Z ##[group]Run lake build
+2026-10-16T21:07:59.1857960Z [36;1mlake build[0m
+2026-10-16T21:07:59.1918907Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:07:59.1919479Z ##[endgroup]
+2026-10-16T21:08:06.2160784Z ✔ [3305/3339] Built Ramtastic.BSD.EllipticCurve (4.6s)
+2026-10-16T21:08:06.6230180Z ✔ [3307/3339] Built Ramtastic.ChowGroups.AlgebraicCycle (5.1s)
+2026-10-16T21:08:07.2155941Z ✔ [3308/3339] Built Ramtastic.Bass.HingeRotation (5.6s)
+2026-10-16T21:08:08.6210592Z ✔ [3309/3339] Built Ramtastic.DeRham.DifferentialForms (7.0s)
+2026-10-16T21:08:10.4236892Z ✔ [3310/3339] Built Ramtastic.BSD.TateShafarevich (4.3s)
+2026-10-16T21:08:11.1244791Z ✔ [3311/3341] Built Ramtastic.BSD.LFunction (4.5s)
+2026-10-16T21:08:11.2310399Z ✔ [3312/3341] Built Ramtastic.BSD.MordellWeil (4.0s)
+2026-10-16T21:08:12.9310353Z ✔ [3313/3347] Built Ramtastic.ChowGroups.RationalEquivalence (4.3s)
+2026-10-16T21:08:15.9400609Z ✔ [3315/3347] Built Ramtastic.DeRham.ClosedExact (4.8s)
+2026-10-16T21:08:17.0392271Z ✔ [3316/3347] Built Ramtastic.ComplexStructure.AlmostComplex (5.8s)
+2026-10-16T21:08:17.3396423Z ✔ [3317/3373] Built Ramtastic.BSD.HeightPairing (4.4s)
+2026-10-16T21:08:18.3451290Z ✔ [3320/3377] Built Ramtastic.DeRham.LeibnizRule (7.8s)
+2026-10-16T21:08:21.1610749Z ⚠ [3321/3377] Built Ramtastic.DeRham.StokesTheorem (4.1s)
+2026-10-16T21:08:21.1700666Z warning: Ramtastic/DeRham/StokesTheorem.lean:83:2: Try this: intro x ⟨hpos, hsum⟩ i _
+2026-10-16T21:08:27.5735194Z ✔ [3322/3377] Built Ramtastic.ChowGroups.ChowGroup (11s)
+2026-10-16T21:08:28.1748010Z ✔ [3323/3377] Built Ramtastic.BSD.BSDFormula (7.1s)
+2026-10-16T21:08:28.3770495Z ⚠ [3325/3377] Built Ramtastic.DeRham.Quotient (10s)
+2026-10-16T21:08:28.3829832Z warning: Ramtastic/DeRham/Quotient.lean:119:33: This simp argument is unused:
+2026-10-16T21:08:28.3830720Z   Pi.sub_apply
+2026-10-16T21:08:28.3830964Z 
+2026-10-16T21:08:28.3831154Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:28.3832063Z   simp only [Pi.add_apply,̵ ̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵] at *
+2026-10-16T21:08:28.3834794Z 
+2026-10-16T21:08:28.3859945Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:28.3889934Z warning: Ramtastic/DeRham/Quotient.lean:159:33: This simp argument is unused:
+2026-10-16T21:08:28.3919639Z   Pi.neg_apply
+2026-10-16T21:08:28.3979299Z 
+2026-10-16T21:08:28.4009547Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:28.4039963Z   simp only [neg_one_smul, P̵i̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵,̵ ̵neg_sub_neg]
+2026-10-16T21:08:28.4069259Z 
+2026-10-16T21:08:28.4099902Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:30.1790822Z ⚠ [3326/3377] Built Ramtastic.ComplexStructure.TypeDecomposition (11s)
+2026-10-16T21:08:30.1820137Z warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:89:27: This simp argument is unused:
+2026-10-16T21:08:30.1849559Z   Finset.card_fin
+2026-10-16T21:08:30.1859688Z 
+2026-10-16T21:08:30.1869597Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:30.1900034Z   simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+2026-10-16T21:08:30.1919354Z 
+2026-10-16T21:08:30.1929704Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:30.1959822Z warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:169:27: This simp argument is unused:
+2026-10-16T21:08:30.1989408Z   Finset.card_fin
+2026-10-16T21:08:30.2009384Z 
+2026-10-16T21:08:30.2049544Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:30.2069849Z   simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+2026-10-16T21:08:30.2079436Z 
+2026-10-16T21:08:30.2109798Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:30.2129924Z warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:175:13: This simp argument is unused:
+2026-10-16T21:08:30.2159637Z   IsType11
+2026-10-16T21:08:30.2160876Z 
+2026-10-16T21:08:30.2209487Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:30.2220622Z   simp only [I̵s̵T̵y̵pe̵1̵1̵,̵ ̵p̵roj11, pullbackJ_apply, ContinuousAlternatingMap.smul_apply,
+2026-10-16T21:08:30.2239530Z       ContinuousAlternatingMap.add_apply]
+2026-10-16T21:08:30.2269185Z 
+2026-10-16T21:08:30.2280161Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:30.2309913Z warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:184:13: This simp argument is unused:
+2026-10-16T21:08:30.2329471Z   IsType20_02
+2026-10-16T21:08:30.2343289Z 
+2026-10-16T21:08:30.2370042Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:30.2371445Z   simp only [I̵s̵T̵y̵pe̵2̵0̵_̵0̵2̵,̵ ̵p̵roj20_02, pullbackJ_apply, Pi.neg_apply,
+2026-10-16T21:08:30.2409748Z   ̵  ̵ ̵ ̵ContinuousAlternatingMap.smul_apply,
+2026-10-16T21:08:30.2439663Z   ̲  ̲ ̲ ̲ContinuousAlternatingMap.sub_apply,
+2026-10-16T21:08:30.2459821Z   ̵  ̵ ̵ ̵ContinuousAlternatingMap.neg_apply]
+2026-10-16T21:08:30.2469261Z 
+2026-10-16T21:08:30.2497472Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:30.2520017Z warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:307:58: This simp argument is unused:
+2026-10-16T21:08:30.2529469Z   Finset.card_fin
+2026-10-16T21:08:30.2559301Z 
+2026-10-16T21:08:30.2580479Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:30.2610005Z   simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+2026-10-16T21:08:30.2622695Z 
+2026-10-16T21:08:30.2649739Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:30.2669982Z warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:316:53: This simp argument is unused:
+2026-10-16T21:08:30.2670854Z   Finset.card_fin
+2026-10-16T21:08:30.2671081Z 
+2026-10-16T21:08:30.2671273Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:30.2672086Z   simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+2026-10-16T21:08:30.2672522Z 
+2026-10-16T21:08:30.2672903Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:31.8800660Z ✔ [3327/3377] Built Ramtastic.BSD.ArithmeticGAGA (4.3s)
+2026-10-16T21:08:31.9840628Z ✔ [3329/3377] Built Ramtastic.HardyLittlewood.PrimePairAsymptotic (3.6s)
+2026-10-16T21:08:32.9823036Z ✔ [3331/3378] Built Ramtastic.Kahler.KahlerForm (4.8s)
+2026-10-16T21:08:35.9930767Z ✔ [3332/3378] Built Ramtastic.QuantumYM.WilsonActionConstruction (4.0s)
+2026-10-16T21:08:36.0930546Z ✔ [3334/3378] Built Ramtastic.HodgeStar.StarOperator (5.9s)
+2026-10-16T21:08:37.0970500Z ⚠ [3335/3378] Built Ramtastic.Kahler.SL2Weight (5.2s)
+2026-10-16T21:08:37.1000123Z warning: Ramtastic/Kahler/SL2Weight.lean:42:17: This simp argument is unused:
+2026-10-16T21:08:37.1029582Z   Nat.zero_eq
+2026-10-16T21:08:37.1059389Z 
+2026-10-16T21:08:37.1089972Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:37.1120535Z   s̵i̵m̵p̵ ̵o̵n̵l̵y̵ ̵[̵N̵a̵t̵.̵z̵e̵r̵o̵_̵e̵q̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵o̵n̵e̵_̵m̵u̵l̵,̵
+2026-10-16T21:08:37.1160986Z   ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵i̵t̵e̵r̵a̵t̵e̵_̵o̵n̵e̵,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵i̵t̵e̵r̵a̵t̵e̵_̵z̵e̵r̵o̵,̵ ̵i̵d̵_̵e̵q̵]̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲N̲a̲t̲.̲c̲a̲s̲t̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲,̲ ̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲i̲t̲e̲r̲a̲t̲e̲_̲o̲n̲e̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲i̲t̲e̲r̲a̲t̲e̲_̲z̲e̲r̲o̲,̲
+2026-10-16T21:08:37.1199588Z   ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲i̲d̲_̲e̲q̲]̲
+2026-10-16T21:08:37.1200028Z 
+2026-10-16T21:08:37.1229664Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:39.1050584Z ✔ [3336/3378] Built Ramtastic.ChowGroups.IntersectionProduct (6.1s)
+2026-10-16T21:08:39.9050620Z ✔ [3337/3378] Built Ramtastic.BSD.Kolyvagin (3.9s)
+2026-10-16T21:08:41.6100765Z ⚠ [3338/3378] Built Ramtastic.DeRham.DeRhamTheorem (4.5s)
+2026-10-16T21:08:41.6130929Z warning: Ramtastic/DeRham/DeRhamTheorem.lean:87:11: instance `Ramtastic.DeRham.DeRhamTheorem.DeRhamIsomorphism.singAddCommGroup` must be marked with `@[reducible]` or `@[implicit_reducible]`
+2026-10-16T21:08:41.6133755Z warning: Ramtastic/DeRham/DeRhamTheorem.lean:87:11: instance `Ramtastic.DeRham.DeRhamTheorem.DeRhamIsomorphism.singModule` must be marked with `@[reducible]` or `@[implicit_reducible]`
+2026-10-16T21:08:42.0110369Z ⚠ [3339/3378] Built Ramtastic.DeRham.Functoriality (5.9s)
+2026-10-16T21:08:42.0150008Z warning: Ramtastic/DeRham/Functoriality.lean:57:39: This simp argument is unused:
+2026-10-16T21:08:42.0169560Z   map_add
+2026-10-16T21:08:42.0219579Z 
+2026-10-16T21:08:42.0229735Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:42.0259824Z   simp [pullback, Pi.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+2026-10-16T21:08:42.0260274Z 
+2026-10-16T21:08:42.0260729Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:42.0261814Z warning: Ramtastic/DeRham/Functoriality.lean:62:40: This simp argument is unused:
+2026-10-16T21:08:42.0262612Z   map_smul
+2026-10-16T21:08:42.0262825Z 
+2026-10-16T21:08:42.0263038Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:42.0263817Z   simp [pullback, Pi.smul_apply,̵ ̵m̵a̵p̵_̵s̵m̵u̵l̵]
+2026-10-16T21:08:42.0264310Z 
+2026-10-16T21:08:42.0264765Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:42.0265842Z warning: Ramtastic/DeRham/Functoriality.lean:113:5: unused variable `hf`
+2026-10-16T21:08:42.0266523Z 
+2026-10-16T21:08:42.0266972Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-16T21:08:44.4140433Z ✔ [3340/3378] Built Ramtastic.BSD.Statement (4.4s)
+2026-10-16T21:08:46.2170498Z ✔ [3342/3378] Built Ramtastic.TwinPrimes.Statement (4.6s)
+2026-10-16T21:08:47.5183987Z ✔ [3343/3378] Built Ramtastic.Tao.BoundedPrimeGaps (5.5s)
+2026-10-16T21:08:47.7192083Z ⚠ [3345/3378] Built Ramtastic.ComplexStructure.DelDelBar (8.6s)
+2026-10-16T21:08:47.7209891Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:138:19: This simp argument is unused:
+2026-10-16T21:08:47.7210728Z   pullbackJ_smul
+2026-10-16T21:08:47.7210967Z 
+2026-10-16T21:08:47.7211165Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7211930Z   simp only [h_form, proj20_02, ContinuousAlternatingMap.smul_apply,
+2026-10-16T21:08:47.7212736Z       ContinuousAlternatingMap.sub_apply, pullbackJ_apply,
+2026-10-16T21:08:47.7239907Z   ̵  ̵ ̵ ̵extDeriv_smul,̵ ̵p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵]
+2026-10-16T21:08:47.7269318Z 
+2026-10-16T21:08:47.7299790Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7329899Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:153:19: This simp argument is unused:
+2026-10-16T21:08:47.7359603Z   pullbackJ_smul
+2026-10-16T21:08:47.7389305Z 
+2026-10-16T21:08:47.7409593Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7410226Z   simp only [h_form, proj20_02, ContinuousAlternatingMap.smul_apply,
+2026-10-16T21:08:47.7410869Z       ContinuousAlternatingMap.sub_apply, pullbackJ_apply,
+2026-10-16T21:08:47.7411622Z   ̵  ̵ ̵ ̵extDeriv_smul,̵ ̵p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵]
+2026-10-16T21:08:47.7411955Z 
+2026-10-16T21:08:47.7412315Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7413164Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:211:70: This simp argument is unused:
+2026-10-16T21:08:47.7414292Z   Finset.card_fin
+2026-10-16T21:08:47.7414485Z 
+2026-10-16T21:08:47.7414640Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7415255Z   simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+2026-10-16T21:08:47.7415609Z 
+2026-10-16T21:08:47.7415925Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7416782Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:218:70: This simp argument is unused:
+2026-10-16T21:08:47.7417452Z   Finset.card_fin
+2026-10-16T21:08:47.7417644Z 
+2026-10-16T21:08:47.7417799Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7418428Z   simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+2026-10-16T21:08:47.7418786Z 
+2026-10-16T21:08:47.7419353Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7420614Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:225:56: This simp argument is unused:
+2026-10-16T21:08:47.7421358Z   neg_neg
+2026-10-16T21:08:47.7421542Z 
+2026-10-16T21:08:47.7421700Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7422476Z   simp only [fderiv_neg, ContinuousLinearMap.neg_apply, neg_n̵e̵g̵,̵ ̵n̵e̵g̵_̵smul]
+2026-10-16T21:08:47.7422963Z 
+2026-10-16T21:08:47.7423279Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7424136Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:225:65: This simp argument is unused:
+2026-10-16T21:08:47.7424797Z   neg_smul
+2026-10-16T21:08:47.7424976Z 
+2026-10-16T21:08:47.7425145Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7425889Z   simp only [fderiv_neg, ContinuousLinearMap.neg_apply, neg_neg,̵ ̵n̵e̵g̵_̵s̵m̵u̵l̵]
+2026-10-16T21:08:47.7426400Z 
+2026-10-16T21:08:47.7426709Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7427630Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:241:100: This simp argument is unused:
+2026-10-16T21:08:47.7428323Z   Fin.removeNth
+2026-10-16T21:08:47.7428523Z 
+2026-10-16T21:08:47.7428685Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7429709Z   simp [̵F̵i̵n̵.̵r̵e̵m̵o̵v̵e̵N̵t̵h̵,̵ ̵F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵[̲F̲i̲n̲.̲s̲u̲c̲c̲A̲b̲o̲v̲e̲,̲
+2026-10-16T21:08:47.7430386Z   ̲  ̲ ̲ ̲ ̲ ̲Fin.tail]
+2026-10-16T21:08:47.7430602Z 
+2026-10-16T21:08:47.7430938Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7431836Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:241:115: This simp argument is unused:
+2026-10-16T21:08:47.7432493Z   Fin.succAbove
+2026-10-16T21:08:47.7432674Z 
+2026-10-16T21:08:47.7432835Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7433254Z   simp [Fin.removeNth,
+2026-10-16T21:08:47.7433703Z   ̲  ̲ ̲ ̲ ̲ ̲F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵ ̵Fin.tail]
+2026-10-16T21:08:47.7434007Z 
+2026-10-16T21:08:47.7434356Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7435203Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:242:130: This simp argument is unused:
+2026-10-16T21:08:47.7435836Z   Fin.tail
+2026-10-16T21:08:47.7435998Z 
+2026-10-16T21:08:47.7436152Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7436589Z   simp [Fin.removeNth,
+2026-10-16T21:08:47.7437212Z   ̲  ̲ ̲ ̲ ̲ ̲F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵ ̵F̵i̵n̵.̵t̵a̵i̵l̵]̵F̲i̲n̲.̲s̲u̲c̲c̲A̲b̲o̲v̲e̲]̲
+2026-10-16T21:08:47.7437638Z 
+2026-10-16T21:08:47.7437941Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7438799Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:244:13: This simp argument is unused:
+2026-10-16T21:08:47.7471354Z   neg_one_smul
+2026-10-16T21:08:47.7471558Z 
+2026-10-16T21:08:47.7471723Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7472767Z   simp only [̵n̵e̵g̵_̵o̵n̵e̵_̵s̵m̵u̵l̵,̵ ̵o̵n̵e̵_̵s̵m̵u̵l̵,̵[̲o̲n̲e̲_̲s̲m̲u̲l̲,̲ neg_smul, Fin.val_zero, Fin.val_one, pow_zero, pow_one, neg_neg]
+2026-10-16T21:08:47.7473485Z 
+2026-10-16T21:08:47.7473820Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7490867Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:251:0: automatically included section variable(s) unused in theorem `Ramtastic.ComplexStructure.DelDelBar.h_sym_from_d2`:
+2026-10-16T21:08:47.7492005Z   acs
+2026-10-16T21:08:47.7510260Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-16T21:08:47.7519427Z   omit acs in theorem ...
+2026-10-16T21:08:47.7529462Z 
+2026-10-16T21:08:47.7569870Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-16T21:08:47.7589965Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:270:60: This simp argument is unused:
+2026-10-16T21:08:47.7609952Z   Fin.tail
+2026-10-16T21:08:47.7639554Z 
+2026-10-16T21:08:47.7660419Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7670324Z   simp [Fin.removeNth, Fin.succAbove,̵ ̵F̵i̵n̵.̵t̵a̵i̵l̵]
+2026-10-16T21:08:47.7699404Z 
+2026-10-16T21:08:47.7729988Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7749853Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:278:57: This simp argument is unused:
+2026-10-16T21:08:47.7759638Z   Matrix.head_cons
+2026-10-16T21:08:47.7789409Z 
+2026-10-16T21:08:47.7799695Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:47.7820018Z   simp only [Fin.val_zero, Fin.val_one, pow_zero, pow_one, one_smul, Matrix.cons_val_zero,
+2026-10-16T21:08:47.7850398Z   ̲  ̲ ̲ ̲M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵]̵M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲]̲ at hd2_eval
+2026-10-16T21:08:47.7879386Z 
+2026-10-16T21:08:47.7889775Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:47.7910151Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:300:5: unused variable `hf`
+2026-10-16T21:08:47.7939590Z 
+2026-10-16T21:08:47.7949684Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-16T21:08:47.7970253Z warning: Ramtastic/ComplexStructure/DelDelBar.lean:300:27: unused variable `hr`
+2026-10-16T21:08:47.7999456Z 
+2026-10-16T21:08:47.8029916Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-16T21:08:48.4230796Z ✔ [3346/3378] Built Ramtastic.HardyLittlewood.Tower (4.0s)
+2026-10-16T21:08:50.8300865Z ✔ [3347/3378] Built Ramtastic.PrincipalBundles.PrincipalBundle (4.5s)
+2026-10-16T21:08:58.1470229Z ⚠ [3348/3378] Built Ramtastic.DeRham.WedgeProduct (9.8s)
+2026-10-16T21:08:58.1480162Z warning: Ramtastic/DeRham/WedgeProduct.lean:59:30: This simp argument is unused:
+2026-10-16T21:08:58.1499662Z   map_add
+2026-10-16T21:08:58.1529391Z 
+2026-10-16T21:08:58.1539789Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:58.1560004Z   simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+2026-10-16T21:08:58.1589754Z       AlternatingMap.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+2026-10-16T21:08:58.1619295Z 
+2026-10-16T21:08:58.1629802Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:58.1649923Z warning: Ramtastic/DeRham/WedgeProduct.lean:84:30: This simp argument is unused:
+2026-10-16T21:08:58.1679563Z   map_add
+2026-10-16T21:08:58.1709388Z 
+2026-10-16T21:08:58.1719651Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:58.1739969Z   simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+2026-10-16T21:08:58.1769847Z       AlternatingMap.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+2026-10-16T21:08:58.1779398Z 
+2026-10-16T21:08:58.1809738Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:58.1839734Z warning: Ramtastic/DeRham/WedgeProduct.lean:104:31: This simp argument is unused:
+2026-10-16T21:08:58.1869483Z   map_smul
+2026-10-16T21:08:58.1883310Z 
+2026-10-16T21:08:58.1909687Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:58.1939960Z   simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+2026-10-16T21:08:58.1941766Z       AlternatingMap.smul_apply,̵ ̵m̵a̵p̵_̵s̵m̵u̵l̵]
+2026-10-16T21:08:58.1969390Z 
+2026-10-16T21:08:58.1999862Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:58.2029847Z warning: Ramtastic/DeRham/WedgeProduct.lean:111:39: This simp argument is unused:
+2026-10-16T21:08:58.2059559Z   MultilinearMap.smul_apply
+2026-10-16T21:08:58.2089372Z 
+2026-10-16T21:08:58.2119631Z Hint: Omit it from the simp argument list.
+2026-10-16T21:08:58.2150379Z   simp only [MultilinearMap.sum_apply, M̵u̵l̵t̵i̵l̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Finset.smul_sum]
+2026-10-16T21:08:58.2179359Z 
+2026-10-16T21:08:58.2210667Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:08:58.5476607Z ✔ [3349/3378] Built Ramtastic.HodgeStar.Codifferential (10s)
+2026-10-16T21:08:58.9520413Z ✔ [3351/3379] Built Ramtastic.HodgeStar.StarConstruction (11s)
+2026-10-16T21:08:59.3510246Z ✔ [3352/3382] Built Ramtastic.ChowGroups.ProjectiveSpace (8.5s)
+2026-10-16T21:09:02.6560543Z ✔ [3353/3382] Built Ramtastic.Polignac.Statement (3.7s)
+2026-10-16T21:09:02.8546197Z ✔ [3354/3382] Built Ramtastic.ChowGroups.ChowRing (4.6s)
+2026-10-16T21:09:03.3571072Z ✔ [3355/3382] Built Ramtastic.ComplexStructure.Integrability (4.0s)
+2026-10-16T21:09:03.6571321Z ✔ [3356/3386] Built Ramtastic.DeRham.LongExactSequence (5.0s)
+2026-10-16T21:09:07.0667165Z ✔ [3359/3386] Built Ramtastic.DeRham.ManifoldForms (3.8s)
+2026-10-16T21:09:08.0740761Z ✔ [3360/3386] Built Ramtastic.Kahler.HodgeDecomposition (4.5s)
+2026-10-16T21:09:08.1731018Z ✔ [3361/3390] Built Ramtastic.PrincipalBundles.Connection (5.5s)
+2026-10-16T21:09:11.7844378Z ✔ [3368/3391] Built Ramtastic.CycleClass.ThomClass (4.7s)
+2026-10-16T21:09:12.3910413Z ✔ [3371/3398] Built Ramtastic.HodgeStar.HodgeLaplacian (9.6s)
+2026-10-16T21:09:14.3983501Z ✔ [3374/3398] Built Ramtastic.QuantumYM.CompactGroupProduct (6.3s)
+2026-10-16T21:09:14.9980391Z ⚠ [3377/3399] Built Ramtastic.Dolbeault.DolbeaultComplex (6.9s)
+2026-10-16T21:09:15.0029980Z warning: Ramtastic/Dolbeault/DolbeaultComplex.lean:77:41: This simp argument is unused:
+2026-10-16T21:09:15.0059563Z   pullbackJ_smul
+2026-10-16T21:09:15.0059832Z 
+2026-10-16T21:09:15.0060044Z Hint: Omit it from the simp argument list.
+2026-10-16T21:09:15.0061371Z   simp only [proj20_02, extDeriv_smul, p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵,̵ ̵pullbackJ_apply, ContinuousAlternatingMap.smul_apply,
+2026-10-16T21:09:15.0062569Z   ̲  ̲ ̲ ̲ ̲ ̲ContinuousAlternatingMap.sub_apply]
+2026-10-16T21:09:15.0062990Z 
+2026-10-16T21:09:15.0063421Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-16T21:09:16.5000625Z ✔ [3379/3401] Built Ramtastic.CycleClass.FundamentalClass (4.6s)
+2026-10-16T21:09:17.7036793Z ✔ [3382/3401] Built Ramtastic.HodgeStar.L2InnerProduct (5.3s)
+2026-10-16T21:09:19.5140567Z ✔ [3384/3405] Built Ramtastic.Dolbeault.DolbeaultCohomology (4.5s)
+2026-10-16T21:09:20.8135527Z ✔ [3385/3405] Built Ramtastic.SchurTest (6.4s)
+2026-10-16T21:09:21.3131051Z ✔ [3387/3405] Built Ramtastic.CycleClass.CycleClassMap (4.8s)
+2026-10-16T21:09:25.0310597Z ⚠ [3389/3405] Built Ramtastic.Kahler.LefschetzOperator (5.6s)
+2026-10-16T21:09:25.0373527Z warning: Ramtastic/Kahler/LefschetzOperator.lean:80:0: automatically included section variable(s) unused in theorem `Ramtastic.Kahler.LefschetzOperator.lambda_zero`:
+2026-10-16T21:09:25.0375402Z   lm
+2026-10-16T21:09:25.0376411Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-16T21:09:25.0377523Z   omit lm in theorem ...
+2026-10-16T21:09:25.0377946Z 
+2026-10-16T21:09:25.0378459Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-16T21:09:25.6310719Z ✔ [3390/3405] Built Ramtastic.QuantumYM.StrongResolventConvergence (7.0s)
+2026-10-16T21:09:25.8307515Z ✔ [3391/3405] Built Ramtastic.GAGA.ProjectiveKahler (4.5s)
+2026-10-16T21:09:26.1332167Z ✔ [3393/3405] Built Ramtastic.Dolbeault.DolbeaultTheorem (5.4s)
+2026-10-16T21:09:29.0340699Z ✔ [3394/3405] Built Ramtastic.CycleClass.RingHomomorphism (3.9s)
+2026-10-16T21:09:30.6400520Z ✔ [3396/3434] Built Ramtastic.Kahler.KahlerLaplacian (4.8s)
+2026-10-16T21:09:30.6459941Z ✔ [3397/3434] Built Ramtastic.QuantumYM.GlimmJaffeLimit (4.5s)
+2026-10-16T21:09:31.3395461Z ✔ [3412/3434] Built Ramtastic.CycleClass.ImageInHodge (5.7s)
+2026-10-16T21:09:33.1463511Z ✔ [3413/3434] Built Ramtastic.GAGA.AnalyticSheaves (4.2s)
+2026-10-16T21:09:35.0490372Z ✔ [3414/3434] Built Ramtastic.Kahler.HardLefschetz (4.3s)
+2026-10-16T21:09:37.3550450Z ✔ [3416/3434] Built Ramtastic.Tao.Tower (4.2s)
+2026-10-16T21:09:40.2560404Z ✔ [3421/3434] Built Ramtastic.TwinPrimes.Tower (5.3s)
+2026-10-16T21:09:41.4580438Z ✔ [3422/3434] Built Ramtastic.Sobolev.CartanProof (10s)
+2026-10-16T21:09:42.1606722Z ✔ [3423/3434] Built Ramtastic.GAGA.GAGACorrespondence (4.8s)
+2026-10-16T21:09:42.9616021Z ✔ [3424/3434] Built Ramtastic.Sobolev.SobolevSpaces (11s)
+2026-10-16T21:09:45.4673738Z ✔ [3425/3434] Built Ramtastic.SeibergWitten.CliffordBundle (5.1s)
+2026-10-16T21:09:45.7676993Z ✔ [3426/3434] Built Ramtastic.GAGA.ChowToHodge (3.6s)
+2026-10-16T21:09:46.9711680Z ✔ [3427/3434] Built Ramtastic.Sobolev.EllipticRegularity (3.0s)
+2026-10-16T21:09:49.0733950Z ✔ [3428/3434] Built Ramtastic.GAGA.RationalHodgeStructure (3.2s)
+2026-10-16T21:09:52.0804124Z ✔ [3429/3434] Built Ramtastic.Sobolev.FredholmTheory (5.1s)
+2026-10-16T21:09:53.5820634Z ✔ [3430/3434] Built Ramtastic.Sobolev.EllipticOperator (6.5s)
+2026-10-16T21:09:55.1836369Z ✔ [3431/3434] Built Ramtastic.Sobolev.HodgeTheorem (3.1s)
+2026-10-16T21:09:58.5871551Z ✔ [3432/3434] Built Ramtastic.Sobolev.CompactManifold (3.4s)
+2026-10-16T21:10:00.8894842Z ✔ [3433/3434] Built Ramtastic (2.2s)
+2026-10-16T21:10:00.9037492Z Build completed successfully (3434 jobs).
+2026-10-16T21:10:00.9411574Z ##[group]Run lake env lean -DwarningAsError=true audit/ReleasedSubsetAudit.lean
+2026-10-16T21:10:00.9412211Z [36;1mlake env lean -DwarningAsError=true audit/ReleasedSubsetAudit.lean[0m
+2026-10-16T21:10:00.9477972Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:10:00.9478371Z ##[endgroup]
+2026-10-16T21:11:09.5604726Z AXIOM_AUDIT_PASS safe=2221 theorems=926 unsafe=0
+2026-10-16T21:11:09.5607980Z 'Ramtastic.Bass.HingeRotation.rotate_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:11:09.5609612Z 'Ramtastic.GAGA.ChowToHodge.hodge_from_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:11:09.5610782Z 'Ramtastic.TwinPrimes.Tower.twinPrimes' depends on axioms: [propext]
+2026-10-16T21:11:09.7452415Z ##[group]Run lake env lean -DwarningAsError=true audit/StrictAudit.lean
+2026-10-16T21:11:09.7453360Z [36;1mlake env lean -DwarningAsError=true audit/StrictAudit.lean[0m
+2026-10-16T21:11:09.7532892Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:11:09.7533174Z ##[endgroup]
+2026-10-16T21:12:17.8257664Z AXIOM_AUDIT_PASS safe=2223 theorems=928 unsafe=0
+2026-10-16T21:12:17.8258554Z 'Ramtastic.Bass.HingeRotation.rotate_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:12:17.8259970Z 'Ramtastic.GAGA.ChowToHodge.hodge_from_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:12:17.8260902Z 'Ramtastic.TwinPrimes.Tower.twinPrimes' depends on axioms: [propext]
+2026-10-16T21:12:18.0150129Z ##[group]Run python3 audit/test_axiom_audit.py audit/ReleasedSubsetAudit.lean
+2026-10-16T21:12:18.0150755Z [36;1mpython3 audit/test_axiom_audit.py audit/ReleasedSubsetAudit.lean[0m
+2026-10-16T21:12:18.0212147Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:12:18.0212409Z ##[endgroup]
+2026-10-16T21:12:31.1697658Z Failed to reject native proof for expected reason:
+2026-10-16T21:12:31.1698370Z CONTROL_PASS public axiom: rejected AuditProbe.probe
+2026-10-16T21:12:31.1699262Z CONTROL_PASS private axiom: rejected probe
+2026-10-16T21:12:31.1699866Z CONTROL_PASS placeholder: rejected sorryAx
+2026-10-16T21:12:31.1701090Z /home/runner/work/Ramtastic/Ramtastic/ramtastic-audit-prm1gekf/Probe.lean:82:0: error: Unapproved axiom AuditProbe.probe._native.native_decide.ax_1_1 used by AuditProbe.probe
+2026-10-16T21:12:31.1702673Z 'Ramtastic.Bass.HingeRotation.rotate_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:12:31.1705232Z 'Ramtastic.GAGA.ChowToHodge.hodge_from_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:12:31.1706531Z 'Ramtastic.TwinPrimes.Tower.twinPrimes' depends on axioms: [propext]
+2026-10-16T21:12:31.1707119Z 
+2026-10-16T21:12:31.1804661Z ##[error]Process completed with exit code 1.
+2026-10-16T21:12:31.1854586Z ##[group]Run lake env lean -DwarningAsError=true audit/SemanticProbes.lean
+2026-10-16T21:12:31.1855161Z [36;1mlake env lean -DwarningAsError=true audit/SemanticProbes.lean[0m
+2026-10-16T21:12:31.1916802Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:12:31.1917075Z ##[endgroup]
+2026-10-16T21:12:38.3601140Z audit/SemanticProbes.lean:15:47: error: 'ring' tactic does nothing
+2026-10-16T21:12:38.3601717Z 
+2026-10-16T21:12:38.3602117Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-16T21:12:38.3602975Z audit/SemanticProbes.lean:77:2: error: unsolved goals
+2026-10-16T21:12:38.3603550Z case refine_5
+2026-10-16T21:12:38.3604086Z h : (quaternionI * quaternionJ).transpose = quaternionI * quaternionJ
+2026-10-16T21:12:38.3605219Z entry : Matrix.vecCons 0 (fun i => Matrix.vecCons 0 (fun i => Matrix.vecCons 0 (fun i => 1) i) i) 3 = -![0, 0, 0, 1] 3
+2026-10-16T21:12:38.3606367Z ⊢ False
+2026-10-16T21:12:38.3607206Z 'RamtasticAudit.squareMinusIdentity_does_not_force_euclidean_isometry' depends on axioms: [propext,
+2026-10-16T21:12:38.3608121Z  Classical.choice,
+2026-10-16T21:12:38.3608502Z  Quot.sound]
+2026-10-16T21:12:38.3609691Z 'RamtasticAudit.actual_quarter_turn_changes_euclidean_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:12:38.3610849Z 'RamtasticAudit.hodge_named_field_allows_unequal_dimensions' depends on axioms: [propext, Quot.sound]
+2026-10-16T21:12:38.3611972Z 'RamtasticAudit.clamped_hodge_sum_adds_out_of_range_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T21:12:38.3613057Z 'RamtasticAudit.two_skew_factors_need_not_have_selfadjoint_product' depends on axioms: [propext,
+2026-10-16T21:12:38.3613740Z  sorryAx,
+2026-10-16T21:12:38.3614009Z  Classical.choice,
+2026-10-16T21:12:38.3614309Z  Quot.sound]
+2026-10-16T21:12:38.5467570Z ##[error]Process completed with exit code 1.
+2026-10-16T21:12:38.5530215Z ##[group]Run git diff --exit-code -- lean-toolchain lakefile.lean lake-manifest.json
+2026-10-16T21:12:38.5530872Z [36;1mgit diff --exit-code -- lean-toolchain lakefile.lean lake-manifest.json[0m
+2026-10-16T21:12:38.5603500Z shell: /usr/bin/bash -e {0}
+2026-10-16T21:12:38.5603840Z ##[endgroup]
+2026-10-16T21:12:38.5803285Z Post job cleanup.
+2026-10-16T21:12:38.6707316Z [command]/usr/bin/git version
+2026-10-16T21:12:38.6752686Z git version 2.55.0
+2026-10-16T21:12:38.6792486Z Temporarily overriding HOME='/home/runner/work/_temp/cb078c67-a68c-445f-9b15-5955d39d180f' before making global git config changes
+2026-10-16T21:12:38.6793979Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-16T21:12:38.6797879Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ramtastic/Ramtastic
+2026-10-16T21:12:38.6840897Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-16T21:12:38.6876865Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-16T21:12:38.7153233Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-16T21:12:38.7179550Z http.https://github.com/.extraheader
+2026-10-16T21:12:38.7198791Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-16T21:12:38.7230167Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-16T21:12:38.7509372Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-16T21:12:38.7553268Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-16T21:12:38.7984454Z Cleaning up orphan processes
+2026-10-16T21:12:38.8317411Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

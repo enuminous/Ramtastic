@@ -1,0 +1,27 @@
+test_exact_fieldspace_extraction (test_engine.CatalogTests.test_exact_fieldspace_extraction) ... ok
+test_frozen_sources_and_full_cartesian_count (test_engine.CatalogTests.test_frozen_sources_and_full_cartesian_count) ... ok
+test_prior_status_not_imported_as_mapping_or_evidence (test_engine.CatalogTests.test_prior_status_not_imported_as_mapping_or_evidence) ... ok
+test_bad_criterion_records_computation_and_error (test_engine.EvidenceTests.test_bad_criterion_records_computation_and_error) ... ok
+test_changed_input_engine_mapping_are_blocked (test_engine.EvidenceTests.test_changed_input_engine_mapping_are_blocked) ... ok
+test_concurrent_writers_preserve_chain (test_engine.EvidenceTests.test_concurrent_writers_preserve_chain) ... ok
+test_dashboard_script_payload_escapes_html (test_engine.EvidenceTests.test_dashboard_script_payload_escapes_html) ... ok
+test_inapplicable_slot_blocks_even_synthetic_execution (test_engine.EvidenceTests.test_inapplicable_slot_blocks_even_synthetic_execution) ... ok
+test_ledger_tamper_reorder_and_incomplete_tail_detection (test_engine.EvidenceTests.test_ledger_tamper_reorder_and_incomplete_tail_detection) ... ok
+test_mapping_measurements_and_plan_schema_are_strict (test_engine.EvidenceTests.test_mapping_measurements_and_plan_schema_are_strict) ... ok
+test_negative_result_and_bad_input_both_retained (test_engine.EvidenceTests.test_negative_result_and_bad_input_both_retained) ... ok
+test_nonfinite_duplicate_or_malformed_json_retained_as_errors (test_engine.EvidenceTests.test_nonfinite_duplicate_or_malformed_json_retained_as_errors) ... ok
+test_repeated_runs_not_counted_as_independent_groups (test_engine.EvidenceTests.test_repeated_runs_not_counted_as_independent_groups) ... ok
+test_research_blocked_until_explicit_review (test_engine.EvidenceTests.test_research_blocked_until_explicit_review) ... ok
+test_synthetic_computation_does_not_clear_unknown_mapping (test_engine.EvidenceTests.test_synthetic_computation_does_not_clear_unknown_mapping) ... ok
+test_all_46_adapters_execute_finite_outputs (test_engine.KernelTests.test_all_46_adapters_execute_finite_outputs) ... ok
+test_all_90_upstream_numeric_fixtures (test_engine.KernelTests.test_all_90_upstream_numeric_fixtures) ... ok
+test_boundary_semantics_preserved_and_exhaustion_visible (test_engine.KernelTests.test_boundary_semantics_preserved_and_exhaustion_visible) ... ok
+test_branch_order_sign_and_domain_controls (test_engine.KernelTests.test_branch_order_sign_and_domain_controls) ... ok
+test_independence_deduplication_and_veto (test_engine.KernelTests.test_independence_deduplication_and_veto) ... ok
+test_no_bool_strings_nonfinite_or_unknown_fields_in_numbers (test_engine.KernelTests.test_no_bool_strings_nonfinite_or_unknown_fields_in_numbers) ... ok
+test_rank_ties_empty_and_retrospective_only (test_engine.KernelTests.test_rank_ties_empty_and_retrospective_only) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.299s
+
+OK

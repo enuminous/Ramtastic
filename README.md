@@ -1,5 +1,20 @@
 # Ramtastic
 
+> **2026-10-16 audit of this fork:** The frozen release at `916ab476` fails its
+> pinned build. The full [Monolithic Zoo report](audit/REPORT.md) separates that
+> failure, an explicit diagnostic repair, valid conditional results, and four
+> exact semantic witnesses. See [verification evidence](audit/VERIFICATION.md)
+> and the [flat audit ZIP](audit/Ramtastic-Zoo-Audit-2026-10-16.zip).
+> The upstream description and attribution below are preserved; its blanket
+> build claim is qualified by this audit. The concurrent Aristotle summary is
+> preserved; see the [scope addendum](audit/PUBLICATION-ADDENDUM.md).
+
+[Complete 46-animal ledger](audit/ZOO-46.md) · [Audit instructions](audit/README.md) ·
+[Canonical Zoo](https://github.com/enuminous/Monolithic-Zoo-Lean4) ·
+[eNuminous network](https://enuminous.github.io/EFMW/repositories.html)
+
+---
+
 Formal mathematics in Lean 4. Every result here is kernel-verified — **zero `sorry`, zero custom axioms.** What the kernel accepts, you can accept. What it doesn't, isn't here.
 
 > *The mechanism of transformation IS the content of transformation. Everything is rotations.* 🐟

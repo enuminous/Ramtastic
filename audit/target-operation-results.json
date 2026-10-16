@@ -1,0 +1,51 @@
+{
+  "WEASEL": {
+    "retained": [
+      {
+        "changed_keys": 1,
+        "severity": 1,
+        "cost": 1,
+        "reproducibility": 1
+      },
+      {
+        "changed_keys": 1,
+        "severity": 1,
+        "cost": 1,
+        "reproducibility": 1
+      },
+      {
+        "changed_keys": 1,
+        "severity": 1,
+        "cost": 1,
+        "reproducibility": 1
+      },
+      {
+        "changed_keys": 1,
+        "severity": 1,
+        "cost": 1,
+        "reproducibility": 1
+      }
+    ]
+  },
+  "ELEPHANT": {
+    "current": [
+      {
+        "id": 1,
+        "time": 1790070145,
+        "status": "active",
+        "supersedes": null,
+        "provenance": "https://github.com/enuminous/Ramtastic/tree/916ab476012852778edd9ca63aecf200a8e90ed1"
+      }
+    ],
+    "lineage": [
+      {
+        "id": 1,
+        "time": 1790070145,
+        "status": "active",
+        "supersedes": null,
+        "provenance": "https://github.com/enuminous/Ramtastic/tree/916ab476012852778edd9ca63aecf200a8e90ed1"
+      }
+    ],
+    "termination": "origin"
+  }
+}
