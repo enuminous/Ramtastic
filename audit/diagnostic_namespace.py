@@ -15,12 +15,11 @@ if path.read_bytes()!=original:
 needle=b'namespace Ramtastic.Dolbeault.DolbeaultTheorem\n'
 assert original.count(needle)==1
 changed=original.replace(needle,needle+b'\nopen Ramtastic.ComplexStructure\n')
-old=b'  have hdf := hclosed x\n'
-new=old+b'  have hform : (fun x => extDeriv f x) = 0 := funext hclosed\n'
-assert changed.count(old)==1
-changed=changed.replace(old,new)
-assert changed.count(b'this, hdf, pullbackJ_zero')==2
-changed=changed.replace(b'this, hdf, pullbackJ_zero',b'this, hform, pullbackJ_zero')
+start=changed.index(b'  have hdf := hclosed x\n')
+end=changed.index(b'\nend\n',start)
+changed=changed[:start]+b'''  simp [DelDelBar.del, DelDelBar.delbar, proj10, proj01,
+    ComplexForm.ofReal, pullbackJ, hclosed]
+'''+changed[end:]
 path.write_bytes(changed)
-print('DIAGNOSTIC_ONLY: opened Ramtastic.ComplexStructure; supplied function-level zero equality to the two imaginary-component simp proofs. The theorem statement is unchanged.')
+print('DIAGNOSTIC_ONLY: opened Ramtastic.ComplexStructure; unfolded the projections and pullback, then rewrote the closed-form hypothesis. The theorem statement is unchanged.')
 print('Original release build remains FAILED. Subsequent Lean results concern this explicitly modified checkout.')

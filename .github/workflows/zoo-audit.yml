@@ -15,6 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
+        id: setup
         with:
           auto-config: false
           build: false
@@ -25,12 +26,20 @@ jobs:
       - name: Apply explicit diagnostic namespace and zero-form correction
         run: python3 audit/diagnostic_namespace.py
       - name: Build diagnostically corrected source
+        id: build
         run: lake build
+      - name: Audit 75 unmodified released modules independently of the failed source
+        if: always() && steps.setup.outcome == 'success'
+        run: lake env lean -DwarningAsError=true audit/ReleasedSubsetAudit.lean
       - name: Audit all project declarations
+        if: always() && steps.build.outcome == 'success'
         run: lake env lean -DwarningAsError=true audit/StrictAudit.lean
       - name: Exercise audit rejection controls
-        run: python3 audit/test_axiom_audit.py
+        if: always() && steps.setup.outcome == 'success'
+        run: python3 audit/test_axiom_audit.py audit/ReleasedSubsetAudit.lean
       - name: Verify semantic counterexamples
+        if: always() && steps.setup.outcome == 'success'
         run: lake env lean -DwarningAsError=true audit/SemanticProbes.lean
       - name: Verify dependency pins
+        if: always() && steps.setup.outcome == 'success'
         run: git diff --exit-code -- lean-toolchain lakefile.lean lake-manifest.json
