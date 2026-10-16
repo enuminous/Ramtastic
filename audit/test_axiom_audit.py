@@ -11,7 +11,7 @@ cases = [
     ("public axiom", "axiom AuditProbe.probe : False", "AuditProbe.probe"),
     ("private axiom", "namespace AuditProbe\nprivate axiom probe : False\nend AuditProbe", "probe"),
     ("placeholder", "theorem AuditProbe.probe : False := by sorry", "sorryAx"),
-    ("native proof", "theorem AuditProbe.probe : (1 : Nat) = 1 := by native_decide", "Lean.ofReduceBool"),
+    ("native proof", "theorem AuditProbe.probe : (1 : Nat) = 1 := by native_decide", "AuditProbe.probe._native.native_decide.ax_"),
 ]
 with tempfile.TemporaryDirectory(prefix="ramtastic-audit-", dir=".") as directory:
     probe = Path(directory) / "Probe.lean"

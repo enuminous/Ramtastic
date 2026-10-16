@@ -12,7 +12,7 @@ noncomputable def anisotropicJ : (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) where
 
 noncomputable def anisotropicHinge : Ramtastic.Bass.HingeRotation.Hinge (ℝ × ℝ) where
   J := anisotropicJ
-  sq_neg := by ext <;> simp [anisotropicJ] <;> ring
+  sq_neg := by ext <;> simp [anisotropicJ]
 
 def euclideanSquare (v : ℝ × ℝ) : ℝ := v.1 ^ 2 + v.2 ^ 2
 
@@ -77,6 +77,8 @@ theorem two_skew_factors_need_not_have_selfadjoint_product :
   · intro h
     have entry := congrArg (fun m : Matrix (Fin 4) (Fin 4) ℚ => m 0 3) h
     norm_num [quaternionI, quaternionJ, Matrix.mul_apply, Fin.sum_univ_succ] at entry
+    change (1 : ℚ) = -1 at entry
+    norm_num at entry
 
 #print axioms squareMinusIdentity_does_not_force_euclidean_isometry
 #print axioms actual_quarter_turn_changes_euclidean_length
