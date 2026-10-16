@@ -1,0 +1,73 @@
+{
+  "CIRCUS": {
+    "animal": "CIRCUS",
+    "decision": "FAIL",
+    "pipeline": [
+      {
+        "stage": "definition",
+        "provenance_status": "documented"
+      },
+      {
+        "stage": "data_selection",
+        "provenance_status": "documented"
+      },
+      {
+        "stage": "labels",
+        "provenance_status": "documented"
+      },
+      {
+        "stage": "scoring",
+        "provenance_status": "documented"
+      },
+      {
+        "stage": "validation",
+        "provenance_status": "documented"
+      }
+    ],
+    "dependencies": [
+      {
+        "materiality": "material",
+        "feedback": false,
+        "note": "Proof fields remain explicit assumptions; no empirical independence claimed."
+      }
+    ],
+    "risks": [
+      {
+        "id": "F01",
+        "materiality": "material",
+        "status": "present"
+      },
+      {
+        "id": "F02",
+        "materiality": "material",
+        "status": "present"
+      },
+      {
+        "id": "F03",
+        "materiality": "material",
+        "status": "present"
+      },
+      {
+        "id": "F04",
+        "materiality": "material",
+        "status": "present"
+      }
+    ],
+    "independent_checks": []
+  },
+  "MONSTER": {
+    "animal": "MONSTER",
+    "decision": "N/A",
+    "preregistration": {
+      "registered_before_outcomes": false,
+      "protocol_id": "retrospective-source-audit"
+    },
+    "metric": {
+      "tolerance": null
+    },
+    "baseline": {
+      "matched": false
+    },
+    "conditions": []
+  }
+}

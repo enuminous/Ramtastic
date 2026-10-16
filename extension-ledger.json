@@ -1,0 +1,44 @@
+[
+  {
+    "extension": "CIRCUS",
+    "execution": "computed",
+    "output": "FAIL",
+    "source": {
+      "repository": "enuminous/Circus",
+      "commit": "647c91dc06b4ea48871c06608298b46f00f68f99",
+      "path": "src/circus.py",
+      "git_blob_sha1": "65421922766c9178c1b188703ac21c03f95be6dd"
+    },
+    "interpretation": "Declared report gate only; not independent evidence or a finding that Lean is inconsistent."
+  },
+  {
+    "extension": "MONSTER",
+    "execution": "computed",
+    "output": "N/A",
+    "source": {
+      "repository": "enuminous/Zoo-Monster",
+      "commit": "95f475ccffa30afe1853659dfd9431734b2788e0",
+      "path": "src/monster.py",
+      "git_blob_sha1": "ae86fbb2712ee4c5736519eb6bdb9f0d9e65aced"
+    },
+    "interpretation": "Declared report gate only; not independent evidence or a finding that Lean is inconsistent."
+  },
+  {
+    "extension": "CHIMERA",
+    "execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "reason": "No classical/quantum record-recovery event is being evaluated."
+  },
+  {
+    "extension": "WOODPECKER",
+    "execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "reason": "No measured ablation losses, matched baseline or validation record."
+  },
+  {
+    "extension": "NIGHTINGALE",
+    "execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "reason": "No fitted prediction function, effect estimates or bootstrap/support data; branch projection only is tested upstream."
+  }
+]

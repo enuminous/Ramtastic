@@ -1,0 +1,37 @@
+{
+  "target_commit": "916ab476012852778edd9ca63aecf200a8e90ed1",
+  "zoo_commit": "15dfb335424e77e1458cd77996f23d074dac0d88",
+  "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b",
+  "static": {
+    "target_commit": "916ab476012852778edd9ca63aecf200a8e90ed1",
+    "tracked_files": 84,
+    "released_lean_modules": 77,
+    "reachable_from_root": 77,
+    "unreachable_modules": [],
+    "missing_project_imports": [],
+    "source_named_declaration_counts": {
+      "structure": 50,
+      "def": 181,
+      "lemma": 2,
+      "theorem": 371,
+      "inductive": 1,
+      "class": 35,
+      "abbrev": 11,
+      "instance": 22
+    },
+    "source_named_theorems_and_lemmas": 373,
+    "safety_tokens": {
+      "True": 6
+    },
+    "interpretation": "Lexical counts exclude generated declarations; True occurrences require semantic review. Not a kernel result."
+  },
+  "zoo": {
+    "canonical_animals": 46,
+    "conformance_adapters_executed": 46,
+    "numeric_reference_matches": 90,
+    "target_adapters_computed": 2,
+    "target_adapters_blocked": 44
+  },
+  "exact_counterexamples": 4,
+  "lean_status": "See separately captured exact-toolchain CI evidence; this script does not execute Lean."
+}

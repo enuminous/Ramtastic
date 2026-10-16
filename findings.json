@@ -1,0 +1,145 @@
+[
+  {
+    "id": "F00",
+    "kind": "release_build",
+    "evidence_status": "demonstrated",
+    "severity": "high",
+    "title": "Pinned build failure",
+    "source": {
+      "path": "Ramtastic/Dolbeault/DolbeaultTheorem.lean",
+      "line": 62,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/Dolbeault/DolbeaultTheorem.lean#L62"
+    },
+    "evidence": "Original CI run 38963360333; namespace-only run 38965312902 also exposes two zero-form proof goals."
+  },
+  {
+    "id": "F01",
+    "kind": "missing_hypothesis_boundary",
+    "evidence_status": "demonstrated",
+    "severity": "medium",
+    "title": "Bare Hinge does not imply Euclidean isometry",
+    "source": {
+      "path": "Ramtastic/Bass/HingeRotation.lean",
+      "line": 42,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/Bass/HingeRotation.lean#L42"
+    },
+    "evidence": "Exact anisotropic J witness; does not contradict the separately stated skew-adjointness hypothesis."
+  },
+  {
+    "id": "F02",
+    "kind": "documentation",
+    "evidence_status": "rejected",
+    "severity": "high",
+    "title": "Unrestricted skew-times-skew self-adjointness shortcut",
+    "source": {
+      "path": "Ramtastic/Bass/README.md",
+      "line": 60,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/Bass/README.md#L60"
+    },
+    "evidence": "Exact anticommuting skew-adjoint quaternion-action matrices have skew-adjoint nonzero product."
+  },
+  {
+    "id": "F03",
+    "kind": "specification",
+    "evidence_status": "demonstrated",
+    "severity": "high",
+    "title": "Sheaf symmetry field is vacuous",
+    "source": {
+      "path": "Ramtastic/GAGA/AnalyticSheaves.lean",
+      "line": 43,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/GAGA/AnalyticSheaves.lean#L43"
+    },
+    "evidence": "The disjunction with True accepts every input; full intended companion cohomology data is missing."
+  },
+  {
+    "id": "F04",
+    "kind": "specification",
+    "evidence_status": "demonstrated",
+    "severity": "high",
+    "title": "Clamped Hodge sum differs from bounded diagonal sum",
+    "source": {
+      "path": "Ramtastic/GAGA/RationalHodgeStructure.lean",
+      "line": 47,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/GAGA/RationalHodgeStructure.lean#L47"
+    },
+    "evidence": "Symmetric dimension-two fixture: degree-three clamped sum 2 versus bounded sum 0."
+  },
+  {
+    "id": "F05",
+    "kind": "conditional_scope",
+    "evidence_status": "demonstrated",
+    "severity": "high",
+    "title": "Endpoint conclusions and deep prerequisites are supplied as hypotheses",
+    "source": {
+      "path": "Ramtastic/GAGA/ChowToHodge.lean",
+      "line": 69,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/GAGA/ChowToHodge.lean#L69"
+    },
+    "evidence": "Source review also identifies TwinPrimes, KGZData, HardyLittlewood, de Rham, Hard Lefschetz and Fredholm assumptions."
+  },
+  {
+    "id": "F06",
+    "kind": "model_boundary",
+    "evidence_status": "demonstrated",
+    "severity": "high",
+    "title": "CPn is a Unit carrier with supplied algebraic structures",
+    "source": {
+      "path": "Ramtastic/ChowGroups/ProjectiveSpace.lean",
+      "line": 42,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/ChowGroups/ProjectiveSpace.lean#L42"
+    },
+    "evidence": "No geometric projective-space equivalence is supplied by this definition; Cohom is uniformly rational in the model."
+  },
+  {
+    "id": "F07",
+    "kind": "semantic_bridge",
+    "evidence_status": "supported but incomplete",
+    "severity": "high",
+    "title": "Strong BSD Tower witnesses need identification with actual invariants",
+    "source": {
+      "path": "Ramtastic/BSD/Statement.lean",
+      "line": 42,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/BSD/Statement.lean#L42"
+    },
+    "evidence": "Positive existential period/Sha-order/Tamagawa choices alone do not identify the geometric/arithmetic quantities."
+  },
+  {
+    "id": "F08",
+    "kind": "conditional_scope",
+    "evidence_status": "demonstrated",
+    "severity": "high",
+    "title": "Spectral transfer does not instantiate the four-dimensional QFT problem",
+    "source": {
+      "path": "Ramtastic/QuantumYM/StrongResolventConvergence.lean",
+      "line": 191,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/QuantumYM/StrongResolventConvergence.lean#L191"
+    },
+    "evidence": "Uniform gap and Kato/Weyl transfer are hypotheses; bounded-operator/scalar-shift examples leave the continuum construction open."
+  },
+  {
+    "id": "F09",
+    "kind": "documentation",
+    "evidence_status": "demonstrated",
+    "severity": "low",
+    "title": "Six Bass theorems, not eight",
+    "source": {
+      "path": "Ramtastic/Bass/README.md",
+      "line": 78,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic/Bass/README.md#L78"
+    },
+    "evidence": "Eight named declarations comprise one structure, one definition and six theorems."
+  },
+  {
+    "id": "F10",
+    "kind": "artifact_boundary",
+    "evidence_status": "unresolved",
+    "severity": "scope",
+    "title": "Unpublished halting construction not audited",
+    "source": {
+      "path": "Ramtastic.lean",
+      "line": 7,
+      "url": "https://github.com/enuminous/Ramtastic/blob/916ab476012852778edd9ca63aecf200a8e90ed1/Ramtastic.lean#L7"
+    },
+    "evidence": "Public root explicitly excludes Vega; no corresponding halting theorem found in released inventory."
+  }
+]

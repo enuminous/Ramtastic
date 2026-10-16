@@ -1,0 +1,36 @@
+--- a/Ramtastic/Dolbeault/DolbeaultTheorem.lean
++++ b/Ramtastic/Dolbeault/DolbeaultTheorem.lean
+@@ -21,6 +21,8 @@
+ import Ramtastic.Dolbeault.DolbeaultCohomology
+ 
+ namespace Ramtastic.Dolbeault.DolbeaultTheorem
++
++open Ramtastic.ComplexStructure
+ 
+ open Ramtastic.DeRham.DifferentialForms
+ open Ramtastic.ComplexStructure.AlmostComplex
+@@ -61,22 +63,8 @@
+     (hclosed : ∀ x, extDeriv f x = 0) (x : E) (m : Fin 1 → E) :
+     (DelDelBar.del f).re x m = 0 ∧ (DelDelBar.del f).im x m = 0 ∧
+     (DelDelBar.delbar f).re x m = 0 ∧ (DelDelBar.delbar f).im x m = 0 := by
+-  have hdf := hclosed x
+-  constructor
+-  · -- Re(∂f) = (1/2)df = 0
+-    have := proj10_ofReal_re (fun x => extDeriv f x) x m
+-    simp [DelDelBar.del, this, hdf, smul_zero]
+-  constructor
+-  · -- Im(∂f) = -(1/2)J*df, and J*(0) = 0
+-    have := proj10_ofReal_im (fun x => extDeriv f x) x m
+-    simp [DelDelBar.del, this, hdf, pullbackJ_zero, Pi.zero_apply, smul_zero, neg_zero]
+-  constructor
+-  · -- Re(∂̄f) = (1/2)df = 0
+-    have := proj01_ofReal_re (fun x => extDeriv f x) x m
+-    simp [DelDelBar.delbar, this, hdf, smul_zero]
+-  · -- Im(∂̄f) = (1/2)J*df = 0
+-    have := proj01_ofReal_im (fun x => extDeriv f x) x m
+-    simp [DelDelBar.delbar, this, hdf, pullbackJ_zero, Pi.zero_apply, smul_zero]
++  simp [DelDelBar.del, DelDelBar.delbar, proj10, proj01,
++    ComplexForm.ofReal, pullbackJ, hclosed]
+ 
+ end
+ 

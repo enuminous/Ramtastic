@@ -1,0 +1,2374 @@
+{
+  "runs": [
+    {
+      "animal": "ANT",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 11,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "AXOLOTL",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "reference_function": 1,
+        "damaged_function": 0.2,
+        "adapted_function": 0.8,
+        "cost": 0.3,
+        "transformation": 0.3,
+        "invariant_retention": 1
+      },
+      "output": {
+        "recovery": 0.7499999990625001,
+        "efficiency": 2.0000000000000004,
+        "resilience": 0.7599999995500001
+      }
+    },
+    {
+      "animal": "BAT",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "gain": 0.01,
+        "placebo_gain": 0.02,
+        "incremental_brier": 0.1,
+        "placebo_brier": 0.2
+      },
+      "output": {
+        "label": "placeboFailure"
+      }
+    },
+    {
+      "animal": "BEAVER",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "effectiveness": 0.1,
+        "collateral": 0.1,
+        "verification": 1,
+        "bounded": true,
+        "rollback_verified": false
+      },
+      "output": {
+        "accepted": false
+      }
+    },
+    {
+      "animal": "BISON",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "demand": 10,
+        "queue": 2,
+        "capacity": 3,
+        "queue_limit": 5
+      },
+      "output": {
+        "served": 3,
+        "queue": 5,
+        "dropped": 4
+      }
+    },
+    {
+      "animal": "BONOBO",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "gains": [
+          0.2,
+          -0.1
+        ],
+        "efficiency": 0.8,
+        "stability": 0.9,
+        "fairness_dispersion": 0.1,
+        "resolution": 0.8
+      },
+      "output": {
+        "exploitation": 0.1,
+        "cooperative_score": 0.8618181818181818
+      }
+    },
+    {
+      "animal": "BUTTERFLY",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "state": 1.2,
+        "base": 0.1,
+        "gain": 0.5,
+        "threshold": 1,
+        "incoming": 0
+      },
+      "output": {
+        "next_state": 0.12
+      }
+    },
+    {
+      "animal": "CAT",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "full": 0.2,
+        "ablated": 0.3
+      },
+      "output": {
+        "penalty": 0.09999999999999998,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CHAMELEON",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "distance": 2,
+        "expected_adaptation": 0.5,
+        "between": 1,
+        "within": 0
+      },
+      "output": {
+        "unexplained": 1.5,
+        "noise_adjusted": 1
+      }
+    },
+    {
+      "animal": "COBRA",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "previous": 0,
+        "divergence": 0.8,
+        "violation": 0.3,
+        "proxy_delta": 0,
+        "goal_delta": 0,
+        "context_gap": 0.2,
+        "confidence": 0.9
+      },
+      "output": {
+        "risk": 0.1566,
+        "persistent": 0.15999999999999998
+      }
+    },
+    {
+      "animal": "CRAB",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 10,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "CROCODILE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "treated_pre": 1,
+        "treated_post": 4,
+        "control_pre": 2,
+        "control_post": 3
+      },
+      "output": {
+        "difference_in_differences": 2
+      }
+    },
+    {
+      "animal": "DOLPHIN",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 11,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "DRAGON",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 11,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "EAGLE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 8,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "ELEPHANT",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "events": [
+          {
+            "id": 1,
+            "time": 1,
+            "status": "superseded",
+            "supersedes": null,
+            "provenance": "synthetic original"
+          },
+          {
+            "id": 2,
+            "time": 2,
+            "status": "active",
+            "supersedes": 1,
+            "provenance": "synthetic revision"
+          }
+        ],
+        "start": 2,
+        "fuel": 3
+      },
+      "output": {
+        "current": [
+          {
+            "id": 2,
+            "time": 2,
+            "status": "active",
+            "supersedes": 1,
+            "provenance": "synthetic revision"
+          }
+        ],
+        "lineage": [
+          {
+            "id": 2,
+            "time": 2,
+            "status": "active",
+            "supersedes": 1,
+            "provenance": "synthetic revision"
+          },
+          {
+            "id": 1,
+            "time": 1,
+            "status": "superseded",
+            "supersedes": null,
+            "provenance": "synthetic original"
+          }
+        ],
+        "termination": "origin"
+      }
+    },
+    {
+      "animal": "FALCON",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "event_time": 1,
+        "hazard_time": 3,
+        "delay": 1,
+        "alarm_time": 2
+      },
+      "output": {
+        "latency": {
+          "detection_latency": 1,
+          "intervention_latency": 1,
+          "reaction_margin": 0,
+          "missed": true
+        }
+      }
+    },
+    {
+      "animal": "FOX",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 10,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "GECKO",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 8,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "HEDGEHOG",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "median_gain": 0.003,
+        "win_rate": 0.7,
+        "habitat_support": false,
+        "development": [
+          "development-a"
+        ],
+        "heldout": [
+          "heldout-b"
+        ]
+      },
+      "output": {
+        "label": "generalizes",
+        "supplied_environment_ids_disjoint": true
+      }
+    },
+    {
+      "animal": "HIVE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 9,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "HORSE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "workload": 0.8,
+        "attention": 0.7,
+        "fatigue": 0.2
+      },
+      "output": {
+        "workload_penalty": 0.3500000000000001
+      }
+    },
+    {
+      "animal": "JELLYFISH",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "base_weight": 0.4,
+        "stress_gain": 0.2,
+        "confidence": 0.8,
+        "stress": 0.5,
+        "health": 0.9,
+        "alpha": 0.5,
+        "incoming": 0.2
+      },
+      "output": {
+        "dynamic_weight": 0.4,
+        "next_health": 0.8
+      }
+    },
+    {
+      "animal": "LYNX",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "distance": 2,
+        "rarity": 2,
+        "rediscovery": 0.5,
+        "replication": 0.8,
+        "yield_score": 0.9
+      },
+      "output": {
+        "novelty": 1.75,
+        "latent_yield": 1.2600000000000002,
+        "emergent": true
+      }
+    },
+    {
+      "animal": "MAGPIE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "coherence": 0.9,
+        "direct_support": 0.8,
+        "provenance": 0.7,
+        "corroboration": 0.6,
+        "unsupported_inference": 0.2,
+        "unresolved_provenance": 0.1,
+        "contradiction": 0.3
+      },
+      "output": {
+        "groundedness": 0.7777777777774897,
+        "alarm": false
+      }
+    },
+    {
+      "animal": "MANTIS",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "ready": false,
+        "z_variance": 3,
+        "z_autocorrelation": 3,
+        "z_curvature": 3
+      },
+      "output": {
+        "precursor": 3.0,
+        "coherence": 1.0,
+        "label": "calibrating"
+      }
+    },
+    {
+      "animal": "MOLE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "indicators_present": true,
+        "surface_health": 0.9,
+        "latent_degradation": 0.7,
+        "coverage": 0.8
+      },
+      "output": {
+        "gap": 0.6,
+        "hidden_failure": true
+      }
+    },
+    {
+      "animal": "MOTH",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 7,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "OCTOPUS",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 6,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "ORCA",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "ack": true,
+        "payload_complete": false,
+        "ownership_clear": true,
+        "dependency_complete": true
+      },
+      "output": {
+        "handoff_integrity": 0.75
+      }
+    },
+    {
+      "animal": "OWL",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 6,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "PENGUIN",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 10,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "PHOENIX",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "fidelity": 0.5,
+        "integrity": 1,
+        "capability": 0.8,
+        "scores": [
+          0.9,
+          0.95
+        ],
+        "start": 0,
+        "hold": 2,
+        "threshold": 0.8
+      },
+      "output": {
+        "completeness": 0.74,
+        "stable": true,
+        "vacuous_window": false
+      }
+    },
+    {
+      "animal": "PULSE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 12,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "RAVEN",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 7,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "RHINO",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "baseline": 2,
+        "after": 1
+      },
+      "output": {
+        "retention": 0.5
+      }
+    },
+    {
+      "animal": "SALMON",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "weight": 2,
+        "incoming_weights": [
+          0.25,
+          0.25
+        ],
+        "parents": {
+          "0": [
+            1
+          ]
+        },
+        "start": 0,
+        "fuel": 1
+      },
+      "output": {
+        "unresolved_mass": 1.0,
+        "trace": {
+          "kind": "branch",
+          "id": 0,
+          "parents": [
+            {
+              "kind": "exhausted",
+              "id": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "animal": "SHARK",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 13,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "SHEPHERD",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 12,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "SPIDER",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "columns": [
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            3
+          ]
+        ],
+        "rows": 4,
+        "horizons": 1
+      },
+      "output": {
+        "scores": [
+          0.25,
+          0.625,
+          0.625,
+          1.0
+        ],
+        "columns": 10,
+        "mode": "retrospective"
+      }
+    },
+    {
+      "animal": "TERMITE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "state": 0.2,
+        "weighted_sum": 0.8,
+        "total_weight": 1,
+        "susceptibility": 0.5,
+        "bias": 0.1
+      },
+      "output": {
+        "next_state": 0.6
+      }
+    },
+    {
+      "animal": "TORTOISE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "candidate_brier": 0.12,
+        "control_brier": 0.14
+      },
+      "output": {
+        "gain": 0.020000000000000018
+      }
+    },
+    {
+      "animal": "TURTLE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "evidence_groups": [
+          {
+            "id": "one-shared-source",
+            "applicable": true,
+            "veto_on_failure": false,
+            "polarity": "positive"
+          },
+          {
+            "id": "one-shared-source",
+            "applicable": true,
+            "veto_on_failure": false,
+            "polarity": "positive"
+          },
+          {
+            "id": "one-shared-source",
+            "applicable": true,
+            "veto_on_failure": false,
+            "polarity": "positive"
+          }
+        ],
+        "invariant_score": 0.9
+      },
+      "output": {
+        "label": "insufficient",
+        "groups": 1,
+        "positive_groups": 1,
+        "negative_groups": 0,
+        "veto": false
+      }
+    },
+    {
+      "animal": "WEASEL",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "findings": [
+          {
+            "changed_keys": 1,
+            "severity": 2,
+            "cost": 0.2,
+            "reproducibility": 1
+          },
+          {
+            "changed_keys": 2,
+            "severity": 3,
+            "cost": 0.1,
+            "reproducibility": 1
+          }
+        ],
+        "budget": 1
+      },
+      "output": {
+        "retained": [
+          {
+            "changed_keys": 1,
+            "severity": 2,
+            "cost": 0.2,
+            "reproducibility": 1
+          }
+        ]
+      }
+    },
+    {
+      "animal": "WHALE",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "values": [
+          1,
+          2,
+          4
+        ],
+        "baseline": 1,
+        "window": 1
+      },
+      "output": {
+        "deviation": 1.3333333333333333,
+        "gap": 1.6666666666666665
+      }
+    },
+    {
+      "animal": "WOLF",
+      "kind": "conformance_fixture_only",
+      "input": {
+        "rho": 0.85,
+        "previous": 0,
+        "instantaneous": 1
+      },
+      "output": {
+        "updated": 0.15000000000000002
+      }
+    }
+  ],
+  "reference_comparisons": [
+    {
+      "label": "magpie.groundedness",
+      "actual": 0.7777777777774897,
+      "expected": 0.7777777777774897,
+      "matched": true
+    },
+    {
+      "label": "wolf.update",
+      "actual": 0.15000000000000002,
+      "expected": 0.15000000000000002,
+      "matched": true
+    },
+    {
+      "label": "chameleon.noiseAdjusted",
+      "actual": 1,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "jellyfish.dynamicWeight",
+      "actual": 0.4,
+      "expected": 0.4,
+      "matched": true
+    },
+    {
+      "label": "jellyfish.nextHealth",
+      "actual": 0.8,
+      "expected": 0.8,
+      "matched": true
+    },
+    {
+      "label": "bison.served",
+      "actual": 3,
+      "expected": 3,
+      "matched": true
+    },
+    {
+      "label": "bison.queue",
+      "actual": 5,
+      "expected": 5,
+      "matched": true
+    },
+    {
+      "label": "bison.dropped",
+      "actual": 4,
+      "expected": 4.0,
+      "matched": true
+    },
+    {
+      "label": "orca.handoff",
+      "actual": 0.75,
+      "expected": 0.75,
+      "matched": true
+    },
+    {
+      "label": "lynx.novelty",
+      "actual": 1.75,
+      "expected": 1.75,
+      "matched": true
+    },
+    {
+      "label": "lynx.yield",
+      "actual": 1.2600000000000002,
+      "expected": 1.2600000000000002,
+      "matched": true
+    },
+    {
+      "label": "horse.workload",
+      "actual": 0.3500000000000001,
+      "expected": 0.3500000000000001,
+      "matched": true
+    },
+    {
+      "label": "termite.step",
+      "actual": 0.6,
+      "expected": 0.6,
+      "matched": true
+    },
+    {
+      "label": "phoenix.completeness",
+      "actual": 0.74,
+      "expected": 0.74,
+      "matched": true
+    },
+    {
+      "label": "cobra.risk",
+      "actual": 0.1566,
+      "expected": 0.1566,
+      "matched": true
+    },
+    {
+      "label": "whale.deviation",
+      "actual": 1.3333333333333333,
+      "expected": 1.3333333333333333,
+      "matched": true
+    },
+    {
+      "label": "whale.gap",
+      "actual": 1.6666666666666665,
+      "expected": 1.6666666666666665,
+      "matched": true
+    },
+    {
+      "label": "rhino.retention",
+      "actual": 0.5,
+      "expected": 0.5,
+      "matched": true
+    },
+    {
+      "label": "axolotl.recovery",
+      "actual": 0.7499999990625001,
+      "expected": 0.7499999990625001,
+      "matched": true
+    },
+    {
+      "label": "axolotl.efficiency",
+      "actual": 2.0000000000000004,
+      "expected": 2.0000000000000004,
+      "matched": true
+    },
+    {
+      "label": "axolotl.resilience",
+      "actual": 0.7599999995500001,
+      "expected": 0.7599999995500001,
+      "matched": true
+    },
+    {
+      "label": "butterfly.step",
+      "actual": 0.12,
+      "expected": 0.12,
+      "matched": true
+    },
+    {
+      "label": "owl.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "owl.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "owl.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "owl.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "octopus.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "octopus.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "octopus.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "octopus.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "gecko.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "gecko.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "gecko.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "gecko.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "hive.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "hive.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "hive.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "hive.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "eagle.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "eagle.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "eagle.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "eagle.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "crab.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "crab.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "crab.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "crab.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "shepherd.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "shepherd.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "shepherd.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "shepherd.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "pulse.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "pulse.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "pulse.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "pulse.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "fox.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "fox.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "fox.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "fox.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "spider.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "spider.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "spider.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "spider.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "raven.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "raven.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "raven.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "raven.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "dolphin.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "dolphin.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "dolphin.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "dolphin.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "ant.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "ant.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "ant.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "ant.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "moth.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "moth.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "moth.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "moth.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "shark.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "shark.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "shark.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "shark.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "penguin.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "penguin.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "penguin.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "penguin.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    },
+    {
+      "label": "dragon.rank0",
+      "actual": 0.25,
+      "expected": 0.25,
+      "matched": true
+    },
+    {
+      "label": "dragon.rank1",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "dragon.rank2",
+      "actual": 0.625,
+      "expected": 0.625,
+      "matched": true
+    },
+    {
+      "label": "dragon.rank3",
+      "actual": 1.0,
+      "expected": 1.0,
+      "matched": true
+    }
+  ]
+}
