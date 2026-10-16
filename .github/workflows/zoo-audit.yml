@@ -1,0 +1,27 @@
+name: Ramtastic Zoo audit
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
+        with:
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+          use-github-cache: true
+      - name: Audit all project declarations
+        run: lake env lean -DwarningAsError=true audit/StrictAudit.lean
+      - name: Exercise audit rejection controls
+        run: python3 audit/test_axiom_audit.py
+      - name: Verify dependency pins
+        run: git diff --exit-code -- lean-toolchain lakefile.lean lake-manifest.json
