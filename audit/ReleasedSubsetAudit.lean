@@ -80,7 +80,6 @@ open Lean in
 run_cmd do
   let env ← getEnv
   let allowed : Array Name := #[``propext, ``Classical.choice, ``Quot.sound]
-  let mut state : CollectAxioms.State := {}
   let mut count := 0
   let mut theoremCount := 0
   let mut unsafeCount := 0
@@ -96,9 +95,8 @@ run_cmd do
         count := count + 1
         if info matches .thmInfo _ then
           theoremCount := theoremCount + 1
-        let (_, nextState) := ((CollectAxioms.collect name).run env).run state
-        state := nextState
-        for ax in state.axioms do
+        let axioms ← collectAxioms name
+        for ax in axioms do
           unless allowed.contains ax do
             throwError "Unapproved axiom {ax} used by {name}"
   if count == 0 then

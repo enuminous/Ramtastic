@@ -12,7 +12,7 @@ noncomputable def anisotropicJ : (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) where
 
 noncomputable def anisotropicHinge : Ramtastic.Bass.HingeRotation.Hinge (ℝ × ℝ) where
   J := anisotropicJ
-  sq_neg := by ext x <;> simp [anisotropicJ] <;> ring
+  sq_neg := by ext <;> simp [anisotropicJ] <;> ring
 
 def euclideanSquare (v : ℝ × ℝ) : ℝ := v.1 ^ 2 + v.2 ^ 2
 
@@ -63,7 +63,20 @@ theorem two_skew_factors_need_not_have_selfadjoint_product :
     quaternionI * quaternionI = -1 ∧
     quaternionJ * quaternionJ = -1 ∧
     (quaternionI * quaternionJ).transpose ≠ quaternionI * quaternionJ := by
-  decide
+  refine ⟨?_, ?_, ?_, ?_, ?_⟩
+  · ext i j
+    fin_cases i <;> fin_cases j <;> norm_num [quaternionI]
+  · ext i j
+    fin_cases i <;> fin_cases j <;> norm_num [quaternionJ]
+  · ext i j
+    fin_cases i <;> fin_cases j <;>
+      norm_num [quaternionI, Matrix.mul_apply, Fin.sum_univ_succ]
+  · ext i j
+    fin_cases i <;> fin_cases j <;>
+      norm_num [quaternionJ, Matrix.mul_apply, Fin.sum_univ_succ]
+  · intro h
+    have entry := congrArg (fun m : Matrix (Fin 4) (Fin 4) ℚ => m 0 3) h
+    norm_num [quaternionI, quaternionJ, Matrix.mul_apply, Fin.sum_univ_succ] at entry
 
 #print axioms squareMinusIdentity_does_not_force_euclidean_isometry
 #print axioms actual_quarter_turn_changes_euclidean_length
