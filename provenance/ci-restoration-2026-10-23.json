@@ -1,0 +1,8 @@
+{
+  "status": "SOURCE_RESTORED_NOT_A_BUILD_ATTESTATION",
+  "source_repository": "enuminous/Aristotle-Ramtastic-Audit",
+  "source_commit": "5363f08e2657c578267274cb1e75e4498993b22d",
+  "source_path": "Ramtastic/Bass/CliffordBridge.lean",
+  "sha256": "088714626d627b6a1bc06ae4596437ff5af02a3867d61dd01d04450c12d86d00",
+  "provenance_note": "Byte-identical copy of the documented reconstruction from the Aristotle audit. Not a recovered byte-identical original Aristotle export. See the pinned source PROVENANCE.md."
+}

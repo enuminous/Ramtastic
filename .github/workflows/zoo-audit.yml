@@ -14,6 +14,8 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           fetch-depth: 0
+      - name: Check complete source imports and restoration provenance
+        run: python3 audit/check_sources.py
       - uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
         id: setup
         with:
@@ -37,6 +39,9 @@ jobs:
       - name: Exercise audit rejection controls
         if: always() && steps.setup.outcome == 'success'
         run: python3 audit/test_axiom_audit.py audit/ReleasedSubsetAudit.lean
+      - name: Exercise complete-project audit rejection controls
+        if: always() && steps.build.outcome == 'success'
+        run: python3 audit/test_axiom_audit.py audit/StrictAudit.lean
       - name: Verify semantic counterexamples
         if: always() && steps.setup.outcome == 'success'
         run: lake env lean -DwarningAsError=true audit/SemanticProbes.lean

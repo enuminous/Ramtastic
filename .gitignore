@@ -189,3 +189,12 @@ SPOILER_ALERT.md
 **/SPOILER_ALERT.md
 tools/spoiler_master.tsv
 tools/tower_*.txt
+
+# Restored documented Clifford extension
+!/Ramtastic/Bass/CliffordBridge.lean
+!/CI-RESTORATION.md
+!/audit/
+!/audit/check_sources.py
+!/provenance/
+!/provenance/ci-restoration-2026-10-23.json
+!/provenance/2026-10-16-upload-lakefile.toml
