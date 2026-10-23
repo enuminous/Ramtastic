@@ -1,5 +1,12 @@
 # Ramtastic Monolithic Zoo audit — 2026-10-16
 
+**Current CI, 23 October 2026:** the restored 78-module diagnostic project passes
+[build, axiom audits, rejection controls and semantic probes](https://github.com/enuminous/Ramtastic/actions/runs/39944006741).
+See [CI-RESTORATION.md](CI-RESTORATION.md) for the missing Clifford module's pinned
+provenance and the complete-root repair. CI still applies the disclosed diagnostic
+correction; the unmodified frozen release's historical failure remains unchanged.
+The flat-bundle description and October 16 findings below describe that earlier audit.
+
 Start with [REPORT.md](REPORT.md) for the findings, [VERIFICATION.md](VERIFICATION.md)
 for compiler evidence, and [ZOO-46.md](ZOO-46.md) for every animal's disposition.
 The [publication addendum](PUBLICATION-ADDENDUM.md) preserves and distinguishes
