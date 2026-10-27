@@ -1,5 +1,27 @@
 # Ramtastic Monolithic Zoo audit — 2026-10-16
 
+<!-- ENUMINOUS-UNIFIED-NAV:START -->
+## Repository navigation
+
+**eNuminous network:** [All public repositories](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md) · [EFMW](https://github.com/enuminous/EFMW) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Zoo](https://github.com/enuminous/Tortoise) · [Papers](https://github.com/enuminous/papers) · [Quantum geometry](https://github.com/enuminous/Base888-Quantum-Geometry)
+
+**This project:** [Repository home](https://github.com/enuminous/Ramtastic) · [Subject index](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md#simulators-computation-and-experiments)
+
+<details open>
+<summary><strong>On this page</strong></summary>
+
+- [Reproduce](#reproduce)
+- [Attribution and interpretation](#attribution-and-interpretation)
+
+
+</details>
+
+**Related repositories:** [Weaver_Os](https://github.com/enuminous/Weaver_Os) · [BackroomsProtocol-EFMW-Analysis](https://github.com/enuminous/BackroomsProtocol-EFMW-Analysis) · [simself](https://github.com/enuminous/simself) · [EFMW-Rule30](https://github.com/enuminous/EFMW-Rule30) · [EFMW](https://github.com/enuminous/EFMW) · [papers](https://github.com/enuminous/papers)
+
+> **Evidence boundary:** A link between projects is navigation, not an assertion of proven equivalence, experimental validation, or shared authorship. See each repository’s own status and review notes.
+<!-- ENUMINOUS-UNIFIED-NAV:END -->
+
+
 **Current CI, 23 October 2026:** the restored 78-module diagnostic project passes
 [build, axiom audits, rejection controls and semantic probes](https://github.com/enuminous/Ramtastic/actions/runs/39944006741).
 See [CI-RESTORATION.md](CI-RESTORATION.md) for the missing Clifford module's pinned
