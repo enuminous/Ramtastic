@@ -1,0 +1,2 @@
+INTEGRITY_PASS 51 files
+Unexpected exit 1: ['lake', 'exe', 'cache', 'get']; inspect /replay-workspace/run/results/mathlib-cache.log

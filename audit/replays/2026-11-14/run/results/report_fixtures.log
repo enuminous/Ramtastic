@@ -1,0 +1,2 @@
+Generated complete-record Python/Lean certificates: {'chimera': 128, 'circus': 256, 'monster': 1048}
+Run lake env lean -DwarningAsError=true .lake/SourceReportFixtures.lean to check them.

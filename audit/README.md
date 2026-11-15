@@ -1,5 +1,7 @@
 # Ramtastic Monolithic Zoo audit — 2026-10-16
 
+November 14 follow-up: [fresh-environment known-result replay](replays/2026-11-14/REPLAY-RESULT.md), with separate original FAIL and diagnostic PASS logs.
+
 Start with [REPORT.md](REPORT.md) for the findings, [VERIFICATION.md](VERIFICATION.md)
 for compiler evidence, and [ZOO-46.md](ZOO-46.md) for every animal's disposition.
 The [publication addendum](PUBLICATION-ADDENDUM.md) preserves and distinguishes

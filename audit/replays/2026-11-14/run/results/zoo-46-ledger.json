@@ -1,0 +1,1599 @@
+[
+  {
+    "id": 1,
+    "animal": "TORTOISE",
+    "purpose_and_transformation": "Brier gain from supplied candidate and control scores; no fitting or prospective guarantee",
+    "required_inputs": {
+      "candidate_brier": {
+        "type": "float",
+        "required": true
+      },
+      "control_brier": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "ordered split; temporal separation contract; Brier gain",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No prospective candidate/control forecasts or observed labels; a source audit has no Brier scores."
+  },
+  {
+    "id": 2,
+    "animal": "OWL",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published OWL feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 3,
+    "animal": "OCTOPUS",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published OCTOPUS feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 4,
+    "animal": "GECKO",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published GECKO feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 5,
+    "animal": "HIVE",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published HIVE feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 6,
+    "animal": "EAGLE",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published EAGLE feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 7,
+    "animal": "CRAB",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published CRAB feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 8,
+    "animal": "SHEPHERD",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published SHEPHERD feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 9,
+    "animal": "PULSE",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published PULSE feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 10,
+    "animal": "CAT",
+    "purpose_and_transformation": "Ablation penalty and its sign from supplied losses",
+    "required_inputs": {
+      "full": {
+        "type": "float",
+        "required": true
+      },
+      "ablated": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "ablation penalty and sign classifier; exact-integer sign reference",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No matched full/ablated loss experiment; logical hypothesis inspection is not an ablation-loss measurement."
+  },
+  {
+    "id": 11,
+    "animal": "FOX",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published FOX feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 12,
+    "animal": "SPIDER",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published SPIDER feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 13,
+    "animal": "RAVEN",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published RAVEN feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 14,
+    "animal": "DOLPHIN",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published DOLPHIN feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 15,
+    "animal": "ANT",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published ANT feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 16,
+    "animal": "MOTH",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published MOTH feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 17,
+    "animal": "SHARK",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published SHARK feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 18,
+    "animal": "PENGUIN",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published PENGUIN feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 19,
+    "animal": "BAT",
+    "purpose_and_transformation": "Placebo-first baseline decision from supplied summary scores",
+    "required_inputs": {
+      "gain": {
+        "type": "float",
+        "required": true
+      },
+      "placebo_gain": {
+        "type": "float",
+        "required": true
+      },
+      "incremental_brier": {
+        "type": "float",
+        "required": true
+      },
+      "placebo_brier": {
+        "type": "float",
+        "required": true
+      },
+      "material_gain": {
+        "type": "float",
+        "required": false,
+        "default": 0.002
+      }
+    },
+    "current_formal_scope": "verdict kernel with source placebo precedence; fitting excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No matched candidate, conventional baseline and placebo losses."
+  },
+  {
+    "id": 20,
+    "animal": "HEDGEHOG",
+    "purpose_and_transformation": "Summary decision; additionally checks supplied development and heldout IDs are disjoint",
+    "required_inputs": {
+      "median_gain": {
+        "type": "float",
+        "required": true
+      },
+      "win_rate": {
+        "type": "float",
+        "required": true
+      },
+      "habitat_support": {
+        "type": "bool",
+        "required": true
+      },
+      "development": {
+        "type": "list",
+        "required": true
+      },
+      "heldout": {
+        "type": "list",
+        "required": true
+      },
+      "material_gain": {
+        "type": "float",
+        "required": false,
+        "default": 0.002
+      }
+    },
+    "current_formal_scope": "generalization verdict and environment separation obligation; training excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No development/heldout environments and outcome gains."
+  },
+  {
+    "id": 21,
+    "animal": "CROCODILE",
+    "purpose_and_transformation": "Difference-in-differences arithmetic; causal assumptions remain external",
+    "required_inputs": {
+      "treated_pre": {
+        "type": "float",
+        "required": true
+      },
+      "treated_post": {
+        "type": "float",
+        "required": true
+      },
+      "control_pre": {
+        "type": "float",
+        "required": true
+      },
+      "control_post": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "difference-in-differences kernel and conditional identification contract",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No treated/control pre/post measurements or causal identification design."
+  },
+  {
+    "id": 22,
+    "animal": "DRAGON",
+    "purpose_and_transformation": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+    "required_inputs": {
+      "columns": {
+        "type": "list",
+        "required": true
+      },
+      "rows": {
+        "type": "int",
+        "required": true
+      },
+      "horizons": {
+        "type": "int",
+        "required": false,
+        "default": 1
+      },
+      "mode": {
+        "type": "str",
+        "required": false,
+        "default": "retrospective"
+      }
+    },
+    "current_formal_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Requires precomputed component columns in the published DRAGON feature order; no corresponding observed dataset or justified Ramtastic adapter exists."
+  },
+  {
+    "id": 23,
+    "animal": "TURTLE",
+    "purpose_and_transformation": "Evidence decision with group counts derived from distinct supplied group IDs; independence remains external",
+    "required_inputs": {
+      "evidence_groups": {
+        "type": "list",
+        "required": true
+      },
+      "invariant_score": {
+        "type": "float",
+        "required": true
+      },
+      "minimum_groups": {
+        "type": "int",
+        "required": false,
+        "default": 3
+      },
+      "support_threshold": {
+        "type": "float",
+        "required": false,
+        "default": 0.18
+      },
+      "conditional_threshold": {
+        "type": "float",
+        "required": false,
+        "default": 0.05
+      }
+    },
+    "current_formal_scope": "summary verdict and veto precedence; group normalization supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No calibrated invariant score or three independent applicable evidence groups. Source review and its tests share one target."
+  },
+  {
+    "id": 24,
+    "animal": "MAGPIE",
+    "purpose_and_transformation": "Groundedness and falling-groundedness alarm from supplied scores",
+    "required_inputs": {
+      "coherence": {
+        "type": "float",
+        "required": true
+      },
+      "direct_support": {
+        "type": "float",
+        "required": true
+      },
+      "provenance": {
+        "type": "float",
+        "required": true
+      },
+      "corroboration": {
+        "type": "float",
+        "required": true
+      },
+      "unsupported_inference": {
+        "type": "float",
+        "required": true
+      },
+      "unresolved_provenance": {
+        "type": "float",
+        "required": true
+      },
+      "contradiction": {
+        "type": "float",
+        "required": true
+      },
+      "previous_groundedness": {
+        "type": "number or null",
+        "required": false,
+        "default": null
+      },
+      "threshold": {
+        "type": "float",
+        "required": false,
+        "default": 0.25
+      }
+    },
+    "current_formal_scope": "groundedness and history-dependent alarm; entropy/storage excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No calibrated coherence/support/provenance scores or groundedness history. Traceable citations alone do not supply these scores."
+  },
+  {
+    "id": 25,
+    "animal": "WOLF",
+    "purpose_and_transformation": "EMA update only; channel extraction, graph aggregation and alarm gates are not ported",
+    "required_inputs": {
+      "rho": {
+        "type": "float",
+        "required": true
+      },
+      "previous": {
+        "type": "float",
+        "required": true
+      },
+      "instantaneous": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "local channel contribution, weight, EMA and alarm contract; graph aggregation supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No time-indexed channel measurements for an EMA."
+  },
+  {
+    "id": 26,
+    "animal": "ELEPHANT",
+    "purpose_and_transformation": "Current-event filter and bounded lineage; explicit missing/exhausted termination",
+    "required_inputs": {
+      "events": {
+        "type": "list",
+        "required": true
+      },
+      "start": {
+        "type": "int",
+        "required": true
+      },
+      "fuel": {
+        "type": "int",
+        "required": false,
+        "default": 100
+      }
+    },
+    "current_formal_scope": "active-event filter and fuel-bounded lineage abstraction; full memory API excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "computed",
+    "evidence_status": "demonstrated",
+    "target_result": {
+      "current": [
+        {
+          "id": 1,
+          "time": 1790070145,
+          "status": "active",
+          "supersedes": null,
+          "provenance": "https://github.com/enuminous/Ramtastic/tree/916ab476012852778edd9ca63aecf200a8e90ed1"
+        }
+      ],
+      "lineage": [
+        {
+          "id": 1,
+          "time": 1790070145,
+          "status": "active",
+          "supersedes": null,
+          "provenance": "https://github.com/enuminous/Ramtastic/tree/916ab476012852778edd9ca63aecf200a8e90ed1"
+        }
+      ],
+      "termination": "origin"
+    },
+    "limitation": "One-snapshot provenance bookkeeping does not reconstruct the unavailable earlier history."
+  },
+  {
+    "id": 27,
+    "animal": "CHAMELEON",
+    "purpose_and_transformation": "Unexplained and noise-adjusted distances from supplied distances",
+    "required_inputs": {
+      "distance": {
+        "type": "float",
+        "required": true
+      },
+      "expected_adaptation": {
+        "type": "float",
+        "required": true
+      },
+      "between": {
+        "type": "float",
+        "required": true
+      },
+      "within": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "unexplained/noise-adjusted excess; supplied centroid distances",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No observed context distances, adaptation baseline, or within/between noise estimates."
+  },
+  {
+    "id": 28,
+    "animal": "JELLYFISH",
+    "purpose_and_transformation": "Dynamic edge weight and single-node health update; graph iteration is external",
+    "required_inputs": {
+      "base_weight": {
+        "type": "float",
+        "required": true
+      },
+      "stress_gain": {
+        "type": "float",
+        "required": true
+      },
+      "confidence": {
+        "type": "float",
+        "required": true
+      },
+      "stress": {
+        "type": "float",
+        "required": true
+      },
+      "health": {
+        "type": "float",
+        "required": true
+      },
+      "alpha": {
+        "type": "float",
+        "required": true
+      },
+      "incoming": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "dynamic edge weight, flow, next health and harm; graph aggregation supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No measured system-health network, stress gains or incoming harm."
+  },
+  {
+    "id": 29,
+    "animal": "BEAVER",
+    "purpose_and_transformation": "Intervention acceptance gates; supplied boundedness and rollback flags are declarations",
+    "required_inputs": {
+      "effectiveness": {
+        "type": "float",
+        "required": true
+      },
+      "collateral": {
+        "type": "float",
+        "required": true
+      },
+      "verification": {
+        "type": "float",
+        "required": true
+      },
+      "bounded": {
+        "type": "bool",
+        "required": true
+      },
+      "rollback_verified": {
+        "type": "bool",
+        "required": true
+      },
+      "min_effectiveness": {
+        "type": "float",
+        "required": false,
+        "default": 0.05
+      },
+      "max_collateral": {
+        "type": "float",
+        "required": false,
+        "default": 0.2
+      },
+      "min_verification": {
+        "type": "float",
+        "required": false,
+        "default": 1.0
+      }
+    },
+    "current_formal_scope": "acceptance contract including bounds and rollback flags; external repair not certified",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No target repair or measured intervention/rollback experiment was authorized as part of the audit."
+  },
+  {
+    "id": 30,
+    "animal": "MANTIS",
+    "purpose_and_transformation": "Calibration/precursor/intervention decision from supplied z scores",
+    "required_inputs": {
+      "ready": {
+        "type": "bool",
+        "required": true
+      },
+      "z_variance": {
+        "type": "float",
+        "required": true
+      },
+      "z_autocorrelation": {
+        "type": "float",
+        "required": true
+      },
+      "z_curvature": {
+        "type": "float",
+        "required": true
+      },
+      "threshold": {
+        "type": "float",
+        "required": false,
+        "default": 2.0
+      },
+      "min_coherence": {
+        "type": "float",
+        "required": false,
+        "default": 0.5
+      }
+    },
+    "current_formal_scope": "calibrated z-score aggregation and state decision; baseline fitting supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No calibrated time series of variance, autocorrelation and curvature z-scores."
+  },
+  {
+    "id": 31,
+    "animal": "BISON",
+    "purpose_and_transformation": "Single-step bounded queue, served demand and dropped demand",
+    "required_inputs": {
+      "demand": {
+        "type": "float",
+        "required": true
+      },
+      "queue": {
+        "type": "float",
+        "required": true
+      },
+      "capacity": {
+        "type": "float",
+        "required": true
+      },
+      "queue_limit": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "single-component queue transition; exact natural-number capacity bound",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No workload demand, capacity or queue observations."
+  },
+  {
+    "id": 32,
+    "animal": "WEASEL",
+    "purpose_and_transformation": "Counterexample finding filter by changed-key budget and positive severity; no search",
+    "required_inputs": {
+      "findings": {
+        "type": "list",
+        "required": true
+      },
+      "budget": {
+        "type": "int",
+        "required": true
+      }
+    },
+    "current_formal_scope": "bounded finding filter; target search/enumeration remains external",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "computed",
+    "evidence_status": "demonstrated",
+    "target_result": {
+      "retained": [
+        {
+          "changed_keys": 1,
+          "severity": 1,
+          "cost": 1,
+          "reproducibility": 1
+        },
+        {
+          "changed_keys": 1,
+          "severity": 1,
+          "cost": 1,
+          "reproducibility": 1
+        },
+        {
+          "changed_keys": 1,
+          "severity": 1,
+          "cost": 1,
+          "reproducibility": 1
+        },
+        {
+          "changed_keys": 1,
+          "severity": 1,
+          "cost": 1,
+          "reproducibility": 1
+        }
+      ]
+    },
+    "limitation": "Filtering supplied witnesses is not discovery or proof search."
+  },
+  {
+    "id": 33,
+    "animal": "SALMON",
+    "purpose_and_transformation": "Unresolved mass and bounded ancestry; exhaustion is not an origin; no weighted full trace",
+    "required_inputs": {
+      "weight": {
+        "type": "float",
+        "required": true
+      },
+      "incoming_weights": {
+        "type": "list",
+        "required": true
+      },
+      "parents": {
+        "type": "dict",
+        "required": true
+      },
+      "start": {
+        "type": "int",
+        "required": true
+      },
+      "fuel": {
+        "type": "int",
+        "required": false,
+        "default": 10
+      }
+    },
+    "current_formal_scope": "unresolved-mass kernel and fuel-bounded trace abstraction; weighted tracing excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Import links are recorded, but no justified influence weights or mass interpretation is supplied."
+  },
+  {
+    "id": 34,
+    "animal": "ORCA",
+    "purpose_and_transformation": "Four-field handoff integrity only; pairwise coordination metrics are external",
+    "required_inputs": {
+      "ack": {
+        "type": "bool",
+        "required": true
+      },
+      "payload_complete": {
+        "type": "bool",
+        "required": true
+      },
+      "ownership_clear": {
+        "type": "bool",
+        "required": true
+      },
+      "dependency_complete": {
+        "type": "bool",
+        "required": true
+      }
+    },
+    "current_formal_scope": "handoff checks and aggregate coordination formula; pairwise metrics supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No acknowledged operational handoff with measured payload/ownership/dependency flags."
+  },
+  {
+    "id": 35,
+    "animal": "MOLE",
+    "purpose_and_transformation": "Hidden-failure gap and coverage gates from supplied indicators",
+    "required_inputs": {
+      "indicators_present": {
+        "type": "bool",
+        "required": true
+      },
+      "surface_health": {
+        "type": "float",
+        "required": true
+      },
+      "latent_degradation": {
+        "type": "float",
+        "required": true
+      },
+      "coverage": {
+        "type": "float",
+        "required": true
+      },
+      "gap_threshold": {
+        "type": "float",
+        "required": false,
+        "default": 0.25
+      },
+      "minimum_coverage": {
+        "type": "float",
+        "required": false,
+        "default": 0.5
+      }
+    },
+    "current_formal_scope": "observability gap and coverage-gated hidden-failure flag; indicators supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No calibrated surface/latent health indicators or detection coverage."
+  },
+  {
+    "id": 36,
+    "animal": "LYNX",
+    "purpose_and_transformation": "Novelty/yield arithmetic and emergence gates; no literature or independence verification",
+    "required_inputs": {
+      "distance": {
+        "type": "float",
+        "required": true
+      },
+      "rarity": {
+        "type": "float",
+        "required": true
+      },
+      "rediscovery": {
+        "type": "float",
+        "required": true
+      },
+      "replication": {
+        "type": "float",
+        "required": true
+      },
+      "yield_score": {
+        "type": "float",
+        "required": true
+      },
+      "alpha": {
+        "type": "float",
+        "required": false,
+        "default": 0.5
+      },
+      "beta": {
+        "type": "float",
+        "required": false,
+        "default": 0.5
+      },
+      "gamma": {
+        "type": "float",
+        "required": false,
+        "default": 0.5
+      },
+      "novelty_threshold": {
+        "type": "float",
+        "required": false,
+        "default": 0.4
+      },
+      "replication_threshold": {
+        "type": "float",
+        "required": false,
+        "default": 0.6
+      }
+    },
+    "current_formal_scope": "novelty, yield and emergence contract; reference distances supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "Literature comparison is qualitative; numeric novelty distance, rarity and replication scores are not measured."
+  },
+  {
+    "id": 37,
+    "animal": "HORSE",
+    "purpose_and_transformation": "Workload penalty only; joint-effectiveness and human factors measurement are external",
+    "required_inputs": {
+      "workload": {
+        "type": "float",
+        "required": true
+      },
+      "attention": {
+        "type": "float",
+        "required": true
+      },
+      "fatigue": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "trust/workload/joint-effectiveness kernels and handoff contract",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No workload, attention or fatigue observations."
+  },
+  {
+    "id": 38,
+    "animal": "TERMITE",
+    "purpose_and_transformation": "Single-agent update from a supplied neighbor snapshot; no scheduling or graph simulation",
+    "required_inputs": {
+      "state": {
+        "type": "float",
+        "required": true
+      },
+      "weighted_sum": {
+        "type": "float",
+        "required": true
+      },
+      "total_weight": {
+        "type": "float",
+        "required": true
+      },
+      "susceptibility": {
+        "type": "float",
+        "required": false,
+        "default": 0.5
+      },
+      "bias": {
+        "type": "float",
+        "required": false,
+        "default": 0.0
+      }
+    },
+    "current_formal_scope": "agent update and synchronous mapping; graph weighted inputs supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No interacting-agent state snapshot or neighbor weights."
+  },
+  {
+    "id": 39,
+    "animal": "PHOENIX",
+    "purpose_and_transformation": "Recovery completeness and finite-window stability; hold=0 is vacuously true as upstream",
+    "required_inputs": {
+      "fidelity": {
+        "type": "float",
+        "required": true
+      },
+      "integrity": {
+        "type": "float",
+        "required": true
+      },
+      "capability": {
+        "type": "float",
+        "required": true
+      },
+      "scores": {
+        "type": "list",
+        "required": true
+      },
+      "start": {
+        "type": "int",
+        "required": true
+      },
+      "hold": {
+        "type": "int",
+        "required": true
+      },
+      "threshold": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "recovery completeness and hold-window predicate; fidelity inputs supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No damaged/recovered system or recovery hold-window series."
+  },
+  {
+    "id": 40,
+    "animal": "COBRA",
+    "purpose_and_transformation": "Persistent divergence and confidence-weighted risk from supplied scores",
+    "required_inputs": {
+      "previous": {
+        "type": "float",
+        "required": true
+      },
+      "divergence": {
+        "type": "float",
+        "required": true
+      },
+      "violation": {
+        "type": "float",
+        "required": true
+      },
+      "proxy_delta": {
+        "type": "float",
+        "required": true
+      },
+      "goal_delta": {
+        "type": "float",
+        "required": true
+      },
+      "context_gap": {
+        "type": "float",
+        "required": true
+      },
+      "confidence": {
+        "type": "float",
+        "required": true
+      },
+      "persistence": {
+        "type": "float",
+        "required": false,
+        "default": 0.8
+      }
+    },
+    "current_formal_scope": "persistent/proxy divergence and risk kernels; deltas supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No measured goal/proxy divergence or intent evidence; mathematical defects imply no intent attribution."
+  },
+  {
+    "id": 41,
+    "animal": "WHALE",
+    "purpose_and_transformation": "Cumulative deviation and history gap; zero-window upstream behavior preserved",
+    "required_inputs": {
+      "values": {
+        "type": "list",
+        "required": true
+      },
+      "baseline": {
+        "type": "float",
+        "required": true
+      },
+      "window": {
+        "type": "int",
+        "required": true
+      }
+    },
+    "current_formal_scope": "cumulative deviation, history gap and stability formula; slope supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No long-term observed series and baseline."
+  },
+  {
+    "id": 42,
+    "animal": "FALCON",
+    "purpose_and_transformation": "Detection/intervention latency, reaction margin and missed-hazard gate",
+    "required_inputs": {
+      "event_time": {
+        "type": "float",
+        "required": true
+      },
+      "hazard_time": {
+        "type": "float",
+        "required": true
+      },
+      "delay": {
+        "type": "float",
+        "required": true
+      },
+      "alarm_time": {
+        "type": "number or null",
+        "required": false,
+        "default": null
+      }
+    },
+    "current_formal_scope": "latency/missed/reaction-margin kernel; streaming threshold monitor excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No event/hazard/alarm timing experiment."
+  },
+  {
+    "id": 43,
+    "animal": "RHINO",
+    "purpose_and_transformation": "Performance retention with explicit zero-baseline branch; no shock generation",
+    "required_inputs": {
+      "baseline": {
+        "type": "float",
+        "required": true
+      },
+      "after": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "retention, amplification and graceful-failure kernels; invariants supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No matched baseline/post-shock performance measurement."
+  },
+  {
+    "id": 44,
+    "animal": "BONOBO",
+    "purpose_and_transformation": "Exploitation sum and cooperative score from supplied utilities and summary measures",
+    "required_inputs": {
+      "gains": {
+        "type": "list",
+        "required": true
+      },
+      "efficiency": {
+        "type": "float",
+        "required": true
+      },
+      "stability": {
+        "type": "float",
+        "required": true
+      },
+      "fairness_dispersion": {
+        "type": "float",
+        "required": true
+      },
+      "resolution": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "gain, exploitation and cooperation score; dispersion supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No agent utilities, fairness or cooperation observations."
+  },
+  {
+    "id": 45,
+    "animal": "AXOLOTL",
+    "purpose_and_transformation": "Recovery, efficiency and resilience; invariant retention supplied externally",
+    "required_inputs": {
+      "reference_function": {
+        "type": "float",
+        "required": true
+      },
+      "damaged_function": {
+        "type": "float",
+        "required": true
+      },
+      "adapted_function": {
+        "type": "float",
+        "required": true
+      },
+      "cost": {
+        "type": "float",
+        "required": true
+      },
+      "transformation": {
+        "type": "float",
+        "required": true
+      },
+      "invariant_retention": {
+        "type": "float",
+        "required": true
+      }
+    },
+    "current_formal_scope": "recovery, efficiency and resilience; transformation/invariants supplied",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No observed damage/adaptation outcomes, costs or invariant-retention measurement."
+  },
+  {
+    "id": 46,
+    "animal": "BUTTERFLY",
+    "purpose_and_transformation": "One nonlinear clipped layer step only; no graph cascade or counterfactual comparison",
+    "required_inputs": {
+      "state": {
+        "type": "float",
+        "required": true
+      },
+      "incoming": {
+        "type": "float",
+        "required": true
+      },
+      "base": {
+        "type": "float",
+        "required": false,
+        "default": 0.0
+      },
+      "gain": {
+        "type": "float",
+        "required": false,
+        "default": 1.0
+      },
+      "threshold": {
+        "type": "float",
+        "required": false,
+        "default": 1.0
+      }
+    },
+    "current_formal_scope": "layer update, amplification and bounded trajectory; graph comparison excluded",
+    "criterion": "See operation-criteria.json; conformance is separate from target evaluation.",
+    "conformance_execution": "computed",
+    "target_execution": "blocked_missing_inputs",
+    "evidence_status": "unresolved",
+    "target_result": null,
+    "limitation": "No justified nonlinear dynamical layer or measured cascade inputs."
+  }
+]

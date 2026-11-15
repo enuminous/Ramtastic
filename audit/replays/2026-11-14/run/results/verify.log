@@ -1,0 +1,2 @@
+Static checks passed: 46 animals, 90 fixture entries, 186 original source hashes.
+This command checks static integrity only. Compiler and runtime evidence is recorded in BUILD_STATUS.md.

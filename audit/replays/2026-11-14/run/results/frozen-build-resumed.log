@@ -1,0 +1,1080 @@
+✔ [1717/1767] Built Mathlib.Algebra.CharP.Basic (2.6s)
+✔ [1718/1767] Built Mathlib.Algebra.Group.Submonoid.Finite (2.6s)
+✔ [1723/1769] Built Mathlib.Data.Complex.BigOperators (2.8s)
+✔ [1725/1773] Built Mathlib.Topology.Algebra.Module.Basic (3.0s)
+✔ [1728/1773] Built Mathlib.Algebra.Order.Group.Action (1.7s)
+✔ [1729/1776] Built Mathlib.Topology.Sets.Opens (4.5s)
+✔ [1732/1776] Built Mathlib.Algebra.GroupWithZero.Submonoid.Pointwise (2.7s)
+✔ [1735/1778] Built Mathlib.Algebra.Star.SelfAdjoint (6.3s)
+✔ [1736/1781] Built Mathlib.Topology.OpenPartialHomeomorph.Continuity (2.2s)
+✔ [1737/1793] Built Mathlib.Algebra.IsPrimePow (2.4s)
+✔ [1741/1798] Built Mathlib.Algebra.Star.StarProjection (1.9s)
+✔ [1743/1798] Built Mathlib.GroupTheory.Coset.Card (4.3s)
+✔ [1745/1798] Built Mathlib.Data.List.Prime (1.9s)
+✔ [1746/1809] Built Mathlib.Algebra.Algebra.IsSimpleRing (1.5s)
+✔ [1750/1809] Built Mathlib.Topology.Algebra.InfiniteSum.Basic (10s)
+✔ [1752/1815] Built Mathlib.Topology.MetricSpace.IsometricSMul (10s)
+✔ [1753/1815] Built Mathlib.Algebra.Module.Rat (2.2s)
+✔ [1755/1816] Built Mathlib.Tactic.Ring.Compare (3.2s)
+✔ [1757/1816] Built Mathlib.Data.Nat.Factors (2.8s)
+✔ [1758/1826] Built Mathlib.Topology.MetricSpace.Algebra (7.5s)
+✔ [1759/1826] Built Mathlib.Algebra.GCDMonoid.Basic (9.2s)
+✔ [1773/1826] Built Mathlib.Algebra.Group.Subgroup.Order (2.2s)
+✔ [1775/1829] Built Mathlib.Algebra.Order.Module.Rat (2.3s)
+✔ [1776/1829] Built Mathlib.LinearAlgebra.Finsupp.SumProd (2.4s)
+✔ [1779/1831] Built Mathlib.Algebra.QuadraticDiscriminant (2.0s)
+✔ [1782/1834] Built Mathlib.Topology.MetricSpace.Dilation (4.2s)
+✔ [1784/1837] Built Mathlib.Data.DFinsupp.Module (2.8s)
+✔ [1787/1837] Built Mathlib.GroupTheory.Archimedean (2.9s)
+✔ [1788/1837] Built Mathlib.Topology.Algebra.InfiniteSum.Group (5.9s)
+✔ [1791/1840] Built Mathlib.Data.Fintype.Fin (2.6s)
+✔ [1792/1841] Built Mathlib.Algebra.Order.BigOperators.Expect (5.1s)
+✔ [1795/1841] Built Mathlib.Topology.MetricSpace.DilationEquiv (3.4s)
+✔ [1796/1841] Built Mathlib.LinearAlgebra.Basis.Defs (7.0s)
+✔ [1797/1841] Built Mathlib.Data.DFinsupp.Sigma (3.2s)
+✔ [1798/1841] Built Mathlib.Analysis.Normed.Group.Basic (18s)
+✔ [1802/1841] Built Mathlib.Data.Finsupp.ToDFinsupp (3.7s)
+✔ [1803/1841] Built Mathlib.Algebra.Ring.Periodic (4.8s)
+✔ [1807/1841] Built Mathlib.Algebra.Star.Pi (1.9s)
+✔ [1808/1843] Built Mathlib.Analysis.Normed.Group.Subgroup (2.9s)
+✔ [1809/1853] Built Mathlib.Data.Fin.Tuple.Reflection (3.7s)
+✔ [1811/1855] Built Mathlib.Analysis.Normed.Group.Rat (3.0s)
+✔ [1813/1855] Built Mathlib.Algebra.Group.Action.TransferInstance (2.2s)
+✔ [1815/1860] Built Mathlib.Analysis.Normed.Group.Constructions (5.4s)
+✔ [1823/1862] Built Mathlib.Topology.Algebra.Module.LinearMapPiProd (5.9s)
+✔ [1824/1862] Built Mathlib.Topology.Algebra.InfiniteSum.NatInt (7.2s)
+✔ [1826/1863] Built Mathlib.Algebra.Group.Pointwise.Set.BigOperators (2.0s)
+✔ [1827/1868] Built Mathlib.Algebra.GroupWithZero.Action.TransferInstance (1.6s)
+✔ [1833/1868] Built Mathlib.Algebra.Ring.NonZeroDivisors (2.3s)
+✔ [1835/1869] Built Mathlib.LinearAlgebra.LinearIndependent.Basic (7.7s)
+✔ [1836/1880] Built Mathlib.Data.Set.Semiring (2.3s)
+✔ [1840/1885] Built Mathlib.Topology.Algebra.InfiniteSum.Ring (3.3s)
+✔ [1841/1886] Built Mathlib.Algebra.Star.Pointwise (2.4s)
+✔ [1843/1893] Built Mathlib.Algebra.Module.BigOperators (2.2s)
+✔ [1845/1895] Built Mathlib.RingTheory.Ideal.Defs (2.9s)
+✔ [1851/1910] Built Mathlib.Analysis.Normed.Group.Uniform (10s)
+✔ [1855/1910] Built Mathlib.Tactic.NoncommRing (1.9s)
+✔ [1862/1910] Built Mathlib.Algebra.Star.Center (2.4s)
+✔ [1863/1916] Built Mathlib.Topology.Algebra.InfiniteSum.Order (6.4s)
+✔ [1874/1916] Built Mathlib.RingTheory.Ideal.Maximal (3.0s)
+✔ [1876/1923] Built Mathlib.Tactic.Module (16s)
+✔ [1880/1923] Built Mathlib.Algebra.Group.AddChar (4.7s)
+✔ [1881/1923] Built Mathlib.Algebra.FreeAbelianGroup.Finsupp (3.2s)
+✔ [1885/1923] Built Mathlib.Algebra.MonoidAlgebra.Lift (3.1s)
+✔ [1887/1924] Built Mathlib.Algebra.MonoidAlgebra.NoZeroDivisors (2.6s)
+✔ [1888/1937] Built Mathlib.Analysis.Normed.Group.InfiniteSum (2.9s)
+✔ [1890/1937] Built Mathlib.Analysis.Normed.Ring.Finite (2.4s)
+✔ [1897/1937] Built Mathlib.LinearAlgebra.Finsupp.Span (2.0s)
+✔ [1898/1939] Built Mathlib.Algebra.BigOperators.RingEquiv (1.8s)
+✔ [1901/1944] Built Mathlib.Algebra.Star.BigOperators (1.0s)
+✔ [1903/1949] Built Mathlib.LinearAlgebra.Basis.Prod (2.4s)
+✔ [1906/1949] Built Mathlib.LinearAlgebra.TensorProduct.Basic (12s)
+✔ [1909/1955] Built Mathlib.Algebra.MonoidAlgebra.Module (6.5s)
+✔ [1911/1955] Built Mathlib.Algebra.Ring.Regular (2.2s)
+✔ [1913/1959] Built Mathlib.Data.Matrix.Composition (3.9s)
+✔ [1914/1959] Built Mathlib.LinearAlgebra.Basis.SMul (4.2s)
+✔ [1918/1960] Built Mathlib.LinearAlgebra.DFinsupp (8.1s)
+✔ [1920/1965] Built Mathlib.RingTheory.AlgebraTower (4.2s)
+✔ [1921/1978] Built Mathlib.Analysis.Normed.Module.Basic (12s)
+✔ [1926/1978] Built Mathlib.Algebra.MonoidAlgebra.Support (3.3s)
+✔ [1930/1982] Built Mathlib.Algebra.Order.Interval.Set.Instances (3.6s)
+✔ [1932/1982] Built Mathlib.Algebra.Polynomial.Monomial (2.6s)
+✔ [1933/1983] Built Mathlib.Topology.Algebra.Module.Equiv (21s)
+✔ [1938/1989] Built Mathlib.Data.Matrix.Block (6.4s)
+✔ [1941/1989] Built Mathlib.LinearAlgebra.StdBasis (5.2s)
+✔ [1943/1995] Built Mathlib.Algebra.Polynomial.Degree.Defs (5.0s)
+✔ [1947/1995] Built Mathlib.Topology.Order.Lattice (3.9s)
+✔ [1949/2004] Built Mathlib.LinearAlgebra.Matrix.StdBasis (3.0s)
+✔ [1951/2004] Built Mathlib.Data.Nat.Cast.Order.Field (3.2s)
+✔ [1956/2007] Built Mathlib.Analysis.Normed.Ring.InfiniteSum (6.6s)
+✔ [1957/2013] Built Mathlib.Topology.Algebra.Module.Star (5.1s)
+✔ [1958/2013] Built Mathlib.Algebra.DirectSum.Module (9.4s)
+✔ [1961/2024] Built Mathlib.LinearAlgebra.Quotient.Card (2.2s)
+✔ [1966/2025] Built Mathlib.Data.Sign.Basic (3.7s)
+✔ [1969/2026] Built Mathlib.Algebra.Ring.Action.Submonoid (2.7s)
+✔ [1970/2029] Built Mathlib.LinearAlgebra.TensorProduct.Associator (15s)
+✔ [1971/2029] Built Mathlib.Algebra.Polynomial.Degree.Operations (5.1s)
+✔ [1975/2029] Built Mathlib.GroupTheory.QuotientGroup.Finite (3.4s)
+✔ [1977/2029] Built Mathlib.RingTheory.Ideal.Quotient.Defs (4.1s)
+✔ [1978/2031] Built Mathlib.Data.Int.SuccPred (2.2s)
+✔ [1979/2031] Built Mathlib.Algebra.Algebra.Operations (15s)
+✔ [1986/2032] Built Mathlib.Algebra.Polynomial.Degree.Domain (2.4s)
+✔ [1989/2032] Built Mathlib.Topology.CompactOpen (4.0s)
+✔ [1990/2032] Built Mathlib.GroupTheory.QuotientGroup.ModEq (2.0s)
+✔ [1993/2032] Built Mathlib.Algebra.Group.Units.Opposite (1.5s)
+✔ [1995/2033] Built Mathlib.Algebra.Polynomial.Degree.TrailingDegree (3.8s)
+✔ [1996/2043] Built Mathlib.Algebra.Order.Interval.Set.Group (4.2s)
+✔ [2002/2044] Built Mathlib.Topology.Semicontinuity.Basic (8.2s)
+✔ [2004/2044] Built Mathlib.Algebra.Algebra.Subalgebra.Tower (3.1s)
+✔ [2005/2060] Built Mathlib.Algebra.Ring.AddAut (1.5s)
+✔ [2014/2065] Built Mathlib.Algebra.Order.Pi (2.3s)
+✔ [2016/2069] Built Mathlib.RingTheory.Ideal.Quotient.Basic (5.1s)
+✔ [2020/2078] Built Mathlib.Topology.UnitInterval (8.2s)
+✔ [2025/2079] Built Mathlib.Algebra.Polynomial.Eval.Degree (3.5s)
+✔ [2029/2079] Built Mathlib.Data.Nat.NthRoot.Defs (1.0s)
+✔ [2030/2080] Built Mathlib.LinearAlgebra.TensorProduct.Basis (5.2s)
+✔ [2032/2083] Built Mathlib.Algebra.Module.MinimalAxioms (1.5s)
+✔ [2036/2083] Built Mathlib.Algebra.Order.Ring.Interval (3.2s)
+✔ [2037/2089] Built Mathlib.Topology.Compactness.CompactlyCoherentSpace (2.3s)
+✔ [2039/2100] Built Mathlib.LinearAlgebra.AffineSpace.Defs (1.2s)
+✔ [2047/2100] Built Mathlib.Algebra.Order.Module.Synonym (2.1s)
+✔ [2048/2100] Built Mathlib.RingTheory.Multiplicity (6.6s)
+✔ [2049/2105] Built Mathlib.Topology.Instances.EReal.Lemmas (5.7s)
+✔ [2055/2107] Built Mathlib.Algebra.Algebra.Spectrum.Basic (7.7s)
+✔ [2057/2107] Built Mathlib.Algebra.Polynomial.Reverse (4.0s)
+✔ [2059/2107] Built Mathlib.NumberTheory.Padics.PadicVal.Defs (1.0s)
+✔ [2060/2107] Built Mathlib.Topology.Bornology.Absorbs (2.9s)
+✔ [2061/2107] Built Mathlib.Topology.UniformSpace.CompactConvergence (4.4s)
+✔ [2062/2119] Built Mathlib.Algebra.Polynomial.Monic (4.2s)
+✔ [2072/2123] Built Mathlib.Topology.Path (9.5s)
+✔ [2075/2126] Built Mathlib.Data.Nat.Factorization.Defs (3.4s)
+✔ [2080/2133] Built Mathlib.LinearAlgebra.Ray (7.8s)
+✔ [2084/2135] Built Mathlib.Topology.Algebra.UniformConvergence (7.2s)
+✔ [2086/2135] Built Mathlib.Analysis.Normed.Group.Pointwise (7.5s)
+✔ [2087/2135] Built Mathlib.Analysis.CStarAlgebra.Basic (7.6s)
+✔ [2089/2135] Built Mathlib.Topology.Algebra.FilterBasis (7.8s)
+✔ [2090/2135] Built Mathlib.LinearAlgebra.Finsupp.Pi (4.7s)
+✔ [2092/2144] Built Mathlib.Topology.Algebra.Affine (4.2s)
+✔ [2094/2152] Built Mathlib.Topology.Algebra.Equicontinuity (4.1s)
+✔ [2098/2152] Built Mathlib.Tactic.SuppressCompilation (2.4s)
+✔ [2099/2160] Built Mathlib.Topology.AlexandrovDiscrete (2.7s)
+✔ [2104/2173] Built Mathlib.Dynamics.FixedPoints.Topology (2.5s)
+✔ [2114/2176] Built Mathlib.LinearAlgebra.AffineSpace.Independent (10s)
+✔ [2120/2179] Built Mathlib.Topology.QuasiSeparated (4.2s)
+✔ [2121/2179] Built Mathlib.Tactic.Ext (1.2s)
+✔ [2124/2181] Built Mathlib.Tactic.GeneralizeProofs (980ms)
+✔ [2125/2183] Built Mathlib.Data.Seq.Computation (5.0s)
+✔ [2129/2184] Built Mathlib.Tactic.Have (2.2s)
+✔ [2130/2185] Built Mathlib.Analysis.Convex.Basic (11s)
+✔ [2132/2185] Built Mathlib.LinearAlgebra.Matrix.ToLin (22s)
+✔ [2135/2185] Built Mathlib.Tactic.Linarith.NNRealPreprocessor (3.2s)
+✔ [2137/2192] Built Mathlib.Analysis.Normed.Module.Ball.Pointwise (9.9s)
+✔ [2144/2197] Built Mathlib.Tactic.Linter.CommandStart (762ms)
+✔ [2149/2198] Built Mathlib.Tactic.Linarith.Oracle.FourierMotzkin (2.9s)
+✔ [2150/2209] Built Mathlib.Analysis.Convex.Hull (3.2s)
+✔ [2157/2209] Built Mathlib.Topology.Sets.Compacts (6.2s)
+✔ [2158/2209] Built Mathlib.Tactic.ModCases (3.0s)
+✔ [2163/2209] Built Mathlib.Topology.Instances.AddCircle.Defs (15s)
+✔ [2165/2209] Built Mathlib.Data.Seq.Basic (4.5s)
+✔ [2166/2209] Built Mathlib.Tactic.MoveAdd (3.3s)
+✔ [2167/2212] Built Mathlib.Data.Rat.Sqrt (1.7s)
+✔ [2169/2219] Built Mathlib.Data.Nat.Prime.Int (1.0s)
+✔ [2173/2222] Built Mathlib.Tactic.ComputeAsymptotics.Multiseries.Defs (4.4s)
+✔ [2174/2222] Built Mathlib.Data.Nat.Digits.Lemmas (5.0s)
+✔ [2176/2234] Built Mathlib.Tactic.NormNum.BigOperators (7.8s)
+✔ [2181/2240] Built Mathlib.Order.PiLex (4.5s)
+✔ [2185/2240] Built Mathlib.Analysis.Normed.Group.AddCircle (7.3s)
+✔ [2186/2241] Built Mathlib.Algebra.BigOperators.Finsupp.Fin (2.3s)
+✔ [2189/2258] Built Mathlib.Analysis.RCLike.Basic (21s)
+✔ [2190/2258] Built Mathlib.Data.Nat.Choose.Factorization (3.6s)
+✔ [2194/2264] Built Mathlib.Analysis.Convex.Function (13s)
+✔ [2200/2266] Built Mathlib.RingTheory.Finiteness.Defs (3.5s)
+✔ [2205/2267] Built Mathlib.Algebra.Polynomial.Derivative (10s)
+✔ [2207/2267] Built Mathlib.Data.DFinsupp.Order (5.8s)
+✔ [2209/2267] Built Mathlib.Logic.Small.List (1.8s)
+✔ [2210/2277] Built Mathlib.Algebra.Module.Congruence.Defs (3.2s)
+✔ [2219/2283] Built Mathlib.Algebra.CharP.Frobenius (2.8s)
+✔ [2220/2286] Built Mathlib.Order.IsNormal (3.5s)
+✔ [2225/2292] Built Mathlib.RingTheory.Noetherian.Defs (2.0s)
+✔ [2229/2297] Built Mathlib.RingTheory.OreLocalization.NonZeroDivisors (1.8s)
+✔ [2230/2298] Built Mathlib.Analysis.SpecialFunctions.Exp (4.8s)
+✔ [2234/2298] Built Mathlib.Data.DFinsupp.Lex (4.4s)
+✔ [2235/2305] Built Mathlib.RingTheory.UniqueFactorizationDomain.Defs (2.0s)
+✔ [2236/2305] Built Mathlib.Algebra.MonoidAlgebra.Basic (16s)
+✔ [2240/2306] Built Mathlib.RingTheory.OreLocalization.Ring (5.8s)
+✔ [2241/2306] Built Mathlib.SetTheory.Ordinal.Family (7.8s)
+✔ [2243/2306] Built Mathlib.Data.Finsupp.Lex (4.0s)
+✔ [2252/2306] Built Mathlib.Tactic.NormNum.IsCoprime (3.5s)
+✔ [2253/2306] Built Mathlib.GroupTheory.MonoidLocalization.Maps (11s)
+✔ [2254/2306] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse (7.5s)
+✔ [2259/2307] Built Mathlib.Algebra.Exact (13s)
+✔ [2260/2308] Built Mathlib.SetTheory.Ordinal.FixedPoint (4.4s)
+✔ [2261/2308] Built Mathlib.RingTheory.UniqueFactorizationDomain.NormalizedFactors (5.3s)
+✔ [2264/2310] Built Mathlib.Data.Fintype.Parity (2.3s)
+✔ [2270/2316] Built Mathlib.RingTheory.EuclideanDomain (3.8s)
+✔ [2272/2316] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Angle (12s)
+✔ [2273/2321] Built Mathlib.Algebra.CharP.Reduced (2.3s)
+✔ [2275/2325] Built Mathlib.Algebra.Polynomial.AlgebraMap (8.7s)
+✔ [2279/2327] Built Mathlib.Algebra.MvPolynomial.Degrees (6.1s)
+✔ [2283/2332] Built Mathlib.Data.ZMod.ValMinAbs (3.2s)
+✔ [2285/2349] Built Mathlib.Analysis.Normed.Operator.Basic (18s)
+✔ [2288/2349] Built Mathlib.RingTheory.Finiteness.Finsupp (4.5s)
+✔ [2293/2350] Built Mathlib.Algebra.Algebra.Subalgebra.Prod (3.0s)
+✔ [2296/2352] Built Mathlib.RingTheory.Finiteness.Bilinear (3.5s)
+✔ [2298/2352] Built Mathlib.SetTheory.Cardinal.Cofinality (8.2s)
+✔ [2299/2357] Built Mathlib.Algebra.Polynomial.RingDivision (5.7s)
+✔ [2300/2357] Built Mathlib.LinearAlgebra.Dimension.Basic (4.7s)
+✔ [2303/2359] Built Mathlib.Analysis.SpecialFunctions.Complex.Arg (6.5s)
+✔ [2304/2359] Built Mathlib.RingTheory.Localization.FractionRing (12s)
+✔ [2306/2369] Built Mathlib.RingTheory.Finiteness.Ideal (4.6s)
+✔ [2310/2369] Built Mathlib.Algebra.Polynomial.Eval.Subring (2.6s)
+✔ [2314/2386] Built Mathlib.SetTheory.Cardinal.Regular (3.4s)
+✔ [2316/2386] Built Mathlib.LinearAlgebra.Dimension.Finrank (2.6s)
+✔ [2328/2388] Built Mathlib.Analysis.SpecialFunctions.Complex.Log (4.0s)
+✔ [2335/2392] Built Mathlib.Algebra.MvPolynomial.Equiv (11s)
+✔ [2337/2393] Built Mathlib.Topology.ContinuousMap.Compact (10s)
+✔ [2340/2398] Built Mathlib.LinearAlgebra.Basis.Cardinality (4.1s)
+✔ [2347/2400] Built Mathlib.Algebra.Order.Antidiag.Pi (6.4s)
+✔ [2350/2400] Built Mathlib.Logic.Equiv.Fintype (4.1s)
+✔ [2351/2400] Built Mathlib.LinearAlgebra.FreeModule.Finite.Basic (3.0s)
+✔ [2353/2400] Built Mathlib.Tactic.ComputeAsymptotics.Multiseries.Majorized (3.9s)
+✔ [2354/2400] Built Mathlib.Tactic.ComputeAsymptotics.Multiseries.Basis (4.3s)
+✔ [2357/2413] Built Mathlib.Algebra.Polynomial.Roots (10s)
+✔ [2368/2427] Built Mathlib.RingTheory.Ideal.Quotient.Noetherian (2.3s)
+✔ [2372/2433] Built Mathlib.RingTheory.Noetherian.Orzech (3.4s)
+✔ [2374/2435] Built Mathlib.Combinatorics.Enumerative.Partition.Basic (3.1s)
+✔ [2376/2436] Built Mathlib.GroupTheory.Perm.Finite (3.3s)
+✔ [2377/2436] Built Mathlib.Algebra.Polynomial.Expand (3.8s)
+✔ [2378/2436] Built Mathlib.RingTheory.Localization.Away.Basic (12s)
+✔ [2382/2436] Built Mathlib.LinearAlgebra.Multilinear.Basis (3.2s)
+✔ [2384/2436] Built Mathlib.Algebra.Polynomial.Identities (3.2s)
+✔ [2387/2440] Built Mathlib.RingTheory.Nilpotent.Basic (3.1s)
+✔ [2390/2448] Built Mathlib.RingTheory.Nilpotent.Lemmas (3.6s)
+✔ [2393/2451] Built Mathlib.LinearAlgebra.InvariantBasisNumber (4.7s)
+✔ [2397/2454] Built Mathlib.Data.Nat.Choose.Cast (1.9s)
+✔ [2399/2454] Built Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic (4.4s)
+✔ [2413/2465] Built Mathlib.RingTheory.FinitePresentation (6.9s)
+✔ [2414/2475] Built Mathlib.RingTheory.Polynomial.Subring (3.6s)
+✔ [2419/2478] Built Mathlib.GroupTheory.Perm.Cycle.Factors (6.8s)
+✔ [2423/2478] Built Mathlib.Tactic.Positivity.Finset (4.7s)
+✔ [2425/2478] Built Mathlib.LinearAlgebra.Matrix.Dual (3.0s)
+✔ [2426/2489] Built Mathlib.Algebra.Order.Hom.TypeTags (3.2s)
+✔ [2431/2489] Built Mathlib.LinearAlgebra.FiniteDimensional.Defs (4.4s)
+✔ [2433/2497] Built Mathlib.GroupTheory.Subgroup.Simple (2.6s)
+✔ [2434/2497] Built Mathlib.Algebra.Ring.Action.ConjAct (2.0s)
+✔ [2436/2503] Built Mathlib.RingTheory.Algebraic.Basic (8.9s)
+✔ [2440/2503] Built Mathlib.Data.W.Basic (1.0s)
+✔ [2444/2503] Built Mathlib.Algebra.Module.LocalizedModule.Basic (25s)
+✔ [2445/2504] Built Mathlib.RingTheory.Finiteness.Projective (2.6s)
+✔ [2446/2505] Built Mathlib.LinearAlgebra.Matrix.InvariantBasisNumber (3.4s)
+✔ [2448/2507] Built Mathlib.Algebra.Polynomial.HasseDeriv (4.1s)
+✔ [2453/2509] Built Mathlib.RingTheory.IntegralDomain (4.5s)
+✔ [2456/2513] Built Mathlib.Data.PNat.Prime (2.5s)
+✔ [2458/2513] Built Mathlib.SetTheory.Cardinal.Subfield (3.3s)
+✔ [2459/2513] Built Mathlib.Algebra.Module.LocalizedModule.IsLocalization (3.1s)
+✔ [2460/2516] Built Mathlib.LinearAlgebra.Matrix.Determinant.Basic (8.1s)
+✔ [2465/2516] Built Mathlib.Data.Int.WithZero (2.2s)
+✔ [2467/2516] Built Mathlib.Tactic.NormNum.Irrational (5.4s)
+✔ [2469/2520] Built Mathlib.FieldTheory.RatFunc.Defs (4.2s)
+✔ [2471/2522] Built Mathlib.Algebra.Ring.Subsemiring.Pointwise (2.5s)
+✔ [2472/2522] Built Mathlib.LinearAlgebra.Dimension.ErdosKaplansky (3.8s)
+✔ [2474/2522] Built Mathlib.LinearAlgebra.Matrix.Reindex (3.1s)
+✔ [2477/2522] Built Mathlib.RingTheory.LocalRing.MaximalIdeal.Defs (2.5s)
+✔ [2478/2525] Built Mathlib.RingTheory.Ideal.Pointwise (3.0s)
+✔ [2479/2529] Built Mathlib.Algebra.Algebra.Subalgebra.Pointwise (2.3s)
+✔ [2482/2549] Built Mathlib.RingTheory.Spectrum.Maximal.Defs (2.7s)
+✔ [2485/2549] Built Mathlib.RingTheory.Localization.Module (6.8s)
+✔ [2486/2563] Built Mathlib.RingTheory.Jacobson.Radical (5.7s)
+✔ [2492/2563] Built Mathlib.RingTheory.Spectrum.Maximal.Basic (2.2s)
+✔ [2495/2568] Built Mathlib.LinearAlgebra.Matrix.NonsingularInverse (8.5s)
+✔ [2498/2568] Built Mathlib.RingTheory.IsPrimary (3.8s)
+✔ [2499/2570] Built Mathlib.FieldTheory.IntermediateField.Basic (16s)
+✔ [2500/2570] Built Mathlib.RingTheory.Ideal.Over (6.1s)
+✔ [2501/2571] Built Mathlib.Topology.Algebra.UniformFilterBasis (2.8s)
+✔ [2502/2574] Built Mathlib.Algebra.GroupWithZero.Range (5.1s)
+✔ [2513/2582] Built Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup (8.6s)
+✔ [2517/2586] Built Mathlib.RingTheory.Bezout (2.0s)
+✔ [2519/2598] Built Mathlib.Topology.Algebra.Nonarchimedean.Bases (4.2s)
+✔ [2524/2600] Built Mathlib.RingTheory.Ideal.IsPrimary (3.1s)
+✔ [2527/2601] Built Mathlib.RingTheory.TensorProduct.Maps (42s)
+✔ [2530/2601] Built Mathlib.Topology.Sets.OpenCover (2.1s)
+✔ [2536/2602] Built Mathlib.Topology.Algebra.Ring.Ideal (2.1s)
+✔ [2539/2602] Built Mathlib.RingTheory.LocalRing.ResidueField.Basic (4.9s)
+✔ [2544/2602] Built Mathlib.Algebra.Algebra.TransferInstance (2.4s)
+✔ [2546/2602] Built Mathlib.Order.Ideal (3.6s)
+✔ [2549/2602] Built Mathlib.LinearAlgebra.Matrix.ToLinearEquiv (4.6s)
+✔ [2550/2609] Built Mathlib.LinearAlgebra.Matrix.SchurComplement (8.3s)
+✔ [2554/2611] Built Mathlib.Topology.Spectral.Prespectral (3.1s)
+✔ [2555/2611] Built Mathlib.RingTheory.MatrixPolynomialAlgebra (4.1s)
+✔ [2560/2613] Built Mathlib.Algebra.Module.LocalizedModule.Submodule (15s)
+✔ [2562/2630] Built Mathlib.RingTheory.SurjectiveOnStalks (6.5s)
+✔ [2570/2641] Built Mathlib.Algebra.Polynomial.GroupRingAction (4.9s)
+✔ [2574/2650] Built Mathlib.Algebra.Ring.Action.Invariant (2.1s)
+✔ [2579/2667] Built Mathlib.RingTheory.TensorProduct.MvPolynomial (9.2s)
+✔ [2584/2674] Built Mathlib.Algebra.Algebra.Subalgebra.IsSimpleOrder (4.6s)
+✔ [2586/2686] Built Mathlib.GroupTheory.Solvable (4.4s)
+✔ [2587/2686] Built Mathlib.RingTheory.AlgebraicIndependent.Defs (4.1s)
+✔ [2589/2686] Built Mathlib.LinearAlgebra.Matrix.Charpoly.LinearMap (6.7s)
+✔ [2591/2686] Built Mathlib.Combinatorics.Matroid.Dual (5.3s)
+✔ [2593/2698] Built Mathlib.LinearAlgebra.TensorProduct.RightExactness (14s)
+✔ [2595/2698] Built Mathlib.RingTheory.Finiteness.Prod (2.1s)
+✔ [2605/2698] Built Mathlib.RingTheory.MvPolynomial.Basic (5.3s)
+✔ [2609/2703] Built Mathlib.Combinatorics.Matroid.Constructions (3.2s)
+✔ [2613/2703] Built Mathlib.Order.Atoms.Finite (2.7s)
+✔ [2616/2706] Built Mathlib.Algebra.Module.ZMod (3.5s)
+✔ [2619/2706] Built Mathlib.LinearAlgebra.Vandermonde (7.2s)
+✔ [2621/2712] Built Mathlib.Order.CompactlyGenerated.Intervals (3.6s)
+✔ [2625/2712] Built Mathlib.RingTheory.IntegralClosure.Algebra.Basic (8.1s)
+✔ [2626/2712] Built Mathlib.RingTheory.Localization.BaseChange (20s)
+✔ [2628/2714] Built Mathlib.RingTheory.Finiteness.Nakayama (4.1s)
+✔ [2629/2717] Built Mathlib.RingTheory.LocalProperties.Submodule (5.7s)
+✔ [2632/2720] Built Mathlib.RingTheory.FractionalIdeal.Basic (9.7s)
+✔ [2634/2720] Built Mathlib.Combinatorics.Matroid.Closure (10s)
+✔ [2635/2720] Built Mathlib.LinearAlgebra.Dual.Lemmas (28s)
+✔ [2636/2720] Built Mathlib.RingTheory.Localization.Algebra (7.4s)
+✔ [2640/2721] Built Mathlib.RingTheory.Nakayama (6.9s)
+✔ [2642/2722] Built Mathlib.Algebra.Polynomial.Module.AEval (13s)
+✔ [2646/2725] Built Mathlib.CategoryTheory.Category.ULift (3.0s)
+✔ [2648/2725] Built Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Basic (11s)
+✔ [2649/2725] Built Mathlib.Algebra.Category.MonCat.Basic (7.8s)
+✔ [2651/2725] Built Mathlib.RingTheory.FractionalIdeal.Inverse (5.6s)
+✔ [2652/2726] Built Mathlib.LinearAlgebra.GeneralLinearGroup.AlgEquiv (3.7s)
+✔ [2653/2730] Built Mathlib.CategoryTheory.Category.Preorder (2.7s)
+✔ [2657/2734] Built Mathlib.LinearAlgebra.Matrix.SesquilinearForm (23s)
+✔ [2658/2734] Built Mathlib.Combinatorics.Matroid.Rank.Cardinal (3.7s)
+✔ [2659/2742] Built Mathlib.LinearAlgebra.Contraction (7.7s)
+✔ [2666/2786] Built Mathlib.CategoryTheory.CommSq (3.6s)
+✔ [2673/2797] Built Mathlib.CategoryTheory.Retract (4.3s)
+✔ [2674/2806] Built Mathlib.CategoryTheory.IsConnected (3.6s)
+✔ [2675/2806] Built Mathlib.RingTheory.Filtration (9.1s)
+✔ [2676/2806] Built Mathlib.CategoryTheory.Limits.Types.ColimitType (4.5s)
+✔ [2677/2806] Built Mathlib.Algebra.Category.Grp.Basic (9.5s)
+✔ [2679/2810] Built Mathlib.CategoryTheory.LiftingProperties.Basic (2.2s)
+✔ [2684/2819] Built Mathlib.CategoryTheory.HomCongr (2.2s)
+✔ [2685/2834] Built Mathlib.Algebra.Category.Grp.ForgetCorepresentable (2.3s)
+✔ [2690/2839] Built Mathlib.CategoryTheory.Functor.EpiMono (2.6s)
+✔ [2694/2840] Built Mathlib.CategoryTheory.Functor.TwoSquare (3.7s)
+✔ [2698/2853] Built Mathlib.CategoryTheory.MorphismProperty.Composition (3.2s)
+✔ [2702/2853] Built Mathlib.LinearAlgebra.Determinant (14s)
+✔ [2704/2856] Built Mathlib.Topology.Algebra.Group.ClosedSubgroup (3.5s)
+✔ [2705/2862] Built Mathlib.NumberTheory.ArithmeticFunction.Moebius (3.8s)
+✔ [2706/2865] Built Mathlib.LinearAlgebra.Matrix.BilinearForm (13s)
+✔ [2709/2873] Built Mathlib.RingTheory.Norm.Defs (2.6s)
+✔ [2712/2880] Built Mathlib.NumberTheory.Padics.PadicVal.Basic (4.3s)
+✔ [2723/2898] Built Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots (7.1s)
+✔ [2724/2898] Built Mathlib.Algebra.BigOperators.Field (2.9s)
+✔ [2730/2904] Built Mathlib.Analysis.Normed.Module.Ray (3.6s)
+✔ [2733/2907] Built Mathlib.CategoryTheory.Limits.Cones (25s)
+✔ [2737/2909] Built Mathlib.RingTheory.Algebraic.Integral (19s)
+✔ [2742/2909] Built Mathlib.RingTheory.Ideal.Cotangent (10s)
+✔ [2744/2909] Built Mathlib.Algebra.Algebra.ZMod (2.8s)
+✔ [2745/2909] Built Mathlib.Data.Fintype.Sort (1.8s)
+✔ [2749/2909] Built Mathlib.Analysis.InnerProductSpace.Convex (3.4s)
+✔ [2750/2909] Built Mathlib.Analysis.Convex.EGauge (8.3s)
+✔ [2751/2909] Built Mathlib.RingTheory.Ideal.GoingUp (7.2s)
+✔ [2754/2909] Built Mathlib.Analysis.Normed.Operator.NormedSpace (9.4s)
+✔ [2757/2911] Built Mathlib.Analysis.Complex.Arg (3.4s)
+✔ [2758/2913] Built Mathlib.FieldTheory.IntermediateField.Adjoin.Algebra (9.9s)
+✔ [2759/2913] Built Mathlib.Algebra.GCDMonoid.IntegrallyClosed (3.1s)
+✔ [2766/2915] Built Mathlib.LinearAlgebra.Multilinear.Curry (8.4s)
+✔ [2770/2916] Built Mathlib.CategoryTheory.Limits.HasLimits (12s)
+✔ [2773/2916] Built Mathlib.RingTheory.Adjoin.PowerBasis (5.5s)
+✔ [2774/2916] Built Mathlib.CategoryTheory.Limits.Shapes.Terminal (5.2s)
+✔ [2777/2916] Built Mathlib.CategoryTheory.Limits.Types.Limits (3.3s)
+✔ [2779/2922] Built Mathlib.RingTheory.Adjoin.Field (6.6s)
+✔ [2786/2922] Built Mathlib.RingTheory.AlgebraicIndependent.Adjoin (10s)
+✔ [2787/2922] Built Mathlib.RingTheory.Spectrum.Prime.Topology (12s)
+✔ [2794/2922] Built Mathlib.CategoryTheory.Limits.Creates (6.2s)
+✔ [2803/2929] Built Mathlib.Topology.MetricSpace.Completion (4.1s)
+✔ [2804/2931] Built Mathlib.FieldTheory.RatFunc.Basic (29s)
+✔ [2805/2942] Built Mathlib.FieldTheory.PrimitiveElement (8.4s)
+✔ [2814/2944] Built Mathlib.RingTheory.RootsOfUnity.Minpoly (3.5s)
+✔ [2816/2946] Built Mathlib.FieldTheory.Normal.Closure (7.0s)
+✔ [2823/2950] Built Mathlib.Topology.FiberBundle.IsHomeomorphicTrivialBundle (2.1s)
+✔ [2826/2960] Built Mathlib.CategoryTheory.Limits.Shapes.Products (17s)
+✔ [2831/2960] Built Mathlib.RingTheory.Valuation.ValuationSubring (12s)
+✔ [2833/2962] Built Mathlib.SetTheory.Cardinal.Continuum (2.9s)
+✔ [2835/2968] Built Mathlib.Analysis.Asymptotics.TVS (27s)
+✔ [2836/2990] Built Mathlib.Analysis.Normed.Group.AddTorsor (4.0s)
+✔ [2843/2990] Built Mathlib.FieldTheory.Finite.GaloisField (4.7s)
+✔ [2844/2993] Built Mathlib.CategoryTheory.Comma.Over.Basic (39s)
+✔ [2845/2994] Built Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas (25s)
+✔ [2846/2997] Built Mathlib.Analysis.Calculus.FDeriv.Defs (5.2s)
+✔ [2854/3000] Built Mathlib.Analysis.Normed.Module.RCLike.Basic (4.3s)
+✔ [2858/3000] Built Mathlib.Analysis.Normed.Module.Multilinear.Basic (44s)
+✔ [2860/3000] Built Mathlib.Analysis.Normed.Operator.Compact (8.3s)
+✔ [2861/3000] Built Mathlib.Topology.Algebra.Valued.ValuationTopology (12s)
+✔ [2864/3000] Built Mathlib.Analysis.Calculus.FDeriv.RestrictScalars (5.7s)
+✔ [2865/3000] Built Mathlib.CategoryTheory.Grothendieck (11s)
+✔ [2866/3000] Built Mathlib.Topology.Algebra.ContinuousAffineMap (15s)
+✔ [2867/3000] Built Mathlib.Analysis.Calculus.FDeriv.Linear (3.4s)
+✔ [2870/3000] Built Mathlib.FieldTheory.SeparableDegree (20s)
+✔ [2872/3008] Built Mathlib.CategoryTheory.Limits.Shapes.Grothendieck (6.5s)
+✔ [2879/3010] Built Mathlib.Analysis.Calculus.Deriv.Basic (15s)
+✔ [2881/3010] Built Mathlib.CategoryTheory.Limits.Shapes.BinaryProducts (16s)
+✔ [2885/3010] Built Mathlib.Topology.Algebra.ContinuousAffineEquiv (8.0s)
+✔ [2888/3010] Built Mathlib.MeasureTheory.MeasurableSpace.Constructions (6.6s)
+✔ [2889/3010] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.Cospan (6.8s)
+✔ [2891/3010] Built Mathlib.Topology.Algebra.Module.FiniteDimension (23s)
+✔ [2892/3026] Built Mathlib.MeasureTheory.MeasurableSpace.MeasurablyGenerated (3.3s)
+✔ [2908/3065] Built Mathlib.Analysis.Normed.Module.Alternating.Basic (20s)
+✔ [2909/3069] Built Mathlib.MeasureTheory.OuterMeasure.Defs (2.2s)
+✔ [2913/3069] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.PullbackCone (4.8s)
+✔ [2914/3069] Built Mathlib.MeasureTheory.OuterMeasure.AE (4.5s)
+✔ [2916/3071] Built Mathlib.Analysis.Calculus.Deriv.Comp (14s)
+✔ [2918/3071] Built Mathlib.MeasureTheory.OuterMeasure.Operations (5.1s)
+✔ [2920/3071] Built Mathlib.Analysis.Normed.Affine.Isometry (16s)
+✔ [2921/3075] Built Mathlib.Analysis.Calculus.FDeriv.Add (24s)
+✔ [2924/3075] Built Mathlib.Analysis.Normed.Module.Multilinear.Curry (28s)
+✔ [2925/3075] Built Mathlib.Analysis.Convex.TotallyBounded (2.0s)
+✔ [2926/3075] Built Mathlib.Geometry.Convex.Cone.Basic (9.7s)
+✔ [2927/3075] Built Mathlib.Algebra.Central.Basic (2.7s)
+✔ [2928/3075] Built Mathlib.MeasureTheory.OuterMeasure.OfFunction (4.2s)
+✔ [2929/3075] Built Mathlib.FieldTheory.SeparableClosure (26s)
+✔ [2930/3075] Built Mathlib.Analysis.Calculus.FDeriv.Affine (3.9s)
+✔ [2933/3075] Built Mathlib.MeasureTheory.OuterMeasure.Caratheodory (4.6s)
+✔ [2935/3076] Built Mathlib.CategoryTheory.Limits.Shapes.Equalizers (12s)
+✔ [2937/3076] Built Mathlib.Analysis.Convex.Cone.Extension (5.3s)
+✔ [2938/3076] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.Pasting (10s)
+✔ [2941/3076] Built Mathlib.Analysis.Calculus.Deriv.Add (9.0s)
+✔ [2942/3076] Built Mathlib.CategoryTheory.Limits.Shapes.FiniteLimits (2.7s)
+✔ [2949/3076] Built Mathlib.FieldTheory.Galois.GaloisClosure (5.0s)
+✔ [2951/3076] Built Mathlib.Combinatorics.Enumerative.InclusionExclusion (5.7s)
+✔ [2953/3076] Built Mathlib.Analysis.Convex.Gauge (12s)
+✔ [2955/3076] Built Mathlib.Analysis.Calculus.Deriv.Slope (5.9s)
+✔ [2957/3076] Built Mathlib.Analysis.Normed.Module.FiniteDimension (18s)
+✔ [2959/3076] Built Mathlib.Analysis.Calculus.FDeriv.Equiv (16s)
+✔ [2962/3084] Built Mathlib.MeasureTheory.Measure.AEDisjoint (3.5s)
+✔ [2969/3084] Built Mathlib.CategoryTheory.Limits.Shapes.Images (10s)
+✔ [2971/3089] Built Mathlib.CategoryTheory.Limits.Opposites (5.8s)
+✔ [2975/3090] Built Mathlib.CategoryTheory.Filtered.Basic (5.6s)
+✔ [2979/3091] Built Mathlib.Analysis.RCLike.Lemmas (4.7s)
+✔ [2981/3091] Built Mathlib.MeasureTheory.Measure.Comap (3.6s)
+✔ [2985/3096] Built Mathlib.CategoryTheory.Limits.Types.Filtered (3.5s)
+✔ [2988/3096] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs (4.8s)
+✔ [2992/3097] Built Mathlib.MeasureTheory.Measure.Typeclasses.NoAtoms (3.1s)
+✔ [2993/3097] Built Mathlib.FieldTheory.Galois.Infinite (8.4s)
+✔ [2994/3111] Built Mathlib.CategoryTheory.Limits.Shapes.ZeroMorphisms (7.0s)
+✔ [2998/3111] Built Mathlib.Analysis.Calculus.FDeriv.CompCLM (36s)
+✔ [3002/3111] Built Mathlib.MeasureTheory.Measure.Trim (3.0s)
+✔ [3003/3113] Built Mathlib.Analysis.Analytic.ConvergenceRadius (19s)
+✔ [3011/3125] Built Mathlib.Analysis.Normed.Module.Dual (5.0s)
+✔ [3014/3127] Built Mathlib.MeasureTheory.Measure.Typeclasses.Probability (4.3s)
+✔ [3015/3127] Built Mathlib.Data.ENNReal.Holder (2.0s)
+✔ [3016/3133] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic (6.8s)
+✔ [3021/3144] Built Mathlib.CategoryTheory.Preadditive.Basic (6.7s)
+✔ [3025/3144] Built Mathlib.CategoryTheory.Limits.Shapes.RegularMono (7.4s)
+✔ [3026/3146] Built Mathlib.MeasureTheory.Measure.AEMeasurable (5.8s)
+✔ [3029/3146] Built Mathlib.Probability.ConditionalProbability (5.9s)
+✔ [3030/3173] Built Mathlib.Analysis.SpecialFunctions.Pow.Continuity (8.3s)
+✔ [3039/3173] Built Mathlib.Order.Monotone.Monovary (3.5s)
+✔ [3040/3174] Built Mathlib.Analysis.Analytic.Linear (9.2s)
+✔ [3043/3174] Built Mathlib.CategoryTheory.Limits.Shapes.KernelPair (3.7s)
+✔ [3050/3178] Built Mathlib.Topology.Algebra.Group.Compact (2.6s)
+✔ [3051/3178] Built Mathlib.MeasureTheory.Measure.Dirac (6.3s)
+✔ [3053/3182] Built Mathlib.Topology.Algebra.Valued.WithVal (19s)
+✔ [3058/3187] Built Mathlib.Analysis.Analytic.Uniqueness (5.7s)
+✔ [3061/3190] Built Mathlib.Analysis.MeanInequalities (11s)
+✔ [3063/3190] Built Mathlib.Algebra.Order.Monovary (7.8s)
+✔ [3065/3190] Built Mathlib.Analysis.InnerProductSpace.Subspace (7.3s)
+✔ [3071/3206] Built Mathlib.MeasureTheory.Group.Arithmetic (13s)
+✔ [3073/3206] Built Mathlib.Algebra.Category.Ring.Constructions (14s)
+✔ [3078/3207] Built Mathlib.Util.Superscript (3.0s)
+✔ [3084/3207] Built Mathlib.Topology.Algebra.Module.ClosedSubmodule (6.0s)
+✔ [3087/3208] Built Mathlib.MeasureTheory.Topology (3.2s)
+✔ [3088/3218] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Complex (3.0s)
+✔ [3096/3225] Built Mathlib.CategoryTheory.Limits.Shapes.Diagonal (14s)
+✔ [3099/3227] Built Mathlib.Analysis.Convex.Mul (9.4s)
+✔ [3100/3230] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Real (5.2s)
+✔ [3101/3230] Built Mathlib.MeasureTheory.Measure.Regular (7.9s)
+✔ [3102/3230] Built Mathlib.Analysis.BoxIntegral.Box.Basic (5.9s)
+✔ [3105/3231] Built Mathlib.Analysis.Calculus.ContDiff.Basic (21s)
+✔ [3106/3234] Built Mathlib.MeasureTheory.Integral.Lebesgue.Basic (8.4s)
+✔ [3108/3234] Built Mathlib.Analysis.MeanInequalitiesPow (5.4s)
+✔ [3114/3244] Built Mathlib.MeasureTheory.Function.SpecialFunctions.Basic (4.3s)
+✔ [3117/3254] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Metrizable (3.0s)
+✔ [3122/3255] Built Mathlib.RingTheory.LocalProperties.Basic (9.1s)
+✔ [3124/3255] Built Mathlib.MeasureTheory.Measure.Content (5.6s)
+✔ [3125/3255] Built Mathlib.MeasureTheory.Integral.Lebesgue.Map (3.7s)
+✔ [3126/3255] Built Mathlib.Analysis.Normed.Lp.MeasurableSpace (3.8s)
+✔ [3128/3260] Built Mathlib.MeasureTheory.Function.Egorov (3.7s)
+✔ [3130/3260] Built Mathlib.Analysis.Normed.Operator.Banach (19s)
+✔ [3131/3260] Built Mathlib.Algebra.CharP.CharAndCard (3.2s)
+✔ [3134/3264] Built Mathlib.Analysis.BoxIntegral.Partition.Basic (5.1s)
+✔ [3144/3269] Built Mathlib.Tactic.NormNum.ModEq (1.9s)
+✔ [3150/3272] Built Mathlib.LinearAlgebra.Complex.FiniteDimensional (2.4s)
+✔ [3151/3273] Built Mathlib.Tactic.ReduceModChar.Ext (403ms)
+✔ [3152/3273] Built Mathlib.Tactic.NormNum.NatFib (1.0s)
+✔ [3153/3275] Built Mathlib.Tactic.NormNum.Prime (2.3s)
+✔ [3157/3283] Built Mathlib.Tactic.Recall (1.6s)
+✔ [3158/3283] Built Mathlib.Tactic.Relation.Symm (1.0s)
+✔ [3161/3284] Built Mathlib.RingTheory.LocalProperties.IntegrallyClosed (4.5s)
+✔ [3162/3284] Built Mathlib.Algebra.Group.TypeTags.Pointwise (1.7s)
+✔ [3163/3287] Built Mathlib.MeasureTheory.Integral.Lebesgue.Countable (4.2s)
+✔ [3165/3287] Built Mathlib.Tactic.Simproc.Factors (2.4s)
+✔ [3166/3288] Built Mathlib.Tactic.Simproc.VecPerm (2.2s)
+✔ [3167/3288] Built ProofWidgets.Component.PenroseDiagram (1.2s)
+✔ [3168/3309] Built Mathlib.Tactic.ReduceModChar (4.7s)
+✔ [3171/3309] Built Mathlib.Analysis.InnerProductSpace.Symmetric (7.7s)
+✔ [3173/3309] Built ProofWidgets.Presentation.Expr (2.1s)
+✔ [3175/3311] Built Mathlib.Tactic.Simproc.FinsetInterval (5.0s)
+✔ [3176/3311] Built ProofWidgets.Component.HtmlDisplay (1.3s)
+✔ [3177/3314] Built Mathlib.RingTheory.DedekindDomain.Dvr (4.0s)
+✔ [3181/3317] Built Mathlib.Tactic.WithoutCDot (836ms)
+✔ [3183/3317] Built Mathlib.Tactic.Widget.CommDiag (2.6s)
+✔ [3184/3337] Built Mathlib.Analysis.Calculus.ContDiff.Comp (16s)
+✔ [3185/3337] Built Mathlib.Data.Finsupp.Weight (7.5s)
+✔ [3186/3337] Built Mathlib.Analysis.Calculus.ContDiff.CPolynomial (3.6s)
+✔ [3187/3338] Built Mathlib.Analysis.InnerProductSpace.Projection.Submodule (7.5s)
+✔ [3189/3339] Built Mathlib.MeasureTheory.Measure.Prod (9.9s)
+✔ [3190/3339] Built Mathlib.Analysis.Calculus.ContDiff.Deriv (5.2s)
+✔ [3191/3339] Built Mathlib.Tactic.Widget.StringDiagram (8.9s)
+✔ [3206/3389] Built Mathlib.Tactic.Ring.NamePowerVars (2.5s)
+✔ [3208/3389] Built Mathlib.Topology.UrysohnsLemma (5.5s)
+✔ [3210/3401] Built Mathlib.Analysis.Normed.Module.Alternating.Uncurry.Fin (14s)
+✔ [3213/3403] Built Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional (10s)
+✔ [3214/3405] Built Mathlib.Analysis.Calculus.FDeriv.ContinuousMultilinearMap (14s)
+✔ [3215/3405] Built Mathlib.Analysis.Calculus.FDeriv.Mul (53s)
+✔ [3219/3405] Built Mathlib.Topology.Algebra.Module.Spaces.WeakDual (6.4s)
+✔ [3221/3405] Built Mathlib.MeasureTheory.Group.Measure (17s)
+✔ [3222/3405] Built Mathlib.RingTheory.DedekindDomain.AdicValuation (26s)
+✔ [3224/3405] Built Mathlib.Algebra.Algebra.Unitization (16s)
+✔ [3225/3405] Built Mathlib.MeasureTheory.Group.LIntegral (3.0s)
+✔ [3229/3409] Built Mathlib.Topology.Algebra.Module.Spaces.CharacterSpace (4.9s)
+✔ [3230/3412] Built Mathlib.Analysis.Calculus.FDeriv.Pow (10s)
+✔ [3234/3414] Built Mathlib.MeasureTheory.Constructions.Pi (8.3s)
+✔ [3240/3434] Built Mathlib.Algebra.TrivSqZeroExt.Basic (19s)
+✔ [3245/3434] Built Mathlib.Analysis.Real.Spectrum (5.8s)
+✔ [3247/3434] Built Mathlib.RingTheory.Polynomial.Cyclotomic.Basic (7.0s)
+✔ [3251/3434] Built Mathlib.MeasureTheory.Group.Prod (10s)
+✔ [3253/3434] Built Mathlib.MeasureTheory.Function.EssSup (5.5s)
+✔ [3260/3434] Built Mathlib.Data.Set.PowersetCard (4.5s)
+✔ [3261/3434] Built Mathlib.Analysis.Calculus.Deriv.Mul (22s)
+✔ [3268/3434] Built Mathlib.LinearAlgebra.QuadraticForm.Basic (23s)
+✔ [3269/3434] Built Mathlib.Order.Hom.PowersetCard (2.5s)
+✔ [3270/3434] Built Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality (4.8s)
+✔ [3271/3434] Built Mathlib.MeasureTheory.Function.LpSeminorm.Monotonicity (5.7s)
+✔ [3272/3434] Built Mathlib.LinearAlgebra.QuadraticForm.Isometry (4.8s)
+✔ [3273/3434] Built Mathlib.MeasureTheory.Measure.WithDensity (8.0s)
+✔ [3275/3434] Built Mathlib.Analysis.Calculus.Deriv.MeanValue (6.9s)
+✔ [3276/3434] Built Mathlib.Analysis.Calculus.Deriv.ZPow (6.4s)
+✔ [3277/3434] Built Mathlib.Analysis.Calculus.ContDiff.Operations (47s)
+✔ [3282/3434] Built Mathlib.MeasureTheory.Function.LpSeminorm.SMul (4.1s)
+✔ [3283/3434] Built Mathlib.LinearAlgebra.QuadraticForm.IsometryEquiv (4.2s)
+✔ [3286/3434] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.Lemmas (2.8s)
+✔ [3287/3434] Built Mathlib.Analysis.Calculus.LogDeriv (5.6s)
+✔ [3289/3434] Built Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp (5.4s)
+✔ [3292/3434] Built Mathlib.Analysis.InnerProductSpace.PiL2 (38s)
+✔ [3296/3434] Built Mathlib.Analysis.Analytic.IteratedFDeriv (7.1s)
+✔ [3299/3434] Built Mathlib.NumberTheory.Cyclotomic.Basic (18s)
+✔ [3301/3434] Built Mathlib.Analysis.BoxIntegral.Partition.Measure (2.7s)
+✔ [3304/3434] Built Mathlib.MeasureTheory.Function.LpSpace.Complete (3.3s)
+✔ [3310/3434] Built Mathlib.LinearAlgebra.CliffordAlgebra.Grading (8.7s)
+✔ [3311/3434] Built Mathlib.Analysis.InnerProductSpace.GramSchmidtOrtho (4.6s)
+✔ [3312/3434] Built Mathlib.Analysis.InnerProductSpace.ProdL2 (5.0s)
+✔ [3313/3434] Built Mathlib.MeasureTheory.Function.L1Space.AEEqFun (3.2s)
+✔ [3314/3434] Built Mathlib.LinearAlgebra.CliffordAlgebra.Conjugation (3.4s)
+✔ [3319/3434] Built Mathlib.Analysis.InnerProductSpace.Orientation (3.9s)
+✔ [3322/3434] Built Mathlib.LinearAlgebra.CliffordAlgebra.Inversion (2.6s)
+✔ [3323/3434] Built Mathlib.LinearAlgebra.CliffordAlgebra.SpinGroup (4.3s)
+✔ [3324/3434] Built Mathlib.MeasureTheory.Function.SimpleFuncDenseLp (11s)
+✔ [3325/3434] Built Mathlib.MeasureTheory.Integral.FinMeasAdditive (5.0s)
+✔ [3327/3434] Built Mathlib.MeasureTheory.Integral.Bochner.L1 (7.0s)
+✔ [3331/3434] Built Mathlib.MeasureTheory.Integral.Bochner.SumMeasure (2.4s)
+✔ [3332/3434] Built Mathlib.MeasureTheory.Integral.Bochner.Set (7.4s)
+✔ [3343/3434] Built Mathlib.MeasureTheory.Group.FundamentalDomain (17s)
+✔ [3345/3434] Built Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic (4.2s)
+✔ [3346/3434] Built Mathlib.MeasureTheory.Integral.CircleIntegral (4.6s)
+✔ [3347/3434] Built Mathlib.Analysis.Complex.CauchyIntegral (4.3s)
+✔ [3353/3434] Built Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity (2.2s)
+✔ [3355/3434] Built Mathlib.Tactic.NormNum.LegendreSymbol (3.4s)
+✔ [3357/3434] Built Ramtastic.HardyLittlewood.PrimePairAsymptotic (6.0s)
+✔ [3358/3434] Built Ramtastic.QuantumYM.WilsonActionConstruction (7.4s)
+✔ [3359/3434] Built Ramtastic.PrincipalBundles.PrincipalBundle (7.9s)
+✔ [3360/3434] Built Ramtastic.SeibergWitten.CliffordBundle (8.4s)
+⚠ [3361/3434] Built Ramtastic.Kahler.SL2Weight (8.4s)
+warning: Ramtastic/Kahler/SL2Weight.lean:42:17: This simp argument is unused:
+  Nat.zero_eq
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵o̵n̵l̵y̵ ̵[̵N̵a̵t̵.̵z̵e̵r̵o̵_̵e̵q̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵o̵n̵e̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵i̵t̵e̵r̵a̵t̵e̵_̵o̵n̵e̵,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵i̵t̵e̵r̵a̵t̵e̵_̵z̵e̵r̵o̵,̵ ̵i̵d̵_̵e̵q̵]̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲N̲a̲t̲.̲c̲a̲s̲t̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲,̲ ̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲i̲t̲e̲r̲a̲t̲e̲_̲o̲n̲e̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲i̲t̲e̲r̲a̲t̲e̲_̲z̲e̲r̲o̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲i̲d̲_̲e̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3362/3434] Built Ramtastic.DeRham.DifferentialForms (9.6s)
+✔ [3363/3434] Built Ramtastic.SchurTest (9.0s)
+✔ [3364/3434] Built Ramtastic.Sobolev.CartanProof (10s)
+✔ [3365/3434] Built Ramtastic.QuantumYM.StrongResolventConvergence (10s)
+✔ [3366/3434] Built Ramtastic.BSD.EllipticCurve (4.1s)
+✔ [3367/3434] Built Ramtastic.ChowGroups.AlgebraicCycle (5.0s)
+✔ [3368/3434] Built Ramtastic.Bass.HingeRotation (4.7s)
+✔ [3369/3434] Built Ramtastic.Tao.BoundedPrimeGaps (4.4s)
+✔ [3370/3434] Built Ramtastic.TwinPrimes.Statement (4.4s)
+✔ [3371/3434] Built Ramtastic.HardyLittlewood.Tower (3.8s)
+✔ [3372/3434] Built Ramtastic.QuantumYM.CompactGroupProduct (5.0s)
+✔ [3373/3434] Built Ramtastic.DeRham.ClosedExact (3.8s)
+✔ [3374/3434] Built Ramtastic.ComplexStructure.AlmostComplex (4.0s)
+✔ [3375/3434] Built Ramtastic.PrincipalBundles.Connection (5.1s)
+⚠ [3376/3434] Built Ramtastic.DeRham.StokesTheorem (3.4s)
+warning: Ramtastic/DeRham/StokesTheorem.lean:83:2: Try this: intro x ⟨hpos, hsum⟩ i _
+✔ [3377/3434] Built Ramtastic.DeRham.LeibnizRule (5.9s)
+✔ [3378/3434] Built Ramtastic.HodgeStar.StarOperator (5.0s)
+✔ [3379/3434] Built Ramtastic.QuantumYM.GlimmJaffeLimit (3.8s)
+✔ [3380/3434] Built Ramtastic.BSD.TateShafarevich (3.5s)
+✔ [3381/3434] Built Ramtastic.BSD.MordellWeil (3.9s)
+✔ [3382/3434] Built Ramtastic.BSD.LFunction (4.4s)
+✔ [3383/3434] Built Ramtastic.ChowGroups.RationalEquivalence (4.2s)
+⚠ [3384/3434] Built Ramtastic.DeRham.WedgeProduct (7.6s)
+warning: Ramtastic/DeRham/WedgeProduct.lean:59:30: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+      AlternatingMap.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/WedgeProduct.lean:84:30: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+      AlternatingMap.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/WedgeProduct.lean:104:31: This simp argument is unused:
+  map_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+      AlternatingMap.smul_apply,̵ ̵m̵a̵p̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/WedgeProduct.lean:111:39: This simp argument is unused:
+  MultilinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [MultilinearMap.sum_apply, M̵u̵l̵t̵i̵l̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Finset.smul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3385/3434] Built Ramtastic.Tao.Tower (4.2s)
+✔ [3386/3434] Built Ramtastic.Polignac.Statement (4.3s)
+✔ [3387/3434] Built Ramtastic.TwinPrimes.Tower (3.8s)
+✔ [3388/3434] Built Ramtastic.Sobolev.SobolevSpaces (10s)
+✔ [3389/3434] Built Ramtastic.Kahler.KahlerForm (4.0s)
+✔ [3390/3434] Built Ramtastic.BSD.HeightPairing (4.8s)
+⚠ [3391/3434] Built Ramtastic.DeRham.Quotient (7.9s)
+warning: Ramtastic/DeRham/Quotient.lean:119:33: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.add_apply,̵ ̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/Quotient.lean:159:33: This simp argument is unused:
+  Pi.neg_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [neg_one_smul, P̵i̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵,̵ ̵neg_sub_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3392/3434] Built Ramtastic.HodgeStar.Codifferential (7.7s)
+⚠ [3393/3434] Built Ramtastic.ComplexStructure.TypeDecomposition (8.9s)
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:89:27: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:169:27: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:175:13: This simp argument is unused:
+  IsType11
+
+Hint: Omit it from the simp argument list.
+  simp only [I̵s̵T̵y̵pe̵1̵1̵,̵ ̵p̵roj11, pullbackJ_apply, ContinuousAlternatingMap.smul_apply,
+      ContinuousAlternatingMap.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:184:13: This simp argument is unused:
+  IsType20_02
+
+Hint: Omit it from the simp argument list.
+  simp only [I̵s̵T̵y̵pe̵2̵0̵_̵0̵2̵,̵ ̵p̵roj20_02, pullbackJ_apply, Pi.neg_apply,
+  ̵  ̵ ̵ ̵ContinuousAlternatingMap.smul_apply,
+  ̲  ̲ ̲ ̲ContinuousAlternatingMap.sub_apply,
+  ̵  ̵ ̵ ̵ContinuousAlternatingMap.neg_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:307:58: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:316:53: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3394/3434] Built Ramtastic.ChowGroups.ChowGroup (6.7s)
+✔ [3395/3434] Built Ramtastic.HodgeStar.StarConstruction (9.1s)
+✔ [3396/3434] Built Ramtastic.DeRham.ManifoldForms (3.2s)
+✔ [3397/3434] Built Ramtastic.BSD.ArithmeticGAGA (3.3s)
+⚠ [3398/3434] Built Ramtastic.DeRham.DeRhamTheorem (3.6s)
+warning: Ramtastic/DeRham/DeRhamTheorem.lean:87:11: instance `Ramtastic.DeRham.DeRhamTheorem.DeRhamIsomorphism.singAddCommGroup` must be marked with `@[reducible]` or `@[implicit_reducible]`
+warning: Ramtastic/DeRham/DeRhamTheorem.lean:87:11: instance `Ramtastic.DeRham.DeRhamTheorem.DeRhamIsomorphism.singModule` must be marked with `@[reducible]` or `@[implicit_reducible]`
+✔ [3399/3434] Built Ramtastic.BSD.BSDFormula (3.7s)
+⚠ [3400/3434] Built Ramtastic.DeRham.Functoriality (4.3s)
+warning: Ramtastic/DeRham/Functoriality.lean:57:39: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  simp [pullback, Pi.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/Functoriality.lean:62:40: This simp argument is unused:
+  map_smul
+
+Hint: Omit it from the simp argument list.
+  simp [pullback, Pi.smul_apply,̵ ̵m̵a̵p̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/Functoriality.lean:113:5: unused variable `hf`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3401/3434] Built Ramtastic.ChowGroups.IntersectionProduct (4.6s)
+✔ [3402/3434] Built Ramtastic.BSD.Kolyvagin (3.3s)
+⚠ [3403/3434] Built Ramtastic.ComplexStructure.DelDelBar (5.7s)
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:138:19: This simp argument is unused:
+  pullbackJ_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [h_form, proj20_02, ContinuousAlternatingMap.smul_apply,
+      ContinuousAlternatingMap.sub_apply, pullbackJ_apply,
+  ̵  ̵ ̵ ̵extDeriv_smul,̵ ̵p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:153:19: This simp argument is unused:
+  pullbackJ_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [h_form, proj20_02, ContinuousAlternatingMap.smul_apply,
+      ContinuousAlternatingMap.sub_apply, pullbackJ_apply,
+  ̵  ̵ ̵ ̵extDeriv_smul,̵ ̵p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:211:70: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:218:70: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:225:56: This simp argument is unused:
+  neg_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [fderiv_neg, ContinuousLinearMap.neg_apply, neg_n̵e̵g̵,̵ ̵n̵e̵g̵_̵smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:225:65: This simp argument is unused:
+  neg_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [fderiv_neg, ContinuousLinearMap.neg_apply, neg_neg,̵ ̵n̵e̵g̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:241:100: This simp argument is unused:
+  Fin.removeNth
+
+Hint: Omit it from the simp argument list.
+  simp [̵F̵i̵n̵.̵r̵e̵m̵o̵v̵e̵N̵t̵h̵,̵ ̵F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵[̲F̲i̲n̲.̲s̲u̲c̲c̲A̲b̲o̲v̲e̲,̲
+  ̲  ̲ ̲ ̲ ̲ ̲Fin.tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:241:115: This simp argument is unused:
+  Fin.succAbove
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.removeNth,
+  ̲  ̲ ̲ ̲ ̲ ̲F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵ ̵Fin.tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:242:130: This simp argument is unused:
+  Fin.tail
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.removeNth,
+  ̲  ̲ ̲ ̲ ̲ ̲F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵ ̵F̵i̵n̵.̵t̵a̵i̵l̵]̵F̲i̲n̲.̲s̲u̲c̲c̲A̲b̲o̲v̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:244:13: This simp argument is unused:
+  neg_one_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵n̵e̵g̵_̵o̵n̵e̵_̵s̵m̵u̵l̵,̵ ̵o̵n̵e̵_̵s̵m̵u̵l̵,̵[̲o̲n̲e̲_̲s̲m̲u̲l̲,̲ neg_smul, Fin.val_zero, Fin.val_one, pow_zero, pow_one, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:251:0: automatically included section variable(s) unused in theorem `Ramtastic.ComplexStructure.DelDelBar.h_sym_from_d2`:
+  acs
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit acs in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:270:60: This simp argument is unused:
+  Fin.tail
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.removeNth, Fin.succAbove,̵ ̵F̵i̵n̵.̵t̵a̵i̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:278:57: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.val_zero, Fin.val_one, pow_zero, pow_one, one_smul, Matrix.cons_val_zero,
+  ̲  ̲ ̲ ̲M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵]̵M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲]̲ at hd2_eval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:300:5: unused variable `hf`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:300:27: unused variable `hr`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3404/3434] Built Ramtastic.BSD.Statement (3.4s)
+✔ [3405/3434] Built Ramtastic.HodgeStar.HodgeLaplacian (6.6s)
+✔ [3406/3434] Built Ramtastic.DeRham.LongExactSequence (4.9s)
+✔ [3407/3434] Built Ramtastic.ChowGroups.ChowRing (3.7s)
+✔ [3408/3434] Built Ramtastic.ComplexStructure.Integrability (3.5s)
+✔ [3409/3434] Built Ramtastic.ChowGroups.ProjectiveSpace (4.4s)
+✔ [3410/3434] Built Ramtastic.HodgeStar.L2InnerProduct (3.6s)
+✔ [3411/3434] Built Ramtastic.Sobolev.EllipticRegularity (4.1s)
+✔ [3412/3434] Built Ramtastic.Kahler.HodgeDecomposition (2.9s)
+✔ [3413/3434] Built Ramtastic.CycleClass.ThomClass (2.9s)
+⚠ [3414/3434] Built Ramtastic.Dolbeault.DolbeaultComplex (3.7s)
+warning: Ramtastic/Dolbeault/DolbeaultComplex.lean:77:41: This simp argument is unused:
+  pullbackJ_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [proj20_02, extDeriv_smul, p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵,̵ ̵pullbackJ_apply, ContinuousAlternatingMap.smul_apply,
+  ̲  ̲ ̲ ̲ ̲ ̲ContinuousAlternatingMap.sub_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3415/3434] Built Ramtastic.Kahler.LefschetzOperator (3.3s)
+warning: Ramtastic/Kahler/LefschetzOperator.lean:80:0: automatically included section variable(s) unused in theorem `Ramtastic.Kahler.LefschetzOperator.lambda_zero`:
+  lm
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit lm in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3416/3434] Built Ramtastic.Sobolev.FredholmTheory (4.8s)
+✔ [3417/3434] Built Ramtastic.CycleClass.FundamentalClass (3.7s)
+✔ [3418/3434] Built Ramtastic.Sobolev.EllipticOperator (6.1s)
+✔ [3419/3434] Built Ramtastic.Dolbeault.DolbeaultCohomology (3.9s)
+✔ [3420/3434] Built Ramtastic.Kahler.KahlerLaplacian (3.9s)
+✔ [3421/3434] Built Ramtastic.Sobolev.HodgeTheorem (3.4s)
+✔ [3422/3434] Built Ramtastic.CycleClass.CycleClassMap (3.2s)
+✔ [3423/3434] Built Ramtastic.Kahler.HardLefschetz (3.0s)
+✖ [3424/3434] Building Ramtastic.Dolbeault.DolbeaultTheorem (3.6s)
+trace: .> LEAN_PATH=/replay-workspace/run/Ramtastic/.lake/packages/Cli/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/batteries/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/Qq/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/aesop/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/proofwidgets/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/importGraph/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/plausible/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/packages/mathlib/.lake/build/lib/lean:/replay-workspace/run/Ramtastic/.lake/build/lib/lean /replay-workspace/elan/toolchains/leanprover--lean4---v4.30.0-rc1/bin/lean /replay-workspace/run/Ramtastic/Ramtastic/Dolbeault/DolbeaultTheorem.lean -o /replay-workspace/run/Ramtastic/.lake/build/lib/lean/Ramtastic/Dolbeault/DolbeaultTheorem.olean -i /replay-workspace/run/Ramtastic/.lake/build/lib/lean/Ramtastic/Dolbeault/DolbeaultTheorem.ilean -c /replay-workspace/run/Ramtastic/.lake/build/ir/Ramtastic/Dolbeault/DolbeaultTheorem.c --setup /replay-workspace/run/Ramtastic/.lake/build/ir/Ramtastic/Dolbeault/DolbeaultTheorem.setup.json --json
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:62:5: Unknown identifier `DelDelBar.del`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:62:36: Unknown identifier `DelDelBar.del`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:63:5: Unknown identifier `DelDelBar.delbar`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:63:39: Unknown identifier `DelDelBar.delbar`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:68:10: Unknown identifier `DelDelBar.del`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:66:2: unsolved goals
+case left
+E : Type u_1
+inst✝³ : NormedAddCommGroup E
+inst✝² : NormedSpace ℝ E
+acs : AlmostComplexStr E
+F : Type u_2
+inst✝¹ : NormedAddCommGroup F
+inst✝ : NormedSpace ℝ F
+f : DiffForm ℝ E F 0
+hclosed : ∀ (x : E), extDeriv f x = 0
+x : E
+m : Fin 1 → E
+hdf : extDeriv f x = 0
+this : ((proj10 (ComplexForm.ofReal fun x => extDeriv f x)).re x) m = (1 / 2) • (extDeriv f x) m
+⊢ sorry () = 0
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:10: Unknown identifier `DelDelBar.del`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:70:2: unsolved goals
+case right.left
+E : Type u_1
+inst✝³ : NormedAddCommGroup E
+inst✝² : NormedSpace ℝ E
+acs : AlmostComplexStr E
+F : Type u_2
+inst✝¹ : NormedAddCommGroup F
+inst✝ : NormedSpace ℝ F
+f : DiffForm ℝ E F 0
+hclosed : ∀ (x : E), extDeriv f x = 0
+x : E
+m : Fin 1 → E
+hdf : extDeriv f x = 0
+this : ((proj10 (ComplexForm.ofReal fun x => extDeriv f x)).im x) m = -(1 / 2) • (pullbackJ (fun x => extDeriv f x) x) m
+⊢ sorry () = 0
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:76:10: Unknown identifier `DelDelBar.delbar`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:74:2: unsolved goals
+case right.right.left
+E : Type u_1
+inst✝³ : NormedAddCommGroup E
+inst✝² : NormedSpace ℝ E
+acs : AlmostComplexStr E
+F : Type u_2
+inst✝¹ : NormedAddCommGroup F
+inst✝ : NormedSpace ℝ F
+f : DiffForm ℝ E F 0
+hclosed : ∀ (x : E), extDeriv f x = 0
+x : E
+m : Fin 1 → E
+hdf : extDeriv f x = 0
+this : ((proj01 (ComplexForm.ofReal fun x => extDeriv f x)).re x) m = (1 / 2) • (extDeriv f x) m
+⊢ sorry () = 0
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:79:10: Unknown identifier `DelDelBar.delbar`
+error: Ramtastic/Dolbeault/DolbeaultTheorem.lean:77:2: unsolved goals
+case right.right.right
+E : Type u_1
+inst✝³ : NormedAddCommGroup E
+inst✝² : NormedSpace ℝ E
+acs : AlmostComplexStr E
+F : Type u_2
+inst✝¹ : NormedAddCommGroup F
+inst✝ : NormedSpace ℝ F
+f : DiffForm ℝ E F 0
+hclosed : ∀ (x : E), extDeriv f x = 0
+x : E
+m : Fin 1 → E
+hdf : extDeriv f x = 0
+this : ((proj01 (ComplexForm.ofReal fun x => extDeriv f x)).im x) m = (1 / 2) • (pullbackJ (fun x => extDeriv f x) x) m
+⊢ sorry () = 0
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:68:25: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, t̵hi̵s̵,̵ ̵h̵df, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:68:31: This simp argument is unused:
+  hdf
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, h̵d̵f̵,̵ ̵smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:68:36: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, hdf,̵ ̵s̵m̵u̵l̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:25: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, t̵hi̵s̵,̵ ̵h̵df, pullbackJ_zero, Pi.zero_apply, smul_zero, neg_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:31: This simp argument is unused:
+  hdf
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, h̵d̵f̵,̵ ̵pullbackJ_zero, Pi.zero_apply, smul_zero, neg_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:36: This simp argument is unused:
+  pullbackJ_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, hdf, p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵z̵e̵r̵o̵,̵ ̵Pi.zero_apply, smul_zero, neg_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:52: This simp argument is unused:
+  Pi.zero_apply
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, hdf, pullbackJ_zero, P̵i̵.̵z̵e̵r̵o̵_̵a̵p̵p̵l̵y̵,̵ ̵smul_zero, neg_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:67: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, hdf, pullbackJ_zero, Pi.zero_apply, s̵m̵u̵l̵_̵z̵e̵r̵o̵,̵ ̵neg_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:72:78: This simp argument is unused:
+  neg_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.del, this, hdf, pullbackJ_zero, Pi.zero_apply, smul_zero,̵ ̵n̵e̵g̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:76:28: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, t̵hi̵s̵,̵ ̵h̵df, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:76:34: This simp argument is unused:
+  hdf
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, this, h̵d̵f̵,̵ ̵smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:76:39: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, this, hdf,̵ ̵s̵m̵u̵l̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:79:28: This simp argument is unused:
+  this
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, t̵hi̵s̵,̵ ̵h̵df, pullbackJ_zero, Pi.zero_apply, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:79:34: This simp argument is unused:
+  hdf
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, this, h̵d̵f̵,̵ ̵pullbackJ_zero, Pi.zero_apply, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:79:39: This simp argument is unused:
+  pullbackJ_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, this, hdf, p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵z̵e̵r̵o̵,̵ ̵Pi.zero_apply, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:79:55: This simp argument is unused:
+  Pi.zero_apply
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, this, hdf, pullbackJ_zero, P̵i̵.̵z̵e̵r̵o̵_̵a̵p̵p̵l̵y̵,̵ ̵smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/Dolbeault/DolbeaultTheorem.lean:79:70: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp [DelDelBar.delbar, this, hdf, pullbackJ_zero, Pi.zero_apply,̵ ̵s̵m̵u̵l̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+✔ [3425/3434] Built Ramtastic.CycleClass.RingHomomorphism (2.9s)
+✔ [3426/3434] Built Ramtastic.GAGA.ProjectiveKahler (2.0s)
+✔ [3427/3434] Built Ramtastic.Sobolev.CompactManifold (3.5s)
+✔ [3428/3434] Built Ramtastic.CycleClass.ImageInHodge (3.5s)
+✔ [3429/3434] Built Ramtastic.GAGA.AnalyticSheaves (2.9s)
+✔ [3430/3434] Built Ramtastic.GAGA.GAGACorrespondence (3.3s)
+✔ [3431/3434] Built Ramtastic.GAGA.ChowToHodge (2.6s)
+✔ [3432/3434] Built Ramtastic.GAGA.RationalHodgeStructure (2.7s)
+Some required targets logged failures:
+- Ramtastic.Dolbeault.DolbeaultTheorem
+error: build failed

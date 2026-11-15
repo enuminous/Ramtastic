@@ -1,0 +1,8 @@
+{
+  "conformance": "All 46 published selected adapters return; 90 frozen reference values match with rel_tol=abs_tol=1e-12. This is a port regression, not target evidence.",
+  "WEASEL": "Retain the four independently reproduced exact witnesses with one changed fixture key, positive witness indicator and budget 1; no counterexample search claimed.",
+  "ELEPHANT": "One current event identifies the frozen source commit and terminates at the recorded snapshot origin. Earlier git history is outside this shallow snapshot.",
+  "CIRCUS": "Gate the claim that all documented semantics are established. Material demonstrated specification/prose failures force FAIL. No independent-source flag is invented.",
+  "MONSTER": "Retrospective audit has no preregistered performance envelope; source procedure must return N/A.",
+  "other_target_operations": "Do not manufacture missing observations. Record required inputs and blocked applicability."
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 6865,
+    "sha256": "0703d1efe41278d902e49678a5ce7ae1f1028f68742215e2a01e68e8972625b6"
+  },
+  {
+    "path": "Materials/description.png",
+    "bytes": 95637,
+    "sha256": "d47c2405c66a9c0f71327f4abb6d16210efc93535716e7f5fe38ecee8aa75687"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1550,
+    "sha256": "c361355a441c4ad707336b87f0eafdd4b7409819fd45be611a0020309caa65b2"
+  },
+  {
+    "path": "Ramtastic.lean",
+    "bytes": 3387,
+    "sha256": "900003dfec5c29802202c124245072da6bdb187e02a7e9ee204869467bf359fe"
+  },
+  {
+    "path": "Ramtastic/BSD/ArithmeticGAGA.lean",
+    "bytes": 3798,
+    "sha256": "7048da3ff0b345e3c127e72acbf5cbc47af6945edafbb1e6ef44630e1ec52787"
+  },
+  {
+    "path": "Ramtastic/BSD/BSDFormula.lean",
+    "bytes": 6284,
+    "sha256": "c6d85278756cbd444c123d0137842b4acecdcb4db22be2414d70eb8e3b472761"
+  },
+  {
+    "path": "Ramtastic/BSD/EllipticCurve.lean",
+    "bytes": 3207,
+    "sha256": "4d4ef7b6f2b5e807999562aafb1d3f09346f0df8f088fcb93f0c7d88f62e2e6f"
+  },
+  {
+    "path": "Ramtastic/BSD/HeightPairing.lean",
+    "bytes": 2913,
+    "sha256": "c8d01da3e8fe5fe9e6e8f4806c3989429e65c434fb14f7612a0e4dbe6e63218b"
+  },
+  {
+    "path": "Ramtastic/BSD/Kolyvagin.lean",
+    "bytes": 2509,
+    "sha256": "71617c9f58bfe73c1b6ad608595ad2f8c7dfba5b731fdf1ce82e3ca1e9b3ddc8"
+  },
+  {
+    "path": "Ramtastic/BSD/LFunction.lean",
+    "bytes": 3879,
+    "sha256": "21348680ebe587c0b5616a410e5e5aea2807a3ff375b742ceabc9a1d27ba46fd"
+  },
+  {
+    "path": "Ramtastic/BSD/MordellWeil.lean",
+    "bytes": 3010,
+    "sha256": "461ff4a622fc3ed9c8bb4ed0e68ad2fda25930117101044f807710e1ccbdc190"
+  },
+  {
+    "path": "Ramtastic/BSD/Statement.lean",
+    "bytes": 2432,
+    "sha256": "da7e8fd9edd5a7903b943b9ed3edd0b092e4c8bf10bddf80ada6be4ab8f53c6e"
+  },
+  {
+    "path": "Ramtastic/BSD/TateShafarevich.lean",
+    "bytes": 3288,
+    "sha256": "6fe1a7a424b89f484ff877d1fb51a3e8692e469906082a8f1e7910c3100fcd15"
+  },
+  {
+    "path": "Ramtastic/Bass/HingeRotation.lean",
+    "bytes": 5056,
+    "sha256": "d2303c9d0eb9c35600dba224427ec7b40e511d811858dbbc9a4452a1e122359d"
+  },
+  {
+    "path": "Ramtastic/Bass/README.md",
+    "bytes": 5307,
+    "sha256": "064d4afe1e21482e6dfd093f836aa21d986f301fb7798a936fc9215e68b80404"
+  },
+  {
+    "path": "Ramtastic/ChowGroups/AlgebraicCycle.lean",
+    "bytes": 4749,
+    "sha256": "fbd27e9ae44edfba86dc6ac669a942ae65256ed462f01ea6fda44e620aa29c1d"
+  },
+  {
+    "path": "Ramtastic/ChowGroups/ChowGroup.lean",
+    "bytes": 7772,
+    "sha256": "464b9947d797cadf4ed64566ee2ee3fc4027a9bc3ded64ac007106b39a45c9ee"
+  },
+  {
+    "path": "Ramtastic/ChowGroups/ChowRing.lean",
+    "bytes": 5538,
+    "sha256": "c3645a6e2a7a0670cd47c0fd6ca3f6a3fc337865a5def707b8fb49b3205b0627"
+  },
+  {
+    "path": "Ramtastic/ChowGroups/IntersectionProduct.lean",
+    "bytes": 6085,
+    "sha256": "ca232bb09da02dcdff149934e693908db30e4589f3223b93ccd4ec2cab082f7a"
+  },
+  {
+    "path": "Ramtastic/ChowGroups/ProjectiveSpace.lean",
+    "bytes": 10734,
+    "sha256": "1a7738ca7455f40ca8d7c4fd7376432dec4937401b61af5d6875e93839331c05"
+  },
+  {
+    "path": "Ramtastic/ChowGroups/RationalEquivalence.lean",
+    "bytes": 5612,
+    "sha256": "35bd859b3ce4128bb32bf8293f0620d2e0b8ccf6f64a321e5febd85a77fe885a"
+  },
+  {
+    "path": "Ramtastic/ComplexStructure/AlmostComplex.lean",
+    "bytes": 13757,
+    "sha256": "dfda68e550f2b5e0079ccd5e8b7eb0239ad3f12b3b7d6258d296160f46efda59"
+  },
+  {
+    "path": "Ramtastic/ComplexStructure/DelDelBar.lean",
+    "bytes": 17378,
+    "sha256": "687bed6f389d3230511574781a9edb56d2e1dc6999711bf8eefc77b07f0cc684"
+  },
+  {
+    "path": "Ramtastic/ComplexStructure/Integrability.lean",
+    "bytes": 3670,
+    "sha256": "204a8f07097dfbf2f9a4d4e3c2ab2470e8f2b7b746daeff910f66513ea2fcbd0"
+  },
+  {
+    "path": "Ramtastic/ComplexStructure/TypeDecomposition.lean",
+    "bytes": 25060,
+    "sha256": "01cdde375e414acbd0c4c9df8dcc8d20597dbfc7e0f30557a2ddb6eee3073251"
+  },
+  {
+    "path": "Ramtastic/CycleClass/CycleClassMap.lean",
+    "bytes": 3775,
+    "sha256": "c69dfe437e127fc15f808f76d9303868cfcb0c9c129fdba21f973a4ee9b43fc1"
+  },
+  {
+    "path": "Ramtastic/CycleClass/FundamentalClass.lean",
+    "bytes": 3630,
+    "sha256": "3a925bf0c7e0808389a95c3f22d07e6056a4a101efcfee8ba51e8b2eaf6daea1"
+  },
+  {
+    "path": "Ramtastic/CycleClass/ImageInHodge.lean",
+    "bytes": 11526,
+    "sha256": "37129ae07d1b6f3cfe89059ae16e1b78bf7eedb14faa69962052e9b5ff81f83f"
+  },
+  {
+    "path": "Ramtastic/CycleClass/RingHomomorphism.lean",
+    "bytes": 3796,
+    "sha256": "6a4e1c2c1a22caa867680017a5e4b6943a3272d270c662009e607d7673eab96a"
+  },
+  {
+    "path": "Ramtastic/CycleClass/ThomClass.lean",
+    "bytes": 3841,
+    "sha256": "7adbfe999e67331600e6698c12e7723f36c8275ea82ee0e2d91bb3b49e3721f2"
+  },
+  {
+    "path": "Ramtastic/DeRham/ClosedExact.lean",
+    "bytes": 3277,
+    "sha256": "4fee6e762cba8857968ca23eab0df1472d272da25f2d9acfd5e85ef3285d02c5"
+  },
+  {
+    "path": "Ramtastic/DeRham/DeRhamTheorem.lean",
+    "bytes": 5627,
+    "sha256": "04508a5eb4530d2b4bd2d845722b2dda8bc4bfef4b9a172df61bd78e78ffbeb9"
+  },
+  {
+    "path": "Ramtastic/DeRham/DifferentialForms.lean",
+    "bytes": 8693,
+    "sha256": "df353a29c035a0b45b6eff6998bd8872e764f1fd7752fc7e6414c6936d92184f"
+  },
+  {
+    "path": "Ramtastic/DeRham/Functoriality.lean",
+    "bytes": 7401,
+    "sha256": "a1a3fda24bd18e94d819dec141a1b6f10899d2c31620254b3c26cfd80bfe6907"
+  },
+  {
+    "path": "Ramtastic/DeRham/LeibnizRule.lean",
+    "bytes": 5008,
+    "sha256": "3ea6e7b51f8c779816c740c0650c96b8c78805dbe0b0e4433de2066ab332ea35"
+  },
+  {
+    "path": "Ramtastic/DeRham/LongExactSequence.lean",
+    "bytes": 4564,
+    "sha256": "ea369fb4ec4db7d10c429d321cbe67902467d7aef97e54a99a8545b1bafde207"
+  },
+  {
+    "path": "Ramtastic/DeRham/ManifoldForms.lean",
+    "bytes": 3616,
+    "sha256": "8f1ee1434b478a7a1357a90b22188518e5ba13032de416b322124fa3e0e8d624"
+  },
+  {
+    "path": "Ramtastic/DeRham/Quotient.lean",
+    "bytes": 12071,
+    "sha256": "9f0028d90708070c082dd3abc5433cc60056a0a7c18891a21aa0704712a464d2"
+  },
+  {
+    "path": "Ramtastic/DeRham/StokesTheorem.lean",
+    "bytes": 6411,
+    "sha256": "c929119d80107edab5de715bcf1d731487478c1abd1b947244443cfc4731c5a1"
+  },
+  {
+    "path": "Ramtastic/DeRham/WedgeProduct.lean",
+    "bytes": 16070,
+    "sha256": "a37731289257e33070592febc45d0b7618a1c8df2bb0797f69a0b562113acd2b"
+  },
+  {
+    "path": "Ramtastic/Dolbeault/DolbeaultCohomology.lean",
+    "bytes": 4064,
+    "sha256": "901fce2356d2b0ea0c3b97ee68132fac82b9ef2bbd6267fd9f4c60325b6c4c7b"
+  },
+  {
+    "path": "Ramtastic/Dolbeault/DolbeaultComplex.lean",
+    "bytes": 6327,
+    "sha256": "061ec7521df45bea69d04ccef9afaefd08f148391ce244ec95898f5c07e9f74a"
+  },
+  {
+    "path": "Ramtastic/Dolbeault/DolbeaultTheorem.lean",
+    "bytes": 3838,
+    "sha256": "a608bee675dee668f69ba122e1ac5d5373e8e259671cc6204a4c548261b93c8a"
+  },
+  {
+    "path": "Ramtastic/GAGA/AnalyticSheaves.lean",
+    "bytes": 1808,
+    "sha256": "d105e6299cbe6aa748703e2014809ea4af9d9e7821ad65e813b179594ae525d0"
+  },
+  {
+    "path": "Ramtastic/GAGA/ChowToHodge.lean",
+    "bytes": 3420,
+    "sha256": "8c74b9b7a89ba5edde914fc4549814642c5b35c3042d9198362ad3cacb8274d2"
+  },
+  {
+    "path": "Ramtastic/GAGA/GAGACorrespondence.lean",
+    "bytes": 2233,
+    "sha256": "43a91f79a310bb4002db3d1f56a261afdbea2a3f201d4be17e390cb231de9916"
+  },
+  {
+    "path": "Ramtastic/GAGA/ProjectiveKahler.lean",
+    "bytes": 2718,
+    "sha256": "ef2ae2ae13ce8c961a51318d480e27db5dcff40e72d934969d4ae2e09f346c9c"
+  },
+  {
+    "path": "Ramtastic/GAGA/RationalHodgeStructure.lean",
+    "bytes": 2992,
+    "sha256": "4e3d58e6fcd6477b6c68f32906969c0c2b4de5d8618b821d5c4b47d51a4d1290"
+  },
+  {
+    "path": "Ramtastic/HardyLittlewood/PrimePairAsymptotic.lean",
+    "bytes": 1955,
+    "sha256": "26f802233da9eb1f623845e42425bf96f23d83cda8fed9ded6f94f56d9090bf4"
+  },
+  {
+    "path": "Ramtastic/HardyLittlewood/Tower.lean",
+    "bytes": 1125,
+    "sha256": "eca51a8fbc36e5c867107fa692ec24dc1e1ef22169d7fe4ed041cd5fb37c44fc"
+  },
+  {
+    "path": "Ramtastic/HodgeStar/Codifferential.lean",
+    "bytes": 14449,
+    "sha256": "04cf8c08e5392908ebec52ef01475f027349d897bd0a8ed2c02e0e80c9320905"
+  },
+  {
+    "path": "Ramtastic/HodgeStar/HodgeLaplacian.lean",
+    "bytes": 19221,
+    "sha256": "df04771ef1bc0e1bd8e031f1648fa5a635d633242a7f271efe2713a09c223418"
+  },
+  {
+    "path": "Ramtastic/HodgeStar/L2InnerProduct.lean",
+    "bytes": 7399,
+    "sha256": "2742603922e17055a7d684b7ee028a17c3706f73333e2004c37ccaf952d9a500"
+  },
+  {
+    "path": "Ramtastic/HodgeStar/StarConstruction.lean",
+    "bytes": 22033,
+    "sha256": "e9ef7622f4fe94e5d5c345926ae42f1b48112d5e75476004885d4572397ba83f"
+  },
+  {
+    "path": "Ramtastic/HodgeStar/StarOperator.lean",
+    "bytes": 6340,
+    "sha256": "68042529c202f80a23e9716f3fc3b2aff71e34ce3cdf75c8ebc4569f85de1317"
+  },
+  {
+    "path": "Ramtastic/Kahler/HardLefschetz.lean",
+    "bytes": 7194,
+    "sha256": "c36808230893aa6db0dae482d3d8114a8ea5d05182402d0728465f7dfa957f21"
+  },
+  {
+    "path": "Ramtastic/Kahler/HodgeDecomposition.lean",
+    "bytes": 6721,
+    "sha256": "2e09ac0bbbc75497aa4460109e12bc2f7170d3e8e72fa950a798087139e9b75b"
+  },
+  {
+    "path": "Ramtastic/Kahler/KahlerForm.lean",
+    "bytes": 5071,
+    "sha256": "b53a38023312b3838047d700ab937e8c73207a38584175b6f0b2852952feefd6"
+  },
+  {
+    "path": "Ramtastic/Kahler/KahlerLaplacian.lean",
+    "bytes": 7300,
+    "sha256": "e23afb7bf8c5fb8fe78076cabef332c982567487417509ef03d60242c76c5dcf"
+  },
+  {
+    "path": "Ramtastic/Kahler/LefschetzOperator.lean",
+    "bytes": 8239,
+    "sha256": "a207f9b74a21cbe611ef5f846a137ce8073e081b13060980c813f32a566ddd6e"
+  },
+  {
+    "path": "Ramtastic/Kahler/SL2Weight.lean",
+    "bytes": 8719,
+    "sha256": "11abc0cd42b2dfe67ae90035b364537356cd01ae18ae891c7f0f57cc35abf89c"
+  },
+  {
+    "path": "Ramtastic/Polignac/Statement.lean",
+    "bytes": 1549,
+    "sha256": "5ec230f57a9353e715e8e129c6da587c744eade691f03aa235c484172ecc488f"
+  },
+  {
+    "path": "Ramtastic/PrincipalBundles/Connection.lean",
+    "bytes": 5928,
+    "sha256": "911951c05773480786c9c96507ad4843cb1393ea0f29b72ea52eb96119ee2373"
+  },
+  {
+    "path": "Ramtastic/PrincipalBundles/PrincipalBundle.lean",
+    "bytes": 7536,
+    "sha256": "9cd71c03db5e785ada47327fdbc47b72ad7527d2ec31fbed2eec03cdb43054aa"
+  },
+  {
+    "path": "Ramtastic/QuantumYM/CompactGroupProduct.lean",
+    "bytes": 27171,
+    "sha256": "2536186434f9769b5b57672b1e384abe1ee6196f708b80bc1206f8309d476a19"
+  },
+  {
+    "path": "Ramtastic/QuantumYM/GlimmJaffeLimit.lean",
+    "bytes": 11210,
+    "sha256": "35eeeff0dd7d7251cbcab388cd352f5cdcb6647e91f4b2f09ae01da366575897"
+  },
+  {
+    "path": "Ramtastic/QuantumYM/StrongResolventConvergence.lean",
+    "bytes": 28115,
+    "sha256": "3f89699906c1d12c31f78f2e1082da7949064adcbe65abb3d879a7cda39669ae"
+  },
+  {
+    "path": "Ramtastic/QuantumYM/WilsonActionConstruction.lean",
+    "bytes": 9718,
+    "sha256": "05f42a1a4cb087155490f37ffe0bec8e1dfa432834da69652f9f476b4ef08d9d"
+  },
+  {
+    "path": "Ramtastic/SchurTest.lean",
+    "bytes": 5299,
+    "sha256": "98a81febcd335238bc09cf222362baf0f28f148208234995d9f6e05cd6f08293"
+  },
+  {
+    "path": "Ramtastic/SeibergWitten/CliffordBundle.lean",
+    "bytes": 9214,
+    "sha256": "1ddf66542574ae27c79f95536cbdd7a9fb22c5a06c0005fef5a8f06c2c57b9f7"
+  },
+  {
+    "path": "Ramtastic/Sobolev/CartanProof.lean",
+    "bytes": 5850,
+    "sha256": "eaba80f7e76ea21e88dc871361f8a6cbd9706daf25aea8764efdcf0b893fcee1"
+  },
+  {
+    "path": "Ramtastic/Sobolev/CompactManifold.lean",
+    "bytes": 10218,
+    "sha256": "12fc8d6fc75cdea766aa1c4b3d8c04151078abbd685f0bd945efc3d447d5f1f7"
+  },
+  {
+    "path": "Ramtastic/Sobolev/EllipticOperator.lean",
+    "bytes": 21581,
+    "sha256": "5842661d908540b1f991ed48b7ebe3249f101261c4532b0a481fe98fb8271621"
+  },
+  {
+    "path": "Ramtastic/Sobolev/EllipticRegularity.lean",
+    "bytes": 7219,
+    "sha256": "d7d3578ffbd690581601fc36492e256f542a3544a1a3a75d02aaa83616fb5f60"
+  },
+  {
+    "path": "Ramtastic/Sobolev/FredholmTheory.lean",
+    "bytes": 22721,
+    "sha256": "e1b8834bed4075a861a32b1a506f66cf53a4d4d3aee7384e4fdf5d3b05ac4a00"
+  },
+  {
+    "path": "Ramtastic/Sobolev/HodgeTheorem.lean",
+    "bytes": 11827,
+    "sha256": "9019f85979cd5c2bdf36bc7d45f9af03f29aa6d9beff34194ad4f39d49fb2fde"
+  },
+  {
+    "path": "Ramtastic/Sobolev/SobolevSpaces.lean",
+    "bytes": 18165,
+    "sha256": "b11f17db4acba142046a9865eebac6da3b271085cc49ce3222b222669b1f850a"
+  },
+  {
+    "path": "Ramtastic/Tao/BoundedPrimeGaps.lean",
+    "bytes": 1671,
+    "sha256": "d4bf3ab12a4093f100dcb09ef8564b5184a50d914691923c327e4e3cd89fd247"
+  },
+  {
+    "path": "Ramtastic/Tao/Tower.lean",
+    "bytes": 681,
+    "sha256": "de50909ce3995360e48c8dfd0cef87848b642a574c1b8dc490ef1eeec45ae744"
+  },
+  {
+    "path": "Ramtastic/TwinPrimes/Statement.lean",
+    "bytes": 549,
+    "sha256": "0b30d5b0fdf9747521600dbe47de38e93630a8f2aee4f440ccb53343529fd928"
+  },
+  {
+    "path": "Ramtastic/TwinPrimes/Tower.lean",
+    "bytes": 670,
+    "sha256": "16d9e5f201602b6fe8fa5802db33da9ce59a3d5b9d2cdffd2345afb1ae4ea798"
+  },
+  {
+    "path": "lake-manifest.json",
+    "bytes": 3146,
+    "sha256": "180cb84ee09682fecf1f02954b87289094b09e66b7452e93ea65ae8cb130b9f3"
+  },
+  {
+    "path": "lakefile.lean",
+    "bytes": 234,
+    "sha256": "6bc7639f763ae05cbeef37be48be4ed7926736d4b700cedbc738b7484df5204d"
+  },
+  {
+    "path": "lean-toolchain",
+    "bytes": 28,
+    "sha256": "139988460d342a8941f9c9f2dbfe34b9a178ef3916e5df559e8b6a526ec89a08"
+  }
+]

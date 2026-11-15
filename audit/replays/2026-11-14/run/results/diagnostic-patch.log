@@ -1,0 +1,2 @@
+DIAGNOSTIC_ONLY: opened Ramtastic.ComplexStructure; unfolded the projections and pullback, then rewrote the closed-form hypothesis. The theorem statement is unchanged.
+Original release build remains FAILED. Subsequent Lean results concern this explicitly modified checkout.

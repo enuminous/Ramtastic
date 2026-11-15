@@ -1,0 +1,9 @@
+'RamtasticAudit.squareMinusIdentity_does_not_force_euclidean_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RamtasticAudit.actual_quarter_turn_changes_euclidean_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RamtasticAudit.hodge_named_field_allows_unequal_dimensions' depends on axioms: [propext, Quot.sound]
+'RamtasticAudit.clamped_hodge_sum_adds_out_of_range_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RamtasticAudit.two_skew_factors_need_not_have_selfadjoint_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

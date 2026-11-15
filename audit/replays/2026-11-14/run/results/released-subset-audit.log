@@ -1,0 +1,4 @@
+AXIOM_AUDIT_PASS safe=2221 theorems=926 unsafe=0
+'Ramtastic.Bass.HingeRotation.rotate_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramtastic.GAGA.ChowToHodge.hodge_from_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramtastic.TwinPrimes.Tower.twinPrimes' depends on axioms: [propext]

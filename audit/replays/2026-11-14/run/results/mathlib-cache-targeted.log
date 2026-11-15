@@ -1,0 +1,16 @@
+Current branch: HEAD
+Using cache (Azure) from origin: (some leanprover-community/mathlib4)
+Attempting to download 1 file(s) from leanprover-community/mathlib4 cache
+
+Downloaded: 0 file(s) [attempted 1/1 = 100%], Decompressed: 0[K
+Downloaded: 0 file(s) [attempted 1/1 = 100%], Decompressed: 0[K
+Warning: some files were not found in the cache.
+This usually means that your local checkout of mathlib4 has diverged from upstream.
+
+  * If you push your commits to a PR to the mathlib4 repository
+    (use a draft PR if it is not ready for review),
+    then CI will build the oleans and they will be available later.
+  * If you have already opened a PR, this may mean
+    the CI build has failed part-way through building.
+Decompressed 0 file(s)
+No cache files to decompress

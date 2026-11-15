@@ -1,0 +1,251 @@
+⚠ [3323/3434] Replayed Ramtastic.ComplexStructure.TypeDecomposition
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:89:27: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:169:27: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:175:13: This simp argument is unused:
+  IsType11
+
+Hint: Omit it from the simp argument list.
+  simp only [I̵s̵T̵y̵pe̵1̵1̵,̵ ̵p̵roj11, pullbackJ_apply, ContinuousAlternatingMap.smul_apply,
+      ContinuousAlternatingMap.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:184:13: This simp argument is unused:
+  IsType20_02
+
+Hint: Omit it from the simp argument list.
+  simp only [I̵s̵T̵y̵pe̵2̵0̵_̵0̵2̵,̵ ̵p̵roj20_02, pullbackJ_apply, Pi.neg_apply,
+  ̵  ̵ ̵ ̵ContinuousAlternatingMap.smul_apply,
+  ̲  ̲ ̲ ̲ContinuousAlternatingMap.sub_apply,
+  ̵  ̵ ̵ ̵ContinuousAlternatingMap.neg_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:307:58: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/TypeDecomposition.lean:316:53: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3324/3434] Replayed Ramtastic.ComplexStructure.DelDelBar
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:138:19: This simp argument is unused:
+  pullbackJ_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [h_form, proj20_02, ContinuousAlternatingMap.smul_apply,
+      ContinuousAlternatingMap.sub_apply, pullbackJ_apply,
+  ̵  ̵ ̵ ̵extDeriv_smul,̵ ̵p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:153:19: This simp argument is unused:
+  pullbackJ_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [h_form, proj20_02, ContinuousAlternatingMap.smul_apply,
+      ContinuousAlternatingMap.sub_apply, pullbackJ_apply,
+  ̵  ̵ ̵ ̵extDeriv_smul,̵ ̵p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:211:70: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:218:70: This simp argument is unused:
+  Finset.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.prod_const,̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:225:56: This simp argument is unused:
+  neg_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [fderiv_neg, ContinuousLinearMap.neg_apply, neg_n̵e̵g̵,̵ ̵n̵e̵g̵_̵smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:225:65: This simp argument is unused:
+  neg_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [fderiv_neg, ContinuousLinearMap.neg_apply, neg_neg,̵ ̵n̵e̵g̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:241:100: This simp argument is unused:
+  Fin.removeNth
+
+Hint: Omit it from the simp argument list.
+  simp [̵F̵i̵n̵.̵r̵e̵m̵o̵v̵e̵N̵t̵h̵,̵ ̵F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵[̲F̲i̲n̲.̲s̲u̲c̲c̲A̲b̲o̲v̲e̲,̲
+  ̲  ̲ ̲ ̲ ̲ ̲Fin.tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:241:115: This simp argument is unused:
+  Fin.succAbove
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.removeNth,
+  ̲  ̲ ̲ ̲ ̲ ̲F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵ ̵Fin.tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:242:130: This simp argument is unused:
+  Fin.tail
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.removeNth,
+  ̲  ̲ ̲ ̲ ̲ ̲F̵i̵n̵.̵s̵u̵c̵c̵A̵b̵o̵v̵e̵,̵ ̵F̵i̵n̵.̵t̵a̵i̵l̵]̵F̲i̲n̲.̲s̲u̲c̲c̲A̲b̲o̲v̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:244:13: This simp argument is unused:
+  neg_one_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵n̵e̵g̵_̵o̵n̵e̵_̵s̵m̵u̵l̵,̵ ̵o̵n̵e̵_̵s̵m̵u̵l̵,̵[̲o̲n̲e̲_̲s̲m̲u̲l̲,̲ neg_smul, Fin.val_zero, Fin.val_one, pow_zero, pow_one, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:251:0: automatically included section variable(s) unused in theorem `Ramtastic.ComplexStructure.DelDelBar.h_sym_from_d2`:
+  acs
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit acs in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:270:60: This simp argument is unused:
+  Fin.tail
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.removeNth, Fin.succAbove,̵ ̵F̵i̵n̵.̵t̵a̵i̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:278:57: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.val_zero, Fin.val_one, pow_zero, pow_one, one_smul, Matrix.cons_val_zero,
+  ̲  ̲ ̲ ̲M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵]̵M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲]̲ at hd2_eval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:300:5: unused variable `hf`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Ramtastic/ComplexStructure/DelDelBar.lean:300:27: unused variable `hr`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3333/3434] Replayed Ramtastic.DeRham.Quotient
+warning: Ramtastic/DeRham/Quotient.lean:119:33: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.add_apply,̵ ̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/Quotient.lean:159:33: This simp argument is unused:
+  Pi.neg_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [neg_one_smul, P̵i̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵,̵ ̵neg_sub_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3334/3434] Replayed Ramtastic.DeRham.DeRhamTheorem
+warning: Ramtastic/DeRham/DeRhamTheorem.lean:87:11: instance `Ramtastic.DeRham.DeRhamTheorem.DeRhamIsomorphism.singAddCommGroup` must be marked with `@[reducible]` or `@[implicit_reducible]`
+warning: Ramtastic/DeRham/DeRhamTheorem.lean:87:11: instance `Ramtastic.DeRham.DeRhamTheorem.DeRhamIsomorphism.singModule` must be marked with `@[reducible]` or `@[implicit_reducible]`
+⚠ [3335/3434] Replayed Ramtastic.DeRham.Functoriality
+warning: Ramtastic/DeRham/Functoriality.lean:57:39: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  simp [pullback, Pi.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/Functoriality.lean:62:40: This simp argument is unused:
+  map_smul
+
+Hint: Omit it from the simp argument list.
+  simp [pullback, Pi.smul_apply,̵ ̵m̵a̵p̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/Functoriality.lean:113:5: unused variable `hf`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3347/3434] Replayed Ramtastic.DeRham.StokesTheorem
+warning: Ramtastic/DeRham/StokesTheorem.lean:83:2: Try this: intro x ⟨hpos, hsum⟩ i _
+⚠ [3350/3434] Replayed Ramtastic.DeRham.WedgeProduct
+warning: Ramtastic/DeRham/WedgeProduct.lean:59:30: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+      AlternatingMap.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/WedgeProduct.lean:84:30: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+      AlternatingMap.add_apply,̵ ̵m̵a̵p̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/WedgeProduct.lean:104:31: This simp argument is unused:
+  map_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.compAlternatingMap_apply, AlternatingMap.domDomCongr_apply,
+      AlternatingMap.smul_apply,̵ ̵m̵a̵p̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Ramtastic/DeRham/WedgeProduct.lean:111:39: This simp argument is unused:
+  MultilinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [MultilinearMap.sum_apply, M̵u̵l̵t̵i̵l̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Finset.smul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3351/3434] Replayed Ramtastic.Dolbeault.DolbeaultComplex
+warning: Ramtastic/Dolbeault/DolbeaultComplex.lean:77:41: This simp argument is unused:
+  pullbackJ_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [proj20_02, extDeriv_smul, p̵u̵l̵l̵b̵a̵c̵k̵J̵_̵s̵m̵u̵l̵,̵ ̵pullbackJ_apply, ContinuousAlternatingMap.smul_apply,
+  ̲  ̲ ̲ ̲ ̲ ̲ContinuousAlternatingMap.sub_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3366/3434] Replayed Ramtastic.Kahler.LefschetzOperator
+warning: Ramtastic/Kahler/LefschetzOperator.lean:80:0: automatically included section variable(s) unused in theorem `Ramtastic.Kahler.LefschetzOperator.lambda_zero`:
+  lm
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit lm in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3369/3434] Replayed Ramtastic.Kahler.SL2Weight
+warning: Ramtastic/Kahler/SL2Weight.lean:42:17: This simp argument is unused:
+  Nat.zero_eq
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵o̵n̵l̵y̵ ̵[̵N̵a̵t̵.̵z̵e̵r̵o̵_̵e̵q̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵o̵n̵e̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵i̵t̵e̵r̵a̵t̵e̵_̵o̵n̵e̵,̵ ̵F̵u̵n̵c̵t̵i̵o̵n̵.̵i̵t̵e̵r̵a̵t̵e̵_̵z̵e̵r̵o̵,̵ ̵i̵d̵_̵e̵q̵]̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲N̲a̲t̲.̲c̲a̲s̲t̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲,̲ ̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲i̲t̲e̲r̲a̲t̲e̲_̲o̲n̲e̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲i̲t̲e̲r̲a̲t̲e̲_̲z̲e̲r̲o̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲i̲d̲_̲e̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3432/3434] Built Ramtastic.Dolbeault.DolbeaultTheorem (3.0s)
+✔ [3433/3434] Built Ramtastic (2.2s)
+Build completed successfully (3434 jobs).

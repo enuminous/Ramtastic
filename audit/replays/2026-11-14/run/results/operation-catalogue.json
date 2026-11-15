@@ -1,0 +1,2192 @@
+[
+  {
+    "id": 1,
+    "name": "TORTOISE",
+    "module": "Tortoise",
+    "namespace": "Zoo.Tortoise",
+    "repository": "https://github.com/enuminous/Tortoise",
+    "commit": "6658128fd2df96ff6c32fce219bfc9ee3e8876da",
+    "scope": "ordered split; temporal separation contract; Brier gain",
+    "theorems": [
+      "split_reconstructs",
+      "train_precedes_test"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Tortoise",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "TORTOISE",
+      "implemented_scope": "Brier gain from supplied candidate and control scores; no fitting or prospective guarantee",
+      "parameters": {
+        "candidate_brier": {
+          "type": "float",
+          "required": true
+        },
+        "control_brier": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "780c4f31824c3c9d6741daab822852f9a28cb6d3551ead2019259048f0f69e27",
+    "engine_snapshot_lean_sha256": "780c4f31824c3c9d6741daab822852f9a28cb6d3551ead2019259048f0f69e27",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 2,
+    "name": "OWL",
+    "module": "Owl",
+    "namespace": "Zoo.Owl",
+    "repository": "https://github.com/enuminous/Owl",
+    "commit": "afe43985e76e74e65ff76e64b4c753eab11f1abc",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Owl",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "OWL",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "3c6d9b4849a9ffc3287d857bf0792775cfb4c64149bb7bf9be39bccd9d29cfef",
+    "engine_snapshot_lean_sha256": "3c6d9b4849a9ffc3287d857bf0792775cfb4c64149bb7bf9be39bccd9d29cfef",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 3,
+    "name": "OCTOPUS",
+    "module": "Octopus",
+    "namespace": "Zoo.Octopus",
+    "repository": "https://github.com/enuminous/Octopus",
+    "commit": "e590a6d9d757357da72f043facc62e22d40df45e",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Octopus",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "OCTOPUS",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "5915da9f2080b01720c99d611395596f20ed99cfe44da1a872177e44daece8c7",
+    "engine_snapshot_lean_sha256": "5915da9f2080b01720c99d611395596f20ed99cfe44da1a872177e44daece8c7",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 4,
+    "name": "GECKO",
+    "module": "Gecko",
+    "namespace": "Zoo.Gecko",
+    "repository": "https://github.com/enuminous/Gecko",
+    "commit": "0345f2ed1d98c15306312c828cfe68e6fa8c5c2e",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Gecko",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "GECKO",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "812e777318ca8a4325a518bb6868415caa2c406e8a224280a792060ff4ae0385",
+    "engine_snapshot_lean_sha256": "812e777318ca8a4325a518bb6868415caa2c406e8a224280a792060ff4ae0385",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 5,
+    "name": "HIVE",
+    "module": "Hive",
+    "namespace": "Zoo.Hive",
+    "repository": "https://github.com/enuminous/Hive",
+    "commit": "e66e03d67c19f1f1e663a2a7feaea9f21c48384e",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Hive",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "HIVE",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "06ed0072d324a5abb1cf665bbc2277335a77891648c2bdf2579aa2b1dbd44f40",
+    "engine_snapshot_lean_sha256": "06ed0072d324a5abb1cf665bbc2277335a77891648c2bdf2579aa2b1dbd44f40",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 6,
+    "name": "EAGLE",
+    "module": "Eagle",
+    "namespace": "Zoo.Eagle",
+    "repository": "https://github.com/enuminous/Eagle",
+    "commit": "d4f6fb0293129de8850fa15667b75aaaa7cc5339",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Eagle",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "EAGLE",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "f2d291f2ac3b7124a60402f05d8878fbf033596a36d228c9108db2da535cd1f7",
+    "engine_snapshot_lean_sha256": "f2d291f2ac3b7124a60402f05d8878fbf033596a36d228c9108db2da535cd1f7",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 7,
+    "name": "CRAB",
+    "module": "Crab",
+    "namespace": "Zoo.Crab",
+    "repository": "https://github.com/enuminous/Crab",
+    "commit": "f49f430353c954f54567e754b9bea60b26c40732",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Crab",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "CRAB",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "29f7e663a79d94a9416a89ccf1950c545faf23454e9a0a2bbed9a38bd66b6a04",
+    "engine_snapshot_lean_sha256": "29f7e663a79d94a9416a89ccf1950c545faf23454e9a0a2bbed9a38bd66b6a04",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 8,
+    "name": "SHEPHERD",
+    "module": "Shepherd",
+    "namespace": "Zoo.Shepherd",
+    "repository": "https://github.com/enuminous/Shepherd",
+    "commit": "c875bad6c5185cc3d5813fb097e5ccc2c27b5234",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Shepherd",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "SHEPHERD",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "41ec128a64dac25850d877775a09819b3735aa87d3b76be9a0ac7ca4ea07f5ce",
+    "engine_snapshot_lean_sha256": "41ec128a64dac25850d877775a09819b3735aa87d3b76be9a0ac7ca4ea07f5ce",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 9,
+    "name": "PULSE",
+    "module": "Pulse",
+    "namespace": "Zoo.Pulse",
+    "repository": "https://github.com/enuminous/Pulse",
+    "commit": "78b7bd4a4fa1597373e184fbe895a513574c8939",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Pulse",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "PULSE",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "da904f2ac09483e36416f9d6e189bba9d2631b35d541b4ddadd3221b90a1a423",
+    "engine_snapshot_lean_sha256": "da904f2ac09483e36416f9d6e189bba9d2631b35d541b4ddadd3221b90a1a423",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 10,
+    "name": "CAT",
+    "module": "Cat",
+    "namespace": "Zoo.Cat",
+    "repository": "https://github.com/enuminous/Cat",
+    "commit": "9bf56f891b3ac22e38089ade0351852df1670d11",
+    "scope": "ablation penalty and sign classifier; exact-integer sign reference",
+    "theorems": [
+      "positive_removal_hurt",
+      "removal_hurts_iff"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Cat",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "CAT",
+      "implemented_scope": "Ablation penalty and its sign from supplied losses",
+      "parameters": {
+        "full": {
+          "type": "float",
+          "required": true
+        },
+        "ablated": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "2b69e2ee7e0f6de945d79843b5a0ac8a2813d769b1e92f477388db32ba46f5a0",
+    "engine_snapshot_lean_sha256": "2b69e2ee7e0f6de945d79843b5a0ac8a2813d769b1e92f477388db32ba46f5a0",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 11,
+    "name": "FOX",
+    "module": "Fox",
+    "namespace": "Zoo.Fox",
+    "repository": "https://github.com/enuminous/Fox",
+    "commit": "b4c317d45b7f2b69e92a657ba8d9ccdb4977a457",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Fox",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "FOX",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "c04b6db7a52d12efa496be62c01804b0c199ee78f0bb94c462725d1566cfbd59",
+    "engine_snapshot_lean_sha256": "c04b6db7a52d12efa496be62c01804b0c199ee78f0bb94c462725d1566cfbd59",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 12,
+    "name": "SPIDER",
+    "module": "Spider",
+    "namespace": "Zoo.Spider",
+    "repository": "https://github.com/enuminous/Spider",
+    "commit": "fd8f546d528f0c740248baddd6f0ea05e60abc25",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Spider",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "SPIDER",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "6156e3f062cb1fd356b945d4e0b8bc0ccbcfdefd172e4e4292ae4577f3f6cc5b",
+    "engine_snapshot_lean_sha256": "6156e3f062cb1fd356b945d4e0b8bc0ccbcfdefd172e4e4292ae4577f3f6cc5b",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 13,
+    "name": "RAVEN",
+    "module": "Raven",
+    "namespace": "Zoo.Raven",
+    "repository": "https://github.com/enuminous/Raven",
+    "commit": "d18b4a8e05812ea3d577aa63643071c09fad3ea9",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Raven",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "RAVEN",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "81d4fd7a98691802d64a066d6caa54758f1e390b72db827c34cc0a265e0610ff",
+    "engine_snapshot_lean_sha256": "81d4fd7a98691802d64a066d6caa54758f1e390b72db827c34cc0a265e0610ff",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 14,
+    "name": "DOLPHIN",
+    "module": "Dolphin",
+    "namespace": "Zoo.Dolphin",
+    "repository": "https://github.com/enuminous/Dolphin",
+    "commit": "718b09ca4966d76e186cda7971d09be2caa39321",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Dolphin",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "DOLPHIN",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "864c901073f19dd91a03a1e9fedc673331fc263dbb1b2f3a2567cb3bc1463e34",
+    "engine_snapshot_lean_sha256": "864c901073f19dd91a03a1e9fedc673331fc263dbb1b2f3a2567cb3bc1463e34",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 15,
+    "name": "ANT",
+    "module": "Ant",
+    "namespace": "Zoo.Ant",
+    "repository": "https://github.com/enuminous/Ant",
+    "commit": "e7432f132a47804626322ba7343d187bd2425a75",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Ant",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "ANT",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "68761584b7da9b10d191f370f5289698aad431296eedad895cd6d241fa2c7c8a",
+    "engine_snapshot_lean_sha256": "68761584b7da9b10d191f370f5289698aad431296eedad895cd6d241fa2c7c8a",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 16,
+    "name": "MOTH",
+    "module": "Moth",
+    "namespace": "Zoo.Moth",
+    "repository": "https://github.com/enuminous/Moth",
+    "commit": "08e5ce7cf219f6009b446829110c3399b658a5bd",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Moth",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "MOTH",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "ffc27866a934cf4976b4c22c03903ae22c56ad07776f49b78d46fea844147874",
+    "engine_snapshot_lean_sha256": "ffc27866a934cf4976b4c22c03903ae22c56ad07776f49b78d46fea844147874",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 17,
+    "name": "SHARK",
+    "module": "Shark",
+    "namespace": "Zoo.Shark",
+    "repository": "https://github.com/enuminous/Shark",
+    "commit": "13ef3943eb389a157f214fc4db054e926b22aa5a",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Shark",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "SHARK",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "5bf8c52157ec3911f325e8f66250bd9c656e3ac6c671264ae1cd1577acb3080d",
+    "engine_snapshot_lean_sha256": "5bf8c52157ec3911f325e8f66250bd9c656e3ac6c671264ae1cd1577acb3080d",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 18,
+    "name": "PENGUIN",
+    "module": "Penguin",
+    "namespace": "Zoo.Penguin",
+    "repository": "https://github.com/enuminous/Penguin",
+    "commit": "1a99e0c1eb1c6902d2909721aae9ac8e76bfb75e",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Penguin",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "PENGUIN",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "54a032bc0e846bec038b1459a0224fd3dfa4e52b33e78db2cd34d9201c34419b",
+    "engine_snapshot_lean_sha256": "54a032bc0e846bec038b1459a0224fd3dfa4e52b33e78db2cd34d9201c34419b",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 19,
+    "name": "BAT",
+    "module": "Bat",
+    "namespace": "Zoo.Bat",
+    "repository": "https://github.com/enuminous/Bat",
+    "commit": "67c2c0e3cd6fb035a0e47862ec3f7e64729fa92d",
+    "scope": "verdict kernel with source placebo precedence; fitting excluded",
+    "theorems": [
+      "placebo_has_priority"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Bat",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "BAT",
+      "implemented_scope": "Placebo-first baseline decision from supplied summary scores",
+      "parameters": {
+        "gain": {
+          "type": "float",
+          "required": true
+        },
+        "placebo_gain": {
+          "type": "float",
+          "required": true
+        },
+        "incremental_brier": {
+          "type": "float",
+          "required": true
+        },
+        "placebo_brier": {
+          "type": "float",
+          "required": true
+        },
+        "material_gain": {
+          "type": "float",
+          "required": false,
+          "default": 0.002
+        }
+      }
+    },
+    "current_lean_sha256": "becb9ff63a0a82f256d0894f06c307d1014dc89822acffb6802c3773f2b43f0a",
+    "engine_snapshot_lean_sha256": "becb9ff63a0a82f256d0894f06c307d1014dc89822acffb6802c3773f2b43f0a",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 20,
+    "name": "HEDGEHOG",
+    "module": "Hedgehog",
+    "namespace": "Zoo.Hedgehog",
+    "repository": "https://github.com/enuminous/Hedgehog",
+    "commit": "2e9b46039a6422961f9f08fb6457e2634a4c1de4",
+    "scope": "generalization verdict and environment separation obligation; training excluded",
+    "theorems": [
+      "heldout_not_development"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Hedgehog",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "HEDGEHOG",
+      "implemented_scope": "Summary decision; additionally checks supplied development and heldout IDs are disjoint",
+      "parameters": {
+        "median_gain": {
+          "type": "float",
+          "required": true
+        },
+        "win_rate": {
+          "type": "float",
+          "required": true
+        },
+        "habitat_support": {
+          "type": "bool",
+          "required": true
+        },
+        "development": {
+          "type": "list",
+          "required": true
+        },
+        "heldout": {
+          "type": "list",
+          "required": true
+        },
+        "material_gain": {
+          "type": "float",
+          "required": false,
+          "default": 0.002
+        }
+      }
+    },
+    "current_lean_sha256": "57643434effb7e73d00131c205b65bb6cb6df97ce73606ebb7f5e64212370b8e",
+    "engine_snapshot_lean_sha256": "57643434effb7e73d00131c205b65bb6cb6df97ce73606ebb7f5e64212370b8e",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 21,
+    "name": "CROCODILE",
+    "module": "Crocodile",
+    "namespace": "Zoo.Crocodile",
+    "repository": "https://github.com/enuminous/Crocodile",
+    "commit": "2407241cc2d77f58bc044f9be6bff8ceb5c0b55a",
+    "scope": "difference-in-differences kernel and conditional identification contract",
+    "theorems": [
+      "common_shift_cancels",
+      "causal_requires_design"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Crocodile",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "CROCODILE",
+      "implemented_scope": "Difference-in-differences arithmetic; causal assumptions remain external",
+      "parameters": {
+        "treated_pre": {
+          "type": "float",
+          "required": true
+        },
+        "treated_post": {
+          "type": "float",
+          "required": true
+        },
+        "control_pre": {
+          "type": "float",
+          "required": true
+        },
+        "control_post": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "6040ac91244caed780fb43bde0c07c77668d71487fcf57c1bcf3e7eb047faf06",
+    "engine_snapshot_lean_sha256": "6040ac91244caed780fb43bde0c07c77668d71487fcf57c1bcf3e7eb047faf06",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 22,
+    "name": "DRAGON",
+    "module": "Dragon",
+    "namespace": "Zoo.Dragon",
+    "repository": "https://github.com/enuminous/Dragon",
+    "commit": "9ac2ffe7a271e5375b3bb5a2e6936c822fcc711f",
+    "scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+    "theorems": [
+      "output_length",
+      "valid_column_count",
+      "report_requires_freeze"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Dragon",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "DRAGON",
+      "implemented_scope": "Retrospective percentile-rank mean of precomputed columns; no feature extraction or model training",
+      "parameters": {
+        "columns": {
+          "type": "list",
+          "required": true
+        },
+        "rows": {
+          "type": "int",
+          "required": true
+        },
+        "horizons": {
+          "type": "int",
+          "required": false,
+          "default": 1
+        },
+        "mode": {
+          "type": "str",
+          "required": false,
+          "default": "retrospective"
+        }
+      }
+    },
+    "current_lean_sha256": "0c14b4d5a78832c7d0ee43f7cc8e852806fc7046c475400c998e42f2c24a85f8",
+    "engine_snapshot_lean_sha256": "0c14b4d5a78832c7d0ee43f7cc8e852806fc7046c475400c998e42f2c24a85f8",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 23,
+    "name": "TURTLE",
+    "module": "Turtle",
+    "namespace": "Zoo.Turtle",
+    "repository": "https://github.com/enuminous/Turtle",
+    "commit": "ff98950fcb40f8a8c151a5c9466d11a240146beb",
+    "scope": "summary verdict and veto precedence; group normalization supplied",
+    "theorems": [
+      "applicable_veto_blocks_support",
+      "empty_is_insufficient"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Turtle",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "TURTLE",
+      "implemented_scope": "Evidence decision with group counts derived from distinct supplied group IDs; independence remains external",
+      "parameters": {
+        "evidence_groups": {
+          "type": "list",
+          "required": true
+        },
+        "invariant_score": {
+          "type": "float",
+          "required": true
+        },
+        "minimum_groups": {
+          "type": "int",
+          "required": false,
+          "default": 3
+        },
+        "support_threshold": {
+          "type": "float",
+          "required": false,
+          "default": 0.18
+        },
+        "conditional_threshold": {
+          "type": "float",
+          "required": false,
+          "default": 0.05
+        }
+      }
+    },
+    "current_lean_sha256": "71335a70fd8d2adcf0ee25bd9132e2cfddf567715a1a5138da3d645150f7316c",
+    "engine_snapshot_lean_sha256": "71335a70fd8d2adcf0ee25bd9132e2cfddf567715a1a5138da3d645150f7316c",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 24,
+    "name": "MAGPIE",
+    "module": "Magpie",
+    "namespace": "Zoo.Magpie",
+    "repository": "https://github.com/enuminous/Magpie",
+    "commit": "342438c179832be2fe8b6dbdf1b4b5b0097df2ce",
+    "scope": "groundedness and history-dependent alarm; entropy/storage excluded",
+    "theorems": [
+      "no_history_no_alarm"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Magpie",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "MAGPIE",
+      "implemented_scope": "Groundedness and falling-groundedness alarm from supplied scores",
+      "parameters": {
+        "coherence": {
+          "type": "float",
+          "required": true
+        },
+        "direct_support": {
+          "type": "float",
+          "required": true
+        },
+        "provenance": {
+          "type": "float",
+          "required": true
+        },
+        "corroboration": {
+          "type": "float",
+          "required": true
+        },
+        "unsupported_inference": {
+          "type": "float",
+          "required": true
+        },
+        "unresolved_provenance": {
+          "type": "float",
+          "required": true
+        },
+        "contradiction": {
+          "type": "float",
+          "required": true
+        },
+        "previous_groundedness": {
+          "type": "number or null",
+          "required": false,
+          "default": null
+        },
+        "threshold": {
+          "type": "float",
+          "required": false,
+          "default": 0.25
+        }
+      }
+    },
+    "current_lean_sha256": "5310c771bf101ad6ef0081efccebd328073e34184266c91707d1c91dfc03dff6",
+    "engine_snapshot_lean_sha256": "5310c771bf101ad6ef0081efccebd328073e34184266c91707d1c91dfc03dff6",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 25,
+    "name": "WOLF",
+    "module": "Wolf",
+    "namespace": "Zoo.Wolf",
+    "repository": "https://github.com/enuminous/Wolf",
+    "commit": "7e4fd6d2b7c8829138a5f2d58f1b4cf39ed208c4",
+    "scope": "local channel contribution, weight, EMA and alarm contract; graph aggregation supplied",
+    "theorems": [
+      "alarm_requires_distributed_support"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Wolf",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "WOLF",
+      "implemented_scope": "EMA update only; channel extraction, graph aggregation and alarm gates are not ported",
+      "parameters": {
+        "rho": {
+          "type": "float",
+          "required": true
+        },
+        "previous": {
+          "type": "float",
+          "required": true
+        },
+        "instantaneous": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "e3a9f9a4fca559dc5624646d520920b324eb6023f8870f5cb3d4dd0f7f9b3914",
+    "engine_snapshot_lean_sha256": "e3a9f9a4fca559dc5624646d520920b324eb6023f8870f5cb3d4dd0f7f9b3914",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 26,
+    "name": "ELEPHANT",
+    "module": "Elephant",
+    "namespace": "Zoo.Elephant",
+    "repository": "https://github.com/enuminous/Elephant",
+    "commit": "a30bd9ae77d7df31f35b533e5310eb7e06aa3d40",
+    "scope": "active-event filter and fuel-bounded lineage abstraction; full memory API excluded",
+    "theorems": [
+      "current_members_active",
+      "zero_fuel_stops"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Elephant",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "ELEPHANT",
+      "implemented_scope": "Current-event filter and bounded lineage; explicit missing/exhausted termination",
+      "parameters": {
+        "events": {
+          "type": "list",
+          "required": true
+        },
+        "start": {
+          "type": "int",
+          "required": true
+        },
+        "fuel": {
+          "type": "int",
+          "required": false,
+          "default": 100
+        }
+      }
+    },
+    "current_lean_sha256": "23f153748ace79f4cc12b30e0e4f8b6db96125fa19616c5f8f5b848373716f5e",
+    "engine_snapshot_lean_sha256": "23f153748ace79f4cc12b30e0e4f8b6db96125fa19616c5f8f5b848373716f5e",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 27,
+    "name": "CHAMELEON",
+    "module": "Chameleon",
+    "namespace": "Zoo.Chameleon",
+    "repository": "https://github.com/enuminous/Chameleon",
+    "commit": "75095bd9834953d52a88fd8c64f75393e15d880f",
+    "scope": "unexplained/noise-adjusted excess; supplied centroid distances",
+    "theorems": [
+      "excess_nonnegative",
+      "expected_explains"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Chameleon",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "CHAMELEON",
+      "implemented_scope": "Unexplained and noise-adjusted distances from supplied distances",
+      "parameters": {
+        "distance": {
+          "type": "float",
+          "required": true
+        },
+        "expected_adaptation": {
+          "type": "float",
+          "required": true
+        },
+        "between": {
+          "type": "float",
+          "required": true
+        },
+        "within": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "27f4fa873ec03af1ef7b24ddaaa9a4a94251d6c06479d6e2f6606daaa824c496",
+    "engine_snapshot_lean_sha256": "27f4fa873ec03af1ef7b24ddaaa9a4a94251d6c06479d6e2f6606daaa824c496",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 28,
+    "name": "JELLYFISH",
+    "module": "Jellyfish",
+    "namespace": "Zoo.Jellyfish",
+    "repository": "https://github.com/enuminous/Jellyfish",
+    "commit": "7119a66a75092354deee27dcb89f1d20add4e4e6",
+    "scope": "dynamic edge weight, flow, next health and harm; graph aggregation supplied",
+    "theorems": [
+      "node_count_preserved"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Jellyfish",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "JELLYFISH",
+      "implemented_scope": "Dynamic edge weight and single-node health update; graph iteration is external",
+      "parameters": {
+        "base_weight": {
+          "type": "float",
+          "required": true
+        },
+        "stress_gain": {
+          "type": "float",
+          "required": true
+        },
+        "confidence": {
+          "type": "float",
+          "required": true
+        },
+        "stress": {
+          "type": "float",
+          "required": true
+        },
+        "health": {
+          "type": "float",
+          "required": true
+        },
+        "alpha": {
+          "type": "float",
+          "required": true
+        },
+        "incoming": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "a4c83a6d04bccb824e01f8b157a167a0e34306bdf2a330e2a4bbdf64a8c9c69e",
+    "engine_snapshot_lean_sha256": "a4c83a6d04bccb824e01f8b157a167a0e34306bdf2a330e2a4bbdf64a8c9c69e",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 29,
+    "name": "BEAVER",
+    "module": "Beaver",
+    "namespace": "Zoo.Beaver",
+    "repository": "https://github.com/enuminous/Beaver",
+    "commit": "f6255d49e71e31c325d474039d4e01163266608b",
+    "scope": "acceptance contract including bounds and rollback flags; external repair not certified",
+    "theorems": [
+      "accepted_requires_rollback",
+      "accepted_requires_bounds"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Beaver",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "BEAVER",
+      "implemented_scope": "Intervention acceptance gates; supplied boundedness and rollback flags are declarations",
+      "parameters": {
+        "effectiveness": {
+          "type": "float",
+          "required": true
+        },
+        "collateral": {
+          "type": "float",
+          "required": true
+        },
+        "verification": {
+          "type": "float",
+          "required": true
+        },
+        "bounded": {
+          "type": "bool",
+          "required": true
+        },
+        "rollback_verified": {
+          "type": "bool",
+          "required": true
+        },
+        "min_effectiveness": {
+          "type": "float",
+          "required": false,
+          "default": 0.05
+        },
+        "max_collateral": {
+          "type": "float",
+          "required": false,
+          "default": 0.2
+        },
+        "min_verification": {
+          "type": "float",
+          "required": false,
+          "default": 1.0
+        }
+      }
+    },
+    "current_lean_sha256": "2a05b8bcd7fe7f3146d7e8916f84aadeeab763c954467fc16fd1dff91b530eea",
+    "engine_snapshot_lean_sha256": "2a05b8bcd7fe7f3146d7e8916f84aadeeab763c954467fc16fd1dff91b530eea",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 30,
+    "name": "MANTIS",
+    "module": "Mantis",
+    "namespace": "Zoo.Mantis",
+    "repository": "https://github.com/enuminous/Mantis",
+    "commit": "a9fd85eb62a22d3667201dd6747bf8d296ad9083",
+    "scope": "calibrated z-score aggregation and state decision; baseline fitting supplied",
+    "theorems": [
+      "unready_calibrates"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Mantis",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "MANTIS",
+      "implemented_scope": "Calibration/precursor/intervention decision from supplied z scores",
+      "parameters": {
+        "ready": {
+          "type": "bool",
+          "required": true
+        },
+        "z_variance": {
+          "type": "float",
+          "required": true
+        },
+        "z_autocorrelation": {
+          "type": "float",
+          "required": true
+        },
+        "z_curvature": {
+          "type": "float",
+          "required": true
+        },
+        "threshold": {
+          "type": "float",
+          "required": false,
+          "default": 2.0
+        },
+        "min_coherence": {
+          "type": "float",
+          "required": false,
+          "default": 0.5
+        }
+      }
+    },
+    "current_lean_sha256": "0785032f2d27c68ed97d2da8e9683e99f1d3474e504cbc1a9b81da1ba3eaca18",
+    "engine_snapshot_lean_sha256": "0785032f2d27c68ed97d2da8e9683e99f1d3474e504cbc1a9b81da1ba3eaca18",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 31,
+    "name": "BISON",
+    "module": "Bison",
+    "namespace": "Zoo.Bison",
+    "repository": "https://github.com/enuminous/Bison",
+    "commit": "588acafecff764cb417637861d6d9a1e6bdf502f",
+    "scope": "single-component queue transition; exact natural-number capacity bound",
+    "theorems": [
+      "queue_bounded"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Bison",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "BISON",
+      "implemented_scope": "Single-step bounded queue, served demand and dropped demand",
+      "parameters": {
+        "demand": {
+          "type": "float",
+          "required": true
+        },
+        "queue": {
+          "type": "float",
+          "required": true
+        },
+        "capacity": {
+          "type": "float",
+          "required": true
+        },
+        "queue_limit": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "b50f33d16abe5b60c332aeed4989df2ea79dd10e9791ef3f0eb2573164f4360c",
+    "engine_snapshot_lean_sha256": "b50f33d16abe5b60c332aeed4989df2ea79dd10e9791ef3f0eb2573164f4360c",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 32,
+    "name": "WEASEL",
+    "module": "Weasel",
+    "namespace": "Zoo.Weasel",
+    "repository": "https://github.com/enuminous/Weasel",
+    "commit": "fa2d91ae108f6b3bb515fb16ff0c22ae02324b06",
+    "scope": "bounded finding filter; target search/enumeration remains external",
+    "theorems": [
+      "retained_within_budget"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Weasel",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "WEASEL",
+      "implemented_scope": "Counterexample finding filter by changed-key budget and positive severity; no search",
+      "parameters": {
+        "findings": {
+          "type": "list",
+          "required": true
+        },
+        "budget": {
+          "type": "int",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "a32282976c6982e12028610cbcf79b754d42cf0902922a15afa7b2be9e5dff4d",
+    "engine_snapshot_lean_sha256": "a32282976c6982e12028610cbcf79b754d42cf0902922a15afa7b2be9e5dff4d",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 33,
+    "name": "SALMON",
+    "module": "Salmon",
+    "namespace": "Zoo.Salmon",
+    "repository": "https://github.com/enuminous/Salmon",
+    "commit": "b141f6ccd5b0e789ceddaa91ec9e664cd02c4981",
+    "scope": "unresolved-mass kernel and fuel-bounded trace abstraction; weighted tracing excluded",
+    "theorems": [
+      "exhaustion_not_origin"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Salmon",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "SALMON",
+      "implemented_scope": "Unresolved mass and bounded ancestry; exhaustion is not an origin; no weighted full trace",
+      "parameters": {
+        "weight": {
+          "type": "float",
+          "required": true
+        },
+        "incoming_weights": {
+          "type": "list",
+          "required": true
+        },
+        "parents": {
+          "type": "dict",
+          "required": true
+        },
+        "start": {
+          "type": "int",
+          "required": true
+        },
+        "fuel": {
+          "type": "int",
+          "required": false,
+          "default": 10
+        }
+      }
+    },
+    "current_lean_sha256": "4aa4395177332f81e1e70968d853613c03a8307436f4c575efcff070ffb5913c",
+    "engine_snapshot_lean_sha256": "4aa4395177332f81e1e70968d853613c03a8307436f4c575efcff070ffb5913c",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 34,
+    "name": "ORCA",
+    "module": "Orca",
+    "namespace": "Zoo.Orca",
+    "repository": "https://github.com/enuminous/Orca",
+    "commit": "a5caecf5a81b05495904528b0135fd272daaf90e",
+    "scope": "handoff checks and aggregate coordination formula; pairwise metrics supplied",
+    "theorems": [
+      "complete_requires_ack"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Orca",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "ORCA",
+      "implemented_scope": "Four-field handoff integrity only; pairwise coordination metrics are external",
+      "parameters": {
+        "ack": {
+          "type": "bool",
+          "required": true
+        },
+        "payload_complete": {
+          "type": "bool",
+          "required": true
+        },
+        "ownership_clear": {
+          "type": "bool",
+          "required": true
+        },
+        "dependency_complete": {
+          "type": "bool",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "7253e4744de8b39f7b712df687270af22d4e3d0f2403f388aeb2f332c82d9afb",
+    "engine_snapshot_lean_sha256": "7253e4744de8b39f7b712df687270af22d4e3d0f2403f388aeb2f332c82d9afb",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 35,
+    "name": "MOLE",
+    "module": "Mole",
+    "namespace": "Zoo.Mole",
+    "repository": "https://github.com/enuminous/Mole",
+    "commit": "523f8017851070f2c5d0249da4601357b24dda24",
+    "scope": "observability gap and coverage-gated hidden-failure flag; indicators supplied",
+    "theorems": [
+      "no_indicators_no_failure_claim"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Mole",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "MOLE",
+      "implemented_scope": "Hidden-failure gap and coverage gates from supplied indicators",
+      "parameters": {
+        "indicators_present": {
+          "type": "bool",
+          "required": true
+        },
+        "surface_health": {
+          "type": "float",
+          "required": true
+        },
+        "latent_degradation": {
+          "type": "float",
+          "required": true
+        },
+        "coverage": {
+          "type": "float",
+          "required": true
+        },
+        "gap_threshold": {
+          "type": "float",
+          "required": false,
+          "default": 0.25
+        },
+        "minimum_coverage": {
+          "type": "float",
+          "required": false,
+          "default": 0.5
+        }
+      }
+    },
+    "current_lean_sha256": "80ea3d57a0970f2709c00b2eb18f6fd7f19b706885dacdaffb37abb4eb05d5c9",
+    "engine_snapshot_lean_sha256": "80ea3d57a0970f2709c00b2eb18f6fd7f19b706885dacdaffb37abb4eb05d5c9",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 36,
+    "name": "LYNX",
+    "module": "Lynx",
+    "namespace": "Zoo.Lynx",
+    "repository": "https://github.com/enuminous/Lynx",
+    "commit": "d2f705136a616190f2c135ec9fa0df57b5c34020",
+    "scope": "novelty, yield and emergence contract; reference distances supplied",
+    "theorems": [
+      "emergent_requires_replication"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Lynx",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "LYNX",
+      "implemented_scope": "Novelty/yield arithmetic and emergence gates; no literature or independence verification",
+      "parameters": {
+        "distance": {
+          "type": "float",
+          "required": true
+        },
+        "rarity": {
+          "type": "float",
+          "required": true
+        },
+        "rediscovery": {
+          "type": "float",
+          "required": true
+        },
+        "replication": {
+          "type": "float",
+          "required": true
+        },
+        "yield_score": {
+          "type": "float",
+          "required": true
+        },
+        "alpha": {
+          "type": "float",
+          "required": false,
+          "default": 0.5
+        },
+        "beta": {
+          "type": "float",
+          "required": false,
+          "default": 0.5
+        },
+        "gamma": {
+          "type": "float",
+          "required": false,
+          "default": 0.5
+        },
+        "novelty_threshold": {
+          "type": "float",
+          "required": false,
+          "default": 0.4
+        },
+        "replication_threshold": {
+          "type": "float",
+          "required": false,
+          "default": 0.6
+        }
+      }
+    },
+    "current_lean_sha256": "a213fe61671fd48eda712651f5191c286e94c45db26e004279a43f9ebd0836e4",
+    "engine_snapshot_lean_sha256": "a213fe61671fd48eda712651f5191c286e94c45db26e004279a43f9ebd0836e4",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 37,
+    "name": "HORSE",
+    "module": "Horse",
+    "namespace": "Zoo.Horse",
+    "repository": "https://github.com/enuminous/Horse",
+    "commit": "e55b6881a1d3a0e10fb32e474a3612aa4bf0ab69",
+    "scope": "trust/workload/joint-effectiveness kernels and handoff contract",
+    "theorems": [
+      "handoff_retains_uncertainty"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Horse",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "HORSE",
+      "implemented_scope": "Workload penalty only; joint-effectiveness and human factors measurement are external",
+      "parameters": {
+        "workload": {
+          "type": "float",
+          "required": true
+        },
+        "attention": {
+          "type": "float",
+          "required": true
+        },
+        "fatigue": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "de2cfa56dcb4f8495fde0996dfbfcb8f7d7d9cd9c5c070052e653ab75c0974ce",
+    "engine_snapshot_lean_sha256": "de2cfa56dcb4f8495fde0996dfbfcb8f7d7d9cd9c5c070052e653ab75c0974ce",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 38,
+    "name": "TERMITE",
+    "module": "Termite",
+    "namespace": "Zoo.Termite",
+    "repository": "https://github.com/enuminous/Termite",
+    "commit": "76f70136ebf3b9e8bf4f38d971cce07cb2e73b0f",
+    "scope": "agent update and synchronous mapping; graph weighted inputs supplied",
+    "theorems": [
+      "population_preserved"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Termite",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "TERMITE",
+      "implemented_scope": "Single-agent update from a supplied neighbor snapshot; no scheduling or graph simulation",
+      "parameters": {
+        "state": {
+          "type": "float",
+          "required": true
+        },
+        "weighted_sum": {
+          "type": "float",
+          "required": true
+        },
+        "total_weight": {
+          "type": "float",
+          "required": true
+        },
+        "susceptibility": {
+          "type": "float",
+          "required": false,
+          "default": 0.5
+        },
+        "bias": {
+          "type": "float",
+          "required": false,
+          "default": 0.0
+        }
+      }
+    },
+    "current_lean_sha256": "417bb4b5ce10dcfc6d79e62711f50053af6d10921d9e7b5692fa489aca456335",
+    "engine_snapshot_lean_sha256": "417bb4b5ce10dcfc6d79e62711f50053af6d10921d9e7b5692fa489aca456335",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 39,
+    "name": "PHOENIX",
+    "module": "Phoenix",
+    "namespace": "Zoo.Phoenix",
+    "repository": "https://github.com/enuminous/Phoenix",
+    "commit": "20079489fe4c180105d43b4382733a5506e27beb",
+    "scope": "recovery completeness and hold-window predicate; fidelity inputs supplied",
+    "theorems": [
+      "stable_requires_every_checkpoint"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Phoenix",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "PHOENIX",
+      "implemented_scope": "Recovery completeness and finite-window stability; hold=0 is vacuously true as upstream",
+      "parameters": {
+        "fidelity": {
+          "type": "float",
+          "required": true
+        },
+        "integrity": {
+          "type": "float",
+          "required": true
+        },
+        "capability": {
+          "type": "float",
+          "required": true
+        },
+        "scores": {
+          "type": "list",
+          "required": true
+        },
+        "start": {
+          "type": "int",
+          "required": true
+        },
+        "hold": {
+          "type": "int",
+          "required": true
+        },
+        "threshold": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "1b7102dba94873284fa2d6beee9d4fec8f372dc48ebe77abada5ab3ce5b0d6f8",
+    "engine_snapshot_lean_sha256": "1b7102dba94873284fa2d6beee9d4fec8f372dc48ebe77abada5ab3ce5b0d6f8",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 40,
+    "name": "COBRA",
+    "module": "Cobra",
+    "namespace": "Zoo.Cobra",
+    "repository": "https://github.com/enuminous/Cobra",
+    "commit": "1af3a2016813a04a414be3c79a2b40b158154783",
+    "scope": "persistent/proxy divergence and risk kernels; deltas supplied",
+    "theorems": [
+      "nonimproving_proxy_zero"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Cobra",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "COBRA",
+      "implemented_scope": "Persistent divergence and confidence-weighted risk from supplied scores",
+      "parameters": {
+        "previous": {
+          "type": "float",
+          "required": true
+        },
+        "divergence": {
+          "type": "float",
+          "required": true
+        },
+        "violation": {
+          "type": "float",
+          "required": true
+        },
+        "proxy_delta": {
+          "type": "float",
+          "required": true
+        },
+        "goal_delta": {
+          "type": "float",
+          "required": true
+        },
+        "context_gap": {
+          "type": "float",
+          "required": true
+        },
+        "confidence": {
+          "type": "float",
+          "required": true
+        },
+        "persistence": {
+          "type": "float",
+          "required": false,
+          "default": 0.8
+        }
+      }
+    },
+    "current_lean_sha256": "4e3b68c0656dd161465d4891a9285e59f51c5ab7a63464c27d3834a6f8e04d8f",
+    "engine_snapshot_lean_sha256": "4e3b68c0656dd161465d4891a9285e59f51c5ab7a63464c27d3834a6f8e04d8f",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 41,
+    "name": "WHALE",
+    "module": "Whale",
+    "namespace": "Zoo.Whale",
+    "repository": "https://github.com/enuminous/Whale",
+    "commit": "c64bbfb54fce0d4dba2eb3d9a285bba7c7605d39",
+    "scope": "cumulative deviation, history gap and stability formula; slope supplied",
+    "theorems": [
+      "empty_history_zero_gap"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Whale",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "WHALE",
+      "implemented_scope": "Cumulative deviation and history gap; zero-window upstream behavior preserved",
+      "parameters": {
+        "values": {
+          "type": "list",
+          "required": true
+        },
+        "baseline": {
+          "type": "float",
+          "required": true
+        },
+        "window": {
+          "type": "int",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "cf1873896ce30ecaab8f3708bcb50ea3dfe0a0a2133fe51f3cdd7e6e85ad523b",
+    "engine_snapshot_lean_sha256": "cf1873896ce30ecaab8f3708bcb50ea3dfe0a0a2133fe51f3cdd7e6e85ad523b",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 42,
+    "name": "FALCON",
+    "module": "Falcon",
+    "namespace": "Zoo.Falcon",
+    "repository": "https://github.com/enuminous/Falcon",
+    "commit": "bf74635c358b997983a3ee19a4e7c9bd23bc8436",
+    "scope": "latency/missed/reaction-margin kernel; streaming threshold monitor excluded",
+    "theorems": [
+      "positive_margin_iff_on_time",
+      "absent_alarm_no_timing"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Falcon",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "FALCON",
+      "implemented_scope": "Detection/intervention latency, reaction margin and missed-hazard gate",
+      "parameters": {
+        "event_time": {
+          "type": "float",
+          "required": true
+        },
+        "hazard_time": {
+          "type": "float",
+          "required": true
+        },
+        "delay": {
+          "type": "float",
+          "required": true
+        },
+        "alarm_time": {
+          "type": "number or null",
+          "required": false,
+          "default": null
+        }
+      }
+    },
+    "current_lean_sha256": "d7de18533aff84c26c9fc07de1c0bed6b204ea255d23aa608b450ec0b4b370a3",
+    "engine_snapshot_lean_sha256": "900669c91ad85a2167fbf816da3c61be04b3877903bb0bb6332b8d5f8e230cf3",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 43,
+    "name": "RHINO",
+    "module": "Rhino",
+    "namespace": "Zoo.Rhino",
+    "repository": "https://github.com/enuminous/Rhino",
+    "commit": "8718a3132ffc46ec46564fc0d4fd086637235cca",
+    "scope": "retention, amplification and graceful-failure kernels; invariants supplied",
+    "theorems": [
+      "survives_selected_invariant"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Rhino",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "RHINO",
+      "implemented_scope": "Performance retention with explicit zero-baseline branch; no shock generation",
+      "parameters": {
+        "baseline": {
+          "type": "float",
+          "required": true
+        },
+        "after": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "f9edf73a0a0c668d222b7c3ae4128ad0f34c07242e30f411fbe66f4bf0364301",
+    "engine_snapshot_lean_sha256": "f9edf73a0a0c668d222b7c3ae4128ad0f34c07242e30f411fbe66f4bf0364301",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 44,
+    "name": "BONOBO",
+    "module": "Bonobo",
+    "namespace": "Zoo.Bonobo",
+    "repository": "https://github.com/enuminous/Bonobo",
+    "commit": "40a3c44a997b5e66ebb2c2dbae4d33ce779e630a",
+    "scope": "gain, exploitation and cooperation score; dispersion supplied",
+    "theorems": [
+      "mutual_gain_excludes_loser"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Bonobo",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "BONOBO",
+      "implemented_scope": "Exploitation sum and cooperative score from supplied utilities and summary measures",
+      "parameters": {
+        "gains": {
+          "type": "list",
+          "required": true
+        },
+        "efficiency": {
+          "type": "float",
+          "required": true
+        },
+        "stability": {
+          "type": "float",
+          "required": true
+        },
+        "fairness_dispersion": {
+          "type": "float",
+          "required": true
+        },
+        "resolution": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "4b2576605faadb8896a84843c6684f5394066b04562a9a58ff101f9bb17b4967",
+    "engine_snapshot_lean_sha256": "4b2576605faadb8896a84843c6684f5394066b04562a9a58ff101f9bb17b4967",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 45,
+    "name": "AXOLOTL",
+    "module": "Axolotl",
+    "namespace": "Zoo.Axolotl",
+    "repository": "https://github.com/enuminous/Axolotl",
+    "commit": "af8e011f0be6f5852b3d102d4004aaf86e2bcfd4",
+    "scope": "recovery, efficiency and resilience; transformation/invariants supplied",
+    "theorems": [
+      "acceptable_retains_invariants"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Axolotl",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "AXOLOTL",
+      "implemented_scope": "Recovery, efficiency and resilience; invariant retention supplied externally",
+      "parameters": {
+        "reference_function": {
+          "type": "float",
+          "required": true
+        },
+        "damaged_function": {
+          "type": "float",
+          "required": true
+        },
+        "adapted_function": {
+          "type": "float",
+          "required": true
+        },
+        "cost": {
+          "type": "float",
+          "required": true
+        },
+        "transformation": {
+          "type": "float",
+          "required": true
+        },
+        "invariant_retention": {
+          "type": "float",
+          "required": true
+        }
+      }
+    },
+    "current_lean_sha256": "3014d8968c3f36cecc87cfc7c855d0c65d414268d8919582f879dbbc5836bdb3",
+    "engine_snapshot_lean_sha256": "3014d8968c3f36cecc87cfc7c855d0c65d414268d8919582f879dbbc5836bdb3",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  },
+  {
+    "id": 46,
+    "name": "BUTTERFLY",
+    "module": "Butterfly",
+    "namespace": "Zoo.Butterfly",
+    "repository": "https://github.com/enuminous/Butterfly",
+    "commit": "5952c7f260f65835e1a67d4502aac1e4015bfe49",
+    "scope": "layer update, amplification and bounded trajectory; graph comparison excluded",
+    "theorems": [
+      "run_records_initial_and_steps"
+    ],
+    "proof_status": "compiler-checked and strict-axiom-audited at 44d9881e8878a702fdfa47da53d80436276d92a6",
+    "numbering": "main-sequence reference",
+    "source_bundle": "UPSTREAM_SOURCES.json",
+    "source_key": "Butterfly",
+    "verified_commit": "44d9881e8878a702fdfa47da53d80436276d92a6",
+    "verified_run": "https://github.com/enuminous/Monolithic-Zoo-Lean4/actions/runs/38484522045",
+    "adapter": {
+      "animal": "BUTTERFLY",
+      "implemented_scope": "One nonlinear clipped layer step only; no graph cascade or counterfactual comparison",
+      "parameters": {
+        "state": {
+          "type": "float",
+          "required": true
+        },
+        "incoming": {
+          "type": "float",
+          "required": true
+        },
+        "base": {
+          "type": "float",
+          "required": false,
+          "default": 0.0
+        },
+        "gain": {
+          "type": "float",
+          "required": false,
+          "default": 1.0
+        },
+        "threshold": {
+          "type": "float",
+          "required": false,
+          "default": 1.0
+        }
+      }
+    },
+    "current_lean_sha256": "13bce9a2cb1c3998148924c0a5d4bb29981fda9cac8d0d03c5b70875b965d051",
+    "engine_snapshot_lean_sha256": "13bce9a2cb1c3998148924c0a5d4bb29981fda9cac8d0d03c5b70875b965d051",
+    "engine_commit": "6fbd8beddf442e7adb752ec30ae054a25857602b"
+  }
+]

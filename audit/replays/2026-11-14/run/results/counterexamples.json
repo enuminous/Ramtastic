@@ -1,0 +1,286 @@
+[
+  {
+    "finding": "F01",
+    "claim": "J squared equals minus identity forces Euclidean isometry",
+    "control": {
+      "J": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "attack": {
+      "J": [
+        [
+          0,
+          -2
+        ],
+        [
+          "1/2",
+          0
+        ]
+      ]
+    },
+    "output": {
+      "squared_length_before": "1",
+      "squared_length_after": "1/4",
+      "J_squared": "-I"
+    },
+    "criterion": "Same square-minus-identity property, unequal Euclidean squared lengths",
+    "changed_keys": 1,
+    "status": "demonstrated",
+    "method": "exact rational/integer arithmetic; independent implementation from Lean probes"
+  },
+  {
+    "finding": "F02",
+    "claim": "A product of two skew-adjoint operators is automatically self-adjoint",
+    "control": {
+      "A": [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "attack": {
+      "A": [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ]
+      ]
+    },
+    "output": {
+      "AB": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "transpose_AB": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "both_square_to_minus_I": true
+    },
+    "criterion": "Both factors skew-adjoint; product differs from its transpose",
+    "changed_keys": 1,
+    "status": "demonstrated",
+    "method": "exact rational/integer arithmetic; independent implementation from Lean probes"
+  },
+  {
+    "finding": "F03",
+    "claim": "StructureSheafWithHodge.hodge_symmetry_0q constrains the cohomology dimensions",
+    "control": {
+      "dimensions": [
+        1,
+        1
+      ]
+    },
+    "attack": {
+      "dimensions": [
+        1,
+        7
+      ]
+    },
+    "output": {
+      "field_satisfied": true,
+      "dimensions_equal": false
+    },
+    "criterion": "The field is satisfied via Or.inr True.intro for unequal dimensions",
+    "changed_keys": 1,
+    "status": "demonstrated",
+    "method": "exact rational/integer arithmetic; independent implementation from Lean probes"
+  },
+  {
+    "finding": "F04",
+    "claim": "Clamping out-of-range Hodge indices implements the bounded diagonal sum",
+    "control": {
+      "hodge_numbers": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "attack": {
+      "hodge_numbers": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    "output": {
+      "dimension": 2,
+      "degree": 3,
+      "clamped_sum": 2,
+      "bounded_sum": 0
+    },
+    "criterion": "A symmetric nonnegative fixture yields different sums; no geometric realization needed to refute formula identity",
+    "changed_keys": 1,
+    "status": "demonstrated",
+    "method": "exact rational/integer arithmetic; independent implementation from Lean probes"
+  }
+]

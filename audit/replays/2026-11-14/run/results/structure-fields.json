@@ -1,0 +1,767 @@
+[
+  {
+    "module": "Ramtastic.BSD.ArithmeticGAGA",
+    "path": "Ramtastic/BSD/ArithmeticGAGA.lean",
+    "line": 26,
+    "kind": "structure",
+    "name": "AlgebraicAnalyticCurveComparison",
+    "header": "structure AlgebraicAnalyticCurveComparison",
+    "source_block_without_comments": "structure AlgebraicAnalyticCurveComparison where\n  arithmetic : ArithmeticECData\n  analytic : AnalyticRank\n  same_weierstrass_a : analytic.a = arithmetic.a\n  same_weierstrass_b : analytic.b = arithmetic.b\n  same_conductor : analytic.conductor = arithmetic.conductor\n  same_local_data : forall p : Nat, analytic.local_data p = arithmetic.local_data p"
+  },
+  {
+    "module": "Ramtastic.BSD.ArithmeticGAGA",
+    "path": "Ramtastic/BSD/ArithmeticGAGA.lean",
+    "line": 35,
+    "kind": "structure",
+    "name": "NeronModelLocalComparison",
+    "header": "structure NeronModelLocalComparison\n    (C : AlgebraicAnalyticCurveComparison)",
+    "source_block_without_comments": "structure NeronModelLocalComparison\n    (C : AlgebraicAnalyticCurveComparison) where\n  componentGroupOrder : Nat -> Nat\n  frobeniusTrace : Nat -> Int\n  localFactorTrace : Nat -> Int\n  component_group_matches_tamagawa :\n    forall p : Nat, componentGroupOrder p = (C.arithmetic.local_data p).tamagawa\n  frobenius_matches_arithmetic :\n    forall p : Nat, frobeniusTrace p = (C.arithmetic.local_data p).trace_frobenius\n  local_factor_trace_matches_frobenius :\n    forall p : Nat, Nat.Prime p -> localFactorTrace p = frobeniusTrace p\n  good_reduction_component_trivial :\n    forall p : Nat,\n      (C.arithmetic.local_data p).reduction = ReductionType.good ->\n        componentGroupOrder p = 1"
+  },
+  {
+    "module": "Ramtastic.BSD.ArithmeticGAGA",
+    "path": "Ramtastic/BSD/ArithmeticGAGA.lean",
+    "line": 52,
+    "kind": "structure",
+    "name": "HasseWeilReadoutComparison",
+    "header": "structure HasseWeilReadoutComparison\n    (C : AlgebraicAnalyticCurveComparison)\n    (N : NeronModelLocalComparison C)",
+    "source_block_without_comments": "structure HasseWeilReadoutComparison\n    (C : AlgebraicAnalyticCurveComparison)\n    (N : NeronModelLocalComparison C) where\n  eulerCoefficient : Nat -> Int\n  completedCentralCoefficient : Nat -> Real\n  euler_coefficients_are_frobenius :\n    forall p : Nat, Nat.Prime p -> eulerCoefficient p = N.frobeniusTrace p\n  analytic_rank_is_first_nonzero_completed_coefficient :\n    (forall n : Nat, n < C.analytic.analytic_rank ->\n      completedCentralCoefficient n = 0) /\\\n    completedCentralCoefficient C.analytic.analytic_rank ≠ 0\n  completed_coefficients_match_lfunction :\n    forall n : Nat,\n      completedCentralCoefficient n =\n        iteratedDeriv n C.analytic.L 1 / (Nat.factorial n : Real)"
+  },
+  {
+    "module": "Ramtastic.BSD.ArithmeticGAGA",
+    "path": "Ramtastic/BSD/ArithmeticGAGA.lean",
+    "line": 69,
+    "kind": "structure",
+    "name": "MordellWeilHeightComparison",
+    "header": "structure MordellWeilHeightComparison\n    (_C : AlgebraicAnalyticCurveComparison)",
+    "source_block_without_comments": "structure MordellWeilHeightComparison\n    (_C : AlgebraicAnalyticCurveComparison) where\n  mw : MordellWeilGroup\n  regulator : Regulator mw\n  basisRank : Nat\n  basis_rank_matches_mw : basisRank = mw.rank\n  free_generators_independent :\n    forall coeffs : Fin mw.rank -> Int,\n      Finset.univ.sum (fun i => coeffs i • mw.free_generators i) = 0 ->\n        forall i, coeffs i = 0\n  free_generators_span :\n    forall P : mw.Point, exists coeffs : Fin mw.rank -> Int, exists t : mw.Point,\n      (exists n : Nat, 0 < n /\\ (n : Int) • t = 0) /\\\n      P = Finset.univ.sum (fun i => coeffs i • mw.free_generators i) + t\n  height_detects_torsion :\n    forall P : mw.Point, regulator.height P = 0 <->\n      exists n : Nat, 0 < n /\\ (n : Int) • P = 0\n  regulator_positive_for_positive_rank :\n    0 < mw.rank -> 0 < regulator.regulator"
+  },
+  {
+    "module": "Ramtastic.BSD.ArithmeticGAGA",
+    "path": "Ramtastic/BSD/ArithmeticGAGA.lean",
+    "line": 90,
+    "kind": "structure",
+    "name": "BSDArithmeticGAGAComparison",
+    "header": "structure BSDArithmeticGAGAComparison",
+    "source_block_without_comments": "structure BSDArithmeticGAGAComparison where\n  curve : AlgebraicAnalyticCurveComparison\n  neron : NeronModelLocalComparison curve\n  hasseWeil : HasseWeilReadoutComparison curve neron\n  mordellWeil : MordellWeilHeightComparison curve\n\nend\n\nend Ramtastic.BSD.ArithmeticGAGA"
+  },
+  {
+    "module": "Ramtastic.BSD.BSDFormula",
+    "path": "Ramtastic/BSD/BSDFormula.lean",
+    "line": 28,
+    "kind": "structure",
+    "name": "WeakBSDData",
+    "header": "structure WeakBSDData",
+    "source_block_without_comments": "structure WeakBSDData where\n  mw : MordellWeilGroup\n  ar : AnalyticRank"
+  },
+  {
+    "module": "Ramtastic.BSD.BSDFormula",
+    "path": "Ramtastic/BSD/BSDFormula.lean",
+    "line": 33,
+    "kind": "structure",
+    "name": "StrongBSDData",
+    "header": "structure StrongBSDData extends WeakBSDData",
+    "source_block_without_comments": "structure StrongBSDData extends WeakBSDData where\n  reg : Regulator mw\n  tam : TamagawaData\n  per : PeriodData"
+  },
+  {
+    "module": "Ramtastic.BSD.BSDFormula",
+    "path": "Ramtastic/BSD/BSDFormula.lean",
+    "line": 66,
+    "kind": "structure",
+    "name": "ParityBSDData",
+    "header": "structure ParityBSDData extends WeakBSDData",
+    "source_block_without_comments": "structure ParityBSDData extends WeakBSDData where\n                                                        \n                              \n                                               \n  algebraic_parity : (-1 : ℤ) ^ mw.rank = ar.root_number\n                                              \n  Lambda_differentiable : Differentiable ℝ ar.Lambda\n                                                             \n                                                                  \n                                                           \n                                                            \n  Lambda_leading_nonzero : iteratedDeriv ar.analytic_rank ar.Lambda 1 ≠ 0"
+  },
+  {
+    "module": "Ramtastic.BSD.EllipticCurve",
+    "path": "Ramtastic/BSD/EllipticCurve.lean",
+    "line": 34,
+    "kind": "structure",
+    "name": "EllipticCurveData",
+    "header": "structure EllipticCurveData",
+    "source_block_without_comments": "structure EllipticCurveData where\n                                           \n  a : ℚ\n                                           \n  b : ℚ\n                                \n  disc_ne_zero : 4 * a ^ 3 + 27 * b ^ 2 ≠ 0"
+  },
+  {
+    "module": "Ramtastic.BSD.EllipticCurve",
+    "path": "Ramtastic/BSD/EllipticCurve.lean",
+    "line": 70,
+    "kind": "structure",
+    "name": "LocalData",
+    "header": "structure LocalData",
+    "source_block_without_comments": "structure LocalData where\n                                                                      \n  trace_frobenius : ℤ\n                                      \n  reduction : ReductionType\n                                                      \n  tamagawa : ℕ\n  tamagawa_pos : 0 < tamagawa"
+  },
+  {
+    "module": "Ramtastic.BSD.EllipticCurve",
+    "path": "Ramtastic/BSD/EllipticCurve.lean",
+    "line": 81,
+    "kind": "structure",
+    "name": "ArithmeticECData",
+    "header": "structure ArithmeticECData extends EllipticCurveData",
+    "source_block_without_comments": "structure ArithmeticECData extends EllipticCurveData where\n                                  \n  local_data : ℕ → LocalData\n                                                         \n  conductor : ℕ\n  conductor_pos : 0 < conductor\n                                                 \n  hasse_bound : ∀ p : ℕ, Nat.Prime p →\n    (local_data p).reduction = ReductionType.good →\n    ((local_data p).trace_frobenius : ℝ) ^ 2 ≤ 4 * (p : ℝ)\n\nend\n\nend Ramtastic.BSD.EllipticCurve"
+  },
+  {
+    "module": "Ramtastic.BSD.HeightPairing",
+    "path": "Ramtastic/BSD/HeightPairing.lean",
+    "line": 34,
+    "kind": "structure",
+    "name": "CanonicalHeight",
+    "header": "structure CanonicalHeight (mw : MordellWeilGroup)",
+    "source_block_without_comments": "structure CanonicalHeight (mw : MordellWeilGroup) where\n                                                    \n  height : mw.Point → ℝ\n                        \n  height_nonneg : ∀ P, 0 ≤ height P\n                                  \n  height_zero_iff : ∀ P, height P = 0 ↔\n    ∃ n : ℕ, 0 < n ∧ (n : ℤ) • P = 0\n                                       \n  height_quadratic : ∀ (n : ℤ) (P : mw.Point),\n    height (n • P) = n ^ 2 * height P"
+  },
+  {
+    "module": "Ramtastic.BSD.HeightPairing",
+    "path": "Ramtastic/BSD/HeightPairing.lean",
+    "line": 64,
+    "kind": "structure",
+    "name": "Regulator",
+    "header": "structure Regulator (mw : MordellWeilGroup) extends CanonicalHeight mw",
+    "source_block_without_comments": "structure Regulator (mw : MordellWeilGroup) extends CanonicalHeight mw where\n                                                                  \n  gram_matrix : Fin mw.rank → Fin mw.rank → ℝ\n  gram_is_pairing : ∀ i j,\n    gram_matrix i j = pairing toCanonicalHeight (mw.free_generators i) (mw.free_generators j)\n                             \n  regulator : ℝ\n                                             \n  regulator_pos : 0 < mw.rank → 0 < regulator\n                                                   \n  regulator_zero_rank : mw.rank = 0 → regulator = 1\n\nend\n\nend Ramtastic.BSD.HeightPairing"
+  },
+  {
+    "module": "Ramtastic.BSD.Kolyvagin",
+    "path": "Ramtastic/BSD/Kolyvagin.lean",
+    "line": 31,
+    "kind": "structure",
+    "name": "KGZData",
+    "header": "structure KGZData",
+    "source_block_without_comments": "structure KGZData where\n  mw : MordellWeilGroup\n  ar : AnalyticRank\n                                                         \n                                                                \n                                         \n  kolyvagin_rank0 : ar.analytic_rank = 0 → mw.rank = 0\n                                                                         \n                                                    \n  kolyvagin_contra : mw.rank ≠ 0 → ar.analytic_rank ≠ 0\n                                                 \n                                   \n                                                                 \n                                                                  \n                                \n  gross_zagier : ar.analytic_rank = 1 → mw.rank = 1"
+  },
+  {
+    "module": "Ramtastic.BSD.LFunction",
+    "path": "Ramtastic/BSD/LFunction.lean",
+    "line": 35,
+    "kind": "structure",
+    "name": "EllipticLFunction",
+    "header": "structure EllipticLFunction extends ArithmeticECData",
+    "source_block_without_comments": "structure EllipticLFunction extends ArithmeticECData where\n                                                                             \n  L : ℝ → ℝ\n                                                      \n  L_continuous : Continuous L\n                                                          \n  L_differentiable : Differentiable ℝ L"
+  },
+  {
+    "module": "Ramtastic.BSD.LFunction",
+    "path": "Ramtastic/BSD/LFunction.lean",
+    "line": 56,
+    "kind": "structure",
+    "name": "FunctionalEquation",
+    "header": "structure FunctionalEquation extends EllipticLFunction",
+    "source_block_without_comments": "structure FunctionalEquation extends EllipticLFunction where\n                                  \n  Lambda : ℝ → ℝ\n  Lambda_continuous : Continuous Lambda\n                                  \n  root_number : ℤ\n  root_number_sq : root_number ^ 2 = 1\n                                                    \n  func_eq : ∀ s : ℝ, Lambda s = root_number * Lambda (2 - s)"
+  },
+  {
+    "module": "Ramtastic.BSD.LFunction",
+    "path": "Ramtastic/BSD/LFunction.lean",
+    "line": 75,
+    "kind": "structure",
+    "name": "AnalyticRank",
+    "header": "structure AnalyticRank extends FunctionalEquation",
+    "source_block_without_comments": "structure AnalyticRank extends FunctionalEquation where\n                           \n  analytic_rank : ℕ\n                                                             \n  vanishes_below : ∀ k : ℕ, k < analytic_rank →\n    iteratedDeriv k L 1 = 0\n                                       \n  leading_nonzero : iteratedDeriv analytic_rank L 1 ≠ 0"
+  },
+  {
+    "module": "Ramtastic.BSD.MordellWeil",
+    "path": "Ramtastic/BSD/MordellWeil.lean",
+    "line": 32,
+    "kind": "structure",
+    "name": "MordellWeilGroup",
+    "header": "structure MordellWeilGroup",
+    "source_block_without_comments": "structure MordellWeilGroup where\n                                          \n  Point : Type*\n  [instACG : AddCommGroup Point]\n                                   \n  rank : ℕ\n                                                                 \n  torsion_order : ℕ\n  torsion_order_pos : 0 < torsion_order\n                                                            \n  free_generators : Fin rank → Point\n                                                                   \n  free_independent : ∀ (coeffs : Fin rank → ℤ),\n    Finset.univ.sum (fun i => coeffs i • free_generators i) = 0 →\n    ∀ i, coeffs i = 0\n                                               \n  spans : ∀ p : Point, ∃ (coeffs : Fin rank → ℤ) (t : Point),\n    (∃ n : ℕ, 0 < n ∧ (n : ℤ) • t = 0) ∧\n    p = Finset.univ.sum (fun i => coeffs i • free_generators i) + t\n\nattribute [instance] MordellWeilGroup.instACG"
+  },
+  {
+    "module": "Ramtastic.BSD.Statement",
+    "path": "Ramtastic/BSD/Statement.lean",
+    "line": 60,
+    "kind": "structure",
+    "name": "WeakBSDTowerStatement",
+    "header": "structure WeakBSDTowerStatement",
+    "source_block_without_comments": "structure WeakBSDTowerStatement where\n  arithmetic : BSDArithmeticGAGAComparison\n  proof : WeakRankStatement arithmetic"
+  },
+  {
+    "module": "Ramtastic.BSD.Statement",
+    "path": "Ramtastic/BSD/Statement.lean",
+    "line": 65,
+    "kind": "structure",
+    "name": "StrongBSDTowerStatement",
+    "header": "structure StrongBSDTowerStatement",
+    "source_block_without_comments": "structure StrongBSDTowerStatement where\n  arithmetic : BSDArithmeticGAGAComparison\n  proof : StrongLeadingCoefficientStatement arithmetic\n\nend\n\nend Ramtastic.BSD.Statement"
+  },
+  {
+    "module": "Ramtastic.BSD.TateShafarevich",
+    "path": "Ramtastic/BSD/TateShafarevich.lean",
+    "line": 43,
+    "kind": "structure",
+    "name": "ShaData",
+    "header": "structure ShaData",
+    "source_block_without_comments": "structure ShaData where\n                                               \n  sha_order : ℕ\n  sha_pos : 0 < sha_order\n                                                                      \n  sha_square : ∃ m : ℕ, sha_order = m ^ 2"
+  },
+  {
+    "module": "Ramtastic.BSD.TateShafarevich",
+    "path": "Ramtastic/BSD/TateShafarevich.lean",
+    "line": 62,
+    "kind": "structure",
+    "name": "TamagawaData",
+    "header": "structure TamagawaData extends ArithmeticECData",
+    "source_block_without_comments": "structure TamagawaData extends ArithmeticECData where\n                                           \n  tamagawa_product : ℕ\n  tamagawa_product_pos : 0 < tamagawa_product\n                                                                         \n  bad_primes : Finset ℕ\n                                                                                \n  tamagawa_is_product : tamagawa_product =\n    bad_primes.prod (fun p => (toArithmeticECData.local_data p).tamagawa)\n                                                                          \n  good_tamagawa_one : ∀ p, p ∉ bad_primes →\n    (toArithmeticECData.local_data p).tamagawa = 1"
+  },
+  {
+    "module": "Ramtastic.BSD.TateShafarevich",
+    "path": "Ramtastic/BSD/TateShafarevich.lean",
+    "line": 87,
+    "kind": "structure",
+    "name": "PeriodData",
+    "header": "structure PeriodData",
+    "source_block_without_comments": "structure PeriodData where\n                         \n  omega : ℝ\n  omega_pos : 0 < omega\n\nend\n\nend Ramtastic.BSD.TateShafarevich"
+  },
+  {
+    "module": "Ramtastic.Bass.HingeRotation",
+    "path": "Ramtastic/Bass/HingeRotation.lean",
+    "line": 42,
+    "kind": "structure",
+    "name": "Hinge",
+    "header": "structure Hinge (E : Type*) [AddCommGroup E] [Module ℝ E]",
+    "source_block_without_comments": "structure Hinge (E : Type*) [AddCommGroup E] [Module ℝ E] where\n                                \n  J : E →ₗ[ℝ] E\n                                                                     \n  sq_neg : J.comp J = -LinearMap.id"
+  },
+  {
+    "module": "Ramtastic.ChowGroups.AlgebraicCycle",
+    "path": "Ramtastic/ChowGroups/AlgebraicCycle.lean",
+    "line": 25,
+    "kind": "class",
+    "name": "VarietyData",
+    "header": "class VarietyData (X : Type*)",
+    "source_block_without_comments": "class VarietyData (X : Type*) where\n  dim : ℕ\n  dim_pos : 0 < dim\n  Subvariety : (p : ℕ) → Type*\n  self : Subvariety 0\n\nvariable {X : Type*} [vd : VarietyData X] {p : ℕ}"
+  },
+  {
+    "module": "Ramtastic.ChowGroups.ChowRing",
+    "path": "Ramtastic/ChowGroups/ChowRing.lean",
+    "line": 62,
+    "kind": "class",
+    "name": "CycleClassData",
+    "header": "class CycleClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X]",
+    "source_block_without_comments": "class CycleClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] where\n                                             \n  Cohom : (k : ℕ) → Type*\n  [cohom_addCommGroup : ∀ k, AddCommGroup (Cohom k)]\n  [cohom_module : ∀ k, Module ℚ (Cohom k)]\n                                               \n  cycleClass : ∀ p, Chow X p →+ Cohom (p + p)\n                                                             \n  cl_nontrivial : ∃ (p : ℕ) (a : Chow X p), cycleClass p a ≠ 0\n\nattribute [reducible, instance] CycleClassData.cohom_addCommGroup CycleClassData.cohom_module"
+  },
+  {
+    "module": "Ramtastic.ChowGroups.ChowRing",
+    "path": "Ramtastic/ChowGroups/ChowRing.lean",
+    "line": 82,
+    "kind": "class",
+    "name": "HodgeClassData",
+    "header": "class HodgeClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X]",
+    "source_block_without_comments": "class HodgeClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] where\n                                            \n  isHodge : ∀ p, Set (CycleClassData.Cohom (X := X) (p + p))\n                                                         \n  cl_is_hodge : ∀ p (a : Chow X p),\n    CycleClassData.cycleClass p a ∈ isHodge p"
+  },
+  {
+    "module": "Ramtastic.ChowGroups.IntersectionProduct",
+    "path": "Ramtastic/ChowGroups/IntersectionProduct.lean",
+    "line": 49,
+    "kind": "class",
+    "name": "IntersectionData",
+    "header": "class IntersectionData (X : Type*) [VarietyData X] [RatEquivData X]",
+    "source_block_without_comments": "class IntersectionData (X : Type*) [VarietyData X] [RatEquivData X] where\n                                                       \n  inter : ∀ p q, Chow X p → Chow X q → Chow X (p + q)\n                                           \n  inter_add_left : ∀ p q (a b : Chow X p) (c : Chow X q),\n    inter p q (a + b) c = inter p q a c + inter p q b c\n                                            \n  inter_add_right : ∀ p q (a : Chow X p) (b c : Chow X q),\n    inter p q a (b + c) = inter p q a b + inter p q a c\n                                                \n  unit : Chow X 0\n                                                                                 \n  inter_unit_left : ∀ p (a : Chow X p),\n    HEq (inter 0 p unit a) a\n                                                                              \n  inter_comm : ∀ p q (a : Chow X p) (b : Chow X q),\n    HEq (inter p q a b) (inter q p b a)\n\nvariable [idata : IntersectionData X]"
+  },
+  {
+    "module": "Ramtastic.ChowGroups.RationalEquivalence",
+    "path": "Ramtastic/ChowGroups/RationalEquivalence.lean",
+    "line": 50,
+    "kind": "class",
+    "name": "RatEquivData",
+    "header": "class RatEquivData (X : Type*) [VarietyData X]",
+    "source_block_without_comments": "class RatEquivData (X : Type*) [VarietyData X] where\n                                                  \n                                                               \n  ratTrivial : (p : ℕ) → AddSubgroup (CycleGroup X p)\n\n\nvariable [req : RatEquivData X] {p : ℕ}"
+  },
+  {
+    "module": "Ramtastic.ComplexStructure.AlmostComplex",
+    "path": "Ramtastic/ComplexStructure/AlmostComplex.lean",
+    "line": 50,
+    "kind": "class",
+    "name": "AlmostComplexStr",
+    "header": "class AlmostComplexStr (E : Type*) [NormedAddCommGroup E] [NormedSpace ℝ E]",
+    "source_block_without_comments": "class AlmostComplexStr (E : Type*) [NormedAddCommGroup E] [NormedSpace ℝ E] where\n  J : E →L[ℝ] E\n  J_sq : J.comp J = -ContinuousLinearMap.id ℝ E\n\nvariable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  [acs : AlmostComplexStr E]"
+  },
+  {
+    "module": "Ramtastic.ComplexStructure.TypeDecomposition",
+    "path": "Ramtastic/ComplexStructure/TypeDecomposition.lean",
+    "line": 217,
+    "kind": "structure",
+    "name": "ComplexForm",
+    "header": "@[ext]\nstructure ComplexForm (E : Type*) [NormedAddCommGroup E] [NormedSpace ℝ E]\n    (F : Type*) [NormedAddCommGroup F] [NormedSpace ℝ F] (n : ℕ)",
+    "source_block_without_comments": "@[ext]\nstructure ComplexForm (E : Type*) [NormedAddCommGroup E] [NormedSpace ℝ E]\n    (F : Type*) [NormedAddCommGroup F] [NormedSpace ℝ F] (n : ℕ) where\n  re : DiffForm ℝ E F n\n  im : DiffForm ℝ E F n\n\nvariable {G : Type*} [NormedAddCommGroup G] [NormedSpace ℝ G]"
+  },
+  {
+    "module": "Ramtastic.CycleClass.FundamentalClass",
+    "path": "Ramtastic/CycleClass/FundamentalClass.lean",
+    "line": 52,
+    "kind": "class",
+    "name": "FundamentalClassData",
+    "header": "class FundamentalClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X]",
+    "source_block_without_comments": "class FundamentalClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] where\n                                                                                    \n  fundClass : ∀ p, CycleGroup X p →+ CycleClassData.Cohom (X := X) (p + p)\n                                                            \n                                                           \n  fundClass_ratTrivial : ∀ p (z : CycleGroup X p),\n    z ∈ RatEquivData.ratTrivial p → fundClass p z = 0"
+  },
+  {
+    "module": "Ramtastic.CycleClass.RingHomomorphism",
+    "path": "Ramtastic/CycleClass/RingHomomorphism.lean",
+    "line": 45,
+    "kind": "class",
+    "name": "CupProductData",
+    "header": "class CupProductData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X]",
+    "source_block_without_comments": "class CupProductData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] where\n                         \n  cup : ∀ {k l : ℕ}, CycleClassData.Cohom (X := X) k →\n    CycleClassData.Cohom (X := X) l →\n    CycleClassData.Cohom (X := X) (k + l)\n                                           \n  cup_add_left : ∀ {k l : ℕ} (α₁ α₂ : CycleClassData.Cohom (X := X) k)\n    (β : CycleClassData.Cohom (X := X) l),\n    cup (α₁ + α₂) β = cup α₁ β + cup α₂ β\n                                            \n  cup_add_right : ∀ {k l : ℕ} (α : CycleClassData.Cohom (X := X) k)\n    (β₁ β₂ : CycleClassData.Cohom (X := X) l),\n    cup α (β₁ + β₂) = cup α β₁ + cup α β₂"
+  },
+  {
+    "module": "Ramtastic.CycleClass.RingHomomorphism",
+    "path": "Ramtastic/CycleClass/RingHomomorphism.lean",
+    "line": 67,
+    "kind": "class",
+    "name": "CycleClassRingHom",
+    "header": "class CycleClassRingHom (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [FundamentalClassData X]\n    [CupProductData X]",
+    "source_block_without_comments": "class CycleClassRingHom (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [FundamentalClassData X]\n    [CupProductData X] where\n                                                                                 \n                                                                                \n  cl_mul_eq_cup : ∀ (p q : ℕ) (α : Chow X p) (β : Chow X q),\n    HEq (cycleClassMap (p + q) (IntersectionData.inter p q α β))\n        (CupProductData.cup (cycleClassMap p α) (cycleClassMap q β))\n\nend\n\nend Ramtastic.CycleClass.RingHomomorphism"
+  },
+  {
+    "module": "Ramtastic.CycleClass.ThomClass",
+    "path": "Ramtastic/CycleClass/ThomClass.lean",
+    "line": 64,
+    "kind": "class",
+    "name": "ThomClassData",
+    "header": "class ThomClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] (r : ℕ)",
+    "source_block_without_comments": "class ThomClassData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] (r : ℕ) where\n                                     \n  thomClass : CycleClassData.Cohom (X := X) r\n                                                                      \n  thomIso : ∀ k, CycleClassData.Cohom (X := X) k ≃+ CycleClassData.Cohom (X := X) (k + r)\n                                                    \n  thomClass_ne_zero : thomClass ≠ 0"
+  },
+  {
+    "module": "Ramtastic.DeRham.DeRhamTheorem",
+    "path": "Ramtastic/DeRham/DeRhamTheorem.lean",
+    "line": 76,
+    "kind": "class",
+    "name": "DeRhamIsomorphism",
+    "header": "class DeRhamIsomorphism",
+    "source_block_without_comments": "class DeRhamIsomorphism where\n                                                    \n  SingularCohom : Type*\n                                                   \n  [singAddCommGroup : AddCommGroup SingularCohom]\n  [singModule : Module 𝕜 SingularCohom]\n                                                                            \n  integrationMap : @DeRhamCohomology 𝕜 _ E _ _ 𝕜 _ _ n →ₗ[𝕜] SingularCohom\n                                                           \n  integration_bijective : Function.Bijective integrationMap\n\nattribute [instance] DeRhamIsomorphism.singAddCommGroup DeRhamIsomorphism.singModule\n\nvariable {𝕜 E n}\nvariable [dri : DeRhamIsomorphism 𝕜 E n]"
+  },
+  {
+    "module": "Ramtastic.DeRham.LongExactSequence",
+    "path": "Ramtastic/DeRham/LongExactSequence.lean",
+    "line": 35,
+    "kind": "structure",
+    "name": "PartitionOfUnity",
+    "header": "structure PartitionOfUnity",
+    "source_block_without_comments": "structure PartitionOfUnity where\n  ρU : E → 𝕜\n  ρV : E → 𝕜\n  partition : ∀ x, ρU x + ρV x = 1\n  diff_U : Differentiable 𝕜 ρU\n  diff_V : Differentiable 𝕜 ρV\n\nvariable (pou : PartitionOfUnity (𝕜 := 𝕜) (E := E))"
+  },
+  {
+    "module": "Ramtastic.DeRham.StokesTheorem",
+    "path": "Ramtastic/DeRham/StokesTheorem.lean",
+    "line": 105,
+    "kind": "class",
+    "name": "PoincareLemma",
+    "header": "class PoincareLemma (S : Set E)",
+    "source_block_without_comments": "class PoincareLemma (S : Set E) where\n                                         \n  closed_is_exact : ∀ {n : ℕ} (ω : DiffForm ℝ E ℝ (n + 1)),\n    DifferentialForms.IsClosed ω → DifferentialForms.IsExact ω\n\n                \n                                                                   \n                                                                     \n                                                                      \n                                                            \n\nend\n\nend Ramtastic.DeRham.StokesTheorem"
+  },
+  {
+    "module": "Ramtastic.Dolbeault.DolbeaultCohomology",
+    "path": "Ramtastic/Dolbeault/DolbeaultCohomology.lean",
+    "line": 41,
+    "kind": "class",
+    "name": "DolbeaultSmooth",
+    "header": "class DolbeaultSmooth (E : Type*) [NormedAddCommGroup E] [NormedSpace ℝ E]\n    [AlmostComplexStr E] (F : Type*) [NormedAddCommGroup F] [NormedSpace ℝ F]",
+    "source_block_without_comments": "class DolbeaultSmooth (E : Type*) [NormedAddCommGroup E] [NormedSpace ℝ E]\n    [AlmostComplexStr E] (F : Type*) [NormedAddCommGroup F] [NormedSpace ℝ F] where\n                              \n  r : WithTop ℕ∞\n  hr : minSmoothness ℝ 2 ≤ r\n                                                       \n  smooth : ∀ f : DiffForm ℝ E F 0, ContDiff ℝ r f\n                                                  \n  pullback_diff : ∀ (f : DiffForm ℝ E F 0) (y : E),\n    DifferentiableAt ℝ (pullbackJ (fun x => extDeriv f x)) y\n                                                  \n  ext_diff : ∀ (f : DiffForm ℝ E F 0) (y : E),\n    DifferentiableAt ℝ (fun x => extDeriv f x) y\n\nvariable [ds : DolbeaultSmooth E F]"
+  },
+  {
+    "module": "Ramtastic.GAGA.AnalyticSheaves",
+    "path": "Ramtastic/GAGA/AnalyticSheaves.lean",
+    "line": 24,
+    "kind": "structure",
+    "name": "CoherentSheafData",
+    "header": "structure CoherentSheafData (n : ℕ)",
+    "source_block_without_comments": "structure CoherentSheafData (n : ℕ) where\n                                                                        \n  rank : ℕ\n                                                  \n  cohomDim : Fin (n + 1) → ℕ"
+  },
+  {
+    "module": "Ramtastic.GAGA.AnalyticSheaves",
+    "path": "Ramtastic/GAGA/AnalyticSheaves.lean",
+    "line": 35,
+    "kind": "structure",
+    "name": "StructureSheafData",
+    "header": "structure StructureSheafData (n : ℕ) extends CoherentSheafData n",
+    "source_block_without_comments": "structure StructureSheafData (n : ℕ) extends CoherentSheafData n where\n  rank_one : rank = 1"
+  },
+  {
+    "module": "Ramtastic.GAGA.AnalyticSheaves",
+    "path": "Ramtastic/GAGA/AnalyticSheaves.lean",
+    "line": 41,
+    "kind": "structure",
+    "name": "StructureSheafWithHodge",
+    "header": "structure StructureSheafWithHodge (n : ℕ) extends StructureSheafData n",
+    "source_block_without_comments": "structure StructureSheafWithHodge (n : ℕ) extends StructureSheafData n where\n                                                                         \n  hodge_symmetry_0q : ∀ q : Fin (n + 1), cohomDim q = cohomDim ⟨0, by omega⟩ ∨\n    True                                                                     \n\nend\n\nend Ramtastic.GAGA.AnalyticSheaves"
+  },
+  {
+    "module": "Ramtastic.GAGA.ChowToHodge",
+    "path": "Ramtastic/GAGA/ChowToHodge.lean",
+    "line": 43,
+    "kind": "structure",
+    "name": "ChowToHodgeChain",
+    "header": "structure ChowToHodgeChain (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [HodgeClassData X]\n    [HodgeDecomposition X]",
+    "source_block_without_comments": "structure ChowToHodgeChain (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [HodgeClassData X]\n    [HodgeDecomposition X] where\n                                                       \n  ambientDim : ℕ\n                                                                    \n  gaga : GAGAData ambientDim\n                                                                        \n                                                                         \n  cl_lands_in_hodge : ∀ (p : ℕ) (a : Chow X p),\n    CycleClassData.cycleClass p a ∈ HodgeClassData.isHodge (X := X) p\n                                                                      \n                                                                        \n                                                                               \n  cl_is_hodge_type : ∀ (p : ℕ) (a : Chow X p),\n    HodgeDecomposition.isHodgeType p p (CycleClassData.cycleClass p a)"
+  },
+  {
+    "module": "Ramtastic.GAGA.GAGACorrespondence",
+    "path": "Ramtastic/GAGA/GAGACorrespondence.lean",
+    "line": 36,
+    "kind": "structure",
+    "name": "GAGAData",
+    "header": "structure GAGAData (n : ℕ)",
+    "source_block_without_comments": "structure GAGAData (n : ℕ) where\n                                         \n  algCohomDim : Fin (n + 1) → ℕ\n                                        \n  anCohomDim : Fin (n + 1) → ℕ\n                                                                   \n  gaga_iso : ∀ q, algCohomDim q = anCohomDim q"
+  },
+  {
+    "module": "Ramtastic.GAGA.ProjectiveKahler",
+    "path": "Ramtastic/GAGA/ProjectiveKahler.lean",
+    "line": 43,
+    "kind": "structure",
+    "name": "ProjectiveVarietyData",
+    "header": "structure ProjectiveVarietyData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [HodgeClassData X]\n    [HodgeDecomposition X]",
+    "source_block_without_comments": "structure ProjectiveVarietyData (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [HodgeClassData X]\n    [HodgeDecomposition X] where\n                                                \n  ambientDim : ℕ\n                                                      \n  kahler : @KahlerData E _ _\n                                                                      \n                                                                        \n                                                                  \n  kahler_integral : ∃ (n : ℕ),\n    CycleClassData.cycleClass (X := X) 1 (default) ≠ 0"
+  },
+  {
+    "module": "Ramtastic.GAGA.RationalHodgeStructure",
+    "path": "Ramtastic/GAGA/RationalHodgeStructure.lean",
+    "line": 37,
+    "kind": "structure",
+    "name": "RationalHodgeStructureData",
+    "header": "structure RationalHodgeStructureData (n : ℕ)",
+    "source_block_without_comments": "structure RationalHodgeStructureData (n : ℕ) where\n                                                   \n  hodgeNumbers : Fin (n + 1) → Fin (n + 1) → ℕ\n                                        \n                                                               \n  hodge_symmetry : ∀ (p q : Fin (n + 1)),\n    hodgeNumbers p q = hodgeNumbers q p\n                                                \n  betti : ℕ → ℕ\n                                                               \n  hodge_deRham : ∀ (k : ℕ), k ≤ 2 * n →\n    betti k = ∑ p ∈ Finset.range (k + 1),\n      hodgeNumbers ⟨min p n, by omega⟩ ⟨min (k - p) n, by omega⟩"
+  },
+  {
+    "module": "Ramtastic.GAGA.RationalHodgeStructure",
+    "path": "Ramtastic/GAGA/RationalHodgeStructure.lean",
+    "line": 53,
+    "kind": "structure",
+    "name": "RationalHodgeClass",
+    "header": "structure RationalHodgeClass (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [HodgeClassData X]\n    [HodgeDecomposition X]",
+    "source_block_without_comments": "structure RationalHodgeClass (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] [HodgeClassData X]\n    [HodgeDecomposition X] where\n                      \n  p : ℕ\n                              \n  cls : CycleClassData.Cohom (X := X) (p + p)\n                                                               \n  is_pp : HodgeDecomposition.isHodgeType p p cls\n                                                             \n  is_hodge : cls ∈ HodgeClassData.isHodge (X := X) p"
+  },
+  {
+    "module": "Ramtastic.HardyLittlewood.PrimePairAsymptotic",
+    "path": "Ramtastic/HardyLittlewood/PrimePairAsymptotic.lean",
+    "line": 28,
+    "kind": "structure",
+    "name": "HardyLittlewoodRow",
+    "header": "structure HardyLittlewoodRow (k : Nat)",
+    "source_block_without_comments": "structure HardyLittlewoodRow (k : Nat) where\n  k_pos : 1 ≤ k\n  singularSeries : Real\n  singularSeries_pos : 0 < singularSeries\n  arbitrarily_large_pair :\n    ∀ n : Nat, ∃ p : Nat, n < p ∧ PrimePairAtGap k p"
+  },
+  {
+    "module": "Ramtastic.HardyLittlewood.PrimePairAsymptotic",
+    "path": "Ramtastic/HardyLittlewood/PrimePairAsymptotic.lean",
+    "line": 36,
+    "kind": "structure",
+    "name": "HardyLittlewoodTowerRequirement",
+    "header": "structure HardyLittlewoodTowerRequirement",
+    "source_block_without_comments": "structure HardyLittlewoodTowerRequirement where\n  row : ∀ k : Nat, 1 ≤ k → HardyLittlewoodRow k"
+  },
+  {
+    "module": "Ramtastic.HardyLittlewood.Tower",
+    "path": "Ramtastic/HardyLittlewood/Tower.lean",
+    "line": 18,
+    "kind": "structure",
+    "name": "HardyLittlewoodTowerManifest",
+    "header": "structure HardyLittlewoodTowerManifest",
+    "source_block_without_comments": "structure HardyLittlewoodTowerManifest where\n  requirement : HardyLittlewoodTowerRequirement"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.Codifferential",
+    "path": "Ramtastic/HodgeStar/Codifferential.lean",
+    "line": 56,
+    "kind": "class",
+    "name": "CodifferentialMap",
+    "header": "class CodifferentialMap (k k' : ℕ)",
+    "source_block_without_comments": "class CodifferentialMap (k k' : ℕ) where\n                            \n  codiff : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k'"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.Codifferential",
+    "path": "Ramtastic/HodgeStar/Codifferential.lean",
+    "line": 259,
+    "kind": "class",
+    "name": "CodiffAdjoint",
+    "header": "class CodiffAdjoint (k : ℕ) [MeasurableSpace E]\n    [CodifferentialMap (E := E) (k + 1) k]",
+    "source_block_without_comments": "class CodiffAdjoint (k : ℕ) [MeasurableSpace E]\n    [CodifferentialMap (E := E) (k + 1) k] where\n                                             \n  l2Inner_hi : DiffForm ℝ E ℝ (k + 1) → DiffForm ℝ E ℝ (k + 1) → MeasureTheory.Measure E → ℝ\n                                         \n  l2Inner_lo : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k → MeasureTheory.Measure E → ℝ\n                                                \n  adjoint : ∀ (ω : DiffForm ℝ E ℝ k) (η : DiffForm ℝ E ℝ (k + 1))\n    (μ : MeasureTheory.Measure E),\n    l2Inner_hi (fun x => extDeriv ω x) η μ =\n    l2Inner_lo ω ((CodifferentialMap.codiff (E := E) (k := k + 1) (k' := k)) η) μ\n\nend\n\nend Ramtastic.HodgeStar.Codifferential"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.HodgeLaplacian",
+    "path": "Ramtastic/HodgeStar/HodgeLaplacian.lean",
+    "line": 63,
+    "kind": "class",
+    "name": "HodgeLaplacianMap",
+    "header": "class HodgeLaplacianMap (k : ℕ)",
+    "source_block_without_comments": "class HodgeLaplacianMap (k : ℕ) where\n                             \n  laplacian : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.HodgeLaplacian",
+    "path": "Ramtastic/HodgeStar/HodgeLaplacian.lean",
+    "line": 297,
+    "kind": "class",
+    "name": "HarmonicIffClosedCoclosed",
+    "header": "class HarmonicIffClosedCoclosed (k : ℕ)\n    [hlm : HodgeLaplacianMap (E := E) k]\n    [cdm : CodifferentialMap (E := E) k (k - 1)]",
+    "source_block_without_comments": "class HarmonicIffClosedCoclosed (k : ℕ)\n    [hlm : HodgeLaplacianMap (E := E) k]\n    [cdm : CodifferentialMap (E := E) k (k - 1)] where\n                                 \n  harmonic_isClosed : ∀ (ω : DiffForm ℝ E ℝ k),\n    IsHarmonic (hlm := hlm) ω → IsClosed ω\n                                   \n  harmonic_isCoclosed : ∀ (ω : DiffForm ℝ E ℝ k),\n    IsHarmonic (hlm := hlm) ω → IsCoclosed (cdm := cdm) ω\n                                              \n  closedCoclosed_isHarmonic : ∀ (ω : DiffForm ℝ E ℝ k),\n    IsClosed ω → IsCoclosed (cdm := cdm) ω → IsHarmonic (hlm := hlm) ω"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.HodgeLaplacian",
+    "path": "Ramtastic/HodgeStar/HodgeLaplacian.lean",
+    "line": 318,
+    "kind": "class",
+    "name": "LaplacianSelfAdjoint",
+    "header": "class LaplacianSelfAdjoint (k : ℕ) [MeasurableSpace E]\n    [hlm : HodgeLaplacianMap (E := E) k]",
+    "source_block_without_comments": "class LaplacianSelfAdjoint (k : ℕ) [MeasurableSpace E]\n    [hlm : HodgeLaplacianMap (E := E) k] where\n                                         \n  l2Inner : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k → MeasureTheory.Measure E → ℝ\n                                             \n  selfAdjoint : ∀ (ω η : DiffForm ℝ E ℝ k) (μ : MeasureTheory.Measure E),\n    l2Inner (hlm.laplacian ω) η μ = l2Inner ω (hlm.laplacian η) μ\n                                    \n  nonneg : ∀ (ω : DiffForm ℝ E ℝ k) (μ : MeasureTheory.Measure E),\n    0 ≤ l2Inner (hlm.laplacian ω) ω μ\n\nend\n\nend Ramtastic.HodgeStar.HodgeLaplacian"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.L2InnerProduct",
+    "path": "Ramtastic/HodgeStar/L2InnerProduct.lean",
+    "line": 87,
+    "kind": "class",
+    "name": "L2InnerProductData",
+    "header": "class L2InnerProductData (k : ℕ)",
+    "source_block_without_comments": "class L2InnerProductData (k : ℕ) where\n                              \n  l2Inner : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k → Measure E → ℝ\n                  \n  l2Inner_symm : ∀ ω η μ, l2Inner ω η μ = l2Inner η ω μ\n                                           \n  l2Inner_self_nonneg : ∀ ω μ, 0 ≤ l2Inner ω ω μ\n                                                                     \n  pairingFn : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k → E → ℝ\n                                                          \n  l2Inner_eq_integral : ∀ ω η μ, l2Inner ω η μ = ∫ x, pairingFn ω η x ∂μ\n                                                                \n  pairingFn_add_left : ∀ (ω₁ ω₂ η : DiffForm ℝ E ℝ k) (x : E),\n    pairingFn (ω₁ + ω₂) η x = pairingFn ω₁ η x + pairingFn ω₂ η x\n                                                                      \n  pairingFn_smul_left : ∀ (c : ℝ) (ω η : DiffForm ℝ E ℝ k) (x : E),\n    pairingFn (c • ω) η x = c * pairingFn ω η x\n\nvariable {k : ℕ} [lid : L2InnerProductData (E := E) k]"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.StarOperator",
+    "path": "Ramtastic/HodgeStar/StarOperator.lean",
+    "line": 35,
+    "kind": "class",
+    "name": "HodgeStarMap",
+    "header": "class HodgeStarMap (k k' : ℕ)",
+    "source_block_without_comments": "class HodgeStarMap (k k' : ℕ) where\n                            \n  star : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k'\n                       \n  star_add : ∀ ω₁ ω₂, star (ω₁ + ω₂) = star ω₁ + star ω₂\n                       \n  star_smul : ∀ (c : ℝ) ω, star (c • ω) = c • star ω\n                                                                              \n                                                             \n  star_preserves_diff : ∀ ω, Differentiable ℝ ω → Differentiable ℝ (star ω)\n                                                                                 \n                                                                                      \n                                             \n  star_preserves_contDiff : ∀ {r : WithTop ℕ∞} ω, ContDiff ℝ r ω → ContDiff ℝ r (star ω)\n\nvariable {k k' : ℕ} [hsm : HodgeStarMap (E := E) k k']"
+  },
+  {
+    "module": "Ramtastic.HodgeStar.StarOperator",
+    "path": "Ramtastic/HodgeStar/StarOperator.lean",
+    "line": 73,
+    "kind": "class",
+    "name": "HodgeStarInvolution",
+    "header": "class HodgeStarInvolution (k k' : ℕ)\n    [HodgeStarMap (E := E) k k'] [HodgeStarMap (E := E) k' k]",
+    "source_block_without_comments": "class HodgeStarInvolution (k k' : ℕ)\n    [HodgeStarMap (E := E) k k'] [HodgeStarMap (E := E) k' k] where\n                              \n  star_star : ∀ (ω : DiffForm ℝ E ℝ k),\n    (HodgeStarMap.star (E := E) (k := k') (k' := k))\n      ((HodgeStarMap.star (k := k) (k' := k')) ω) =\n    ((-1 : ℝ) ^ (k * k')) • ω"
+  },
+  {
+    "module": "Ramtastic.Kahler.HardLefschetz",
+    "path": "Ramtastic/Kahler/HardLefschetz.lean",
+    "line": 45,
+    "kind": "class",
+    "name": "LefschetzPowerData",
+    "header": "class LefschetzPowerData (k : ℕ)",
+    "source_block_without_comments": "class LefschetzPowerData (k : ℕ) where\n                                                 \n  lefPow : (r : ℕ) → DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ (k + 2 * r)\n                                                               \n  lefPow_zero : ∀ α : DiffForm ℝ E ℝ k,\n    HEq (lefPow 0 α) α\n                         \n  lefPow_smul : ∀ (r : ℕ) (c : ℝ) (α : DiffForm ℝ E ℝ k),\n    lefPow r (c • α) = c • lefPow r α\n                         \n  lefPow_add : ∀ (r : ℕ) (α β : DiffForm ℝ E ℝ k),\n    lefPow r (α + β) = lefPow r α + lefPow r β"
+  },
+  {
+    "module": "Ramtastic.Kahler.HardLefschetz",
+    "path": "Ramtastic/Kahler/HardLefschetz.lean",
+    "line": 76,
+    "kind": "class",
+    "name": "HardLefschetzData",
+    "header": "class HardLefschetzData (n : ℕ) (k : ℕ)\n    [hlm_k : HodgeLaplacianMap (E := E) k]\n    [hlm_target : HodgeLaplacianMap (E := E) (k + 2 * (n - k))]\n    [lpd : LefschetzPowerData (E := E) k]",
+    "source_block_without_comments": "class HardLefschetzData (n : ℕ) (k : ℕ)\n    [hlm_k : HodgeLaplacianMap (E := E) k]\n    [hlm_target : HodgeLaplacianMap (E := E) (k + 2 * (n - k))]\n    [lpd : LefschetzPowerData (E := E) k] where\n                                                                      \n  k_le_n : k ≤ n\n                                                                \n                                                         \n  hard_lefschetz_inj : ∀ (α : DiffForm ℝ E ℝ k),\n    IsHarmonic (hlm := hlm_k) α →\n    lpd.lefPow (n - k) α = 0 →\n    α = 0\n                                                                      \n                                                                    \n                                                           \n                                                                       \n                                                    \n  hard_lefschetz_surj :\n    ∀ (η : DiffForm ℝ E ℝ (k + 2 * (n - k))),\n    IsHarmonic (hlm := hlm_target) η →\n    ∃ (α : DiffForm ℝ E ℝ k),\n      IsHarmonic (hlm := hlm_k) α ∧ lpd.lefPow (n - k) α = η"
+  },
+  {
+    "module": "Ramtastic.Kahler.HardLefschetz",
+    "path": "Ramtastic/Kahler/HardLefschetz.lean",
+    "line": 116,
+    "kind": "class",
+    "name": "LefschetzDecompositionData",
+    "header": "class LefschetzDecompositionData (n : ℕ) (k : ℕ)\n    [hlm_k : HodgeLaplacianMap (E := E) k]",
+    "source_block_without_comments": "class LefschetzDecompositionData (n : ℕ) (k : ℕ)\n    [hlm_k : HodgeLaplacianMap (E := E) k] where\n                                                                                 \n                                                                     \n  lefPow_at : (r : ℕ) → (hr : 2 * r ≤ k) →\n    DiffForm ℝ E ℝ (k - 2 * r) → DiffForm ℝ E ℝ k\n                                                                          \n                                                                            \n  lambda_at : (r : ℕ) → (hr : 2 * r ≤ k) →\n    DiffForm ℝ E ℝ (k - 2 * r) → DiffForm ℝ E ℝ (k - 2 * r - 2)\n                                                                        \n                                                                        \n                                                  \n                                                                         \n                                                               \n  lefschetz_decomp_exists : ∀ (α : DiffForm ℝ E ℝ k),\n    IsHarmonic (hlm := hlm_k) α →\n    ∃ (prim_components : (r : ℕ) → (hr : 2 * r ≤ k) → DiffForm ℝ E ℝ (k - 2 * r)),\n      (∀ r hr, lambda_at r hr (prim_components r hr) = 0) ∧\n      α = ∑ r ∈ (Finset.range (k / 2 + 1)).attach,\n        if h : 2 * r.1 ≤ k then lefPow_at r.1 h (prim_components r.1 h) else 0\n\nend\n\nend Ramtastic.Kahler.HardLefschetz"
+  },
+  {
+    "module": "Ramtastic.Kahler.HodgeDecomposition",
+    "path": "Ramtastic/Kahler/HodgeDecomposition.lean",
+    "line": 79,
+    "kind": "class",
+    "name": "HodgeDecomposition",
+    "header": "class HodgeDecomposition (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X]",
+    "source_block_without_comments": "class HodgeDecomposition (X : Type*) [VarietyData X] [RatEquivData X]\n    [IntersectionData X] [CycleClassData X] where\n                                                                 \n  isHodgeType : (p q : ℕ) → CycleClassData.Cohom (X := X) (p + q) → Prop\n                                                            \n  isHodgeType_add : ∀ p q (h₁ h₂ : CycleClassData.Cohom (X := X) (p + q)),\n    isHodgeType p q h₁ → isHodgeType p q h₂ → isHodgeType p q (h₁ + h₂)\n                                                                           \n  isHodgeType_smul : ∀ p q (c : ℚ) (h : CycleClassData.Cohom (X := X) (p + q)),\n    isHodgeType p q h → isHodgeType p q (c • h)\n                               \n  isHodgeType_zero : ∀ p q, isHodgeType p q (0 : CycleClassData.Cohom (X := X) (p + q))\n                                                                             \n                                                                           \n                                                                       \n                                                                         \n                                                               \n                                                                              \n                                                                    \n  hodge_pp_spans : ∀ (p : ℕ) (h : CycleClassData.Cohom (X := X) (p + p)),\n    ∃ (h_pp : CycleClassData.Cohom (X := X) (p + p)),\n      isHodgeType p p h_pp ∧\n      ∃ (h_rest : CycleClassData.Cohom (X := X) (p + p)),\n        h = h_pp + h_rest\n\n                                                                      \n                                \n                                                                      \n\nvariable [CycleClassData X] [hd : HodgeDecomposition X]"
+  },
+  {
+    "module": "Ramtastic.Kahler.KahlerForm",
+    "path": "Ramtastic/Kahler/KahlerForm.lean",
+    "line": 57,
+    "kind": "class",
+    "name": "KahlerData",
+    "header": "class KahlerData",
+    "source_block_without_comments": "class KahlerData where\n                                      \n  [acs : AlmostComplexStr E]\n                                            \n                                                                        \n  J_skewAdj : ∀ (v w : E), @inner ℝ E _ (acs.J v) w = -@inner ℝ E _ v (acs.J w)\n                                                    \n                                                                         \n  kahlerForm : DiffForm ℝ E ℝ 2\n                                                                           \n                                                                       \n                                                                     \n  kahlerForm_def : ∀ (x : E) (v w : E),\n    kahlerForm x ![v, w] = @inner ℝ E _ (acs.J v) w\n                                                   \n  kahler_closed : IsClosed kahlerForm\n\nattribute [reducible, instance] KahlerData.acs\n\nvariable [kd : KahlerData (E := E)]"
+  },
+  {
+    "module": "Ramtastic.Kahler.KahlerLaplacian",
+    "path": "Ramtastic/Kahler/KahlerLaplacian.lean",
+    "line": 47,
+    "kind": "class",
+    "name": "DolbeaultLaplacianBar",
+    "header": "class DolbeaultLaplacianBar (k : ℕ)",
+    "source_block_without_comments": "class DolbeaultLaplacianBar (k : ℕ) where\n                          \n  lapBar : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k\n                  \n  lapBar_add : ∀ ω₁ ω₂, lapBar (ω₁ + ω₂) = lapBar ω₁ + lapBar ω₂\n                  \n  lapBar_smul : ∀ (c : ℝ) ω, lapBar (c • ω) = c • lapBar ω"
+  },
+  {
+    "module": "Ramtastic.Kahler.KahlerLaplacian",
+    "path": "Ramtastic/Kahler/KahlerLaplacian.lean",
+    "line": 56,
+    "kind": "class",
+    "name": "DolbeaultLaplacianDel",
+    "header": "class DolbeaultLaplacianDel (k : ℕ)",
+    "source_block_without_comments": "class DolbeaultLaplacianDel (k : ℕ) where\n                         \n  lapDel : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k\n                  \n  lapDel_add : ∀ ω₁ ω₂, lapDel (ω₁ + ω₂) = lapDel ω₁ + lapDel ω₂\n                  \n  lapDel_smul : ∀ (c : ℝ) ω, lapDel (c • ω) = c • lapDel ω"
+  },
+  {
+    "module": "Ramtastic.Kahler.KahlerLaplacian",
+    "path": "Ramtastic/Kahler/KahlerLaplacian.lean",
+    "line": 78,
+    "kind": "class",
+    "name": "KahlerLaplacianIdentity",
+    "header": "class KahlerLaplacianIdentity (k : ℕ)\n    [hlm : HodgeLaplacianMap (E := E) k]\n    [dlb : DolbeaultLaplacianBar (E := E) k]\n    [dld : DolbeaultLaplacianDel (E := E) k]",
+    "source_block_without_comments": "class KahlerLaplacianIdentity (k : ℕ)\n    [hlm : HodgeLaplacianMap (E := E) k]\n    [dlb : DolbeaultLaplacianBar (E := E) k]\n    [dld : DolbeaultLaplacianDel (E := E) k] where\n                      \n  lap_eq_two_lapBar : ∀ ω : DiffForm ℝ E ℝ k,\n    hlm.laplacian ω = (2 : ℝ) • dlb.lapBar ω\n                     \n  lap_eq_two_lapDel : ∀ ω : DiffForm ℝ E ℝ k,\n    hlm.laplacian ω = (2 : ℝ) • dld.lapDel ω\n\nvariable {k : ℕ} [hlm : HodgeLaplacianMap (E := E) k]\n  [dlb : DolbeaultLaplacianBar (E := E) k]\n  [dld : DolbeaultLaplacianDel (E := E) k]\n  [kli : KahlerLaplacianIdentity (E := E) k]"
+  },
+  {
+    "module": "Ramtastic.Kahler.LefschetzOperator",
+    "path": "Ramtastic/Kahler/LefschetzOperator.lean",
+    "line": 41,
+    "kind": "class",
+    "name": "LefschetzMap",
+    "header": "class LefschetzMap (k : ℕ)",
+    "source_block_without_comments": "class LefschetzMap (k : ℕ) where\n                                \n  lef : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ (k + 2)\n                                          \n  lef_add : ∀ α β, lef (α + β) = lef α + lef β\n                                   \n  lef_smul : ∀ (c : ℝ) α, lef (c • α) = c • lef α\n                                                                         \n                                                                      \n                                                                       \n                                                                    \n                                             \n  kahler : DiffForm ℝ E ℝ 2\n                                                                            \n  lef_is_wedge : ∀ α,\n    HEq (lef α) (Ramtastic.DeRham.WedgeProduct.wedgeDiffForm kahler α)\n\nvariable {k : ℕ} [lm : LefschetzMap (E := E) k]"
+  },
+  {
+    "module": "Ramtastic.Kahler.LefschetzOperator",
+    "path": "Ramtastic/Kahler/LefschetzOperator.lean",
+    "line": 71,
+    "kind": "class",
+    "name": "LambdaMap",
+    "header": "class LambdaMap (k k' : ℕ)",
+    "source_block_without_comments": "class LambdaMap (k k' : ℕ) where\n                        \n  lambda : DiffForm ℝ E ℝ k → DiffForm ℝ E ℝ k'\n                  \n  lambda_add : ∀ α β, lambda (α + β) = lambda α + lambda β\n                  \n  lambda_smul : ∀ (c : ℝ) α, lambda (c • α) = c • lambda α"
+  },
+  {
+    "module": "Ramtastic.Kahler.LefschetzOperator",
+    "path": "Ramtastic/Kahler/LefschetzOperator.lean",
+    "line": 92,
+    "kind": "class",
+    "name": "LefschetzAdjoint",
+    "header": "class LefschetzAdjoint (k : ℕ) [MeasurableSpace E]\n    [lm : LefschetzMap (E := E) k]\n    [lam : LambdaMap (E := E) (k + 2) k]\n    [l2_lo : L2InnerProductData (E := E) k]\n    [l2_hi : L2InnerProductData (E := E) (k + 2)]",
+    "source_block_without_comments": "class LefschetzAdjoint (k : ℕ) [MeasurableSpace E]\n    [lm : LefschetzMap (E := E) k]\n    [lam : LambdaMap (E := E) (k + 2) k]\n    [l2_lo : L2InnerProductData (E := E) k]\n    [l2_hi : L2InnerProductData (E := E) (k + 2)] where\n                                                   \n  adjoint : ∀ (α : DiffForm ℝ E ℝ k) (β : DiffForm ℝ E ℝ (k + 2))\n    (μ : MeasureTheory.Measure E),\n    l2_hi.l2Inner (lm.lef α) β μ = l2_lo.l2Inner α (lam.lambda β) μ"
+  },
+  {
+    "module": "Ramtastic.Kahler.LefschetzOperator",
+    "path": "Ramtastic/Kahler/LefschetzOperator.lean",
+    "line": 139,
+    "kind": "class",
+    "name": "KahlerSL2Data",
+    "header": "class KahlerSL2Data (n : ℕ) (k k_lo : ℕ)\n    [lm_k : LefschetzMap (E := E) k]\n    [lam_hi : LambdaMap (E := E) (k + 2) k]\n    [lam_lo : LambdaMap (E := E) k k_lo]\n    [lm_lo : LefschetzMap (E := E) k_lo]",
+    "source_block_without_comments": "class KahlerSL2Data (n : ℕ) (k k_lo : ℕ)\n    [lm_k : LefschetzMap (E := E) k]\n    [lam_hi : LambdaMap (E := E) (k + 2) k]\n    [lam_lo : LambdaMap (E := E) k k_lo]\n    [lm_lo : LefschetzMap (E := E) k_lo] where\n                                                                         \n  degree_compat : k_lo + 2 = k\n                                             \n                                           \n                                                                               \n                                                             \n  sl2_weight : ∀ (α : DiffForm ℝ E ℝ k),\n    lam_hi.lambda (lm_k.lef α) =\n      ((k : ℤ) - (n : ℤ)) • α + degree_compat ▸ lm_lo.lef (lam_lo.lambda α)\n\nend\n\nend Ramtastic.Kahler.LefschetzOperator"
+  },
+  {
+    "module": "Ramtastic.Polignac.Statement",
+    "path": "Ramtastic/Polignac/Statement.lean",
+    "line": 27,
+    "kind": "structure",
+    "name": "PolignacTowerRequirement",
+    "header": "structure PolignacTowerRequirement",
+    "source_block_without_comments": "structure PolignacTowerRequirement where\n  polignac : PolignacStatement"
+  },
+  {
+    "module": "Ramtastic.PrincipalBundles.PrincipalBundle",
+    "path": "Ramtastic/PrincipalBundles/PrincipalBundle.lean",
+    "line": 63,
+    "kind": "class",
+    "name": "GaugeGroupData",
+    "header": "class GaugeGroupData",
+    "source_block_without_comments": "class GaugeGroupData where\n                           \n  G : Type*\n  [group : Group G]\n                                \n  𝔤 : Type*\n  [normedAddCommGroup : NormedAddCommGroup 𝔤]\n  [normedSpace : NormedSpace ℝ 𝔤]\n                              \n  lie : 𝔤 → 𝔤 → 𝔤\n                                                        \n  lie_add : ∀ x y z : 𝔤, lie x (y + z) = lie x y + lie x z\n                                                       \n  add_lie : ∀ x y z : 𝔤, lie (x + y) z = lie x z + lie y z\n                    \n  lie_self : ∀ x : 𝔤, lie x x = 0\n                                            \n  leibniz_lie : ∀ x y z : 𝔤,\n    lie x (lie y z) = lie (lie x y) z + lie y (lie x z)\n                                                 \n  lie_smul : ∀ (t : ℝ) (x y : 𝔤), lie x (t • y) = t • lie x y\n                                                             \n                                                     \n  Ad : G → 𝔤 →ₗ[ℝ] 𝔤\n                                                            \n  Ad_mul : ∀ g h : G, Ad (g * h) = (Ad g).comp (Ad h)\n                    \n  Ad_one : Ad 1 = LinearMap.id\n                                                                     \n  Ad_bracket : ∀ (g : G) (X Y : 𝔤),\n    Ad g (lie X Y) = lie (Ad g X) (Ad g Y)\n                                               \n                                                                  \n  lieBilin : 𝔤 →L[ℝ] 𝔤 →L[ℝ] 𝔤\n                                                            \n  lieBilin_eq : ∀ X Y : 𝔤, lieBilin X Y = lie X Y\n\nattribute [reducible, instance] GaugeGroupData.group\n  GaugeGroupData.normedAddCommGroup GaugeGroupData.normedSpace\n\nvariable [ggd : GaugeGroupData]\n\n                                                 \ninstance : Bracket ggd.𝔤 ggd.𝔤 := ⟨ggd.lie⟩\n\n                                                                              \ninstance : LieRing ggd.𝔤 where\n  add_lie := ggd.add_lie\n  lie_add := ggd.lie_add\n  lie_self := ggd.lie_self\n  leibniz_lie := ggd.leibniz_lie\n\n                                        \ninstance : LieAlgebra ℝ ggd.𝔤 where\n  lie_smul := ggd.lie_smul"
+  },
+  {
+    "module": "Ramtastic.PrincipalBundles.PrincipalBundle",
+    "path": "Ramtastic/PrincipalBundles/PrincipalBundle.lean",
+    "line": 131,
+    "kind": "class",
+    "name": "PrincipalBundleData",
+    "header": "class PrincipalBundleData (M : Type*)",
+    "source_block_without_comments": "class PrincipalBundleData (M : Type*) where\n                                       \n  P : Type*\n                                  \n  proj : P → M\n                                               \n  act : P → ggd.G → P\n                                                      \n  act_assoc : ∀ (p : P) (g h : ggd.G), act (act p g) h = act p (g * h)\n                                              \n  act_one : ∀ (p : P), act p 1 = p\n                                             \n  act_free : ∀ (p : P) (g : ggd.G), act p g = p → g = 1\n                                                    \n  act_fiber : ∀ (p : P) (g : ggd.G), proj (act p g) = proj p\n                                         \n                                           \n  act_transitive : ∀ (p q : P), proj p = proj q → ∃ g : ggd.G, act p g = q\n\n                                                                      \n             \n                                                                      \n\nvariable {M : Type*} [pb : PrincipalBundleData M]"
+  },
+  {
+    "module": "Ramtastic.Sobolev.CompactManifold",
+    "path": "Ramtastic/Sobolev/CompactManifold.lean",
+    "line": 58,
+    "kind": "structure",
+    "name": "CompactManifoldData",
+    "header": "structure CompactManifoldData (n : ℕ)",
+    "source_block_without_comments": "structure CompactManifoldData (n : ℕ) where\n                                            \n  hlm : ∀ (k : Fin (n + 1)), HodgeLaplacianMap (E := E) k\n                                                                           \n  fd : ∀ (k : Fin (n + 1)), @FredholmData E _ _ k (hlm k)\n                                                                    \n                                                                          \n                                                                     \n                                                                    \n                                                                    \n                                                                        \n  star_basis_inj : ∀ (k : Fin (n + 1)),\n    ∃ (f : Fin (fd k).dimKernel → Fin (fd ⟨n - k, by omega⟩).dimKernel),\n      Function.Injective f"
+  },
+  {
+    "module": "Ramtastic.Sobolev.CompactManifold",
+    "path": "Ramtastic/Sobolev/CompactManifold.lean",
+    "line": 185,
+    "kind": "structure",
+    "name": "ConnectedManifold",
+    "header": "structure ConnectedManifold extends CompactManifoldData (E := E) n",
+    "source_block_without_comments": "structure ConnectedManifold extends CompactManifoldData (E := E) n where\n  b0_eq_one : betti toCompactManifoldData ⟨0, by omega⟩ = 1"
+  },
+  {
+    "module": "Ramtastic.Sobolev.EllipticOperator",
+    "path": "Ramtastic/Sobolev/EllipticOperator.lean",
+    "line": 282,
+    "kind": "structure",
+    "name": "PrincipalSymbol",
+    "header": "structure PrincipalSymbol (q : ℕ)",
+    "source_block_without_comments": "structure PrincipalSymbol (q : ℕ) where\n                                                                  \n                                          \n  symbol : E → E → (E [⋀^Fin q]→L[ℝ] ℝ) → (E [⋀^Fin q]→L[ℝ] ℝ)\n                                                     \n  symbol_linear : ∀ x ξ (c : ℝ) (ω η : E [⋀^Fin q]→L[ℝ] ℝ),\n    symbol x ξ (c • ω + η) = c • symbol x ξ ω + symbol x ξ η"
+  },
+  {
+    "module": "Ramtastic.Sobolev.EllipticOperator",
+    "path": "Ramtastic/Sobolev/EllipticOperator.lean",
+    "line": 296,
+    "kind": "structure",
+    "name": "IsElliptic",
+    "header": "structure IsElliptic (q : ℕ) extends PrincipalSymbol (E := E) q",
+    "source_block_without_comments": "structure IsElliptic (q : ℕ) extends PrincipalSymbol (E := E) q where\n                                                                         \n  symbol_inv : E → E → (E [⋀^Fin q]→L[ℝ] ℝ) → (E [⋀^Fin q]→L[ℝ] ℝ)\n                                               \n  inv_left : ∀ x (ξ : E) (hξ : ξ ≠ 0) (ω : E [⋀^Fin q]→L[ℝ] ℝ),\n    symbol_inv x ξ (symbol x ξ ω) = ω\n                                                \n  inv_right : ∀ x (ξ : E) (hξ : ξ ≠ 0) (ω : E [⋀^Fin q]→L[ℝ] ℝ),\n    symbol x ξ (symbol_inv x ξ ω) = ω"
+  },
+  {
+    "module": "Ramtastic.Sobolev.EllipticRegularity",
+    "path": "Ramtastic/Sobolev/EllipticRegularity.lean",
+    "line": 49,
+    "kind": "structure",
+    "name": "EllipticEstimateAt",
+    "header": "structure EllipticEstimateAt (s q : ℕ) (μ : Measure E)\n    [hlm : HodgeLaplacianMap (E := E) q]",
+    "source_block_without_comments": "structure EllipticEstimateAt (s q : ℕ) (μ : Measure E)\n    [hlm : HodgeLaplacianMap (E := E) q] where\n                               \n  C : ℝ\n                                  \n  C_pos : 0 < C\n                                                                           \n  regularity : ∀ ω : DiffForm ℝ E ℝ q,\n    MemSobolev s q ω μ → MemSobolev s q (hlm.laplacian ω) μ →\n    MemSobolev (s + 2) q ω μ\n                                \n  estimate : ∀ ω : DiffForm ℝ E ℝ q,\n    MemSobolev (s + 2) q ω μ →\n    sobolevNormSq (s + 2) q ω μ ≤\n      C * (sobolevNormSq s q (hlm.laplacian ω) μ + sobolevNormSq 0 q ω μ)"
+  },
+  {
+    "module": "Ramtastic.Sobolev.FredholmTheory",
+    "path": "Ramtastic/Sobolev/FredholmTheory.lean",
+    "line": 66,
+    "kind": "structure",
+    "name": "FredholmData",
+    "header": "structure FredholmData (q : ℕ) [hlm : HodgeLaplacianMap (E := E) q]",
+    "source_block_without_comments": "structure FredholmData (q : ℕ) [hlm : HodgeLaplacianMap (E := E) q] where\n                                                 \n  dimKernel : ℕ\n                              \n  dimCokernel : ℕ\n                           \n  basis : Fin dimKernel → DiffForm ℝ E ℝ q\n                                        \n  basis_harmonic : ∀ i, IsHarmonic (hlm := hlm) (basis i)\n                                            \n  basis_spans : ∀ ω, IsHarmonic (hlm := hlm) ω →\n    ∃ coeffs : Fin dimKernel → ℝ, ω = ∑ i : Fin dimKernel, coeffs i • basis i\n                                                         \n                                                                   \n                                                                                  \n  span_harmonic : ∀ (coeffs : Fin dimKernel → ℝ),\n    IsHarmonic (hlm := hlm) (∑ i : Fin dimKernel, coeffs i • basis i)\n                                                     \n  index_zero : dimKernel = dimCokernel"
+  },
+  {
+    "module": "Ramtastic.Sobolev.FredholmTheory",
+    "path": "Ramtastic/Sobolev/FredholmTheory.lean",
+    "line": 158,
+    "kind": "structure",
+    "name": "HarmonicProjectionData",
+    "header": "structure HarmonicProjectionData (q : ℕ) [hlm : HodgeLaplacianMap (E := E) q]\n    extends FredholmData (E := E) q",
+    "source_block_without_comments": "structure HarmonicProjectionData (q : ℕ) [hlm : HodgeLaplacianMap (E := E) q]\n    extends FredholmData (E := E) q where\n                                                                   \n  l2 : DiffForm ℝ E ℝ q → DiffForm ℝ E ℝ q → ℝ\n                                              \n  l2_add_left : ∀ (ω₁ ω₂ η : DiffForm ℝ E ℝ q),\n    l2 (ω₁ + ω₂) η = l2 ω₁ η + l2 ω₂ η\n                                              \n  l2_smul_left : ∀ (c : ℝ) (ω η : DiffForm ℝ E ℝ q),\n    l2 (c • ω) η = c * l2 ω η\n                                          \n  l2_symm : ∀ (ω η : DiffForm ℝ E ℝ q), l2 ω η = l2 η ω\n                                  \n  l2_nonneg : ∀ (ω : DiffForm ℝ E ℝ q), 0 ≤ l2 ω ω\n                                                          \n                                                               \n  l2_pos_def : ∀ (ω : DiffForm ℝ E ℝ q), l2 ω ω = 0 → ω = 0\n                                                              \n  basis_orthonormal : ∀ (i j : Fin dimKernel),\n    l2 (basis i) (basis j) = if i = j then 1 else 0\n                                                                   \n                                                   \n                                                                   \n                                                       \n  l2_self_adj : ∀ (ω η : DiffForm ℝ E ℝ q),\n    l2 (hlm.laplacian ω) η = l2 ω (hlm.laplacian η)\n                                                    \n\n                                                                 \n                                                                     \n                                                        \n\n                                                                  \n                                                                    \n                                                                          \n                                                                   \n  fredholm_decomp : ∀ (ω : DiffForm ℝ E ℝ q),\n    ∃ η, hlm.laplacian η =\n      ω - ∑ i : Fin dimKernel, l2 ω (basis i) • basis i"
+  },
+  {
+    "module": "Ramtastic.Sobolev.HodgeTheorem",
+    "path": "Ramtastic/Sobolev/HodgeTheorem.lean",
+    "line": 57,
+    "kind": "structure",
+    "name": "HodgeDecompositionData",
+    "header": "structure HodgeDecompositionData (m : ℕ) [hlm : HodgeLaplacianMap (E := E) (m + 1)]",
+    "source_block_without_comments": "structure HodgeDecompositionData (m : ℕ) [hlm : HodgeLaplacianMap (E := E) (m + 1)] where\n                                                                                    \n  hpd : HarmonicProjectionData (E := E) (m + 1)\n                                                    \n  cdm : CodifferentialMap (E := E) (m + 1) m\n                                                        \n  cdm_hi : CodifferentialMap (E := E) (m + 2) (m + 1)\n                                                                     \n                                                                       \n                                \n  lap_eq_dcodiff_codiffd : ∀ (η : DiffForm ℝ E ℝ (m + 1)),\n    hlm.laplacian η =\n      (fun x => extDeriv (cdm.codiff η) x) +\n      cdm_hi.codiff (fun x => extDeriv η x)"
+  },
+  {
+    "module": "Ramtastic.Tao.BoundedPrimeGaps",
+    "path": "Ramtastic/Tao/BoundedPrimeGaps.lean",
+    "line": 26,
+    "kind": "structure",
+    "name": "TaoBoundedGapTowerRequirement",
+    "header": "structure TaoBoundedGapTowerRequirement",
+    "source_block_without_comments": "structure TaoBoundedGapTowerRequirement where\n  K : Nat\n  K_pos : 0 < K\n  infinitely_many_bounded_gaps :\n    Set.Infinite { p : Nat | BoundedPrimeGapAtMost K p }"
+  },
+  {
+    "module": "Ramtastic.Tao.Tower",
+    "path": "Ramtastic/Tao/Tower.lean",
+    "line": 17,
+    "kind": "structure",
+    "name": "TaoTowerManifest",
+    "header": "structure TaoTowerManifest",
+    "source_block_without_comments": "structure TaoTowerManifest where\n  requirement : TaoBoundedGapTowerRequirement"
+  },
+  {
+    "module": "Ramtastic.TwinPrimes.Statement",
+    "path": "Ramtastic/TwinPrimes/Statement.lean",
+    "line": 19,
+    "kind": "structure",
+    "name": "TwinPrimeTowerRequirement",
+    "header": "structure TwinPrimeTowerRequirement",
+    "source_block_without_comments": "structure TwinPrimeTowerRequirement where\n  twin_primes : TwinPrimeStatement\n\nend\n\nend Ramtastic.TwinPrimes.Statement"
+  },
+  {
+    "module": "Ramtastic.TwinPrimes.Tower",
+    "path": "Ramtastic/TwinPrimes/Tower.lean",
+    "line": 17,
+    "kind": "structure",
+    "name": "TwinPrimeTowerManifest",
+    "header": "structure TwinPrimeTowerManifest",
+    "source_block_without_comments": "structure TwinPrimeTowerManifest where\n  requirement : TwinPrimeTowerRequirement"
+  }
+]

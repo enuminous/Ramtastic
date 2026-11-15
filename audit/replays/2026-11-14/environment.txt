@@ -1,0 +1,10 @@
+Sat Nov 14 20:56:45 UTC 2026
+Linux replay-host 6.18.57 #1 SMP Tue Oct 20 21:56:04 UTC 2026 x86_64 GNU/Linux
+Python 3.12.14
+git version 2.52.0
+Lean (version 4.30.0-rc1, x86_64-unknown-linux-gnu, commit 714601baf118066cbf3f282361339c6d06665b2a, Release)
+Lake version 5.0.0-src+714601b (Lean version 4.30.0-rc1)
+916ab476012852778edd9ca63aecf200a8e90ed1
+139988460d342a8941f9c9f2dbfe34b9a178ef3916e5df559e8b6a526ec89a08  run/Ramtastic/lean-toolchain
+6bc7639f763ae05cbeef37be48be4ed7926736d4b700cedbc738b7484df5204d  run/Ramtastic/lakefile.lean
+180cb84ee09682fecf1f02954b87289094b09e66b7452e93ea65ae8cb130b9f3  run/Ramtastic/lake-manifest.json
